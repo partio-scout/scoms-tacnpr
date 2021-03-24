@@ -214,27 +214,27 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6098559A
-P 5200 3700
+P 4900 3700
 AR Path="/6098559A" Ref="C?"  Part="1" 
 AR Path="/6096F497/6098559A" Ref="C12"  Part="1" 
-F 0 "C12" H 5292 3746 50  0000 L CNN
-F 1 "C_Small" H 5292 3655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 3700 50  0001 C CNN
-F 3 "~" H 5200 3700 50  0001 C CNN
-	1    5200 3700
+F 0 "C12" H 4992 3746 50  0000 L CNN
+F 1 "100n" H 4992 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4900 3700 50  0001 C CNN
+F 3 "~" H 4900 3700 50  0001 C CNN
+	1    4900 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDD #PWR?
 U 1 1 609855A0
-P 5200 3800
+P 4900 3800
 AR Path="/609855A0" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/609855A0" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 5200 3550 50  0001 C CNN
-F 1 "GNDD" H 5204 3645 50  0000 C CNN
-F 2 "" H 5200 3800 50  0001 C CNN
-F 3 "" H 5200 3800 50  0001 C CNN
-	1    5200 3800
+F 0 "#PWR0107" H 4900 3550 50  0001 C CNN
+F 1 "GNDD" H 4904 3645 50  0000 C CNN
+F 2 "" H 4900 3800 50  0001 C CNN
+F 3 "" H 4900 3800 50  0001 C CNN
+	1    4900 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -244,9 +244,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3500 5950 3500
 Wire Wire Line
-	5200 3600 5200 3500
-Wire Wire Line
-	5200 3500 5550 3500
+	4900 3600 4900 3500
 Connection ~ 5550 3500
 Text GLabel 6300 5000 2    50   Input ~ 0
 IRQ_W5500
@@ -521,8 +519,8 @@ F 3 "~" H 1550 3550 50  0001 C CNN
 $EndComp
 Text Notes 1000 1500 0    276  Italic 55
 TACNPR / CPU, SRAM and USB
-Text Notes 3900 6900 0    118  ~ 24
-TODO: F.BEAD VDDA-linjaan (pin5)\n\nTODO: datasheet 6.1.6 Power supply scheme  !!!
+Text Notes 2500 7450 0    118  ~ 24
+TODO: F.BEAD VDDA-linjaan (pin5)\n\nTODO: datasheet 6.1.6 Power supply scheme  !!!\n\nTODO: tsekkaa RAND-kytkentä (NPR)
 $Comp
 L Device:C_Small C?
 U 1 1 605BED4B
@@ -677,4 +675,6 @@ Wire Wire Line
 	4150 4600 4300 4600
 Wire Wire Line
 	4500 4600 4550 4600
+Wire Wire Line
+	4900 3500 5550 3500
 $EndSCHEMATC
