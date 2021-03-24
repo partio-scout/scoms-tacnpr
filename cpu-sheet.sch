@@ -56,18 +56,18 @@ $EndComp
 $Comp
 L power:GNDD #PWR?
 U 1 1 60985545
-P 4450 4700
+P 4450 4500
 AR Path="/60985545" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/60985545" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4450 4450 50  0001 C CNN
-F 1 "GNDD" H 4454 4545 50  0000 C CNN
-F 2 "" H 4450 4700 50  0001 C CNN
-F 3 "" H 4450 4700 50  0001 C CNN
-	1    4450 4700
+F 0 "#PWR?" H 4450 4250 50  0001 C CNN
+F 1 "GNDD" H 4454 4345 50  0000 C CNN
+F 2 "" H 4450 4500 50  0001 C CNN
+F 3 "" H 4450 4500 50  0001 C CNN
+	1    4450 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 4700 4450 4450
+	4450 4500 4450 4450
 Wire Wire Line
 	4450 4450 4450 4350
 Wire Wire Line
@@ -274,10 +274,6 @@ Connection ~ 5550 3500
 Connection ~ 5750 4000
 Wire Wire Line
 	5750 4000 6950 4000
-Wire Wire Line
-	5100 4800 5150 4800
-Wire Wire Line
-	5100 4900 5150 4900
 Text GLabel 6300 5000 2    50   Input ~ 0
 IRQ_W5500
 Wire Wire Line
@@ -552,5 +548,92 @@ $EndComp
 Text Notes 1000 1500 0    276  Italic 55
 TACNPR / CPU, SRAM and USB
 Text Notes 3900 6900 0    118  ~ 24
-TODO: PROSSUN KIDE JA SEN KONKAT PUUTTUU + F.BEAD VDDA-linjaan (pin5)
+TODO: F.BEAD VDDA-linjaan (pin5)
+$Comp
+L Device:C_Small C?
+U 1 1 605BED4B
+P 4300 4850
+AR Path="/605BED4B" Ref="C?"  Part="1" 
+AR Path="/6096F497/605BED4B" Ref="C?"  Part="1" 
+F 0 "C?" H 4392 4896 50  0000 L CNN
+F 1 "4p3" H 4392 4805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 4850 50  0001 C CNN
+F 3 "~" H 4300 4850 50  0001 C CNN
+	1    4300 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 605C18F9
+P 4300 5100
+AR Path="/605C18F9" Ref="C?"  Part="1" 
+AR Path="/6096F497/605C18F9" Ref="C?"  Part="1" 
+F 0 "C?" H 4392 5146 50  0000 L CNN
+F 1 "4p3" H 4392 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4300 5100 50  0001 C CNN
+F 3 "~" H 4300 5100 50  0001 C CNN
+	1    4300 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 605C2352
+P 4050 5100
+AR Path="/605C2352" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/605C2352" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 4850 50  0001 C CNN
+F 1 "GNDD" H 4054 4945 50  0000 C CNN
+F 2 "" H 4050 5100 50  0001 C CNN
+F 3 "" H 4050 5100 50  0001 C CNN
+	1    4050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 605C2DEB
+P 4050 4850
+AR Path="/605C2DEB" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/605C2DEB" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4050 4600 50  0001 C CNN
+F 1 "GNDD" H 4054 4695 50  0000 C CNN
+F 2 "" H 4050 4850 50  0001 C CNN
+F 3 "" H 4050 4850 50  0001 C CNN
+	1    4050 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 4850 4200 4850
+Wire Wire Line
+	4050 5100 4200 5100
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 605C7982
+P 4500 4950
+F 0 "Y?" V 4454 5038 50  0000 L CNN
+F 1 "32.768K" V 4545 5038 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4850 4500 4800
+Wire Wire Line
+	4500 4800 5150 4800
+Wire Wire Line
+	4600 4900 4600 5100
+Wire Wire Line
+	4600 5100 4500 5100
+Wire Wire Line
+	4600 4900 5150 4900
+Wire Wire Line
+	4500 5050 4500 5100
+Connection ~ 4500 5100
+Wire Wire Line
+	4500 5100 4400 5100
+Wire Wire Line
+	4400 4850 4400 4800
+Wire Wire Line
+	4400 4800 4500 4800
+Connection ~ 4500 4800
 $EndSCHEMATC
