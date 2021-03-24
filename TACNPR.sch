@@ -259,7 +259,7 @@ U 607946F5
 F0 "radio" 94
 F1 "radio-sheet.sch" 94
 $EndSheet
-Text Notes 7200 7000 0    197  ~ 0
+Text Notes 7200 7000 0    197  ~ 39
 TACNPR project
 Text Notes 3450 6100 0    129  Italic 26
 TODO GPIO:t piikkirimalle, reunarima parempaan käyttöön
@@ -275,7 +275,7 @@ Wire Notes Line
 	7150 5150 7150 3250
 Text Notes 7300 3550 0    97   ~ 19
 Screw terminals
-Text Notes 1350 2700 0    118  ~ 24
+Text Notes 2550 2650 0    118  ~ 24
 SUBSHEETS:
 $Sheet
 S 1450 3150 1450 700 
@@ -293,9 +293,9 @@ F1 "cpu-sheet.sch" 94
 $EndSheet
 Text Notes 3450 3650 0    197  ~ 39
 CPU
-Text Notes 950  1800 0    394  ~ 79
-TACNPR project
-Text Notes 1400 7250 0    79   ~ 16
+Text Notes 3300 1650 0    394  ~ 79
+TACNPR project\n
+Text Notes 1450 7300 0    79   ~ 16
 Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL
 $Sheet
 S 5200 4400 1450 750 
@@ -305,4 +305,26 @@ F1 "RF-PA-sheet.sch" 79
 $EndSheet
 Text Notes 5400 4900 0    197  ~ 39
 RF PA
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO?
+U 1 1 6067BE98
+P 2000 6500
+F 0 "#LOGO?" H 2000 7000 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 2000 6100 50  0001 C CNN
+F 2 "" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+	1    2000 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:SYM_Radio_Waves_Large #SYM?
+U 1 1 6067E54C
+P 10800 6800
+F 0 "#SYM?" H 10800 7000 50  0001 C CNN
+F 1 "SYM_Radio_Waves_Large" H 10800 6550 50  0001 C CNN
+F 2 "" H 10800 6600 50  0001 C CNN
+F 3 "~" H 10830 6600 50  0001 C CNN
+	1    10800 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

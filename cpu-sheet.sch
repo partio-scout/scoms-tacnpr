@@ -252,10 +252,6 @@ Wire Wire Line
 	6150 5000 6300 5000
 Text GLabel 6800 5200 2    50   Output ~ 0
 CS_W5500
-Wire Wire Line
-	5100 5600 5150 5600
-Wire Wire Line
-	5100 5700 5150 5700
 Text GLabel 6300 5500 2    50   BiDi ~ 0
 GPIO_12
 Text GLabel 6300 5600 2    50   BiDi ~ 0
@@ -677,4 +673,30 @@ Wire Wire Line
 	4500 4600 4550 4600
 Wire Wire Line
 	4900 3500 5550 3500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60697EB7
+P 4500 5600
+F 0 "TP?" V 4695 5672 50  0000 C CNN
+F 1 "TestPoint" V 4604 5672 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4700 5600 50  0001 C CNN
+F 3 "~" H 4700 5600 50  0001 C CNN
+	1    4500 5600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60698D2D
+P 4500 5700
+F 0 "TP?" V 4695 5772 50  0000 C CNN
+F 1 "TestPoint" V 4604 5772 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4700 5700 50  0001 C CNN
+F 3 "~" H 4700 5700 50  0001 C CNN
+	1    4500 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4500 5600 5150 5600
+Wire Wire Line
+	4500 5700 5150 5700
 $EndSCHEMATC
