@@ -296,7 +296,7 @@ CPU
 Text Notes 3300 1650 0    394  ~ 79
 TACNPR project\n
 Text Notes 1450 7300 0    79   ~ 16
-Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL
+Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL)
 $Sheet
 S 5200 4400 1450 750 
 U 60604CF2
@@ -306,10 +306,10 @@ $EndSheet
 Text Notes 5400 4900 0    197  ~ 39
 RF PA
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO?
+L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 6067BE98
 P 2000 6500
-F 0 "#LOGO?" H 2000 7000 50  0001 C CNN
+F 0 "#LOGO1" H 2000 7000 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Large" H 2000 6100 50  0001 C CNN
 F 2 "" H 2000 6500 50  0001 C CNN
 F 3 "~" H 2000 6500 50  0001 C CNN
@@ -317,10 +317,10 @@ F 3 "~" H 2000 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:SYM_Radio_Waves_Large #SYM?
+L Graphic:SYM_Radio_Waves_Large #SYM1
 U 1 1 6067E54C
 P 10800 6800
-F 0 "#SYM?" H 10800 7000 50  0001 C CNN
+F 0 "#SYM1" H 10800 7000 50  0001 C CNN
 F 1 "SYM_Radio_Waves_Large" H 10800 6550 50  0001 C CNN
 F 2 "" H 10800 6600 50  0001 C CNN
 F 3 "~" H 10830 6600 50  0001 C CNN

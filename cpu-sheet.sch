@@ -674,10 +674,10 @@ Wire Wire Line
 Wire Wire Line
 	4900 3500 5550 3500
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP3
 U 1 1 60697EB7
 P 4500 5600
-F 0 "TP?" V 4695 5672 50  0000 C CNN
+F 0 "TP3" V 4695 5672 50  0000 C CNN
 F 1 "TestPoint" V 4604 5672 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4700 5600 50  0001 C CNN
 F 3 "~" H 4700 5600 50  0001 C CNN
@@ -685,10 +685,10 @@ F 3 "~" H 4700 5600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP4
 U 1 1 60698D2D
 P 4500 5700
-F 0 "TP?" V 4695 5772 50  0000 C CNN
+F 0 "TP4" V 4695 5772 50  0000 C CNN
 F 1 "TestPoint" V 4604 5772 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4700 5700 50  0001 C CNN
 F 3 "~" H 4700 5700 50  0001 C CNN
