@@ -259,7 +259,7 @@ U 607946F5
 F0 "radio" 94
 F1 "radio-sheet.sch" 94
 $EndSheet
-Text Notes 7200 7000 0    197  ~ 39
+Text Notes 7200 7000 0    197  ~ 0
 TACNPR project
 Text Notes 3450 6100 0    129  Italic 26
 TODO GPIO:t piikkirimalle, reunarima parempaan käyttöön
@@ -293,7 +293,7 @@ F1 "cpu-sheet.sch" 94
 $EndSheet
 Text Notes 3450 3650 0    197  ~ 39
 CPU
-Text Notes 950  1800 0    394  Italic 79
+Text Notes 950  1800 0    394  ~ 79
 TACNPR project
 Text Notes 1400 7250 0    79   ~ 16
 Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL
