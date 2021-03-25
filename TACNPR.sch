@@ -252,7 +252,7 @@ $EndSheet
 Text Notes 3550 4950 0    134  ~ 27
 W5500 \nEthernet
 Text Notes 5350 3700 0    118  ~ 24
-Si4633 radio\nsubsystem
+Si4463 radio\nsubsystem
 $Sheet
 S 5200 3150 1450 750 
 U 607946F5

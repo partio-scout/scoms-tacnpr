@@ -14,5 +14,5 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 900  1400 0    276  Italic 55
-TACNPR / Si4633 radio subsystem
+TACNPR / Si4463 radio subsystem
 $EndSCHEMATC
