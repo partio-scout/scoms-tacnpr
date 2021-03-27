@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 950  1500 0    276  Italic 55
+Text Notes 7150 6850 0    157  Italic 31
 TACNPR / RF power amplifier
-Text Notes 1000 1850 0    118  Italic 24
+Text Notes 7200 7050 0    79   Italic 16
 20W RF PA based on Motorola ???, design: Tatu OH2EAT
 $EndSCHEMATC

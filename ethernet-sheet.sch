@@ -274,6 +274,6 @@ F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PD
 	1    3250 3850
 	1    0    0    -1  
 $EndComp
-Text Notes 950  1600 0    276  Italic 55
-TACNPR / Ethernet subsystem (W5500)
+Text Notes 7150 6900 0    157  Italic 31
+TACNPR / Ethernet (W5500)
 $EndSCHEMATC

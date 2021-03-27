@@ -144,8 +144,8 @@ Wire Wire Line
 Connection ~ 3800 4800
 Wire Wire Line
 	3800 4800 4250 4800
-Text Notes 950  1600 0    276  Italic 55
-TACNPR / power protection and filtering
+Text Notes 7100 6850 0    157  Italic 31
+TACNPR / power prot. & filtering
 $Comp
 L Device:CP_Small C?
 U 1 1 60659989
@@ -226,7 +226,7 @@ U 1 1 60662E75
 P 4600 3200
 F 0 "F1" H 4600 3385 50  0000 C CNN
 F 1 "Fuse_Small" H 4600 3294 50  0000 C CNN
-F 2 "" H 4600 3200 50  0001 C CNN
+F 2 "Fuse:Fuse_Schurter_UMT250" H 4600 3200 50  0001 C CNN
 F 3 "~" H 4600 3200 50  0001 C CNN
 	1    4600 3200
 	1    0    0    -1  
@@ -238,6 +238,28 @@ Wire Wire Line
 Text GLabel 6300 3200 2    79   Input ~ 0
 FILTERED_PSU_IN
 Wire Wire Line
-	5300 3200 6300 3200
+	5300 3200 6050 3200
 Connection ~ 5300 3200
+Text Notes 5900 2150 2    197  Italic 39
+TODO: add TVS diode
+$Comp
+L Device:C_Small C?
+U 1 1 60921F52
+P 6050 3300
+AR Path="/60921F52" Ref="C?"  Part="1" 
+AR Path="/608A4C86/60921F52" Ref="C63"  Part="1" 
+F 0 "C63" H 6142 3346 50  0000 L CNN
+F 1 "100nF" H 6142 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6050 3300 50  0001 C CNN
+F 3 "~" H 6050 3300 50  0001 C CNN
+	1    6050 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 6050 3200
+Wire Wire Line
+	6050 3200 6300 3200
+Wire Wire Line
+	5300 3500 6050 3500
+Wire Wire Line
+	6050 3500 6050 3400
 $EndSCHEMATC
