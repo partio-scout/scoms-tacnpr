@@ -562,28 +562,6 @@ F 3 "~" H 5200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C27
-U 1 1 606E8CE6
-P 3050 3500
-F 0 "C27" H 3142 3546 50  0000 L CNN
-F 1 "10u" H 3142 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3050 3500 50  0001 C CNN
-F 3 "~" H 3050 3500 50  0001 C CNN
-	1    3050 3500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C28
-U 1 1 606E8CF0
-P 3350 3500
-F 0 "C28" H 3442 3546 50  0000 L CNN
-F 1 "10u" H 3442 3455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3350 3500 50  0001 C CNN
-F 3 "~" H 3350 3500 50  0001 C CNN
-	1    3350 3500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C31
 U 1 1 606E8CFA
 P 4850 3500
@@ -617,8 +595,6 @@ F 3 "~" H 4200 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3050 3400 3350 3400
-Wire Wire Line
 	4200 3400 4550 3400
 Connection ~ 4200 3400
 Wire Wire Line
@@ -627,28 +603,6 @@ Connection ~ 4550 3400
 Wire Wire Line
 	4850 3400 5200 3400
 Connection ~ 4850 3400
-$Comp
-L power:GND #PWR0149
-U 1 1 606E8D1F
-P 3050 3600
-F 0 "#PWR0149" H 3050 3350 50  0001 C CNN
-F 1 "GND" H 3055 3427 50  0000 C CNN
-F 2 "" H 3050 3600 50  0001 C CNN
-F 3 "" H 3050 3600 50  0001 C CNN
-	1    3050 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0150
-U 1 1 606E8D29
-P 3350 3600
-F 0 "#PWR0150" H 3350 3350 50  0001 C CNN
-F 1 "GND" H 3355 3427 50  0000 C CNN
-F 2 "" H 3350 3600 50  0001 C CNN
-F 3 "" H 3350 3600 50  0001 C CNN
-	1    3350 3600
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0151
 U 1 1 606E8D33
@@ -695,12 +649,6 @@ F 3 "" H 5200 3600 50  0001 C CNN
 $EndComp
 Text GLabel 2650 3400 0    79   Input ~ 0
 FILTERED_PSU_IN
-Wire Wire Line
-	2650 3400 3050 3400
-Connection ~ 3050 3400
-Wire Wire Line
-	3350 3400 3800 3400
-Connection ~ 3350 3400
 $Comp
 L Device:L_Core_Iron_Small L2
 U 1 1 606E8D60
@@ -1681,4 +1629,6 @@ Text GLabel 9600 4950 2    79   Input ~ 0
 Wire Wire Line
 	9050 4950 9600 4950
 Connection ~ 9050 4950
+Wire Wire Line
+	2650 3400 3800 3400
 $EndSCHEMATC
