@@ -235,4 +235,9 @@ Wire Wire Line
 	4700 3200 4950 3200
 Wire Wire Line
 	3300 3200 4500 3200
+Text GLabel 6300 3200 2    79   Input ~ 0
+FILTERED_PSU_IN
+Wire Wire Line
+	5300 3200 6300 3200
+Connection ~ 5300 3200
 $EndSCHEMATC
