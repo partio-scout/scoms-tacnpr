@@ -438,14 +438,16 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:SYM_Arrow45_Tiny #SYM?
+L Graphic:SYM_Arrow45_Tiny #SYM3
 U 1 1 608054E3
 P 5450 6950
-F 0 "#SYM?" H 5610 7000 50  0001 C CNN
+F 0 "#SYM3" H 5610 7000 50  0001 C CNN
 F 1 "SYM_Arrow45_Tiny" H 5450 6880 50  0001 C CNN
 F 2 "Symbol:WEEE-Logo_8.4x12mm_SilkScreen" H 5450 6950 50  0001 C CNN
 F 3 "~" H 5450 6950 50  0001 C CNN
 	1    5450 6950
 	1    0    0    -1  
 $EndComp
+Text Notes 2750 6250 0    158  ~ 32
+TODO: silkit; ykköspinnit, headerien pinnit, bottomin symbolit!
 $EndSCHEMATC

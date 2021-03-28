@@ -1632,4 +1632,32 @@ Wire Wire Line
 Connection ~ 3600 1350
 Wire Wire Line
 	3600 1350 3750 1350
+$Comp
+L Connector:TestPoint_Small TP6
+U 1 1 608E13B9
+P 9050 800
+F 0 "TP6" H 9002 754 50  0000 R CNN
+F 1 "TestPoint_Small" H 9002 845 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9250 800 50  0001 C CNN
+F 3 "~" H 9250 800 50  0001 C CNN
+	1    9050 800 
+	-1   0    0    1   
+$EndComp
+Connection ~ 9050 1000
+Wire Wire Line
+	9050 1000 9050 800 
+$Comp
+L Connector:TestPoint_Small TP7
+U 1 1 608F1362
+P 9100 2850
+F 0 "TP7" H 9052 2804 50  0000 R CNN
+F 1 "TestPoint_Small" H 9052 2895 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9300 2850 50  0001 C CNN
+F 3 "~" H 9300 2850 50  0001 C CNN
+	1    9100 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9100 3050 9100 2850
+Connection ~ 9100 3050
 $EndSCHEMATC

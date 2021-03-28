@@ -877,4 +877,21 @@ Wire Wire Line
 	7700 5000 7400 5000
 Text Notes 7650 4750 0    39   ~ 0
 programming\nconnector:
+$Comp
+L power:GND #PWR?
+U 1 1 6091C4EA
+P 5400 5350
+AR Path="/6091C4EA" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/6091C4EA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5400 5100 50  0001 C CNN
+F 1 "GND" H 5405 5177 50  0000 C CNN
+F 2 "" H 5400 5350 50  0001 C CNN
+F 3 "" H 5400 5350 50  0001 C CNN
+	1    5400 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5200 5400 5200
+Wire Wire Line
+	5400 5200 5400 5350
 $EndSCHEMATC
