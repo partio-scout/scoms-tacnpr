@@ -173,11 +173,9 @@ F 3 "" H 5150 1550 50  0001 C CNN
 $EndComp
 Text GLabel 2600 1350 0    79   Input ~ 0
 FILTERED_PSU_IN
-Wire Wire Line
-	2600 1350 3000 1350
 Connection ~ 3000 1350
 Wire Wire Line
-	3300 1350 3750 1350
+	3300 1350 3600 1350
 Connection ~ 3300 1350
 $Comp
 L Device:L_Core_Iron_Small L1
@@ -515,8 +513,8 @@ Wire Wire Line
 	6350 1900 6150 1900
 Wire Wire Line
 	6150 2100 6150 2200
-Text Notes 4450 1000 2    118  ~ 24
-IN -> 12V / 1st parallel chain:
+Text Notes 2700 1000 2    118  ~ 24
+IN -> 12V:
 $Comp
 L Connector_Generic:Conn_01x02 J6
 U 1 1 606DCAED
@@ -647,8 +645,6 @@ F 3 "" H 5200 3600 50  0001 C CNN
 	1    5200 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2650 3400 0    79   Input ~ 0
-FILTERED_PSU_IN
 $Comp
 L Device:L_Core_Iron_Small L2
 U 1 1 606E8D60
@@ -985,8 +981,6 @@ Wire Wire Line
 	6400 3950 6200 3950
 Wire Wire Line
 	6200 4150 6200 4250
-Text Notes 4600 3050 2    118  ~ 24
-IN -> 12V / 2nd parallel chain:
 $Comp
 L Connector_Generic:Conn_01x02 J7
 U 1 1 606E8E75
@@ -1170,12 +1164,12 @@ Wire Wire Line
 	3300 5300 3750 5300
 Connection ~ 3300 5300
 $Comp
-L Device:L_Core_Iron_Small L5
+L Device:L_Small L5
 U 1 1 6079B45F
 P 3850 5300
 F 0 "L5" V 4055 5300 50  0000 C CNN
 F 1 "1uH" V 3964 5300 50  0000 C CNN
-F 2 "Inductor_SMD:L_Bourns_SRP7028A_7.3x6.6mm" H 3850 5300 50  0001 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 3850 5300 50  0001 C CNN
 F 3 "~" H 3850 5300 50  0001 C CNN
 	1    3850 5300
 	0    -1   -1   0   
@@ -1630,5 +1624,12 @@ Wire Wire Line
 	9050 4950 9600 4950
 Connection ~ 9050 4950
 Wire Wire Line
-	2650 3400 3800 3400
+	2600 1350 3000 1350
+Wire Wire Line
+	3800 3400 3600 3400
+Wire Wire Line
+	3600 3400 3600 1350
+Connection ~ 3600 1350
+Wire Wire Line
+	3600 1350 3750 1350
 $EndSCHEMATC

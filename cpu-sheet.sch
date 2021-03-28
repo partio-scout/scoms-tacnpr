@@ -250,18 +250,8 @@ Wire Wire Line
 	6200 4200 6350 4200
 Text GLabel 6850 4400 2    50   Output ~ 0
 CS_W5500
-Text GLabel 6350 4700 2    50   BiDi ~ 0
+Text GLabel 6300 4900 3    50   BiDi ~ 0
 GPIO_12
-Text GLabel 6350 4800 2    50   BiDi ~ 0
-GPIO_13
-Wire Wire Line
-	6200 4700 6350 4700
-Wire Wire Line
-	6200 4800 6350 4800
-Text GLabel 6350 4900 2    50   BiDi ~ 0
-GPIO_14
-Wire Wire Line
-	6200 4900 6350 4900
 Text GLabel 6850 4600 2    50   BiDi ~ 0
 USB_D+
 Wire Wire Line
@@ -826,4 +816,65 @@ F 3 "" H 5350 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5350 3050 5350 3000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60672621
+P 7700 4900
+AR Path="/60672621" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60672621" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 7700 4750 50  0001 C CNN
+F 1 "+3V3" H 7715 5073 50  0000 C CNN
+F 2 "" H 7700 4900 50  0001 C CNN
+F 3 "" H 7700 4900 50  0001 C CNN
+	1    7700 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 606753E6
+P 7400 5000
+AR Path="/606753E6" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/606753E6" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 7400 4750 50  0001 C CNN
+F 1 "GNDD" H 7404 4845 50  0000 C CNN
+F 2 "" H 7400 5000 50  0001 C CNN
+F 3 "" H 7400 5000 50  0001 C CNN
+	1    7400 5000
+	0    1    1    0   
+$EndComp
+Text Label 7100 5100 2    39   ~ 0
+SWCLK(PA14)
+Wire Wire Line
+	6200 4900 6300 4900
+Wire Wire Line
+	6200 4700 6600 4700
+Text Label 6700 5200 0    39   ~ 0
+SWDIO(PA13)
+Text GLabel 5200 3400 0    39   Input ~ 0
+STM32_NRST
+$Comp
+L Connector:Conn_01x04_Female J9
+U 1 1 6078A281
+P 7900 5000
+F 0 "J9" H 7928 4976 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 7928 4885 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7900 5000 50  0001 C CNN
+F 3 "~" H 7900 5000 50  0001 C CNN
+	1    7900 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4800 6500 4800
+Wire Wire Line
+	6500 4800 6500 5100
+Wire Wire Line
+	7700 5100 6500 5100
+Wire Wire Line
+	7700 5200 6600 5200
+Wire Wire Line
+	6600 4700 6600 5200
+Wire Wire Line
+	7700 5000 7400 5000
+Text Notes 7650 4750 0    39   ~ 0
+programming\nconnector:
 $EndSCHEMATC

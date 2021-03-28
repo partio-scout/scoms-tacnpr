@@ -170,19 +170,6 @@ Connection ~ 3250 4500
 Text GLabel 3300 3200 0    79   Input ~ 0
 RAW_PSU_IN
 $Comp
-L Device:CP_Small C?
-U 1 1 6065E4DA
-P 5300 3300
-AR Path="/6065E4DA" Ref="C?"  Part="1" 
-AR Path="/608A4C86/6065E4DA" Ref="C19"  Part="1" 
-F 0 "C19" H 5388 3346 50  0000 L CNN
-F 1 "47u" H 5388 3255 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x4.5" H 5300 3300 50  0001 C CNN
-F 3 "~" H 5300 3300 50  0001 C CNN
-	1    5300 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6065E855
 P 5300 3550
@@ -195,8 +182,6 @@ F 3 "" H 5300 3550 50  0001 C CNN
 	1    5300 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 3400 5300 3500
 $Comp
 L Device:CP_Small C?
 U 1 1 60660B48
@@ -211,8 +196,6 @@ F 3 "~" H 4950 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4950 3200
-Wire Wire Line
-	4950 3200 5300 3200
 Wire Wire Line
 	4950 3400 4950 3500
 Wire Wire Line
@@ -237,9 +220,6 @@ Wire Wire Line
 	3300 3200 4500 3200
 Text GLabel 6300 3200 2    79   Input ~ 0
 FILTERED_PSU_IN
-Wire Wire Line
-	5300 3200 6050 3200
-Connection ~ 5300 3200
 Text Notes 5900 2150 2    197  Italic 39
 TODO: add TVS diode
 $Comp
@@ -262,4 +242,6 @@ Wire Wire Line
 	5300 3500 6050 3500
 Wire Wire Line
 	6050 3500 6050 3400
+Wire Wire Line
+	4950 3200 6050 3200
 $EndSCHEMATC
