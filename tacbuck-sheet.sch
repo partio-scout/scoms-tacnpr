@@ -1525,7 +1525,7 @@ Wire Wire Line
 	5600 6150 5600 6000
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_OUT
-Text GLabel 4150 6900 2    79   Input ~ 0
+Text GLabel 4400 6900 2    79   Input ~ 0
 12V_OUT
 Text GLabel 9050 1000 2    79   Input ~ 0
 12V_BUCK_A_OUT
@@ -1591,8 +1591,6 @@ Wire Wire Line
 	3150 7300 3850 7300
 Wire Wire Line
 	3500 7100 3850 7100
-Wire Wire Line
-	3850 6700 3850 6900
 Connection ~ 3850 7100
 Wire Wire Line
 	3850 7100 3850 7300
@@ -1613,11 +1611,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 7100 3200 7100
 Connection ~ 2850 7200
-Wire Wire Line
-	4150 6900 3850 6900
-Connection ~ 3850 6900
-Wire Wire Line
-	3850 6900 3850 7100
 Text GLabel 9600 4950 2    79   Input ~ 0
 3V6_OUT
 Wire Wire Line
@@ -1660,4 +1653,26 @@ $EndComp
 Wire Wire Line
 	9100 3050 9100 2850
 Connection ~ 9100 3050
+Wire Wire Line
+	3850 6700 3850 6900
+$Comp
+L Connector_Generic:Conn_01x02 J10
+U 1 1 60AE4162
+P 4050 6700
+F 0 "J10" H 3968 6375 50  0000 C CNN
+F 1 "PWRJMP" H 3968 6466 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 6700 50  0001 C CNN
+F 3 "~" H 4050 6700 50  0001 C CNN
+	1    4050 6700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 6900 3850 6900
+Connection ~ 3850 6900
+Wire Wire Line
+	3850 6900 3850 7100
+Wire Wire Line
+	4150 6900 4400 6900
+Text Notes 4000 6550 0    39   ~ 0
+jumper to enable current measurement &\ndebugging (closed in normal operation)
 $EndSCHEMATC
