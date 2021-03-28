@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 341)
+    (drawings 342)
     (tracks 244)
     (zones 0)
     (modules 140)
@@ -5926,6 +5926,18 @@
     )
   )
 
+  (dimension 86 (width 0.15) (layer Dwgs.User)
+    (gr_text "86,000 mm" (at 138.864 146.842) (layer Dwgs.User)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (feature1 (pts (xy 95.864 129.54) (xy 95.864 146.128421)))
+    (feature2 (pts (xy 181.864 129.54) (xy 181.864 146.128421)))
+    (crossbar (pts (xy 181.864 145.542) (xy 95.864 145.542)))
+    (arrow1a (pts (xy 95.864 145.542) (xy 96.990504 144.955579)))
+    (arrow1b (pts (xy 95.864 145.542) (xy 96.990504 146.128421)))
+    (arrow2a (pts (xy 181.864 145.542) (xy 180.737496 144.955579)))
+    (arrow2b (pts (xy 181.864 145.542) (xy 180.737496 146.128421)))
+  )
   (gr_text +++++ (at 113.03 129.794 90) (layer F.SilkS) (tstamp 607178D3)
     (effects (font (size 1 1) (thickness 0.25)))
   )
