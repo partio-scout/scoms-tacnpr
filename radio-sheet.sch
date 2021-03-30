@@ -16,10 +16,10 @@ $EndDescr
 Text Notes 7150 6950 0    157  Italic 31
 TACNPR / Si4463 radio
 $Comp
-L RF:Si4463 U?
+L RF:Si4463 U8
 U 1 1 60646347
 P 5800 3650
-F 0 "U?" H 5800 2861 50  0000 C CNN
+F 0 "U8" H 5800 2861 50  0000 C CNN
 F 1 "Si4463" H 5800 2770 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 5800 4850 50  0001 C CNN
 F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 5500 3550 50  0001 C CNN
@@ -37,10 +37,10 @@ MOSI_SPI1
 Text Notes 1650 1500 0    197  Italic 39
 TODO: double check pinout!
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0126
 U 1 1 6065CBBA
 P 5900 2700
-F 0 "#PWR?" H 5900 2550 50  0001 C CNN
+F 0 "#PWR0126" H 5900 2550 50  0001 C CNN
 F 1 "+3.3V" H 5915 2873 50  0000 C CNN
 F 2 "" H 5900 2700 50  0001 C CNN
 F 3 "" H 5900 2700 50  0001 C CNN
