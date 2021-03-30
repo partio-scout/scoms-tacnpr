@@ -80,8 +80,6 @@ GPIO_11
 Text GLabel 9700 5400 2    50   BiDi ~ 0
 GPIO_12
 Wire Wire Line
-	9600 3200 9800 3200
-Wire Wire Line
 	9600 3300 9800 3300
 Wire Wire Line
 	9600 3400 9800 3400
@@ -98,17 +96,6 @@ F 1 "Screw_Terminal_PWR_IN" H 7668 3066 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 7750 3300 50  0001 C CNN
 F 3 "~" H 7750 3300 50  0001 C CNN
 	1    7750 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x10 J2
-U 1 1 608D528F
-P 9400 3400
-F 0 "J2" H 9318 2675 50  0000 C CNN
-F 1 "Screw_Terminal_AUX" H 9318 2766 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 9400 3400 50  0001 C CNN
-F 3 "~" H 9400 3400 50  0001 C CNN
-	1    9400 3400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -146,19 +133,6 @@ F 3 "" H 8650 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7800 3800 7900 3800
-$Comp
-L power:GND #PWR0126
-U 1 1 608FD47B
-P 9950 2900
-F 0 "#PWR0126" H 9950 2650 50  0001 C CNN
-F 1 "GND" H 9955 2727 50  0000 C CNN
-F 2 "" H 9950 2900 50  0001 C CNN
-F 3 "" H 9950 2900 50  0001 C CNN
-	1    9950 2900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9600 2900 9950 2900
 Wire Wire Line
 	8500 3800 8650 3800
 Wire Wire Line
@@ -177,18 +151,18 @@ $EndComp
 $Comp
 L power:GND #PWR0128
 U 1 1 6096E90C
-P 8000 3300
-F 0 "#PWR0128" H 8000 3050 50  0001 C CNN
-F 1 "GND" H 8005 3127 50  0000 C CNN
-F 2 "" H 8000 3300 50  0001 C CNN
-F 3 "" H 8000 3300 50  0001 C CNN
-	1    8000 3300
-	1    0    0    -1  
+P 8000 3200
+F 0 "#PWR0128" H 8000 2950 50  0001 C CNN
+F 1 "GND" H 8005 3027 50  0000 C CNN
+F 2 "" H 8000 3200 50  0001 C CNN
+F 3 "" H 8000 3200 50  0001 C CNN
+	1    8000 3200
+	0    -1   -1   0   
 $EndComp
-Text GLabel 8050 3200 2    50   Input ~ 0
+Text GLabel 8250 3300 2    50   Input ~ 0
 RAW_PSU_IN
 Wire Wire Line
-	7950 3300 8000 3300
+	7950 3300 8250 3300
 $Sheet
 S 1450 4350 1450 750 
 U 609A52E7
@@ -326,8 +300,6 @@ Wire Wire Line
 	9250 5400 9700 5400
 Wire Wire Line
 	9250 5500 9500 5500
-Wire Wire Line
-	7950 3200 8050 3200
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 607CF1C5
@@ -450,4 +422,17 @@ F 3 "~" H 5450 6950 50  0001 C CNN
 $EndComp
 Text Notes 2750 6250 0    158  ~ 32
 TODO: silkit; ykköspinnit, headerien pinnit, bottomin symbolit!
+$Comp
+L Connector:Screw_Terminal_01x06 J2
+U 1 1 6063DDDE
+P 9400 3600
+F 0 "J2" H 9318 3075 50  0000 C CNN
+F 1 "Screw_Terminal_01x06" H 9318 3166 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal" H 9400 3600 50  0001 C CNN
+F 3 "~" H 9400 3600 50  0001 C CNN
+	1    9400 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3200 7950 3200
 $EndSCHEMATC
