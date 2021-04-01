@@ -1524,9 +1524,9 @@ Connection ~ 5600 6150
 Wire Wire Line
 	5600 6150 5600 6000
 Text GLabel 2600 5300 0    79   Input ~ 0
-12V_OUT
-Text GLabel 4400 6900 2    79   Input ~ 0
-12V_OUT
+12V_TO_BUCKC
+Text GLabel 5150 6900 2    79   Input ~ 0
+12V_TO_BUCKC
 Text GLabel 9050 1000 2    79   Input ~ 0
 12V_BUCK_A_OUT
 Text GLabel 9100 3050 2    79   Input ~ 0
@@ -1614,7 +1614,7 @@ Connection ~ 2850 7200
 Text GLabel 9600 4950 2    79   Input ~ 0
 3V6_OUT
 Wire Wire Line
-	9050 4950 9600 4950
+	9050 4950 9500 4950
 Connection ~ 9050 4950
 Wire Wire Line
 	2600 1350 3000 1350
@@ -1671,8 +1671,74 @@ Wire Wire Line
 Connection ~ 3850 6900
 Wire Wire Line
 	3850 6900 3850 7100
-Wire Wire Line
-	4150 6900 4400 6900
 Text Notes 4000 6550 0    39   ~ 0
 jumper to enable current measurement &\ndebugging (closed in normal operation)
+$Comp
+L Connector:TestPoint_Small TP8
+U 1 1 6078E361
+P 4050 7700
+F 0 "TP8" H 4002 7654 50  0000 R CNN
+F 1 "TestPoint_Small" H 4002 7745 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4250 7700 50  0001 C CNN
+F 3 "~" H 4250 7700 50  0001 C CNN
+	1    4050 7700
+	-1   0    0    1   
+$EndComp
+Connection ~ 4050 6900
+$Comp
+L Device:C_Small C19
+U 1 1 607C0466
+P 4450 7300
+F 0 "C19" H 4542 7346 50  0000 L CNN
+F 1 "100n" H 4542 7255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 7300 50  0001 C CNN
+F 3 "~" H 4450 7300 50  0001 C CNN
+	1    4450 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0177
+U 1 1 607C046C
+P 4450 7400
+F 0 "#PWR0177" H 4450 7150 50  0001 C CNN
+F 1 "GND" H 4455 7227 50  0000 C CNN
+F 2 "" H 4450 7400 50  0001 C CNN
+F 3 "" H 4450 7400 50  0001 C CNN
+	1    4450 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP9
+U 1 1 607DC7D5
+P 9650 5250
+F 0 "TP9" H 9602 5204 50  0000 R CNN
+F 1 "TestPoint_Small" H 9602 5295 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9850 5250 50  0001 C CNN
+F 3 "~" H 9850 5250 50  0001 C CNN
+	1    9650 5250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 5250 9650 5250
+Wire Wire Line
+	9500 5250 9500 4950
+Connection ~ 9500 4950
+Wire Wire Line
+	9500 4950 9600 4950
+Wire Wire Line
+	4050 6900 4050 7100
+Text GLabel 4550 7100 2    79   Input ~ 0
+12V_OUT
+Wire Wire Line
+	4150 6900 5150 6900
+Connection ~ 4050 7100
+Wire Wire Line
+	4050 7100 4050 7700
+Wire Wire Line
+	4450 7200 4450 7100
+Connection ~ 4450 7100
+Wire Wire Line
+	4450 7100 4050 7100
+Wire Wire Line
+	4450 7100 4550 7100
 $EndSCHEMATC

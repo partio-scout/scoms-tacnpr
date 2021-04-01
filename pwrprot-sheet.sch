@@ -220,8 +220,8 @@ Wire Wire Line
 	3300 3200 4500 3200
 Text GLabel 6300 3200 2    79   Input ~ 0
 FILTERED_PSU_IN
-Text Notes 5900 2150 2    197  Italic 39
-TODO: add TVS diode
+Text Notes 8100 5750 2    197  Italic 39
+TODO: add TVS diode\nchange fuse type?
 $Comp
 L Device:C_Small C?
 U 1 1 60921F52

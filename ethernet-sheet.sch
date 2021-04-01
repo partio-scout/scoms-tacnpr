@@ -261,19 +261,17 @@ F 3 "" H 6350 3850 50  0001 C CNN
 	1    6350 3850
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:RJ45_Amphenol_RJMG1BD3B8K1ANR J?
-U 1 1 6073F4AB
-P 3250 3850
-AR Path="/6073F4AB" Ref="J?"  Part="1" 
-AR Path="/606CD620/6073F4AB" Ref="J3"  Part="1" 
-F 0 "J3" H 3250 4575 50  0000 C CNN
-F 1 "RJ45_Amphenol_RJMG1BD3B8K1ANR" H 3250 4484 50  0000 C CNN
-F 2 "Connector_RJ:RJ45_Amphenol_RJMG1BD3B8K1ANR" H 3250 4550 50  0001 C CNN
-F 3 "https://www.amphenolcanada.com/ProductSearch/Drawings/AC/RJMG1BD3B8K1ANR.PDF" H 3250 4650 50  0001 C CNN
-	1    3250 3850
-	1    0    0    -1  
-$EndComp
 Text Notes 7150 6900 0    157  Italic 31
 TACNPR / Ethernet (W5500)
+$Comp
+L Connector:RJ45_Abracon_ARJP11A-MASA-B-A-EMU2 J?
+U 1 1 60944F80
+P 9900 4050
+F 0 "J?" H 9900 5567 50  0000 C CNN
+F 1 "RJ45_Abracon_ARJP11A-MASA-B-A-EMU2" H 9900 5476 50  0000 C CNN
+F 2 "Connector_RJ:RJ45_Abracon_ARJP11A-MA_Horizontal" H 9900 5450 50  0001 C CNN
+F 3 "https://abracon.com/Magnetics/lan/ARJP11A.PDF" H 9750 3200 50  0001 C CNN
+	1    9900 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
