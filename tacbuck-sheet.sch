@@ -1332,7 +1332,7 @@ Text GLabel 2750 6800 0    79   Input ~ 0
 Text GLabel 2750 7050 0    79   Input ~ 0
 12V_BUCK_B_OUT
 Text GLabel 9600 4950 2    79   Input ~ 0
-3V6_OUT
+3V8_OUT
 Wire Wire Line
 	9050 4950 9500 4950
 Connection ~ 9050 4950
@@ -1432,7 +1432,7 @@ Wire Wire Line
 Wire Wire Line
 	4450 7100 4550 7100
 Text Notes 900  3500 0    79   ~ 16
-TODO:\n-layoutit TACBUCKin mukaan\n-yks isompi kela 1uH isompi virtakesto\n-ENA_3V6 korvataan 0R:llä\n-yhteinen 220u konkka\n-kerkot ihan hakkurin juureen, samoin kela\n-manufacturing files: bommi (LCSC-koodi)
+TODO:\n-kerkot ihan hakkurin juureen, samoin kela\n-manufacturing files: bommi (LCSC-koodi)
 Wire Wire Line
 	5600 2050 5600 2150
 Wire Wire Line
