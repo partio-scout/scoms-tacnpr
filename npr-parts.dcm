@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP HR911105A
+F http://www.kosmodrom.com.ua/pdf/HR911105A.pdf
+$ENDCMP
+#
 $CMP TPS54331DR
 D TPS54331 3-A, 28-V Input, Step Down DC-DC Converter With Eco-mode
 K step down, buck, DC-DC converter

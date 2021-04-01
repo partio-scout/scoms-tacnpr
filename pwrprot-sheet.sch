@@ -182,25 +182,6 @@ F 3 "" H 5300 3550 50  0001 C CNN
 	1    5300 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP_Small C?
-U 1 1 60660B48
-P 4950 3300
-AR Path="/60660B48" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60660B48" Ref="C20"  Part="1" 
-F 0 "C20" H 5038 3346 50  0000 L CNN
-F 1 "22uF" H 5038 3255 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 4950 3300 50  0001 C CNN
-F 3 "~" H 4950 3300 50  0001 C CNN
-	1    4950 3300
-	1    0    0    -1  
-$EndComp
-Connection ~ 4950 3200
-Wire Wire Line
-	4950 3400 4950 3500
-Wire Wire Line
-	4950 3500 5300 3500
-Connection ~ 5300 3500
 Wire Wire Line
 	5300 3500 5300 3550
 $Comp
@@ -214,8 +195,6 @@ F 3 "~" H 4600 3200 50  0001 C CNN
 	1    4600 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4700 3200 4950 3200
 Wire Wire Line
 	3300 3200 4500 3200
 Text GLabel 6300 3200 2    79   Input ~ 0
@@ -243,5 +222,5 @@ Wire Wire Line
 Wire Wire Line
 	6050 3500 6050 3400
 Wire Wire Line
-	4950 3200 6050 3200
+	4700 3200 6050 3200
 $EndSCHEMATC

@@ -1008,4 +1008,6 @@ Wire Wire Line
 	8750 4200 8900 4200
 Wire Wire Line
 	8750 4500 8750 4800
+Text Notes 800  4150 0    79   ~ 16
+TODO: basic-sarjasta SRV05-4 USB ESDprot.
 $EndSCHEMATC

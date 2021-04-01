@@ -448,4 +448,6 @@ Text GLabel 9650 3400 2    50   Output ~ 0
 GPIO12-OC-TERMINAL
 Wire Wire Line
 	9600 3400 9650 3400
+Text Notes 2750 5800 0    79   ~ 16
+TODO: GPIO-pinneistä prossulta sarjavastus 100R + SRV05-4  maihin
 $EndSCHEMATC
