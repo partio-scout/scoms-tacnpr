@@ -417,7 +417,7 @@ F 3 "~" H 5450 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2750 6250 0    158  ~ 32
-TODO: silkit; ykköspinnit, headerien pinnit, bottomin symbolit!
+TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit
 $Comp
 L Connector:Screw_Terminal_01x06 J2
 U 1 1 6063DDDE
