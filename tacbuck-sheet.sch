@@ -27,7 +27,7 @@ F 3 "https://www.ti.com/lit/ds/symlink/tps54331.pdf" H 6750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7100 7050 0    98   Italic 20
-based on TACBUCK-A designed by Tommi OH1JGV
+based on TACBUCK-A design by Tommi OH1JGV
 $Comp
 L Device:C_Small C26
 U 1 1 60693601
@@ -1431,8 +1431,8 @@ Wire Wire Line
 	4450 7100 4050 7100
 Wire Wire Line
 	4450 7100 4550 7100
-Text Notes 900  3500 0    79   ~ 0
--yks isompi kela 1uH isompi virtakesto\n-ENA_3V6 korvataan 0R:llä\n-yhteinen 220u konkka\n-kerkot ihan hakkurin juureen, samoin kela\n-manufacturing files: bommi (LCSC-koodi)
+Text Notes 900  3500 0    79   ~ 16
+TODO:\n-layoutit TACBUCKin mukaan\n-yks isompi kela 1uH isompi virtakesto\n-ENA_3V6 korvataan 0R:llä\n-yhteinen 220u konkka\n-kerkot ihan hakkurin juureen, samoin kela\n-manufacturing files: bommi (LCSC-koodi)
 Wire Wire Line
 	5600 2050 5600 2150
 Wire Wire Line
@@ -1451,21 +1451,19 @@ Wire Wire Line
 Connection ~ 4550 3400
 Text Notes 750  4650 0    79   ~ 0
 lineaariregu: https://datasheet.lcsc.com/szlcsc/Torex-Semicon-XC6206P332MR_C5446.pdf
-Text Notes 650  6100 0    79   ~ 0
-kolme regua?\n-ethernet+CPU\n-si4463\n-lna-osuus
+Text Notes 650  6100 0    79   ~ 16
+kolme lineaariregua? (XC6206, basic-valikoimasta)\n-ethernet+CPU\n-si4463\n-lna-osuus
 Wire Wire Line
 	2600 5300 4500 5300
 Wire Wire Line
 	5600 6000 5600 6250
 Text Notes 4500 6000 0    79   ~ 0
 UHLO approx 4V
-Text Notes 2500 6200 0    79   ~ 0
-tilalle 1206 0R vastukset \nyks per lähtö
 $Comp
-L Device:R_Small R?
+L Device:R_Small R30
 U 1 1 60BA6D4D
 P 3350 6800
-F 0 "R?" H 3409 6846 50  0000 L CNN
+F 0 "R30" H 3409 6846 50  0000 L CNN
 F 1 "0" H 3409 6755 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 6800 50  0001 C CNN
 F 3 "~" H 3350 6800 50  0001 C CNN
@@ -1473,10 +1471,10 @@ F 3 "~" H 3350 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R31
 U 1 1 60BA7D8D
 P 3350 7050
-F 0 "R?" H 3409 7096 50  0000 L CNN
+F 0 "R31" H 3409 7096 50  0000 L CNN
 F 1 "0" H 3409 7005 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" H 3350 7050 50  0001 C CNN
 F 3 "~" H 3350 7050 50  0001 C CNN
@@ -1499,10 +1497,10 @@ Wire Wire Line
 	3650 6800 3650 6900
 Connection ~ 3650 6900
 $Comp
-L Device:R_Small R?
+L Device:R_Small R32
 U 1 1 60BDFDEE
 P 4300 6900
-F 0 "R?" H 4359 6946 50  0000 L CNN
+F 0 "R32" H 4359 6946 50  0000 L CNN
 F 1 "0" H 4359 6855 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" H 4300 6900 50  0001 C CNN
 F 3 "~" H 4300 6900 50  0001 C CNN
