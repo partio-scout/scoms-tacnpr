@@ -1318,7 +1318,7 @@ Wire Wire Line
 Wire Wire Line
 	6150 6050 6150 6150
 Text Notes 6150 4950 2    118  ~ 24
-12V -> 3V8 (TODO: CHANGE component values!!):
+12V -> 3V8 (TODO: UPDATE component values!!):
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_TO_BUCKC
 Text GLabel 5150 6900 2    79   Input ~ 0
@@ -1458,7 +1458,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 6000 5600 6250
 Text Notes 4500 6000 0    79   ~ 0
-UHLO approx 4V
+UVLO approx 4V
 $Comp
 L Device:R_Small R30
 U 1 1 60BA6D4D
