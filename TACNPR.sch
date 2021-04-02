@@ -62,25 +62,12 @@ F 3 "" H 9900 3700 50  0001 C CNN
 	1    9900 3700
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR08
-U 1 1 60838422
-P 9900 3500
-F 0 "#PWR08" H 9900 3250 50  0001 C CNN
-F 1 "GND" H 9905 3327 50  0000 C CNN
-F 2 "" H 9900 3500 50  0001 C CNN
-F 3 "" H 9900 3500 50  0001 C CNN
-	1    9900 3500
-	0    -1   -1   0   
-$EndComp
 Text GLabel 9700 5200 2    50   BiDi ~ 0
 GPIO_10
 Text GLabel 9700 5300 2    50   BiDi ~ 0
 GPIO_11
 Text GLabel 9700 5400 2    50   BiDi ~ 0
 GPIO_12
-Wire Wire Line
-	9600 3500 9900 3500
 Wire Wire Line
 	9600 3700 9900 3700
 $Comp
@@ -450,4 +437,14 @@ Wire Wire Line
 	9600 3400 9650 3400
 Text Notes 2850 5900 0    79   ~ 16
 TODO: GPIO-pinneistä prossulta sarjavastus 100R + SRV05-4  maihin
+Text GLabel 9650 3600 2    50   BiDi ~ 0
+GPIO_10
+Text GLabel 9650 3500 2    50   BiDi ~ 0
+GPIO_11
+Wire Wire Line
+	9600 3500 9650 3500
+Wire Wire Line
+	9600 3600 9650 3600
+Text Notes 9200 4050 0    118  ~ 24
+pin1
 $EndSCHEMATC
