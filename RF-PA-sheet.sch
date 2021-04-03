@@ -17,4 +17,72 @@ Text Notes 7150 6850 0    157  Italic 31
 TACNPR / RF power amplifier
 Text Notes 7200 7050 0    79   Italic 16
 20W RF PA based on Motorola ???, design: Tatu OH2EAT
+Text GLabel 1950 2350 0    79   Input ~ 0
+12V_TO_RFPA
+$Comp
+L Device:C_Small C?
+U 1 1 609C07FD
+P 3000 2450
+AR Path="/609A52E7/609C07FD" Ref="C?"  Part="1" 
+AR Path="/60604CF2/609C07FD" Ref="C?"  Part="1" 
+F 0 "C?" H 3092 2496 50  0000 L CNN
+F 1 "22u" H 3092 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3000 2450 50  0001 C CNN
+F 3 "~" H 3000 2450 50  0001 C CNN
+	1    3000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 609C0803
+P 3350 2450
+AR Path="/609A52E7/609C0803" Ref="C?"  Part="1" 
+AR Path="/60604CF2/609C0803" Ref="C?"  Part="1" 
+F 0 "C?" H 3442 2496 50  0000 L CNN
+F 1 "22u" H 3442 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3350 2450 50  0001 C CNN
+F 3 "~" H 3350 2450 50  0001 C CNN
+	1    3350 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609C0946
+P 2550 2750
+F 0 "#PWR?" H 2550 2500 50  0001 C CNN
+F 1 "GND" H 2555 2577 50  0000 C CNN
+F 2 "" H 2550 2750 50  0001 C CNN
+F 3 "" H 2550 2750 50  0001 C CNN
+	1    2550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 609C1772
+P 2550 2450
+AR Path="/609A52E7/609C1772" Ref="C?"  Part="1" 
+AR Path="/60604CF2/609C1772" Ref="C?"  Part="1" 
+F 0 "C?" H 2642 2496 50  0000 L CNN
+F 1 "100n" H 2642 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 2450 50  0001 C CNN
+F 3 "~" H 2550 2450 50  0001 C CNN
+	1    2550 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 2350 2550 2350
+Wire Wire Line
+	2550 2350 3000 2350
+Connection ~ 2550 2350
+Wire Wire Line
+	3350 2350 3000 2350
+Connection ~ 3000 2350
+Wire Wire Line
+	2550 2750 2550 2550
+Wire Wire Line
+	3350 2550 3000 2550
+Wire Wire Line
+	3000 2550 2550 2550
+Connection ~ 3000 2550
+Connection ~ 2550 2550
 $EndSCHEMATC

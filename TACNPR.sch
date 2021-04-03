@@ -14,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+12V #PWR010
-U 1 1 60828203
-P 10050 3800
-F 0 "#PWR010" H 10050 3650 50  0001 C CNN
-F 1 "+12V" V 10065 3928 50  0000 L CNN
-F 2 "" H 10050 3800 50  0001 C CNN
-F 3 "" H 10050 3800 50  0001 C CNN
-	1    10050 3800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10050 3800 9850 3800
-$Comp
 L Device:C C1
 U 1 1 6082D0F7
 P 9850 3950
@@ -37,7 +24,6 @@ F 3 "~" H 9850 3950 50  0001 C CNN
 	1    9850 3950
 	1    0    0    -1  
 $EndComp
-Connection ~ 9850 3800
 Wire Wire Line
 	9850 3800 9600 3800
 $Comp
@@ -52,10 +38,10 @@ F 3 "" H 9850 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L power:GND #PWR08
 U 1 1 60837962
 P 9900 3700
-F 0 "#PWR09" H 9900 3450 50  0001 C CNN
+F 0 "#PWR08" H 9900 3450 50  0001 C CNN
 F 1 "GND" H 9905 3527 50  0000 C CNN
 F 2 "" H 9900 3700 50  0001 C CNN
 F 3 "" H 9900 3700 50  0001 C CNN
@@ -403,7 +389,7 @@ F 3 "~" H 5450 6950 50  0001 C CNN
 	1    5450 6950
 	1    0    0    -1  
 $EndComp
-Text Notes 2750 6250 0    158  ~ 32
+Text Notes 3000 6100 0    119  ~ 24
 TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit
 $Comp
 L Connector:Screw_Terminal_01x06 J3
@@ -435,8 +421,6 @@ Text GLabel 9650 3400 2    50   Output ~ 0
 GPIO12-OC-TERMINAL
 Wire Wire Line
 	9600 3400 9650 3400
-Text Notes 2850 5900 0    79   ~ 16
-TODO: GPIO-pinneistä prossulta sarjavastus 100R + SRV05-4  maihin
 Text GLabel 9650 3600 2    50   BiDi ~ 0
 GPIO_10
 Text GLabel 9650 3500 2    50   BiDi ~ 0
@@ -447,4 +431,9 @@ Wire Wire Line
 	9600 3600 9650 3600
 Text Notes 9200 4050 0    118  ~ 24
 pin1
+Text GLabel 10000 3800 2    79   Input ~ 0
+12V_OUT
+Wire Wire Line
+	10000 3800 9850 3800
+Connection ~ 9850 3800
 $EndSCHEMATC
