@@ -1110,4 +1110,6 @@ Connection ~ 9800 5500
 Wire Wire Line
 	9800 6250 9800 5900
 Connection ~ 9800 5900
+Text Notes 1950 3800 0    79   ~ 16
+ESD-suojalle\nbasic-sarjasta vastine,\nsama kuin gpiolla?
 $EndSCHEMATC
