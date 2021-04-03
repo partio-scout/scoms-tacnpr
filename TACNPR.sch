@@ -38,10 +38,10 @@ F 3 "" H 9850 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L power:GND #PWR03
 U 1 1 60837962
 P 9900 3700
-F 0 "#PWR08" H 9900 3450 50  0001 C CNN
+F 0 "#PWR03" H 9900 3450 50  0001 C CNN
 F 1 "GND" H 9905 3527 50  0000 C CNN
 F 2 "" H 9900 3700 50  0001 C CNN
 F 3 "" H 9900 3700 50  0001 C CNN
@@ -68,10 +68,10 @@ F 3 "~" H 7750 3300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+3V3 #PWR01
+L power:+3V3 #PWR04
 U 1 1 608DA81D
 P 7800 3800
-F 0 "#PWR01" H 7800 3650 50  0001 C CNN
+F 0 "#PWR04" H 7800 3650 50  0001 C CNN
 F 1 "+3V3" H 7815 3973 50  0000 C CNN
 F 2 "" H 7800 3800 50  0001 C CNN
 F 3 "" H 7800 3800 50  0001 C CNN
@@ -84,16 +84,16 @@ U 1 1 608DBA8A
 P 8000 3800
 F 0 "R1" V 7804 3800 50  0000 C CNN
 F 1 "1k" V 7895 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 8000 3800 50  0001 C CNN
 F 3 "~" H 8000 3800 50  0001 C CNN
 	1    8000 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR03
+L power:GND #PWR05
 U 1 1 608DDB79
 P 8650 3800
-F 0 "#PWR03" H 8650 3550 50  0001 C CNN
+F 0 "#PWR05" H 8650 3550 50  0001 C CNN
 F 1 "GND" H 8655 3627 50  0000 C CNN
 F 2 "" H 8650 3800 50  0001 C CNN
 F 3 "" H 8650 3800 50  0001 C CNN
@@ -118,10 +118,10 @@ F 3 "~" H 8350 3800 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR02
+L power:GND #PWR01
 U 1 1 6096E90C
 P 8000 3200
-F 0 "#PWR02" H 8000 2950 50  0001 C CNN
+F 0 "#PWR01" H 8000 2950 50  0001 C CNN
 F 1 "GND" H 8005 3027 50  0000 C CNN
 F 2 "" H 8000 3200 50  0001 C CNN
 F 3 "" H 8000 3200 50  0001 C CNN
@@ -212,10 +212,10 @@ F 3 "~" H 2000 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:SYM_Radio_Waves_Large #SYM3
+L Graphic:SYM_Radio_Waves_Large #SYM2
 U 1 1 6067E54C
 P 10800 6800
-F 0 "#SYM3" H 10800 7000 50  0001 C CNN
+F 0 "#SYM2" H 10800 7000 50  0001 C CNN
 F 1 "SYM_Radio_Waves_Large" H 10800 6550 50  0001 C CNN
 F 2 "" H 10800 6600 50  0001 C CNN
 F 3 "~" H 10830 6600 50  0001 C CNN
@@ -227,10 +227,10 @@ Wire Notes Line
 Text Notes 7400 4850 0    97   ~ 19
 Pin headers
 $Comp
-L Connector:Conn_01x05_Male J2
+L Connector:Conn_01x05_Male J3
 U 1 1 6066F496
 P 9050 5300
-F 0 "J2" H 9158 5681 50  0000 C CNN
+F 0 "J3" H 9158 5681 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 9158 5590 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 9050 5300 50  0001 C CNN
 F 3 "~" H 9050 5300 50  0001 C CNN
@@ -238,10 +238,10 @@ F 3 "~" H 9050 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR04
+L power:GND #PWR07
 U 1 1 606796FD
 P 9500 5100
-F 0 "#PWR04" H 9500 4850 50  0001 C CNN
+F 0 "#PWR07" H 9500 4850 50  0001 C CNN
 F 1 "GND" H 9505 4927 50  0000 C CNN
 F 2 "" H 9500 5100 50  0001 C CNN
 F 3 "" H 9500 5100 50  0001 C CNN
@@ -249,10 +249,10 @@ F 3 "" H 9500 5100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR05
+L power:GND #PWR08
 U 1 1 60679EBF
 P 9500 5500
-F 0 "#PWR05" H 9500 5250 50  0001 C CNN
+F 0 "#PWR08" H 9500 5250 50  0001 C CNN
 F 1 "GND" H 9505 5327 50  0000 C CNN
 F 2 "" H 9500 5500 50  0001 C CNN
 F 3 "" H 9500 5500 50  0001 C CNN
@@ -270,10 +270,10 @@ Wire Wire Line
 Wire Wire Line
 	9250 5500 9500 5500
 $Comp
-L Mechanical:MountingHole H4
+L Mechanical:MountingHole H7
 U 1 1 607CF1C5
 P 6000 7500
-F 0 "H4" H 6100 7546 50  0000 L CNN
+F 0 "H7" H 6100 7546 50  0000 L CNN
 F 1 "MountingHole" H 6100 7455 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 7500 50  0001 C CNN
 F 3 "~" H 6000 7500 50  0001 C CNN
@@ -281,10 +281,10 @@ F 3 "~" H 6000 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H7
+L Mechanical:MountingHole H6
 U 1 1 607CF952
 P 6400 7250
-F 0 "H7" H 6500 7296 50  0000 L CNN
+F 0 "H6" H 6500 7296 50  0000 L CNN
 F 1 "MountingHole" H 6500 7205 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 7250 50  0001 C CNN
 F 3 "~" H 6400 7250 50  0001 C CNN
@@ -303,10 +303,10 @@ F 3 "~" H 6400 7500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole H5
 U 1 1 607CEFE0
 P 6000 7250
-F 0 "H3" H 6100 7296 50  0000 L CNN
+F 0 "H5" H 6100 7296 50  0000 L CNN
 F 1 "MountingHole" H 6100 7205 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 7250 50  0001 C CNN
 F 3 "~" H 6000 7250 50  0001 C CNN
@@ -314,10 +314,10 @@ F 3 "~" H 6000 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H6
+L Mechanical:MountingHole H4
 U 1 1 607CF948
 P 6400 6950
-F 0 "H6" H 6500 6996 50  0000 L CNN
+F 0 "H4" H 6500 6996 50  0000 L CNN
 F 1 "MountingHole" H 6500 6905 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 6950 50  0001 C CNN
 F 3 "~" H 6400 6950 50  0001 C CNN
@@ -325,10 +325,10 @@ F 3 "~" H 6400 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H5
+L Mechanical:MountingHole H2
 U 1 1 607CF8BE
 P 6400 6700
-F 0 "H5" H 6500 6746 50  0000 L CNN
+F 0 "H2" H 6500 6746 50  0000 L CNN
 F 1 "MountingHole" H 6500 6655 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 6700 50  0001 C CNN
 F 3 "~" H 6400 6700 50  0001 C CNN
@@ -336,10 +336,10 @@ F 3 "~" H 6400 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
+L Mechanical:MountingHole H3
 U 1 1 607CEE86
 P 6000 6950
-F 0 "H2" H 6100 6996 50  0000 L CNN
+F 0 "H3" H 6100 6996 50  0000 L CNN
 F 1 "MountingHole" H 6100 6905 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 6950 50  0001 C CNN
 F 3 "~" H 6000 6950 50  0001 C CNN
@@ -379,10 +379,10 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:SYM_Arrow45_Tiny #SYM2
+L Graphic:SYM_Arrow45_Tiny #SYM3
 U 1 1 608054E3
 P 5450 6950
-F 0 "#SYM2" H 5610 7000 50  0001 C CNN
+F 0 "#SYM3" H 5610 7000 50  0001 C CNN
 F 1 "SYM_Arrow45_Tiny" H 5450 6880 50  0001 C CNN
 F 2 "Symbol:WEEE-Logo_8.4x12mm_SilkScreen" H 5450 6950 50  0001 C CNN
 F 3 "~" H 5450 6950 50  0001 C CNN
@@ -392,10 +392,10 @@ $EndComp
 Text Notes 3000 6100 0    119  ~ 24
 TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit
 $Comp
-L Connector:Screw_Terminal_01x06 J3
+L Connector:Screw_Terminal_01x06 J2
 U 1 1 6063DDDE
 P 9400 3600
-F 0 "J3" H 9318 3075 50  0000 C CNN
+F 0 "J2" H 9318 3075 50  0000 C CNN
 F 1 "Screw_Terminal_01x06" H 9318 3166 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal" H 9400 3600 50  0001 C CNN
 F 3 "~" H 9400 3600 50  0001 C CNN
@@ -405,10 +405,10 @@ $EndComp
 Wire Wire Line
 	8000 3200 7950 3200
 $Comp
-L power:GND #PWR07
+L power:GND #PWR02
 U 1 1 60673177
 P 9900 3300
-F 0 "#PWR07" H 9900 3050 50  0001 C CNN
+F 0 "#PWR02" H 9900 3050 50  0001 C CNN
 F 1 "GND" H 9905 3127 50  0000 C CNN
 F 2 "" H 9900 3300 50  0001 C CNN
 F 3 "" H 9900 3300 50  0001 C CNN
