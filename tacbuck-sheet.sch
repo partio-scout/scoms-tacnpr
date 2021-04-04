@@ -1321,7 +1321,7 @@ Text Notes 6150 4950 2    118  ~ 24
 12V -> 3V8 (TODO: UPDATE component values!!):
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_TO_BUCKC
-Text GLabel 4400 6650 2    79   Input ~ 0
+Text GLabel 4500 7050 2    79   Input ~ 0
 12V_TO_BUCKC
 Text GLabel 9050 1000 2    79   Input ~ 0
 12V_BUCK_A_OUT
@@ -1367,17 +1367,6 @@ Wire Wire Line
 	9100 3050 9100 2850
 Connection ~ 9100 3050
 $Comp
-L Connector:TestPoint_Small TP5
-U 1 1 6078E361
-P 3400 7250
-F 0 "TP5" H 3352 7204 50  0000 R CNN
-F 1 "TestPoint_Small" H 3352 7295 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3600 7250 50  0001 C CNN
-F 3 "~" H 3600 7250 50  0001 C CNN
-	1    3400 7250
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector:TestPoint_Small TP3
 U 1 1 607DC7D5
 P 9650 5250
@@ -1415,8 +1404,6 @@ Wire Wire Line
 Connection ~ 4550 3400
 Text Notes 750  4650 0    79   ~ 0
 lineaariregu: https://datasheet.lcsc.com/szlcsc/Torex-Semicon-XC6206P332MR_C5446.pdf
-Text Notes 800  6450 0    79   ~ 16
-kolme lineaariregua? (XC6206, basic-valikoimasta)\n-ethernet+CPU\n-si4463\n-lna-osuus
 Wire Wire Line
 	2600 5300 4500 5300
 Wire Wire Line
@@ -1452,12 +1439,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R17
 U 1 1 60BDFDEE
-P 4050 6650
-F 0 "R17" H 4109 6696 50  0000 L CNN
-F 1 "0" H 4109 6605 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4050 6650 50  0001 C CNN
-F 3 "~" H 4050 6650 50  0001 C CNN
-	1    4050 6650
+P 4150 7050
+F 0 "R17" H 4209 7096 50  0000 L CNN
+F 1 "0" H 4209 7005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4150 7050 50  0001 C CNN
+F 3 "~" H 4150 7050 50  0001 C CNN
+	1    4150 7050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1474,12 +1461,12 @@ $EndComp
 $Comp
 L Device:R_Small R22
 U 1 1 606AF668
-P 3800 7050
-F 0 "R22" H 3859 7096 50  0000 L CNN
-F 1 "0" H 3859 7005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 3800 7050 50  0001 C CNN
-F 3 "~" H 3800 7050 50  0001 C CNN
-	1    3800 7050
+P 3900 6750
+F 0 "R22" H 3959 6796 50  0000 L CNN
+F 1 "0" H 3959 6705 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3900 6750 50  0001 C CNN
+F 3 "~" H 3900 6750 50  0001 C CNN
+	1    3900 6750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -1487,60 +1474,45 @@ Wire Wire Line
 Wire Wire Line
 	3150 7050 3400 7050
 Connection ~ 3400 7050
-Wire Wire Line
-	3400 7050 3400 7250
-$Comp
-L Connector:TestPoint_Small TP4
-U 1 1 606D7FFC
-P 3400 6550
-F 0 "TP4" H 3352 6504 50  0000 R CNN
-F 1 "TestPoint_Small" H 3352 6595 50  0001 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3600 6550 50  0001 C CNN
-F 3 "~" H 3600 6550 50  0001 C CNN
-	1    3400 6550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 6550 3400 6750
-Wire Wire Line
-	3400 7050 3700 7050
-Text GLabel 4400 6850 2    79   Input ~ 0
+Text GLabel 4500 7250 2    79   Input ~ 0
 12V_OUT
-Text GLabel 4400 7050 2    79   Input ~ 0
+Text GLabel 4500 6750 2    79   Input ~ 0
 12V_TO_RFPA
 $Comp
 L Device:R_Small R19
 U 1 1 6074E6E9
-P 4050 6850
-F 0 "R19" H 4109 6896 50  0000 L CNN
-F 1 "0" H 4109 6805 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4050 6850 50  0001 C CNN
-F 3 "~" H 4050 6850 50  0001 C CNN
-	1    4050 6850
+P 4150 7250
+F 0 "R19" H 4209 7296 50  0000 L CNN
+F 1 "0" H 4209 7205 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4150 7250 50  0001 C CNN
+F 3 "~" H 4150 7250 50  0001 C CNN
+	1    4150 7250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3850 6650 3950 6650
 Connection ~ 3400 6750
 Wire Wire Line
-	3850 6850 3950 6850
+	3950 7250 4050 7250
 Wire Wire Line
-	4400 6650 4150 6650
+	4500 7050 4250 7050
 Wire Wire Line
-	3900 7050 4400 7050
+	4000 6750 4500 6750
 Wire Wire Line
-	4150 6850 4400 6850
+	4250 7250 4500 7250
 Wire Wire Line
 	3150 6750 3400 6750
 Wire Wire Line
 	3400 6800 3400 6750
-Wire Wire Line
-	3850 6650 3850 6750
-Wire Wire Line
-	3850 6750 3400 6750
-Connection ~ 3850 6750
-Wire Wire Line
-	3850 6750 3850 6850
 Text Notes 1400 5700 0    39   ~ 8
 3V8 hakkurin sisäänmenoon \nhttps://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf kotelo 0805, \nLCSC-numero C1015, basic
+Wire Wire Line
+	3400 6750 3800 6750
+Wire Wire Line
+	3400 7050 3950 7050
+Wire Wire Line
+	3950 7050 3950 7250
+Connection ~ 3950 7050
+Wire Wire Line
+	3950 7050 4050 7050
+Text Notes 900  6450 0    79   ~ 16
+kolme lineaariregua? (XC6206, basic-valikoimasta)\n-ethernet+CPU\n-si4463\n-lna-osuus
 $EndSCHEMATC
