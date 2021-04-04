@@ -16,25 +16,25 @@ $EndDescr
 $Comp
 L Device:C C1
 U 1 1 6082D0F7
-P 9850 3950
-F 0 "C1" H 9965 3996 50  0000 L CNN
-F 1 "100n" H 9965 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9888 3800 50  0001 C CNN
-F 3 "~" H 9850 3950 50  0001 C CNN
-	1    9850 3950
+P 9750 3950
+F 0 "C1" H 9865 3996 50  0000 L CNN
+F 1 "100n" H 9865 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 3800 50  0001 C CNN
+F 3 "~" H 9750 3950 50  0001 C CNN
+	1    9750 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9850 3800 9600 3800
+	9750 3800 9600 3800
 $Comp
 L power:GND #PWR06
 U 1 1 6082DD1E
-P 9850 4100
-F 0 "#PWR06" H 9850 3850 50  0001 C CNN
-F 1 "GND" H 9855 3927 50  0000 C CNN
-F 2 "" H 9850 4100 50  0001 C CNN
-F 3 "" H 9850 4100 50  0001 C CNN
-	1    9850 4100
+P 9750 4100
+F 0 "#PWR06" H 9750 3850 50  0001 C CNN
+F 1 "GND" H 9755 3927 50  0000 C CNN
+F 2 "" H 9750 4100 50  0001 C CNN
+F 3 "" H 9750 4100 50  0001 C CNN
+	1    9750 4100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -338,7 +338,7 @@ F 3 "~" H 5450 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3000 6100 0    119  ~ 24
-TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit
+TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat
 $Comp
 L Connector:Screw_Terminal_01x06 J2
 U 1 1 6063DDDE
@@ -382,6 +382,6 @@ pin1
 Text GLabel 10000 3800 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
-	10000 3800 9850 3800
-Connection ~ 9850 3800
+	10000 3800 9750 3800
+Connection ~ 9750 3800
 $EndSCHEMATC
