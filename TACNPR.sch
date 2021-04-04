@@ -319,20 +319,9 @@ U 1 1 608032AF
 P 5450 6750
 F 0 "#SYM1" H 5450 6890 50  0001 C CNN
 F 1 "SYM_ESD_Small" H 5450 6625 50  0001 C CNN
-F 2 "Symbol:ESD-Logo_33x30mm_SilkScreen" H 5450 6760 50  0001 C CNN
+F 2 "Symbol:ESD-Logo_13.2x12mm_SilkScreen" H 5450 6760 50  0001 C CNN
 F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:SYM_Arrow45_Tiny #SYM3
-U 1 1 608054E3
-P 5450 6950
-F 0 "#SYM3" H 5610 7000 50  0001 C CNN
-F 1 "SYM_Arrow45_Tiny" H 5450 6880 50  0001 C CNN
-F 2 "Symbol:WEEE-Logo_8.4x12mm_SilkScreen" H 5450 6950 50  0001 C CNN
-F 3 "~" H 5450 6950 50  0001 C CNN
-	1    5450 6950
 	1    0    0    -1  
 $EndComp
 Text Notes 3000 6100 0    119  ~ 24
