@@ -212,7 +212,7 @@ U 1 1 607DDDF1
 P 7500 3450
 F 0 "J7" H 7600 3425 50  0000 L CNN
 F 1 "Conn_Coaxial" H 7600 3334 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal" H 7500 3450 50  0001 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134_Vertical" H 7500 3450 50  0001 C CNN
 F 3 " ~" H 7500 3450 50  0001 C CNN
 	1    7500 3450
 	1    0    0    -1  
