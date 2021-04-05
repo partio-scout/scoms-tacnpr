@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name TACNPR)(type KiCad)(uri /home/llatva/kicad-projects/TACNPR)(options "")(descr ""))
+  (lib (name NPR)(type KiCad)(uri ${KIPRJMOD}/NPR.pretty)(options "")(descr ""))
+)
