@@ -776,7 +776,7 @@
   )
 
   (module Connector_Coaxial:SMA_Amphenol_132203-12_Horizontal (layer F.Cu) (tedit 5CF42CD6) (tstamp 6078BDE8)
-    (at 94.742 64.262 90)
+    (at 94.488 55.372 90)
     (descr https://www.amphenolrf.com/media/downloads/1769/132203-12.pdf)
     (tags "SMA THT Female Jack Horizontal")
     (path /60604CF2/607DDDF1)
