@@ -325,7 +325,7 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3000 6100 0    119  ~ 24
-TODO: lopuks silkit kuntoon; ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat
+TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat
 $Comp
 L Connector:Screw_Terminal_01x06 J2
 U 1 1 6063DDDE

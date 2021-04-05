@@ -405,7 +405,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 1650 9050 1550
 Wire Wire Line
-	9050 1250 9050 1000
+	9050 1250 9050 1150
 Wire Wire Line
 	9050 1000 8700 1000
 Connection ~ 8700 1000
@@ -810,7 +810,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 3700 9100 3600
 Wire Wire Line
-	9100 3300 9100 3050
+	9100 3300 9100 3200
 Wire Wire Line
 	9100 3050 8750 3050
 Connection ~ 8750 3050
@@ -1385,7 +1385,7 @@ Connection ~ 9500 4950
 Wire Wire Line
 	9500 4950 9600 4950
 Text Notes 900  3500 0    79   ~ 16
-TODO:\n-kerkot ihan hakkurin juureen, samoin kela\n-manufacturing files: bommi (LCSC-koodi)
+TODO:\n-manufacturing files: bommi (LCSC-koodi)
 Wire Wire Line
 	5600 2050 5600 2150
 Wire Wire Line
@@ -1497,8 +1497,6 @@ Wire Wire Line
 Wire Wire Line
 	4000 6750 4500 6750
 Wire Wire Line
-	4250 7250 4500 7250
-Wire Wire Line
 	3150 6750 3400 6750
 Wire Wire Line
 	3400 6800 3400 6750
@@ -1507,7 +1505,7 @@ Text Notes 1400 5700 0    39   ~ 8
 Wire Wire Line
 	3400 6750 3800 6750
 Wire Wire Line
-	3400 7050 3600 7050
+	3400 7050 3500 7050
 Wire Wire Line
 	3950 7050 3950 7250
 Connection ~ 3950 7050
@@ -1566,27 +1564,27 @@ Connection ~ 9500 5250
 $Comp
 L power:GND #PWR?
 U 1 1 60707C50
-P 4350 7550
+P 3250 7500
 AR Path="/60707C50" Ref="#PWR?"  Part="1" 
 AR Path="/609A52E7/60707C50" Ref="#PWR038"  Part="1" 
-F 0 "#PWR038" H 4350 7300 50  0001 C CNN
-F 1 "GND" H 4355 7377 50  0000 C CNN
-F 2 "" H 4350 7550 50  0001 C CNN
-F 3 "" H 4350 7550 50  0001 C CNN
-	1    4350 7550
+F 0 "#PWR038" H 3250 7250 50  0001 C CNN
+F 1 "GND" H 3255 7327 50  0000 C CNN
+F 2 "" H 3250 7500 50  0001 C CNN
+F 3 "" H 3250 7500 50  0001 C CNN
+	1    3250 7500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 60707C4A
-P 4350 7400
+P 3250 7300
 AR Path="/60707C4A" Ref="C?"  Part="1" 
 AR Path="/609A52E7/60707C4A" Ref="C38"  Part="1" 
-F 0 "C38" H 4465 7446 50  0000 L CNN
-F 1 "100n" H 4465 7355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4388 7250 50  0001 C CNN
-F 3 "~" H 4350 7400 50  0001 C CNN
-	1    4350 7400
+F 0 "C38" H 3365 7346 50  0000 L CNN
+F 1 "100n" H 3365 7255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 7150 50  0001 C CNN
+F 3 "~" H 3250 7300 50  0001 C CNN
+	1    3250 7300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1619,4 +1617,169 @@ $EndComp
 Connection ~ 3600 7050
 Wire Wire Line
 	3600 7050 3950 7050
+Wire Wire Line
+	4250 7250 4400 7250
+Wire Wire Line
+	3250 7500 3250 7450
+Wire Wire Line
+	3250 7150 3500 7150
+Wire Wire Line
+	3500 7150 3500 7050
+Connection ~ 3500 7050
+Wire Wire Line
+	3500 7050 3600 7050
+$Comp
+L Device:R_Small R?
+U 1 1 6072DC36
+P 10000 3500
+AR Path="/6072DC36" Ref="R?"  Part="1" 
+AR Path="/609A52E7/6072DC36" Ref="R42"  Part="1" 
+F 0 "R42" V 9804 3500 50  0000 C CNN
+F 1 "1k" V 9895 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10000 3500 50  0001 C CNN
+F 3 "~" H 10000 3500 50  0001 C CNN
+	1    10000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6072DC3C
+P 10650 3500
+AR Path="/6072DC3C" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/6072DC3C" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 10650 3250 50  0001 C CNN
+F 1 "GND" H 10655 3327 50  0000 C CNN
+F 2 "" H 10650 3500 50  0001 C CNN
+F 3 "" H 10650 3500 50  0001 C CNN
+	1    10650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 3500 10650 3500
+Wire Wire Line
+	10100 3500 10200 3500
+$Comp
+L Device:LED D?
+U 1 1 6072DC44
+P 10350 3500
+AR Path="/6072DC44" Ref="D?"  Part="1" 
+AR Path="/609A52E7/6072DC44" Ref="D12"  Part="1" 
+F 0 "D12" H 10343 3245 50  0000 C CNN
+F 1 "LED" H 10343 3336 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10350 3500 50  0001 C CNN
+F 3 "~" H 10350 3500 50  0001 C CNN
+	1    10350 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 3500 9900 3500
+$Comp
+L Device:R_Small R?
+U 1 1 60738F2C
+P 10000 1400
+AR Path="/60738F2C" Ref="R?"  Part="1" 
+AR Path="/609A52E7/60738F2C" Ref="R41"  Part="1" 
+F 0 "R41" V 9804 1400 50  0000 C CNN
+F 1 "1k" V 9895 1400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10000 1400 50  0001 C CNN
+F 3 "~" H 10000 1400 50  0001 C CNN
+	1    10000 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6073942C
+P 10650 1400
+AR Path="/6073942C" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/6073942C" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H 10650 1150 50  0001 C CNN
+F 1 "GND" H 10655 1227 50  0000 C CNN
+F 2 "" H 10650 1400 50  0001 C CNN
+F 3 "" H 10650 1400 50  0001 C CNN
+	1    10650 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1400 10650 1400
+Wire Wire Line
+	10100 1400 10200 1400
+$Comp
+L Device:LED D?
+U 1 1 60739438
+P 10350 1400
+AR Path="/60739438" Ref="D?"  Part="1" 
+AR Path="/609A52E7/60739438" Ref="D11"  Part="1" 
+F 0 "D11" H 10343 1145 50  0000 C CNN
+F 1 "LED" H 10343 1236 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 10350 1400 50  0001 C CNN
+F 3 "~" H 10350 1400 50  0001 C CNN
+	1    10350 1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 1400 9900 1400
+Wire Wire Line
+	9050 1150 9500 1150
+Wire Wire Line
+	9500 1150 9500 1400
+Connection ~ 9050 1150
+Wire Wire Line
+	9050 1150 9050 1000
+Wire Wire Line
+	9100 3200 9500 3200
+Wire Wire Line
+	9500 3200 9500 3500
+Connection ~ 9100 3200
+Wire Wire Line
+	9100 3200 9100 3050
+$Comp
+L Device:R_Small R?
+U 1 1 607BF509
+P 4900 7550
+AR Path="/607BF509" Ref="R?"  Part="1" 
+AR Path="/609A52E7/607BF509" Ref="R?"  Part="1" 
+F 0 "R?" V 4704 7550 50  0000 C CNN
+F 1 "1k" V 4795 7550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4900 7550 50  0001 C CNN
+F 3 "~" H 4900 7550 50  0001 C CNN
+	1    4900 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607BFBA5
+P 5550 7550
+AR Path="/607BFBA5" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/607BFBA5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 7300 50  0001 C CNN
+F 1 "GND" H 5555 7377 50  0000 C CNN
+F 2 "" H 5550 7550 50  0001 C CNN
+F 3 "" H 5550 7550 50  0001 C CNN
+	1    5550 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 7550 5550 7550
+Wire Wire Line
+	5000 7550 5100 7550
+$Comp
+L Device:LED D?
+U 1 1 607BFBB1
+P 5250 7550
+AR Path="/607BFBB1" Ref="D?"  Part="1" 
+AR Path="/609A52E7/607BFBB1" Ref="D?"  Part="1" 
+F 0 "D?" H 5243 7295 50  0000 C CNN
+F 1 "LED" H 5243 7386 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5250 7550 50  0001 C CNN
+F 3 "~" H 5250 7550 50  0001 C CNN
+	1    5250 7550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 7550 4800 7550
+Wire Wire Line
+	4400 7250 4400 7550
+Connection ~ 4400 7250
+Wire Wire Line
+	4400 7250 4500 7250
 $EndSCHEMATC
