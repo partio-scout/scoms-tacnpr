@@ -123,4 +123,15 @@ Wire Wire Line
 Connection ~ 3800 2550
 Connection ~ 3350 2350
 Connection ~ 3350 2550
+$Comp
+L npr-parts:MHW720A U?
+U 1 1 6105F771
+P 5850 3300
+F 0 "U?" H 6578 3158 50  0000 L CNN
+F 1 "MHW720A" H 6578 3045 79  0000 L CNB
+F 2 "" H 5850 3300 50  0001 C CNN
+F 3 "" H 5850 3300 50  0001 C CNN
+	1    5850 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
