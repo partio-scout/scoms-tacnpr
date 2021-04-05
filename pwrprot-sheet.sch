@@ -49,19 +49,6 @@ Wire Wire Line
 Connection ~ 4550 5100
 $Comp
 L Device:C_Small C?
-U 1 1 60A0BED5
-P 5200 4900
-AR Path="/60A0BED5" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60A0BED5" Ref="C47"  Part="1" 
-F 0 "C47" H 5292 4946 50  0000 L CNN
-F 1 "100nF" H 5292 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 4900 50  0001 C CNN
-F 3 "~" H 5200 4900 50  0001 C CNN
-	1    5200 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
 U 1 1 60A0BEDB
 P 4800 4900
 AR Path="/60A0BEDB" Ref="C?"  Part="1" 
@@ -205,7 +192,7 @@ $EndComp
 Text Notes 5650 1000 0    118  ~ 24
 TODO: find proper TVS'es from JLC
 Wire Wire Line
-	3700 3450 4800 3450
+	3700 3450 4450 3450
 Wire Wire Line
 	3750 2750 4800 2750
 $Comp
@@ -264,4 +251,46 @@ Text Notes 3950 2350 0    79   ~ 16
 inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
 Text Notes 3300 5800 0    79   ~ 16
 TODO: USB-suojaa TVS:ksi 3V3-käyttöön, kaikkien 3V3-lineaariregujen eteen
+$Comp
+L Device:C_Small C?
+U 1 1 60A0BED5
+P 5200 4900
+AR Path="/60A0BED5" Ref="C?"  Part="1" 
+AR Path="/608A4C86/60A0BED5" Ref="C47"  Part="1" 
+F 0 "C47" H 5292 4946 50  0000 L CNN
+F 1 "100nF" H 5292 4855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 4900 50  0001 C CNN
+F 3 "~" H 5200 4900 50  0001 C CNN
+	1    5200 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 607F87DF
+P 4450 3550
+AR Path="/607F87DF" Ref="C?"  Part="1" 
+AR Path="/608A4C86/607F87DF" Ref="C64"  Part="1" 
+F 0 "C64" H 4542 3596 50  0000 L CNN
+F 1 "100nF" H 4542 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 3550 50  0001 C CNN
+F 3 "~" H 4450 3550 50  0001 C CNN
+	1    4450 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 3450
+Wire Wire Line
+	4450 3450 4800 3450
+$Comp
+L power:GND #PWR?
+U 1 1 607F91F7
+P 4450 3650
+AR Path="/607F91F7" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/607F91F7" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 4450 3400 50  0001 C CNN
+F 1 "GND" H 4455 3477 50  0000 C CNN
+F 2 "" H 4450 3650 50  0001 C CNN
+F 3 "" H 4450 3650 50  0001 C CNN
+	1    4450 3650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
