@@ -196,10 +196,10 @@ T 900 -575 -175 24 0 0 0 "150 mW max." Normal 0 C C
 T 0 410 280 24 0 0 0 "A1: 400-440 MHz" Normal 0 C C
 T 0 410 240 24 0 0 0 "A2: 440-470 MHz" Normal 0 C C
 T 0 -50 260 71 0 0 0 MHW720A Normal 1 C C
-T 0 0 180 24 0 0 0 "NOTE: No internal D.C. blocking on input pin." Normal 1 C C
+T 0 0 180 24 0 0 0 "NOTE: No internal D.C. blocking on input pin." Normal 0 C C
 T 900 565 -205 24 0 0 0 Pout=20W Normal 0 C C
-T 900 -650 -105 28 0 0 0 "RF input (50 ohm)" Normal 1 C C
-T 900 650 -115 28 0 0 0 "RF output (50 ohm)" Normal 1 C C
+T 900 -650 -105 28 0 0 0 "RF input (50 ohm)" Normal 0 C C
+T 900 650 -115 28 0 0 0 "RF output (50 ohm)" Normal 0 C C
 T 900 -345 -145 28 0 0 0 Vsupply1 Normal 0 C C
 T 900 265 -170 28 0 0 0 Vsupply2 Normal 0 C C
 S -700 335 700 -350 0 1 0 f
