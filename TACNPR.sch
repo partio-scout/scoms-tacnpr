@@ -144,8 +144,8 @@ U 60604CF2
 F0 "RF-PA" 79
 F1 "RF-PA-sheet.sch" 79
 $EndSheet
-Text Notes 5400 4900 0    197  ~ 39
-RF PA
+Text Notes 5350 5000 0    158  ~ 32
+RF PA &\nLPF
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 6067BE98

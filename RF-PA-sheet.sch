@@ -116,29 +116,16 @@ Wire Wire Line
 Wire Wire Line
 	7050 4150 6850 4150
 $Comp
-L Device:CP_Small C?
-U 1 1 606BAEE3
-P 4850 4500
-AR Path="/609A52E7/606BAEE3" Ref="C?"  Part="1" 
-AR Path="/60604CF2/606BAEE3" Ref="C62"  Part="1" 
-F 0 "C62" H 4938 4546 50  0000 L CNN
-F 1 "100u" H 4938 4455 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x4.5" H 4850 4500 50  0001 C CNN
-F 3 "~" H 4850 4500 50  0001 C CNN
-	1    4850 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 606BAEE9
-P 4850 4600
+P 6400 4000
 AR Path="/609A52E7/606BAEE9" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/606BAEE9" Ref="#PWR0104"  Part="1" 
-F 0 "#PWR0104" H 4850 4350 50  0001 C CNN
-F 1 "GND" H 4855 4427 50  0000 C CNN
-F 2 "" H 4850 4600 50  0001 C CNN
-F 3 "" H 4850 4600 50  0001 C CNN
-	1    4850 4600
+F 0 "#PWR0104" H 6400 3750 50  0001 C CNN
+F 1 "GND" H 6405 3827 50  0000 C CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "" H 6400 4000 50  0001 C CNN
+	1    6400 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -249,8 +236,6 @@ Wire Wire Line
 	5550 3050 5550 3450
 Wire Wire Line
 	6150 3050 6150 3800
-Wire Wire Line
-	4850 4400 6150 4400
 $Comp
 L Device:CP1_Small C65
 U 1 1 60811E09
@@ -280,7 +265,7 @@ L Device:L_Core_Iron L6
 U 1 1 60814461
 P 6150 4050
 F 0 "L6" H 6106 4004 50  0000 R CNN
-F 1 "L_Core_Iron" H 6106 4095 50  0000 R CNN
+F 1 "L_Core_Iron" V 6250 4300 50  0000 R CNN
 F 2 "Inductor_SMD:L_1210_3225Metric" H 6150 4050 50  0001 C CNN
 F 3 "~" H 6150 4050 50  0001 C CNN
 	1    6150 4050
@@ -289,7 +274,7 @@ $EndComp
 Wire Wire Line
 	6150 4200 6150 4400
 Wire Wire Line
-	6150 3800 6850 3800
+	6150 3800 6400 3800
 Wire Wire Line
 	6850 3800 6850 3950
 Connection ~ 6150 3800
@@ -405,9 +390,6 @@ Connection ~ 7400 3950
 Wire Wire Line
 	7750 4150 7400 4150
 Connection ~ 7400 4150
-Wire Wire Line
-	4850 4400 3700 4400
-Connection ~ 4850 4400
 Connection ~ 3700 4400
 $Comp
 L Device:CP1_Small C69
@@ -472,4 +454,22 @@ Connection ~ 8300 3950
 Wire Wire Line
 	8300 4150 8650 4150
 Connection ~ 8300 4150
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6850 3800
+Wire Wire Line
+	3700 4400 6150 4400
+$Comp
+L Device:CP_Small C?
+U 1 1 606BAEE3
+P 6400 3900
+AR Path="/609A52E7/606BAEE3" Ref="C?"  Part="1" 
+AR Path="/60604CF2/606BAEE3" Ref="C62"  Part="1" 
+F 0 "C62" H 6488 3946 50  0000 L CNN
+F 1 "100u" H 6488 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.5" H 6400 3900 50  0001 C CNN
+F 3 "~" H 6400 3900 50  0001 C CNN
+	1    6400 3900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
