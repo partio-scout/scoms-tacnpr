@@ -482,4 +482,92 @@ F 3 "" H 6950 3400 50  0001 C CNN
 $EndComp
 Text GLabel 7050 3800 3    50   Input ~ 10
 ETH_ACTLED
+$Comp
+L Device:R_Small R?
+U 1 1 606F9A49
+P 5050 2450
+AR Path="/606F9A49" Ref="R?"  Part="1" 
+AR Path="/606CD620/606F9A49" Ref="R?"  Part="1" 
+F 0 "R?" H 5109 2496 50  0000 L CNN
+F 1 "33" H 5109 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 2450 50  0001 C CNN
+F 3 "~" H 5050 2450 50  0001 C CNN
+	1    5050 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606FADA4
+P 5300 2550
+AR Path="/606FADA4" Ref="R?"  Part="1" 
+AR Path="/606CD620/606FADA4" Ref="R?"  Part="1" 
+F 0 "R?" H 5359 2596 50  0000 L CNN
+F 1 "33" H 5359 2505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 2550 50  0001 C CNN
+F 3 "~" H 5300 2550 50  0001 C CNN
+	1    5300 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606FB7BC
+P 5050 2750
+AR Path="/606FB7BC" Ref="R?"  Part="1" 
+AR Path="/606CD620/606FB7BC" Ref="R?"  Part="1" 
+F 0 "R?" H 5109 2796 50  0000 L CNN
+F 1 "33" H 5109 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5050 2750 50  0001 C CNN
+F 3 "~" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 606FBE38
+P 5300 2850
+AR Path="/606FBE38" Ref="R?"  Part="1" 
+AR Path="/606CD620/606FBE38" Ref="R?"  Part="1" 
+F 0 "R?" H 5359 2896 50  0000 L CNN
+F 1 "33" H 5359 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5300 2850 50  0001 C CNN
+F 3 "~" H 5300 2850 50  0001 C CNN
+	1    5300 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 2450 4950 2450
+Wire Wire Line
+	4800 2550 5200 2550
+Wire Wire Line
+	4800 2750 4950 2750
+Wire Wire Line
+	5200 2850 4800 2850
+$Comp
+L Device:C_Small C?
+U 1 1 60705598
+P 6150 2700
+AR Path="/60705598" Ref="C?"  Part="1" 
+AR Path="/606CD620/60705598" Ref="C?"  Part="1" 
+F 0 "C?" V 5921 2700 50  0000 C CNN
+F 1 "6n8" V 6012 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6150 2700 50  0001 C CNN
+F 3 "~" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60706A8D
+P 5950 2500
+AR Path="/60706A8D" Ref="C?"  Part="1" 
+AR Path="/606CD620/60706A8D" Ref="C?"  Part="1" 
+F 0 "C?" V 5721 2500 50  0000 C CNN
+F 1 "6n8" V 5812 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5950 2500 50  0001 C CNN
+F 3 "~" H 5950 2500 50  0001 C CNN
+	1    5950 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6050 2500 6250 2500
 $EndSCHEMATC
