@@ -205,7 +205,7 @@ P 6750 2700
 AR Path="/60985594" Ref="R?"  Part="1" 
 AR Path="/6096F497/60985594" Ref="R31"  Part="1" 
 F 0 "R31" V 6554 2700 50  0000 C CNN
-F 1 "1k" V 6645 2700 50  0000 C CNN
+F 1 "0" V 6645 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6750 2700 50  0001 C CNN
 F 3 "~" H 6750 2700 50  0001 C CNN
 	1    6750 2700
@@ -767,23 +767,6 @@ $EndComp
 Wire Wire Line
 	6200 3600 6300 3600
 $Comp
-L Device:R_Small R?
-U 1 1 6064249B
-P 7200 2700
-AR Path="/6064249B" Ref="R?"  Part="1" 
-AR Path="/6096F497/6064249B" Ref="R32"  Part="1" 
-F 0 "R32" V 7004 2700 50  0000 C CNN
-F 1 "0" V 7095 2700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 2700 50  0001 C CNN
-F 3 "~" H 7200 2700 50  0001 C CNN
-	1    7200 2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 2700 7100 2700
-Wire Wire Line
-	7300 2700 7450 2700
-$Comp
 L Device:C_Small C?
 U 1 1 60648C13
 P 5350 2900
@@ -1112,4 +1095,6 @@ Wire Wire Line
 Connection ~ 9800 5900
 Text Notes 1950 3800 0    79   ~ 16
 ESD-suojalle\nbasic-sarjasta vastine,\nsama kuin gpiolla?
+Wire Wire Line
+	6850 2700 7450 2700
 $EndSCHEMATC
