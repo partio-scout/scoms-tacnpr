@@ -382,26 +382,15 @@ F 3 "~" H 2100 2200 50  0001 C CNN
 $EndComp
 Text Notes 1150 1750 0    94   ~ 19
 USB connector & ESD protection
-Wire Wire Line
-	2550 3050 2550 2950
-Wire Wire Line
-	3350 2950 3450 2950
-Text GLabel 2550 3050 0    50   BiDi ~ 0
+Text GLabel 2900 3000 3    50   BiDi ~ 0
 USB_D+
-Text GLabel 3450 2950 2    50   BiDi ~ 0
+Text GLabel 2900 2700 0    50   BiDi ~ 0
 USB_D-
-Wire Wire Line
-	3350 2750 3450 2750
-Text GLabel 3450 2750 2    50   BiDi ~ 0
-USB_CONN_D-
-Wire Wire Line
-	1800 2800 2550 2800
-Connection ~ 1800 2800
 Wire Wire Line
 	1800 2800 1800 2700
 Wire Wire Line
-	1750 2900 1800 2900
-Text GLabel 1800 2900 2    50   BiDi ~ 0
+	1750 2900 1850 3000
+Text GLabel 1850 3000 2    50   BiDi ~ 0
 USB_CONN_D-
 Connection ~ 2150 2600
 Wire Wire Line
@@ -425,12 +414,6 @@ F 3 "" H 1450 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 2600 2150 2550
-Wire Wire Line
-	2300 2600 2150 2600
-Wire Wire Line
-	2300 2450 2300 2600
-Wire Wire Line
-	2950 2450 2300 2450
 $Comp
 L power:+5VD #PWR?
 U 1 1 609AB2E4
@@ -445,33 +428,16 @@ F 3 "" H 2150 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U?
-U 1 1 609AB2DE
-P 2950 2850
-AR Path="/609AB2DE" Ref="U?"  Part="1" 
-AR Path="/6096F497/609AB2DE" Ref="U6"  Part="1" 
-F 0 "U6" H 2950 3431 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 2950 3340 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 2950 2350 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 3150 3200 50  0001 C CNN
-	1    2950 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 2800 2550 2750
-Wire Wire Line
-	2950 3300 2950 3250
-$Comp
 L power:GND #PWR?
 U 1 1 609AB2D6
-P 2950 3300
+P 3400 3400
 AR Path="/609AB2D6" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/609AB2D6" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 2950 3050 50  0001 C CNN
-F 1 "GND" H 2955 3127 50  0000 C CNN
-F 2 "" H 2950 3300 50  0001 C CNN
-F 3 "" H 2950 3300 50  0001 C CNN
-	1    2950 3300
+F 0 "#PWR064" H 3400 3150 50  0001 C CNN
+F 1 "GND" H 3405 3227 50  0000 C CNN
+F 2 "" H 3400 3400 50  0001 C CNN
+F 3 "" H 3400 3400 50  0001 C CNN
+	1    3400 3400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1093,8 +1059,39 @@ Connection ~ 9800 5500
 Wire Wire Line
 	9800 6250 9800 5900
 Connection ~ 9800 5900
-Text Notes 1950 3800 0    79   ~ 16
-ESD-suojalle\nbasic-sarjasta vastine,\nsama kuin gpiolla?
 Wire Wire Line
 	6850 2700 7450 2700
+Wire Wire Line
+	3400 2400 2950 2400
+Wire Wire Line
+	2950 2400 2950 2600
+Wire Wire Line
+	2150 2600 2950 2600
+$Comp
+L Power_Protection:SRV05-4 U6
+U 1 1 606FA42D
+P 3400 2900
+F 0 "U6" H 3400 3581 50  0000 C CNN
+F 1 "SRV05-4" H 3400 3490 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4100 2450 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 3400 2900 50  0001 C CNN
+F 4 "C85364" H 3400 2900 50  0001 C CNN "LCSC"
+	1    3400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3000 2550 3000
+Wire Wire Line
+	2550 3000 2550 2800
+Wire Wire Line
+	2550 2800 1800 2800
+Connection ~ 1800 2800
+Wire Wire Line
+	2900 2800 2900 2900
+Wire Wire Line
+	2900 2900 1750 2900
+Connection ~ 1750 2900
+Wire Wire Line
+	2900 2800 2900 2700
+Connection ~ 2900 2800
 $EndSCHEMATC
