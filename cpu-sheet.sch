@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7100 6900 0    157  Italic 31
 TACNPR / CPU, SRAM and USB
 Text Notes 850  4750 0    118  ~ 24
-TODO: F.BEAD VDDA-linjaan (pin5)\n\nTODO: datasheet 6.1.6 Power supply scheme  !!!\n\nTODO: tsekkaa RAND-kytkentä (NPR)
+TODO: F.BEAD VDDA-linjaan (pin5)\nTODO: datasheet 6.1.6 Power supply scheme  !!!\nTODO: tsekkaa RAND-kytkentä (NPR)\nTODO: bootmode-kytkin
 Text GLabel 9450 5000 0    50   BiDi ~ 0
 GPIO11-TERMINAL
 $Comp
@@ -34,17 +34,6 @@ F 3 "" H 9950 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9950 5000 9950 4950
-$Comp
-L Power_Protection:SRV05-4 U6
-U 1 1 60761855
-P 2350 6150
-F 0 "U6" H 2350 6831 50  0000 C CNN
-F 1 "SRV05-4" H 2350 6740 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3050 5700 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2350 6150 50  0001 C CNN
-	1    2350 6150
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 6098553F
@@ -991,15 +980,9 @@ F 3 "" H 1050 6650 50  0001 C CNN
 	1    1050 6650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 6050 1850 6050
-Wire Wire Line
-	1350 6150 1850 6150
-Wire Wire Line
-	1850 6150 1850 6250
 Text GLabel 1700 6050 1    40   Input ~ 0
 USB_DP
-Text GLabel 1700 6150 3    40   Input ~ 0
+Text GLabel 1500 6150 3    40   Input ~ 0
 USB_DM
 Text GLabel 3300 6150 0    40   Input ~ 0
 USB_DM
@@ -1023,7 +1006,7 @@ P 3100 6350
 AR Path="/607FEC0F" Ref="C?"  Part="1" 
 AR Path="/6096F497/607FEC0F" Ref="C74"  Part="1" 
 F 0 "C74" H 3192 6396 50  0000 L CNN
-F 1 "12p" H 3192 6305 50  0000 L CNN
+F 1 "22p" H 3192 6305 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 6350 50  0001 C CNN
 F 3 "~" H 3100 6350 50  0001 C CNN
 	1    3100 6350
@@ -1036,7 +1019,7 @@ P 3100 6650
 AR Path="/60800F22" Ref="C?"  Part="1" 
 AR Path="/6096F497/60800F22" Ref="C75"  Part="1" 
 F 0 "C75" H 3192 6696 50  0000 L CNN
-F 1 "12p" H 3192 6605 50  0000 L CNN
+F 1 "22p" H 3192 6605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3100 6650 50  0001 C CNN
 F 3 "~" H 3100 6650 50  0001 C CNN
 	1    3100 6650
@@ -1058,4 +1041,162 @@ Text GLabel 5950 3650 3    40   Input ~ 0
 VCP_RX
 Wire Wire Line
 	5850 2350 6200 2350
+Wire Wire Line
+	3300 6350 3200 6350
+Connection ~ 3300 6350
+Wire Wire Line
+	3300 6550 3300 6650
+Wire Wire Line
+	3300 6650 3200 6650
+Connection ~ 3300 6550
+$Comp
+L power:GND #PWR?
+U 1 1 60785E8E
+P 2900 6650
+AR Path="/60785E8E" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60785E8E" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H 2900 6400 50  0001 C CNN
+F 1 "GND" H 2905 6477 50  0000 C CNN
+F 2 "" H 2900 6650 50  0001 C CNN
+F 3 "" H 2900 6650 50  0001 C CNN
+	1    2900 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 6350 2900 6350
+Wire Wire Line
+	2900 6350 2900 6650
+Wire Wire Line
+	2900 6650 3000 6650
+Connection ~ 2900 6650
+$Comp
+L Device:C_Small C?
+U 1 1 6078E9C6
+P 3800 5350
+AR Path="/6078E9C6" Ref="C?"  Part="1" 
+AR Path="/6096F497/6078E9C6" Ref="C76"  Part="1" 
+F 0 "C76" H 3892 5396 50  0000 L CNN
+F 1 "470n" H 3892 5305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3800 5350 50  0001 C CNN
+F 3 "~" H 3800 5350 50  0001 C CNN
+	1    3800 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 5550 3800 5450
+$Comp
+L power:GND #PWR?
+U 1 1 607950DB
+P 4050 5150
+AR Path="/607950DB" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/607950DB" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H 4050 4900 50  0001 C CNN
+F 1 "GND" H 4055 4977 50  0000 C CNN
+F 2 "" H 4050 5150 50  0001 C CNN
+F 3 "" H 4050 5150 50  0001 C CNN
+	1    4050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5150 3800 5150
+Wire Wire Line
+	3800 5150 3800 5250
+$Comp
+L Device:C_Small C?
+U 1 1 6079A383
+P 4950 5450
+AR Path="/6079A383" Ref="C?"  Part="1" 
+AR Path="/6096F497/6079A383" Ref="C77"  Part="1" 
+F 0 "C77" H 5042 5496 50  0000 L CNN
+F 1 "100n" H 5042 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4950 5450 50  0001 C CNN
+F 3 "~" H 4950 5450 50  0001 C CNN
+	1    4950 5450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 6079AD16
+P 5200 5450
+AR Path="/6079AD16" Ref="C?"  Part="1" 
+AR Path="/6096F497/6079AD16" Ref="C78"  Part="1" 
+F 0 "C78" H 5292 5496 50  0000 L CNN
+F 1 "100n" H 4950 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 5450 50  0001 C CNN
+F 3 "~" H 5200 5450 50  0001 C CNN
+	1    5200 5450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 5350 5050 5350
+Wire Wire Line
+	5200 5550 5050 5550
+Wire Wire Line
+	5050 5350 5050 5300
+Wire Wire Line
+	3900 5300 3900 5550
+Connection ~ 5050 5350
+Wire Wire Line
+	5050 5350 4950 5350
+$Comp
+L power:GND #PWR?
+U 1 1 607AE242
+P 5050 5550
+AR Path="/607AE242" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/607AE242" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H 5050 5300 50  0001 C CNN
+F 1 "GND" H 5055 5377 50  0000 C CNN
+F 2 "" H 5050 5550 50  0001 C CNN
+F 3 "" H 5050 5550 50  0001 C CNN
+	1    5050 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 5050 5550
+Wire Wire Line
+	5050 5550 4950 5550
+Wire Wire Line
+	3900 5300 5050 5300
+$Comp
+L Device:R_Small R?
+U 1 1 607DB8D4
+P 3400 6050
+AR Path="/607DB8D4" Ref="R?"  Part="1" 
+AR Path="/6096F497/607DB8D4" Ref="R30"  Part="1" 
+F 0 "R30" V 3204 6050 50  0000 C CNN
+F 1 "0" V 3295 6050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 6050 50  0001 C CNN
+F 3 "~" H 3400 6050 50  0001 C CNN
+	1    3400 6050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 607DDB9E
+P 3400 6150
+AR Path="/607DDB9E" Ref="R?"  Part="1" 
+AR Path="/6096F497/607DDB9E" Ref="R32"  Part="1" 
+F 0 "R32" V 3204 6150 50  0000 C CNN
+F 1 "0" V 3295 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 6150 50  0001 C CNN
+F 3 "~" H 3400 6150 50  0001 C CNN
+	1    3400 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Power_Protection:SRV05-4 U6
+U 1 1 60761855
+P 2350 6150
+F 0 "U6" H 2350 6831 50  0000 C CNN
+F 1 "SRV05-4" H 2350 6740 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3050 5700 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 2350 6150 50  0001 C CNN
+	1    2350 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 6050 1850 6050
+Wire Wire Line
+	1850 6250 1850 6150
+Wire Wire Line
+	1350 6150 1850 6150
 $EndSCHEMATC
