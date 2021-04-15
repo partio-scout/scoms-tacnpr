@@ -26,13 +26,9 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 
 	1    5800 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 4050 2    50   Output ~ 0
+Text GLabel 5250 4050 0    50   Input ~ 0
 CS_SI4463
-Text GLabel 5300 4150 0    50   Input ~ 0
-IRQ_SI4463
-Text GLabel 5250 3950 0    50   Input ~ 0
-MISO_SPI1
-Text GLabel 4800 3850 2    50   Output ~ 0
+Text GLabel 5250 3850 0    50   Input ~ 0
 MOSI_SPI1
 Text Notes 1650 1500 0    197  Italic 39
 TODO: double check pinout!
@@ -52,4 +48,156 @@ Wire Wire Line
 Wire Wire Line
 	5900 2950 5900 2700
 Connection ~ 5900 2950
+Wire Wire Line
+	5300 4150 5400 4150
+Text GLabel 5300 4150 0    50   BiDi ~ 0
+IRQ_SI4463
+Text GLabel 5250 3950 0    50   Output ~ 0
+MISO_SPI1
+Wire Wire Line
+	5400 3950 5250 3950
+Wire Wire Line
+	5400 3850 5250 3850
+Wire Wire Line
+	5400 4050 5250 4050
+$Comp
+L Device:C_Small C?
+U 1 1 607A0BD2
+P 6500 3450
+AR Path="/607A0BD2" Ref="C?"  Part="1" 
+AR Path="/6096F497/607A0BD2" Ref="C?"  Part="1" 
+AR Path="/607946F5/607A0BD2" Ref="C82"  Part="1" 
+F 0 "C82" H 6592 3496 50  0000 L CNN
+F 1 "??" H 6592 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6500 3450 50  0001 C CNN
+F 3 "~" H 6500 3450 50  0001 C CNN
+	1    6500 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 3350 5400 3350
+Wire Wire Line
+	5100 3550 5400 3550
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 607A0BC6
+P 5100 3450
+AR Path="/6096F497/607A0BC6" Ref="Y?"  Part="1" 
+AR Path="/607946F5/607A0BC6" Ref="Y4"  Part="1" 
+F 0 "Y4" V 5054 3538 50  0000 L CNN
+F 1 "30M" V 5145 3538 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 5100 3450 50  0001 C CNN
+F 3 "~" H 5100 3450 50  0001 C CNN
+	1    5100 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 607A57E7
+P 6500 3150
+AR Path="/607A57E7" Ref="C?"  Part="1" 
+AR Path="/6096F497/607A57E7" Ref="C?"  Part="1" 
+AR Path="/607946F5/607A57E7" Ref="C81"  Part="1" 
+F 0 "C81" H 6592 3196 50  0000 L CNN
+F 1 "??" H 6592 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6500 3150 50  0001 C CNN
+F 3 "~" H 6500 3150 50  0001 C CNN
+	1    6500 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 607A5B3D
+P 6850 2800
+AR Path="/607A5B3D" Ref="C?"  Part="1" 
+AR Path="/6096F497/607A5B3D" Ref="C?"  Part="1" 
+AR Path="/607946F5/607A5B3D" Ref="C79"  Part="1" 
+F 0 "C79" H 6942 2846 50  0000 L CNN
+F 1 "100n" H 6942 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6850 2800 50  0001 C CNN
+F 3 "~" H 6850 2800 50  0001 C CNN
+	1    6850 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 607A62F8
+P 5800 4350
+F 0 "#PWR0124" H 5800 4100 50  0001 C CNN
+F 1 "GND" H 5805 4177 50  0000 C CNN
+F 2 "" H 5800 4350 50  0001 C CNN
+F 3 "" H 5800 4350 50  0001 C CNN
+	1    5800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 607A6558
+P 6850 2900
+F 0 "#PWR0125" H 6850 2650 50  0001 C CNN
+F 1 "GND" H 6855 2727 50  0000 C CNN
+F 2 "" H 6850 2900 50  0001 C CNN
+F 3 "" H 6850 2900 50  0001 C CNN
+	1    6850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2700 5900 2700
+Connection ~ 5900 2700
+$Comp
+L Device:C_Small C?
+U 1 1 607A8005
+P 7100 2800
+AR Path="/607A8005" Ref="C?"  Part="1" 
+AR Path="/6096F497/607A8005" Ref="C?"  Part="1" 
+AR Path="/607946F5/607A8005" Ref="C80"  Part="1" 
+F 0 "C80" H 7192 2846 50  0000 L CNN
+F 1 "100n" H 6850 2700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7100 2800 50  0001 C CNN
+F 3 "~" H 7100 2800 50  0001 C CNN
+	1    7100 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 2700 6850 2700
+Connection ~ 6850 2700
+$Comp
+L power:GND #PWR0126
+U 1 1 607A8B07
+P 7100 2900
+F 0 "#PWR0126" H 7100 2650 50  0001 C CNN
+F 1 "GND" H 7105 2727 50  0000 C CNN
+F 2 "" H 7100 2900 50  0001 C CNN
+F 3 "" H 7100 2900 50  0001 C CNN
+	1    7100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 607B1A36
+P 7400 2800
+AR Path="/607B1A36" Ref="C?"  Part="1" 
+AR Path="/6096F497/607B1A36" Ref="C?"  Part="1" 
+AR Path="/607946F5/607B1A36" Ref="C?"  Part="1" 
+F 0 "C?" H 7492 2846 50  0000 L CNN
+F 1 "1u" H 7150 2700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7400 2800 50  0001 C CNN
+F 3 "~" H 7400 2800 50  0001 C CNN
+	1    7400 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 607B1F86
+P 7400 2900
+F 0 "#PWR?" H 7400 2650 50  0001 C CNN
+F 1 "GND" H 7405 2727 50  0000 C CNN
+F 2 "" H 7400 2900 50  0001 C CNN
+F 3 "" H 7400 2900 50  0001 C CNN
+	1    7400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 2700 7100 2700
+Connection ~ 7100 2700
 $EndSCHEMATC
