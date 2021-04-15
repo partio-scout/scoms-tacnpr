@@ -799,7 +799,7 @@ U 1 1 6078A281
 P 7550 3750
 F 0 "J6" H 7578 3726 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 7578 3635 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 7550 3750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7550 3750 50  0001 C CNN
 F 3 "~" H 7550 3750 50  0001 C CNN
 	1    7550 3750
 	1    0    0    -1  
