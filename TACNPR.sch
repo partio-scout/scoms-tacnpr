@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "TACNPR"
 Date "2021-03-22"
 Rev "A"
@@ -88,14 +88,6 @@ F1 "tacbuck-sheet.sch" 94
 $EndSheet
 Text Notes 1600 4950 0    134  ~ 27
 DC/DC\nconverters
-$Sheet
-S 3350 4400 1450 750 
-U 606CD620
-F0 "ethernet" 94
-F1 "ethernet-sheet.sch" 94
-$EndSheet
-Text Notes 3550 4950 0    134  ~ 27
-W5500 \nEthernet
 Text Notes 5350 3700 0    118  ~ 24
 Si4463 radio\nsubsystem
 $Sheet
@@ -132,8 +124,8 @@ U 6096F497
 F0 "cpu" 94
 F1 "cpu-sheet.sch" 94
 $EndSheet
-Text Notes 3450 3650 0    197  ~ 39
-CPU
+Text Notes 3400 3700 0    118  ~ 24
+CPU & W5500\nEthernet mod.
 Text Notes 3300 1650 0    394  ~ 79
 TACNPR project\n
 Text Notes 1450 7300 0    79   ~ 16

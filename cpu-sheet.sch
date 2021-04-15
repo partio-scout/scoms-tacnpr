@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 6
 Title "TACNPR"
 Date ""
 Rev "A"
@@ -1199,4 +1199,97 @@ Wire Wire Line
 	1850 6250 1850 6150
 Wire Wire Line
 	1350 6150 1850 6150
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 607EE601
+P 6700 4800
+F 0 "J4" H 6750 5217 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 6750 5126 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 6700 4800 50  0001 C CNN
+F 3 "~" H 6700 4800 50  0001 C CNN
+	1    6700 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 607EF5BA
+P 5500 4600
+AR Path="/607EF5BA" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/607EF5BA" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H 5500 4450 50  0001 C CNN
+F 1 "+3V3" H 5515 4773 50  0000 C CNN
+F 2 "" H 5500 4600 50  0001 C CNN
+F 3 "" H 5500 4600 50  0001 C CNN
+	1    5500 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6500 4600 5800 4600
+$Comp
+L power:GND #PWR?
+U 1 1 607F5A9B
+P 7150 4700
+AR Path="/607F5A9B" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/607F5A9B" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H 7150 4450 50  0001 C CNN
+F 1 "GND" H 7155 4527 50  0000 C CNN
+F 2 "" H 7150 4700 50  0001 C CNN
+F 3 "" H 7150 4700 50  0001 C CNN
+	1    7150 4700
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7000 4900 2    50   Input ~ 0
+IRQ_W5500
+Text GLabel 6500 4900 0    50   Input ~ 0
+CS_SI4463
+Text GLabel 6500 5000 0    50   Input ~ 0
+CLK_SPI3
+Text GLabel 6500 4700 0    50   Output ~ 0
+MISO_SPI3
+Text GLabel 6500 4800 0    50   Input ~ 0
+MOSI_SPI3
+$Comp
+L Device:C_Small C?
+U 1 1 6082112D
+P 5800 4700
+AR Path="/6082112D" Ref="C?"  Part="1" 
+AR Path="/6096F497/6082112D" Ref="C40"  Part="1" 
+F 0 "C40" H 5892 4746 50  0000 L CNN
+F 1 "100n" H 5550 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5800 4700 50  0001 C CNN
+F 3 "~" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	1    0    0    1   
+$EndComp
+Connection ~ 5800 4600
+Wire Wire Line
+	5800 4600 5500 4600
+$Comp
+L power:GND #PWR?
+U 1 1 60827797
+P 5800 4800
+AR Path="/60827797" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60827797" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 5800 4550 50  0001 C CNN
+F 1 "GND" H 5805 4627 50  0000 C CNN
+F 2 "" H 5800 4800 50  0001 C CNN
+F 3 "" H 5800 4800 50  0001 C CNN
+	1    5800 4800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 608383C7
+P 7650 4800
+F 0 "TP4" V 7845 4872 50  0000 C CNN
+F 1 "W5500_RST" V 7754 4872 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7850 4800 50  0001 C CNN
+F 3 "~" H 7850 4800 50  0001 C CNN
+	1    7650 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 4800 7650 4800
+Wire Wire Line
+	7150 4700 7000 4700
 $EndSCHEMATC
