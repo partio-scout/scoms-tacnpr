@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "TACNPR"
 Date "2021-03-22"
 Rev "A"
@@ -365,4 +365,12 @@ F 3 "" H 9500 5500 50  0001 C CNN
 	1    9500 5500
 	0    1    1    0   
 $EndComp
+Text Notes 3450 4950 0    134  ~ 27
+3V3 linear\nregulators
+$Sheet
+S 3300 4350 1450 750 
+U 607FB7F8
+F0 "linear-regs" 94
+F1 "linreg-sheet.sch" 94
+$EndSheet
 $EndSCHEMATC
