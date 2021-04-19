@@ -13,88 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR?
-U 1 1 60A0BEB8
-P 4550 5150
-AR Path="/60A0BEB8" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/60A0BEB8" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 4550 4900 50  0001 C CNN
-F 1 "GND" H 4555 4977 50  0000 C CNN
-F 2 "" H 4550 5150 50  0001 C CNN
-F 3 "" H 4550 5150 50  0001 C CNN
-	1    4550 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60A0BEBE
-P 4550 4800
-AR Path="/60A0BEBE" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/60A0BEBE" Ref="#PWR052"  Part="1" 
-F 0 "#PWR052" H 4550 4650 50  0001 C CNN
-F 1 "+3V3" H 4565 4973 50  0000 C CNN
-F 2 "" H 4550 4800 50  0001 C CNN
-F 3 "" H 4550 4800 50  0001 C CNN
-	1    4550 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 4800 4800 4800
-Connection ~ 4550 4800
-Wire Wire Line
-	4550 4800 3900 4800
-Wire Wire Line
-	4550 5100 4550 5150
-Connection ~ 4550 5100
-$Comp
-L Device:C_Small C?
-U 1 1 60A0BEDB
-P 4800 4900
-AR Path="/60A0BEDB" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60A0BEDB" Ref="C46"  Part="1" 
-F 0 "C46" H 4892 4946 50  0000 L CNN
-F 1 "100nF" H 4892 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 4900 50  0001 C CNN
-F 3 "~" H 4800 4900 50  0001 C CNN
-	1    4800 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 4800 4800
-Wire Wire Line
-	4800 4800 4550 4800
-$Comp
-L Device:C_Small C?
-U 1 1 60A0BEE3
-P 3900 4900
-AR Path="/60A0BEE3" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60A0BEE3" Ref="C45"  Part="1" 
-F 0 "C45" H 3992 4946 50  0000 L CNN
-F 1 "100nF" H 3992 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3900 4900 50  0001 C CNN
-F 3 "~" H 3900 4900 50  0001 C CNN
-	1    3900 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 3900 4800
-Wire Wire Line
-	5200 5000 5200 5100
-Wire Wire Line
-	4550 5100 4800 5100
-Wire Wire Line
-	4800 5000 4800 5100
-Connection ~ 4800 5100
-Wire Wire Line
-	4800 5100 5200 5100
-Wire Wire Line
-	3900 5000 3900 5100
-Connection ~ 3900 5100
-Wire Wire Line
-	3900 5100 4550 5100
 Text Notes 7100 6850 0    157  Italic 31
 TACNPR / power prot. & filtering
-Wire Wire Line
-	3000 5100 3000 5000
 Text GLabel 3750 1500 0    79   Input ~ 0
 RAW_PSU_IN
 $Comp
@@ -145,23 +65,6 @@ F 3 "" H 6500 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6500 1700 6500 1900
-Wire Wire Line
-	3000 4800 3900 4800
-Wire Wire Line
-	3000 5100 3900 5100
-$Comp
-L Device:C_Small C?
-U 1 1 606EB339
-P 3000 4900
-AR Path="/609A52E7/606EB339" Ref="C?"  Part="1" 
-AR Path="/608A4C86/606EB339" Ref="C44"  Part="1" 
-F 0 "C44" H 3092 4946 50  0000 L CNN
-F 1 "22u" H 3092 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3000 4900 50  0001 C CNN
-F 3 "~" H 3000 4900 50  0001 C CNN
-	1    3000 4900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Diode:SM6T10A D5
 U 1 1 607DB5B8
@@ -192,31 +95,31 @@ $EndComp
 Text Notes 5650 1000 0    118  ~ 24
 TODO: find proper TVS'es from JLC
 Wire Wire Line
-	3700 3450 4450 3450
+	3700 3750 4450 3750
 Wire Wire Line
 	3750 2750 4800 2750
 $Comp
 L power:GND #PWR?
 U 1 1 607F3DD2
-P 4800 3750
+P 4800 4050
 AR Path="/607F3DD2" Ref="#PWR?"  Part="1" 
 AR Path="/608A4C86/607F3DD2" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 4800 3500 50  0001 C CNN
-F 1 "GND" H 4805 3577 50  0000 C CNN
-F 2 "" H 4800 3750 50  0001 C CNN
-F 3 "" H 4800 3750 50  0001 C CNN
-	1    4800 3750
+F 0 "#PWR0102" H 4800 3800 50  0001 C CNN
+F 1 "GND" H 4805 3877 50  0000 C CNN
+F 2 "" H 4800 4050 50  0001 C CNN
+F 3 "" H 4800 4050 50  0001 C CNN
+	1    4800 4050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:SM6T10A D10
 U 1 1 607F3DCC
-P 4800 3600
-F 0 "D10" V 4754 3680 50  0000 L CNN
-F 1 "TVS option, DNP" V 4845 3680 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 4800 3400 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 3600 50  0001 C CNN
-	1    4800 3600
+P 4800 3900
+F 0 "D10" V 4754 3980 50  0000 L CNN
+F 1 "TVS option, DNP" V 4845 3980 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 4800 3700 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 3900 50  0001 C CNN
+	1    4800 3900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -243,54 +146,41 @@ F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 2900 50  0001 C C
 	1    4800 2900
 	0    1    1    0   
 $EndComp
-Text GLabel 3700 3450 0    79   Input ~ 0
+Text GLabel 3700 3750 0    79   Input ~ 0
 12V_TO_RFPA
 Text GLabel 3750 2750 0    79   Input ~ 0
 12V_TO_BUCKC
 Text Notes 3950 2350 0    79   ~ 16
 inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
-Text Notes 3300 5800 0    79   ~ 16
+Text Notes 3650 5500 0    79   ~ 16
 TODO: USB-suojaa TVS:ksi 3V3-käyttöön, kaikkien 3V3-lineaariregujen eteen
 $Comp
 L Device:C_Small C?
-U 1 1 60A0BED5
-P 5200 4900
-AR Path="/60A0BED5" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60A0BED5" Ref="C47"  Part="1" 
-F 0 "C47" H 5292 4946 50  0000 L CNN
-F 1 "100nF" H 5292 4855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 4900 50  0001 C CNN
-F 3 "~" H 5200 4900 50  0001 C CNN
-	1    5200 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
 U 1 1 607F87DF
-P 4450 3550
+P 4450 3850
 AR Path="/607F87DF" Ref="C?"  Part="1" 
 AR Path="/608A4C86/607F87DF" Ref="C64"  Part="1" 
-F 0 "C64" H 4542 3596 50  0000 L CNN
-F 1 "100nF" H 4542 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 3550 50  0001 C CNN
-F 3 "~" H 4450 3550 50  0001 C CNN
-	1    4450 3550
+F 0 "C64" H 4542 3896 50  0000 L CNN
+F 1 "100nF" H 4542 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 3850 50  0001 C CNN
+F 3 "~" H 4450 3850 50  0001 C CNN
+	1    4450 3850
 	1    0    0    -1  
 $EndComp
-Connection ~ 4450 3450
+Connection ~ 4450 3750
 Wire Wire Line
-	4450 3450 4800 3450
+	4450 3750 4800 3750
 $Comp
 L power:GND #PWR?
 U 1 1 607F91F7
-P 4450 3650
+P 4450 3950
 AR Path="/607F91F7" Ref="#PWR?"  Part="1" 
 AR Path="/608A4C86/607F91F7" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 4450 3400 50  0001 C CNN
-F 1 "GND" H 4455 3477 50  0000 C CNN
-F 2 "" H 4450 3650 50  0001 C CNN
-F 3 "" H 4450 3650 50  0001 C CNN
-	1    4450 3650
+F 0 "#PWR0113" H 4450 3700 50  0001 C CNN
+F 1 "GND" H 4455 3777 50  0000 C CNN
+F 2 "" H 4450 3950 50  0001 C CNN
+F 3 "" H 4450 3950 50  0001 C CNN
+	1    4450 3950
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

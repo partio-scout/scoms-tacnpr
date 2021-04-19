@@ -126,9 +126,9 @@ F1 "cpu-sheet.sch" 94
 $EndSheet
 Text Notes 3400 3700 0    118  ~ 24
 CPU & W5500\nEthernet mod.
-Text Notes 3300 1650 0    394  ~ 79
+Text Notes 3250 1450 0    394  ~ 79
 TACNPR project\n
-Text Notes 1450 7300 0    79   ~ 16
+Text Notes 1150 7450 0    118  ~ 24
 Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL)
 $Sheet
 S 5200 4400 1450 750 
@@ -141,12 +141,12 @@ RF PA &\nLPF
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 6067BE98
-P 2000 6500
-F 0 "#LOGO1" H 2000 7000 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 2000 6100 50  0001 C CNN
-F 2 "" H 2000 6500 50  0001 C CNN
-F 3 "~" H 2000 6500 50  0001 C CNN
-	1    2000 6500
+P 1850 6600
+F 0 "#LOGO1" H 1850 7100 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 1850 6200 50  0001 C CNN
+F 2 "" H 1850 6600 50  0001 C CNN
+F 3 "~" H 1850 6600 50  0001 C CNN
+	1    1850 6600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -287,7 +287,7 @@ $EndComp
 Text Notes 7250 7050 0    97   ~ 19
 OH1JGV, OH2EAT, OH2FLO, OH3HZB, OH5GE
 Text Notes 3400 1950 0    97   ~ 19
-Tommi OH1JGV, Tatu OH2EAT, Mikko OH2FLO, Lasse OH3HZB, Vili OH5GE 
+Tatu OH2EAT, Lasse OH3HZB & Tommi OH1JGV & SCOMS team\nSpecial thanks to Mikko OH2FLO & Vili OH5GE!
 Wire Notes Line
 	7250 4550 7250 5800
 Wire Notes Line
@@ -354,17 +354,6 @@ Wire Wire Line
 	8150 3200 7950 3200
 Wire Wire Line
 	7950 3300 8150 3300
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 607B9CB1
-P 9500 5500
-F 0 "#PWR0117" H 9500 5350 50  0001 C CNN
-F 1 "+3.3V" V 9515 5628 50  0000 L CNN
-F 2 "" H 9500 5500 50  0001 C CNN
-F 3 "" H 9500 5500 50  0001 C CNN
-	1    9500 5500
-	0    1    1    0   
-$EndComp
 Text Notes 3450 4950 0    134  ~ 27
 3V3 linear\nregulators
 $Sheet
@@ -373,4 +362,6 @@ U 607FB7F8
 F0 "linear-regs" 94
 F1 "linreg-sheet.sch" 94
 $EndSheet
+Text GLabel 9500 5500 2    79   Input ~ 0
+3V3_CPU
 $EndSCHEMATC

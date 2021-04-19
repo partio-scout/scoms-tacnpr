@@ -32,17 +32,6 @@ Text GLabel 5250 3850 0    50   Input ~ 0
 MOSI_SPI1
 Text Notes 1650 1500 0    197  Italic 39
 TODO: double check pinout!
-$Comp
-L power:+3.3V #PWR049
-U 1 1 6065CBBA
-P 5900 2700
-F 0 "#PWR049" H 5900 2550 50  0001 C CNN
-F 1 "+3.3V" H 5915 2873 50  0000 C CNN
-F 2 "" H 5900 2700 50  0001 C CNN
-F 3 "" H 5900 2700 50  0001 C CNN
-	1    5900 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 2950 5900 2950
 Wire Wire Line
@@ -143,7 +132,6 @@ F 3 "" H 6850 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 2700 5900 2700
-Connection ~ 5900 2700
 $Comp
 L Device:C_Small C?
 U 1 1 607A8005
@@ -200,4 +188,9 @@ $EndComp
 Wire Wire Line
 	7400 2700 7100 2700
 Connection ~ 7100 2700
+Text GLabel 3800 2700 0    79   Input ~ 0
+3V3_RADIO
+Wire Wire Line
+	3800 2700 5900 2700
+Connection ~ 5900 2700
 $EndSCHEMATC
