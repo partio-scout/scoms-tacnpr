@@ -70,15 +70,15 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 6096E90C
-P 8150 3300
-F 0 "#PWR01" H 8150 3050 50  0001 C CNN
-F 1 "GND" H 8155 3127 50  0000 C CNN
-F 2 "" H 8150 3300 50  0001 C CNN
-F 3 "" H 8150 3300 50  0001 C CNN
-	1    8150 3300
+P 8300 3200
+F 0 "#PWR01" H 8300 2950 50  0001 C CNN
+F 1 "GND" H 8305 3027 50  0000 C CNN
+F 2 "" H 8300 3200 50  0001 C CNN
+F 3 "" H 8300 3200 50  0001 C CNN
+	1    8300 3200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8150 3200 2    50   Input ~ 0
+Text GLabel 8100 3300 3    50   Input ~ 0
 RAW_PSU_IN
 $Sheet
 S 1450 4350 1450 750 
@@ -350,10 +350,6 @@ Text GLabel 10000 3800 2    79   Input ~ 0
 Wire Wire Line
 	10000 3800 9750 3800
 Connection ~ 9750 3800
-Wire Wire Line
-	8150 3200 7950 3200
-Wire Wire Line
-	7950 3300 8150 3300
 Text Notes 3450 4950 0    134  ~ 27
 3V3 linear\nregulators
 $Sheet
@@ -364,4 +360,19 @@ F1 "linreg-sheet.sch" 94
 $EndSheet
 Text GLabel 9500 5500 2    79   Input ~ 0
 3V3_CPU
+$Comp
+L Mechanical:MountingHole H9
+U 1 1 608AE660
+P 6700 7350
+F 0 "H9" H 6800 7396 50  0000 L CNN
+F 1 "MountingHole" H 6800 7305 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6700 7350 50  0001 C CNN
+F 3 "~" H 6700 7350 50  0001 C CNN
+	1    6700 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 3300 8100 3300
+Wire Wire Line
+	7950 3200 8300 3200
 $EndSCHEMATC
