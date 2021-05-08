@@ -283,9 +283,9 @@ F 3 "~" H 6000 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7250 7050 0    97   ~ 19
-OH1JGV, OH2EAT, OH2FLO, OH3HZB, OH5GE
+OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE
 Text Notes 3400 1950 0    97   ~ 19
-Tatu OH2EAT, Lasse OH3HZB & Tommi OH1JGV & SCOMS team\nSpecial thanks to Mikko OH2FLO & Vili OH5GE!
+Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to Mikko OH2FLO & Vili OH5GE!
 Wire Notes Line
 	7250 4550 7250 5800
 Wire Notes Line
@@ -370,10 +370,10 @@ Wire Wire Line
 Wire Wire Line
 	7950 3200 8300 3200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0143
 U 1 1 609D2232
 P 9700 5400
-F 0 "#PWR?" H 9700 5150 50  0001 C CNN
+F 0 "#PWR0143" H 9700 5150 50  0001 C CNN
 F 1 "GND" H 9705 5227 50  0000 C CNN
 F 2 "" H 9700 5400 50  0001 C CNN
 F 3 "" H 9700 5400 50  0001 C CNN

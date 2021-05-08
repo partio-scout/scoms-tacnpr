@@ -29,7 +29,7 @@ F 3 "https://www.ti.com/lit/ds/symlink/tps54331.pdf" H 6750 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7100 7050 0    98   Italic 20
-based on TACBUCK-A design by Tommi OH1JGV
+based on TACBUCK-A design by Tommi OH1GJV
 $Comp
 L Device:C_Small C12
 U 1 1 60693601
