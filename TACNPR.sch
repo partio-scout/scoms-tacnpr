@@ -52,8 +52,6 @@ Text GLabel 9700 5200 2    50   BiDi ~ 0
 GPIO_10
 Text GLabel 9700 5300 2    50   BiDi ~ 0
 GPIO_11
-Text GLabel 9700 5400 2    50   BiDi ~ 0
-GPIO_12
 Wire Wire Line
 	9600 3700 9900 3700
 $Comp
@@ -308,12 +306,12 @@ $EndComp
 Text Notes 3000 6100 0    119  ~ 24
 TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat\n+ tsekkaa SMD-ledien etuvastukset läpi
 $Comp
-L Connector:Screw_Terminal_01x06 J2
+L Connector:Screw_Terminal_01x05 J2
 U 1 1 6063DDDE
 P 9400 3600
 F 0 "J2" H 9318 3075 50  0000 C CNN
-F 1 "Screw_Terminal_01x06" H 9318 3166 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal" H 9400 3600 50  0001 C CNN
+F 1 "Screw_Terminal_01x05" H 9318 3166 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal" H 9400 3600 50  0001 C CNN
 F 3 "~" H 9400 3600 50  0001 C CNN
 	1    9400 3600
 	-1   0    0    1   
@@ -321,18 +319,14 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 60673177
-P 9900 3300
-F 0 "#PWR02" H 9900 3050 50  0001 C CNN
-F 1 "GND" H 9905 3127 50  0000 C CNN
-F 2 "" H 9900 3300 50  0001 C CNN
-F 3 "" H 9900 3300 50  0001 C CNN
-	1    9900 3300
+P 9650 3400
+F 0 "#PWR02" H 9650 3150 50  0001 C CNN
+F 1 "GND" H 9655 3227 50  0000 C CNN
+F 2 "" H 9650 3400 50  0001 C CNN
+F 3 "" H 9650 3400 50  0001 C CNN
+	1    9650 3400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	9600 3300 9900 3300
-Text GLabel 9650 3400 2    50   Output ~ 0
-GPIO12-OC-TERMINAL
 Wire Wire Line
 	9600 3400 9650 3400
 Text GLabel 9650 3600 2    50   BiDi ~ 0
@@ -375,4 +369,15 @@ Wire Wire Line
 	7950 3300 8100 3300
 Wire Wire Line
 	7950 3200 8300 3200
+$Comp
+L power:GND #PWR?
+U 1 1 609D2232
+P 9700 5400
+F 0 "#PWR?" H 9700 5150 50  0001 C CNN
+F 1 "GND" H 9705 5227 50  0000 C CNN
+F 2 "" H 9700 5400 50  0001 C CNN
+F 3 "" H 9700 5400 50  0001 C CNN
+	1    9700 5400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
