@@ -16,44 +16,33 @@ $EndDescr
 $Comp
 L Device:C C1
 U 1 1 6082D0F7
-P 9750 3950
-F 0 "C1" H 9865 3996 50  0000 L CNN
-F 1 "100n" H 9865 3905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 3800 50  0001 C CNN
-F 3 "~" H 9750 3950 50  0001 C CNN
-	1    9750 3950
+P 9400 3450
+F 0 "C1" H 9515 3496 50  0000 L CNN
+F 1 "100n" H 9515 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3300 50  0001 C CNN
+F 3 "~" H 9400 3450 50  0001 C CNN
+	1    9400 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9750 3800 9600 3800
+	9400 3300 9250 3300
 $Comp
 L power:GND #PWR04
 U 1 1 6082DD1E
-P 9750 4100
-F 0 "#PWR04" H 9750 3850 50  0001 C CNN
-F 1 "GND" H 9755 3927 50  0000 C CNN
-F 2 "" H 9750 4100 50  0001 C CNN
-F 3 "" H 9750 4100 50  0001 C CNN
-	1    9750 4100
+P 9400 3600
+F 0 "#PWR04" H 9400 3350 50  0001 C CNN
+F 1 "GND" H 9405 3427 50  0000 C CNN
+F 2 "" H 9400 3600 50  0001 C CNN
+F 3 "" H 9400 3600 50  0001 C CNN
+	1    9400 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 60837962
-P 9900 3700
-F 0 "#PWR03" H 9900 3450 50  0001 C CNN
-F 1 "GND" H 9905 3527 50  0000 C CNN
-F 2 "" H 9900 3700 50  0001 C CNN
-F 3 "" H 9900 3700 50  0001 C CNN
-	1    9900 3700
-	0    -1   -1   0   
-$EndComp
 Text GLabel 9700 5200 2    50   BiDi ~ 0
-GPIO_10
+GPIO10_TERMINAL
 Text GLabel 9700 5300 2    50   BiDi ~ 0
-GPIO_11
+GPIO11_TERMINAL
 Wire Wire Line
-	9600 3700 9900 3700
+	9250 3200 9450 3200
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 6089740C
@@ -305,45 +294,11 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 $EndComp
 Text Notes 3000 6100 0    119  ~ 24
 TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat\n+ tsekkaa SMD-ledien etuvastukset läpi
-$Comp
-L Connector:Screw_Terminal_01x05 J2
-U 1 1 6063DDDE
-P 9400 3600
-F 0 "J2" H 9318 3075 50  0000 C CNN
-F 1 "Screw_Terminal_01x05" H 9318 3166 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal" H 9400 3600 50  0001 C CNN
-F 3 "~" H 9400 3600 50  0001 C CNN
-	1    9400 3600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 60673177
-P 9650 3400
-F 0 "#PWR02" H 9650 3150 50  0001 C CNN
-F 1 "GND" H 9655 3227 50  0000 C CNN
-F 2 "" H 9650 3400 50  0001 C CNN
-F 3 "" H 9650 3400 50  0001 C CNN
-	1    9650 3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9600 3400 9650 3400
-Text GLabel 9650 3600 2    50   BiDi ~ 0
-GPIO_10
-Text GLabel 9650 3500 2    50   BiDi ~ 0
-GPIO_11
-Wire Wire Line
-	9600 3500 9650 3500
-Wire Wire Line
-	9600 3600 9650 3600
-Text Notes 9100 4050 0    118  ~ 24
-pin1
-Text GLabel 10000 3800 2    79   Input ~ 0
+Text GLabel 9650 3300 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
-	10000 3800 9750 3800
-Connection ~ 9750 3800
+	9650 3300 9400 3300
+Connection ~ 9400 3300
 Text Notes 3450 4950 0    134  ~ 27
 3V3 linear\nregulators
 $Sheet
@@ -378,6 +333,28 @@ F 1 "GND" H 9705 5227 50  0000 C CNN
 F 2 "" H 9700 5400 50  0001 C CNN
 F 3 "" H 9700 5400 50  0001 C CNN
 	1    9700 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 609FD02C
+P 9050 3300
+F 0 "J2" H 8968 2975 50  0000 C CNN
+F 1 "Screw_Terminal_PWR_IN" H 8968 3066 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 9050 3300 50  0001 C CNN
+F 3 "~" H 9050 3300 50  0001 C CNN
+	1    9050 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0144
+U 1 1 60A0111A
+P 9450 3200
+F 0 "#PWR0144" H 9450 2950 50  0001 C CNN
+F 1 "GND" H 9455 3027 50  0000 C CNN
+F 2 "" H 9450 3200 50  0001 C CNN
+F 3 "" H 9450 3200 50  0001 C CNN
+	1    9450 3200
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

@@ -16,7 +16,7 @@ $EndDescr
 Text Notes 7100 6900 0    157  Italic 31
 TACNPR / CPU, SRAM and USB
 Text GLabel 8950 4100 0    50   BiDi ~ 0
-GPIO11-TERMINAL
+GPIO11_TERMINAL
 $Comp
 L power:GND #PWR?
 U 1 1 60915668
@@ -565,7 +565,7 @@ F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 9450 3550 50  0001 C 
 	1    0    0    -1  
 $EndComp
 Text GLabel 8950 3150 0    50   BiDi ~ 0
-GPIO10-TERMINAL
+GPIO10_TERMINAL
 Wire Wire Line
 	8950 3750 8950 3650
 Wire Wire Line
