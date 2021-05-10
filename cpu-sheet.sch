@@ -548,32 +548,12 @@ Connection ~ 8200 1900
 Connection ~ 8950 3750
 Wire Wire Line
 	8950 4100 8950 3750
-Connection ~ 8950 3350
-Wire Wire Line
-	8950 3150 8950 3350
 Wire Wire Line
 	9450 3050 9800 3050
-$Comp
-L Power_Protection:SRV05-4 U9
-U 1 1 608E8C4A
-P 9450 3550
-F 0 "U9" H 9450 4231 50  0000 C CNN
-F 1 "SRV05-4" H 9450 4140 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10150 3100 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 9450 3550 50  0001 C CNN
-	1    9450 3550
-	1    0    0    -1  
-$EndComp
-Text GLabel 8950 3150 0    50   BiDi ~ 0
-GPIO10_TERMINAL
 Wire Wire Line
 	8950 3750 8950 3650
 Wire Wire Line
 	8700 3750 8950 3750
-Wire Wire Line
-	8950 3350 8950 3450
-Wire Wire Line
-	8700 3350 8950 3350
 Wire Wire Line
 	8250 3750 8500 3750
 $Comp
@@ -589,25 +569,8 @@ F 3 "~" H 8600 3750 50  0001 C CNN
 	1    8600 3750
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8250 3350 8500 3350
-$Comp
-L Device:R_Small R?
-U 1 1 608DE596
-P 8600 3350
-AR Path="/608DE596" Ref="R?"  Part="1" 
-AR Path="/6096F497/608DE596" Ref="R39"  Part="1" 
-F 0 "R39" H 8659 3396 50  0000 L CNN
-F 1 "100" H 8659 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8600 3350 50  0001 C CNN
-F 3 "~" H 8600 3350 50  0001 C CNN
-	1    8600 3350
-	0    1    1    0   
-$EndComp
 Text GLabel 8250 3750 0    50   BiDi ~ 0
 GPIO_11
-Text GLabel 8250 3350 0    50   BiDi ~ 0
-GPIO_10
 Wire Wire Line
 	3550 4250 3550 4400
 Wire Wire Line
@@ -804,9 +767,9 @@ F 3 "" H 1800 6600 50  0001 C CNN
 	1    1800 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 2450 6000 1    40   Input ~ 0
+Text GLabel 2350 6000 1    40   Input ~ 0
 USB_DP
-Text GLabel 2250 6100 3    40   Input ~ 0
+Text GLabel 2350 6100 3    40   Input ~ 0
 USB_DM
 Text GLabel 4050 6100 0    40   Input ~ 0
 USB_DM
@@ -857,7 +820,7 @@ Text GLabel 5250 5700 2    40   Input ~ 0
 VCP_TX
 Text GLabel 5250 5800 2    40   Input ~ 0
 VCP_RX
-Text Notes 1750 5200 0    94   ~ 19
+Text Notes 850  4800 0    94   ~ 19
 USB ESD PROT. & SERIAL CH340G
 Text GLabel 4700 2650 2    40   Input ~ 0
 VCP_TX
@@ -1007,23 +970,6 @@ F 3 "~" H 4150 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Power_Protection:SRV05-4 U6
-U 1 1 60761855
-P 3100 6100
-F 0 "U6" H 3100 6781 50  0000 C CNN
-F 1 "SRV05-4" H 3100 6690 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3800 5650 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 3100 6100 50  0001 C CNN
-	1    3100 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2100 6000 2600 6000
-Wire Wire Line
-	2600 6200 2600 6100
-Wire Wire Line
-	2100 6100 2600 6100
-$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 607EE601
 P 8850 5100
@@ -1120,9 +1066,146 @@ Text GLabel 9800 3050 2    79   Input ~ 0
 Text GLabel 5350 3950 0    79   Input ~ 0
 3V3_CPU
 Wire Wire Line
-	5850 3950 5350 3950
+	5850 3950 5650 3950
 Text Notes 6350 6350 0    118  ~ 24
 TODO: F.BEAD VDDA-linjaan (pin5)\nTODO: datasheet 6.1.6 Power supply scheme  !!!\nTODO: tsekkaa RAND-kytkentä (NPR)\nTODO: bootmode-kytkin
 Text GLabel 7550 4900 0    79   Input ~ 0
 3V3_ETHERNET
+Text GLabel 9950 3250 2    50   BiDi ~ 0
+GPIO10_TERMINAL
+$Comp
+L Device:R_Small R?
+U 1 1 608DE596
+P 10150 3450
+AR Path="/608DE596" Ref="R?"  Part="1" 
+AR Path="/6096F497/608DE596" Ref="R39"  Part="1" 
+F 0 "R39" H 10209 3496 50  0000 L CNN
+F 1 "100" H 10209 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10150 3450 50  0001 C CNN
+F 3 "~" H 10150 3450 50  0001 C CNN
+	1    10150 3450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 10350 3450 2    50   BiDi ~ 0
+GPIO_10
+Wire Wire Line
+	9950 3450 9950 3250
+Wire Wire Line
+	9950 3450 10050 3450
+Wire Wire Line
+	10250 3450 10350 3450
+Connection ~ 9950 3450
+$Comp
+L Power_Protection:SRV05-4 U9
+U 1 1 608E8C4A
+P 9450 3550
+F 0 "U9" H 9450 4231 50  0000 C CNN
+F 1 "SRV05-4" H 9450 4140 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 10150 3100 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 9450 3550 50  0001 C CNN
+	1    9450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 6000 2350 6000
+Wire Wire Line
+	2100 6100 2350 6100
+Text GLabel 2600 6000 1    40   Input ~ 0
+USB_DM
+$Comp
+L Power_Protection:SRV05-4 U6
+U 1 1 60761855
+P 3100 6100
+F 0 "U6" H 3100 6781 50  0000 C CNN
+F 1 "SRV05-4" H 3100 6690 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3800 5650 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF" H 3100 6100 50  0001 C CNN
+	1    3100 6100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2600 6200 3    40   Input ~ 0
+USB_DP
+$Comp
+L Device:C_Small C?
+U 1 1 60A426C9
+P 5650 3850
+AR Path="/60A426C9" Ref="C?"  Part="1" 
+AR Path="/6096F497/60A426C9" Ref="C44"  Part="1" 
+F 0 "C44" H 5742 3896 50  0000 L CNN
+F 1 "100n" H 5742 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5650 3850 50  0001 C CNN
+F 3 "~" H 5650 3850 50  0001 C CNN
+	1    5650 3850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 3950
+Wire Wire Line
+	5650 3950 5350 3950
+$Comp
+L power:GNDD #PWR?
+U 1 1 60A43755
+P 5650 3750
+AR Path="/60A43755" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60A43755" Ref="#PWR0145"  Part="1" 
+F 0 "#PWR0145" H 5650 3500 50  0001 C CNN
+F 1 "GNDD" H 5654 3595 50  0000 C CNN
+F 2 "" H 5650 3750 50  0001 C CNN
+F 3 "" H 5650 3750 50  0001 C CNN
+	1    5650 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60A75042
+P 2700 5150
+AR Path="/60A75042" Ref="R?"  Part="1" 
+AR Path="/609A52E7/60A75042" Ref="R?"  Part="1" 
+AR Path="/607FB7F8/60A75042" Ref="R?"  Part="1" 
+AR Path="/6096F497/60A75042" Ref="R23"  Part="1" 
+F 0 "R23" V 2504 5150 50  0000 C CNN
+F 1 "330" V 2595 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 5150 50  0001 C CNN
+F 3 "~" H 2700 5150 50  0001 C CNN
+	1    2700 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A75048
+P 3350 5150
+AR Path="/60A75048" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/60A75048" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/60A75048" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60A75048" Ref="#PWR0146"  Part="1" 
+F 0 "#PWR0146" H 3350 4900 50  0001 C CNN
+F 1 "GND" H 3355 4977 50  0000 C CNN
+F 2 "" H 3350 5150 50  0001 C CNN
+F 3 "" H 3350 5150 50  0001 C CNN
+	1    3350 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5150 3350 5150
+Wire Wire Line
+	2800 5150 2900 5150
+$Comp
+L Device:LED D?
+U 1 1 60A75050
+P 3050 5150
+AR Path="/60A75050" Ref="D?"  Part="1" 
+AR Path="/609A52E7/60A75050" Ref="D?"  Part="1" 
+AR Path="/607FB7F8/60A75050" Ref="D?"  Part="1" 
+AR Path="/6096F497/60A75050" Ref="D6"  Part="1" 
+F 0 "D6" H 3043 4895 50  0000 C CNN
+F 1 "LED" H 3043 4986 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3050 5150 50  0001 C CNN
+F 3 "~" H 3050 5150 50  0001 C CNN
+	1    3050 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 5150 2600 5150
+Wire Wire Line
+	2250 5150 2250 5600
+Connection ~ 2250 5600
 $EndSCHEMATC

@@ -183,4 +183,30 @@ F 3 "" H 4450 3950 50  0001 C CNN
 	1    4450 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 60ABEA9F
+P 4400 1600
+AR Path="/609A52E7/60ABEA9F" Ref="C?"  Part="1" 
+AR Path="/607FB7F8/60ABEA9F" Ref="C?"  Part="1" 
+F 0 "C?" H 4488 1646 50  0000 L CNN
+F 1 "100u" H 4488 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x4.5" H 4400 1600 50  0001 C CNN
+F 3 "~" H 4400 1600 50  0001 C CNN
+	1    4400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60ABEC6B
+P 4400 1700
+AR Path="/60ABEC6B" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60ABEC6B" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4400 1450 50  0001 C CNN
+F 1 "GND" H 4405 1527 50  0000 C CNN
+F 2 "" H 4400 1700 50  0001 C CNN
+F 3 "" H 4400 1700 50  0001 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

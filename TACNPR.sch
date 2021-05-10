@@ -37,9 +37,9 @@ F 3 "" H 9400 3600 50  0001 C CNN
 	1    9400 3600
 	1    0    0    -1  
 $EndComp
-Text GLabel 9700 5200 2    50   BiDi ~ 0
-GPIO10_TERMINAL
 Text GLabel 9700 5300 2    50   BiDi ~ 0
+GPIO10_TERMINAL
+Text GLabel 9700 5200 2    50   BiDi ~ 0
 GPIO11_TERMINAL
 Wire Wire Line
 	9250 3200 9450 3200
@@ -287,7 +287,7 @@ U 1 1 608032AF
 P 5450 6750
 F 0 "#SYM1" H 5450 6890 50  0001 C CNN
 F 1 "SYM_ESD_Small" H 5450 6625 50  0001 C CNN
-F 2 "Symbol:ESD-Logo_13.2x12mm_SilkScreen" H 5450 6760 50  0001 C CNN
+F 2 "Symbol:ESD-Logo_8.9x8mm_SilkScreen" H 5450 6760 50  0001 C CNN
 F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
 	1    0    0    -1  
