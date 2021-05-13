@@ -210,4 +210,6 @@ F 3 "" H 4400 1700 50  0001 C CNN
 	1    4400 1700
 	1    0    0    -1  
 $EndComp
+Text Notes 4600 1150 0    39   ~ 8
+TACPDU fuse holder code: \nC58066
 $EndSCHEMATC
