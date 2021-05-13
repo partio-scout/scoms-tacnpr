@@ -998,7 +998,7 @@ $EndComp
 Text GLabel 9150 5200 2    50   Input ~ 0
 IRQ_W5500
 Text GLabel 8650 5200 0    50   Input ~ 0
-CS_SI4463
+CS_W5500
 Text GLabel 8650 5300 0    50   Input ~ 0
 CLK_SPI3
 Text GLabel 8650 5000 0    50   Output ~ 0
