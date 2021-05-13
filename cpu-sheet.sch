@@ -1249,4 +1249,8 @@ F 3 "" H 9150 5300 50  0001 C CNN
 	1    9150 5300
 	0    -1   -1   0   
 $EndComp
+Text Notes 4100 4350 0    39   ~ 8
+PA15 = USART2_RX
+Text Notes 5400 2700 0    39   ~ 8
+PA2 = USART2_TX
 $EndSCHEMATC
