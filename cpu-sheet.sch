@@ -1055,7 +1055,7 @@ Connection ~ 3100 1750
 Wire Wire Line
 	2350 1750 3100 1750
 Wire Wire Line
-	7550 4900 7950 4900
+	7550 4900 7650 4900
 Text GLabel 9300 1900 2    79   Input ~ 0
 3V3_CPU
 Wire Wire Line
@@ -1209,10 +1209,10 @@ Wire Wire Line
 	2250 5150 2250 5600
 Connection ~ 2250 5600
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP5
 U 1 1 60A02860
 P 8100 4900
-F 0 "TP?" V 8295 4972 50  0000 C CNN
+F 0 "TP5" V 8295 4972 50  0000 C CNN
 F 1 "TestPoint" V 8204 4972 50  0000 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8300 4900 50  0001 C CNN
 F 3 "~" H 8300 4900 50  0001 C CNN
@@ -1222,4 +1222,18 @@ $EndComp
 Connection ~ 8100 4900
 Wire Wire Line
 	8100 4900 7950 4900
+$Comp
+L Connector:TestPoint TP6
+U 1 1 60A1EEDA
+P 7650 4900
+F 0 "TP6" V 7845 4972 50  0000 C CNN
+F 1 "TestPoint" V 7754 4972 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7850 4900 50  0001 C CNN
+F 3 "~" H 7850 4900 50  0001 C CNN
+	1    7650 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7650 4900
+Wire Wire Line
+	7650 4900 7950 4900
 $EndSCHEMATC
