@@ -29,7 +29,7 @@ F 3 "~" H 5050 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 1500 4950 1500
+	3750 1500 4400 1500
 Text GLabel 6750 1500 2    79   Input ~ 0
 FILTERED_PSU_IN
 $Comp
@@ -212,4 +212,7 @@ F 3 "" H 4400 1700 50  0001 C CNN
 $EndComp
 Text Notes 4600 1150 0    39   ~ 8
 TACPDU fuse holder code: \nC58066
+Connection ~ 4400 1500
+Wire Wire Line
+	4400 1500 4950 1500
 $EndSCHEMATC
