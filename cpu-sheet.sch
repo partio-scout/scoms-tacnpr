@@ -161,19 +161,6 @@ F 3 "~" H 5150 2350 50  0001 C CNN
 	1    5150 2350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 60985586
-P 5150 2650
-AR Path="/60985586" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/60985586" Ref="#PWR066"  Part="1" 
-F 0 "#PWR066" H 5150 2400 50  0001 C CNN
-F 1 "GNDD" H 5154 2495 50  0000 C CNN
-F 2 "" H 5150 2650 50  0001 C CNN
-F 3 "" H 5150 2650 50  0001 C CNN
-	1    5150 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4350 2450 5150 2450
 Connection ~ 5150 2450
@@ -201,19 +188,6 @@ F 1 "100n" H 3192 1905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3100 1950 50  0001 C CNN
 F 3 "~" H 3100 1950 50  0001 C CNN
 	1    3100 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDD #PWR?
-U 1 1 609855A0
-P 3100 2050
-AR Path="/609855A0" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/609855A0" Ref="#PWR059"  Part="1" 
-F 0 "#PWR059" H 3100 1800 50  0001 C CNN
-F 1 "GNDD" H 3104 1895 50  0000 C CNN
-F 2 "" H 3100 2050 50  0001 C CNN
-F 3 "" H 3100 2050 50  0001 C CNN
-	1    3100 2050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -572,20 +546,18 @@ $EndComp
 Text GLabel 8250 3750 0    50   BiDi ~ 0
 GPIO_11
 Wire Wire Line
-	3550 4250 3550 4400
-Wire Wire Line
-	3750 4250 3550 4250
+	3800 4250 3800 4300
 $Comp
 L power:GND #PWR?
 U 1 1 6091C4EA
-P 3550 4400
+P 3800 4300
 AR Path="/6091C4EA" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/6091C4EA" Ref="#PWR076"  Part="1" 
-F 0 "#PWR076" H 3550 4150 50  0001 C CNN
-F 1 "GND" H 3555 4227 50  0000 C CNN
-F 2 "" H 3550 4400 50  0001 C CNN
-F 3 "" H 3550 4400 50  0001 C CNN
-	1    3550 4400
+F 0 "#PWR076" H 3800 4050 50  0001 C CNN
+F 1 "GND" H 3805 4127 50  0000 C CNN
+F 2 "" H 3800 4300 50  0001 C CNN
+F 3 "" H 3800 4300 50  0001 C CNN
+	1    3800 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -678,26 +650,10 @@ Wire Wire Line
 	3850 4250 3950 4250
 Wire Wire Line
 	3750 4250 3750 4150
-Connection ~ 3750 4250
 Wire Wire Line
 	3850 4250 3850 4150
 Wire Wire Line
-	3750 4250 3850 4250
-Wire Wire Line
-	3750 4350 3750 4250
-$Comp
-L power:GNDD #PWR?
-U 1 1 60985531
-P 3750 4350
-AR Path="/60985531" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/60985531" Ref="#PWR075"  Part="1" 
-F 0 "#PWR075" H 3750 4100 50  0001 C CNN
-F 1 "GNDD" H 3754 4195 50  0000 C CNN
-F 2 "" H 3750 4350 50  0001 C CNN
-F 3 "" H 3750 4350 50  0001 C CNN
-	1    3750 4350
-	1    0    0    -1  
-$EndComp
+	3750 4250 3800 4250
 $Comp
 L Interface_USB:CH340G U11
 U 1 1 607D90C8
@@ -816,9 +772,9 @@ Wire Wire Line
 	4250 6300 4050 6300
 Wire Wire Line
 	4050 6500 4250 6500
-Text GLabel 5250 5700 2    40   Input ~ 0
-VCP_TX
 Text GLabel 5250 5800 2    40   Input ~ 0
+VCP_TX
+Text GLabel 5250 5700 2    40   Input ~ 0
 VCP_RX
 Text Notes 850  4800 0    94   ~ 19
 USB ESD PROT. & SERIAL CH340G
@@ -1253,4 +1209,138 @@ Text Notes 4100 4350 0    39   ~ 8
 PA15 = USART2_RX
 Text Notes 5400 2700 0    39   ~ 8
 PA2 = USART2_TX
+$Comp
+L Connector:TestPoint RTS1
+U 1 1 60A08243
+P 5200 6500
+F 0 "RTS1" V 5150 6500 50  0000 C CNN
+F 1 "TestPoint" V 5200 6900 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5400 6500 50  0001 C CNN
+F 3 "~" H 5400 6500 50  0001 C CNN
+	1    5200 6500
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint DTR1
+U 1 1 60A0B19B
+P 5200 6400
+F 0 "DTR1" V 5150 6400 50  0000 C CNN
+F 1 "TestPoint" V 5200 6800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5400 6400 50  0001 C CNN
+F 3 "~" H 5400 6400 50  0001 C CNN
+	1    5200 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint DSR1
+U 1 1 60A0C458
+P 5200 6100
+F 0 "DSR1" V 5150 6100 50  0000 C CNN
+F 1 "TestPoint" V 5200 6500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5400 6100 50  0001 C CNN
+F 3 "~" H 5400 6100 50  0001 C CNN
+	1    5200 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint CTS1
+U 1 1 60A0CC9E
+P 5200 6000
+F 0 "CTS1" V 5150 6000 50  0000 C CNN
+F 1 "TestPoint" V 5200 6400 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5400 6000 50  0001 C CNN
+F 3 "~" H 5400 6000 50  0001 C CNN
+	1    5200 6000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5050 6000 5200 6000
+Wire Wire Line
+	5050 6100 5200 6100
+Wire Wire Line
+	5200 6400 5050 6400
+Wire Wire Line
+	5050 6500 5200 6500
+$Comp
+L Connector:TestPoint DCD1
+U 1 1 60A4E325
+P 5200 6300
+F 0 "DCD1" V 5150 6300 50  0000 C CNN
+F 1 "TestPoint" V 5200 6700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5400 6300 50  0001 C CNN
+F 3 "~" H 5400 6300 50  0001 C CNN
+	1    5200 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5200 6300 5050 6300
+$Comp
+L Device:R_Small R?
+U 1 1 60A62B34
+P 5150 5700
+AR Path="/60A62B34" Ref="R?"  Part="1" 
+AR Path="/6096F497/60A62B34" Ref="R24"  Part="1" 
+F 0 "R24" V 4954 5700 50  0000 C CNN
+F 1 "0" V 5045 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5150 5700 50  0001 C CNN
+F 3 "~" H 5150 5700 50  0001 C CNN
+	1    5150 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60A63326
+P 5150 5800
+AR Path="/60A63326" Ref="R?"  Part="1" 
+AR Path="/6096F497/60A63326" Ref="R25"  Part="1" 
+F 0 "R25" V 4954 5800 50  0000 C CNN
+F 1 "0" V 5045 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5150 5800 50  0001 C CNN
+F 3 "~" H 5150 5800 50  0001 C CNN
+	1    5150 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60AF796D
+P 3100 2050
+AR Path="/60AF796D" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60AF796D" Ref="#PWR0149"  Part="1" 
+F 0 "#PWR0149" H 3100 1800 50  0001 C CNN
+F 1 "GND" H 3105 1877 50  0000 C CNN
+F 2 "" H 3100 2050 50  0001 C CNN
+F 3 "" H 3100 2050 50  0001 C CNN
+	1    3100 2050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4250
+Wire Wire Line
+	3800 4250 3850 4250
+$Comp
+L power:GND #PWR?
+U 1 1 60B2FB00
+P 5150 2650
+AR Path="/60B2FB00" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60B2FB00" Ref="#PWR0150"  Part="1" 
+F 0 "#PWR0150" H 5150 2400 50  0001 C CNN
+F 1 "GND" H 5155 2477 50  0000 C CNN
+F 2 "" H 5150 2650 50  0001 C CNN
+F 3 "" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR?
+U 1 1 60B31351
+P 3950 4250
+AR Path="/60B31351" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/60B31351" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3950 4000 50  0001 C CNN
+F 1 "GNDD" H 3954 4095 50  0000 C CNN
+F 2 "" H 3950 4250 50  0001 C CNN
+F 3 "" H 3950 4250 50  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 4250
 $EndSCHEMATC

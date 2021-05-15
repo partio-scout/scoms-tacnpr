@@ -193,4 +193,66 @@ Text GLabel 3800 2700 0    79   Input ~ 0
 Wire Wire Line
 	3800 2700 5900 2700
 Connection ~ 5900 2700
+Text GLabel 5400 3150 0    50   Input ~ 0
+SDN_SI4463
+$Comp
+L Connector:TestPoint CTS?
+U 1 1 60AE7BA1
+P 6350 3850
+AR Path="/6096F497/60AE7BA1" Ref="CTS?"  Part="1" 
+AR Path="/607946F5/60AE7BA1" Ref="GPIOR1"  Part="1" 
+F 0 "GPIOR1" V 6300 3850 50  0000 C CNN
+F 1 "TestPoint" V 6350 4250 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 3850 50  0001 C CNN
+F 3 "~" H 6550 3850 50  0001 C CNN
+	1    6350 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3850 6350 3850
+$Comp
+L Connector:TestPoint GPIOR?
+U 1 1 60AE80D1
+P 6350 3950
+AR Path="/6096F497/60AE80D1" Ref="GPIOR?"  Part="1" 
+AR Path="/607946F5/60AE80D1" Ref="GPIOR2"  Part="1" 
+F 0 "GPIOR2" V 6300 3950 50  0000 C CNN
+F 1 "TestPoint" V 6350 4350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 3950 50  0001 C CNN
+F 3 "~" H 6550 3950 50  0001 C CNN
+	1    6350 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint GPIOR?
+U 1 1 60AE84EF
+P 6350 4050
+AR Path="/6096F497/60AE84EF" Ref="GPIOR?"  Part="1" 
+AR Path="/607946F5/60AE84EF" Ref="GPIOR3"  Part="1" 
+F 0 "GPIOR3" V 6300 4050 50  0000 C CNN
+F 1 "TestPoint" V 6350 4450 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 4050 50  0001 C CNN
+F 3 "~" H 6550 4050 50  0001 C CNN
+	1    6350 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint GPIOR?
+U 1 1 60AE8838
+P 6350 4150
+AR Path="/6096F497/60AE8838" Ref="GPIOR?"  Part="1" 
+AR Path="/607946F5/60AE8838" Ref="GPIOR4"  Part="1" 
+F 0 "GPIOR4" V 6300 4150 50  0000 C CNN
+F 1 "TestPoint" V 6350 4550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 4150 50  0001 C CNN
+F 3 "~" H 6550 4150 50  0001 C CNN
+	1    6350 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3950 6350 3950
+Wire Wire Line
+	6200 4050 6350 4050
+Wire Wire Line
+	6200 4150 6350 4150
 $EndSCHEMATC
