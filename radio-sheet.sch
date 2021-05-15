@@ -255,4 +255,8 @@ Wire Wire Line
 	6200 4050 6350 4050
 Wire Wire Line
 	6200 4150 6350 4150
+Text GLabel 5250 3750 0    50   Input ~ 0
+CLK_SPI1
+Wire Wire Line
+	5400 3750 5250 3750
 $EndSCHEMATC
