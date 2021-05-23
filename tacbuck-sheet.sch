@@ -1576,7 +1576,7 @@ Connection ~ 9500 4950
 Wire Wire Line
 	9500 4950 9600 4950
 Text Notes 900  3500 0    79   ~ 16
-TODO:\n-manufacturing files: bommi (LCSC-koodi)
+TODO:\n-manufacturing files: bommi (LCSC-koodi)\n\nkelan tilalle C357255 ?
 Wire Wire Line
 	5600 2050 5600 2150
 Wire Wire Line
