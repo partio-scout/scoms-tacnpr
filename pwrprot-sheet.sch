@@ -28,8 +28,6 @@ F 3 "~" H 5050 1500 50  0001 C CNN
 	1    5050 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 1500 4400 1500
 Text GLabel 6750 1500 2    79   Input ~ 0
 FILTERED_PSU_IN
 $Comp
@@ -152,8 +150,6 @@ Text GLabel 3750 2750 0    79   Input ~ 0
 12V_TO_BUCKC
 Text Notes 3950 2350 0    79   ~ 16
 inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
-Text Notes 3650 5500 0    79   ~ 16
-TODO: USB-suojaa TVS:ksi 3V3-käyttöön, kaikkien 3V3-lineaariregujen eteen
 $Comp
 L Device:C_Small C?
 U 1 1 607F87DF
@@ -183,36 +179,8 @@ F 3 "" H 4450 3950 50  0001 C CNN
 	1    4450 3950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP_Small C?
-U 1 1 60ABEA9F
-P 4400 1600
-AR Path="/609A52E7/60ABEA9F" Ref="C?"  Part="1" 
-AR Path="/607FB7F8/60ABEA9F" Ref="C?"  Part="1" 
-AR Path="/608A4C86/60ABEA9F" Ref="C45"  Part="1" 
-F 0 "C45" H 4488 1646 50  0000 L CNN
-F 1 "100u" H 4488 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 4400 1600 50  0001 C CNN
-F 3 "~" H 4400 1600 50  0001 C CNN
-	1    4400 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60ABEC6B
-P 4400 1700
-AR Path="/60ABEC6B" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/60ABEC6B" Ref="#PWR0147"  Part="1" 
-F 0 "#PWR0147" H 4400 1450 50  0001 C CNN
-F 1 "GND" H 4405 1527 50  0000 C CNN
-F 2 "" H 4400 1700 50  0001 C CNN
-F 3 "" H 4400 1700 50  0001 C CNN
-	1    4400 1700
-	1    0    0    -1  
-$EndComp
 Text Notes 4600 1150 0    39   ~ 8
 TACPDU fuse holder code: \nC58066
-Connection ~ 4400 1500
 Wire Wire Line
-	4400 1500 4950 1500
+	3750 1500 4950 1500
 $EndSCHEMATC

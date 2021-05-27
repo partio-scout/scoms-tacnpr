@@ -237,17 +237,6 @@ Wire Wire Line
 Wire Wire Line
 	6150 1750 6150 2500
 $Comp
-L Device:CP1_Small C65
-U 1 1 60811E09
-P 4600 2250
-F 0 "C65" H 4691 2296 50  0000 L CNN
-F 1 "1u DNP" H 4691 2205 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S" H 4600 2250 50  0001 C CNN
-F 3 "~" H 4600 2250 50  0001 C CNN
-	1    4600 2250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:L_Core_Iron L5
 U 1 1 6081318C
 P 5550 2300
@@ -321,17 +310,6 @@ Wire Wire Line
 	7050 2850 7400 2850
 Connection ~ 7050 2850
 $Comp
-L Device:CP1_Small C68
-U 1 1 60833964
-P 7750 2750
-F 0 "C68" H 7841 2796 50  0000 L CNN
-F 1 "47uF DNP" H 7841 2705 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S" H 7750 2750 50  0001 C CNN
-F 3 "~" H 7750 2750 50  0001 C CNN
-	1    7750 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 60836405
 P 5150 2250
@@ -344,8 +322,6 @@ F 3 "~" H 5150 2250 50  0001 C CNN
 	1    5150 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 2350 5050 2350
 $Comp
 L power:GND #PWR?
 U 1 1 6083A7A3
@@ -361,17 +337,11 @@ F 3 "" H 5050 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 2400 5050 2350
-Connection ~ 5050 2350
 Wire Wire Line
 	5050 2350 5150 2350
 Wire Wire Line
-	4600 2150 5150 2150
-Wire Wire Line
 	5150 2150 5550 2150
-Connection ~ 5150 2150
 Connection ~ 5550 2150
-Wire Wire Line
-	5550 2600 5200 2600
 Wire Wire Line
 	4600 2600 4600 2850
 Wire Wire Line
@@ -384,57 +354,9 @@ Wire Wire Line
 Connection ~ 2700 3100
 Wire Wire Line
 	2700 3100 2900 3100
-Wire Wire Line
-	7400 2650 7750 2650
 Connection ~ 7400 2650
-Wire Wire Line
-	7750 2850 7400 2850
 Connection ~ 7400 2850
 Connection ~ 3700 3100
-$Comp
-L Device:CP1_Small C69
-U 1 1 6085BCC0
-P 5200 2700
-F 0 "C69" H 5291 2746 50  0000 L CNN
-F 1 "1u DNP" H 5291 2655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S" H 5200 2700 50  0001 C CNN
-F 3 "~" H 5200 2700 50  0001 C CNN
-	1    5200 2700
-	1    0    0    -1  
-$EndComp
-Connection ~ 5200 2600
-Wire Wire Line
-	5200 2600 4600 2600
-$Comp
-L power:GND #PWR?
-U 1 1 6085C6AD
-P 5200 2800
-AR Path="/609A52E7/6085C6AD" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/6085C6AD" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 5200 2550 50  0001 C CNN
-F 1 "GND" H 5205 2627 50  0000 C CNN
-F 2 "" H 5200 2800 50  0001 C CNN
-F 3 "" H 5200 2800 50  0001 C CNN
-	1    5200 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C70
-U 1 1 6085DC55
-P 8300 2750
-F 0 "C70" H 8391 2796 50  0000 L CNN
-F 1 "1u" H 8391 2705 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-12_Kemet-S" H 8300 2750 50  0001 C CNN
-F 3 "~" H 8300 2750 50  0001 C CNN
-	1    8300 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7750 2650 8300 2650
-Connection ~ 7750 2650
-Wire Wire Line
-	8300 2850 7750 2850
-Connection ~ 7750 2850
 $Comp
 L Device:C_Small C?
 U 1 1 60865271
@@ -448,12 +370,6 @@ F 3 "~" H 8650 2750 50  0001 C CNN
 	1    8650 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 2650 8650 2650
-Connection ~ 8300 2650
-Wire Wire Line
-	8300 2850 8650 2850
-Connection ~ 8300 2850
 Connection ~ 6400 2500
 Wire Wire Line
 	6400 2500 6850 2500
@@ -504,4 +420,10 @@ Wire Wire Line
 	6650 1600 6700 1600
 Wire Wire Line
 	6700 1600 6700 1700
+Wire Wire Line
+	4600 2600 5550 2600
+Wire Wire Line
+	7400 2650 8650 2650
+Wire Wire Line
+	7400 2850 8650 2850
 $EndSCHEMATC
