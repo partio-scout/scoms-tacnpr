@@ -94,8 +94,6 @@ Text Notes 5650 1000 0    118  ~ 24
 TODO: find proper TVS'es from JLC
 Wire Wire Line
 	3700 3750 4450 3750
-Wire Wire Line
-	3750 2750 4800 2750
 $Comp
 L power:GND #PWR?
 U 1 1 607F3DD2
@@ -120,34 +118,8 @@ F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 3900 50  0001 C C
 	1    4800 3900
 	0    1    1    0   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 607F3393
-P 4800 3050
-AR Path="/607F3393" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/607F3393" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 4800 2800 50  0001 C CNN
-F 1 "GND" H 4805 2877 50  0000 C CNN
-F 2 "" H 4800 3050 50  0001 C CNN
-F 3 "" H 4800 3050 50  0001 C CNN
-	1    4800 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:SM6T10A D9
-U 1 1 607F338D
-P 4800 2900
-F 0 "D9" V 4754 2980 50  0000 L CNN
-F 1 "TVS option, DNP" V 4845 2980 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 4800 2700 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 2900 50  0001 C CNN
-	1    4800 2900
-	0    1    1    0   
-$EndComp
 Text GLabel 3700 3750 0    79   Input ~ 0
 12V_TO_RFPA
-Text GLabel 3750 2750 0    79   Input ~ 0
-12V_TO_BUCKC
 Text Notes 3950 2350 0    79   ~ 16
 inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
 $Comp

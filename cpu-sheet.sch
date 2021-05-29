@@ -323,7 +323,7 @@ F 3 "~" H 2600 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2850 2350 3350 2350
+	2850 2350 3000 2350
 Wire Wire Line
 	3950 2250 5150 2250
 Connection ~ 3950 2250
@@ -1015,10 +1015,6 @@ Text GLabel 9300 1900 2    79   Input ~ 0
 Wire Wire Line
 	9300 1900 8950 1900
 Connection ~ 8950 1900
-Text GLabel 9800 3050 2    79   Input ~ 0
-3V3_CPU
-Text GLabel 5350 3950 0    79   Input ~ 0
-3V3_CPU
 Wire Wire Line
 	5850 3950 5650 3950
 Text Notes 6350 6350 0    118  ~ 24
@@ -1359,4 +1355,25 @@ $EndComp
 Connection ~ 8500 5200
 Wire Wire Line
 	8500 5200 8650 5200
+Text GLabel 5350 3950 0    79   Input ~ 0
+3V3_CPU
+Text GLabel 9800 3050 2    79   Input ~ 0
+3V8_OUT
+$Comp
+L Device:R_Small R?
+U 1 1 60BE9F43
+P 3100 2350
+AR Path="/60BE9F43" Ref="R?"  Part="1" 
+AR Path="/609A52E7/60BE9F43" Ref="R?"  Part="1" 
+AR Path="/607FB7F8/60BE9F43" Ref="R?"  Part="1" 
+AR Path="/6096F497/60BE9F43" Ref="R26"  Part="1" 
+F 0 "R26" V 2904 2350 50  0000 C CNN
+F 1 "330" V 2995 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3100 2350 50  0001 C CNN
+F 3 "~" H 3100 2350 50  0001 C CNN
+	1    3100 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 2350 3350 2350
 $EndSCHEMATC

@@ -307,8 +307,6 @@ U 607FB7F8
 F0 "linear-regs" 94
 F1 "linreg-sheet.sch" 94
 $EndSheet
-Text GLabel 9500 5500 2    79   Input ~ 0
-3V3_CPU
 $Comp
 L Mechanical:MountingHole H9
 U 1 1 608AE660
@@ -357,4 +355,6 @@ F 3 "" H 9450 3200 50  0001 C CNN
 	1    9450 3200
 	0    -1   -1   0   
 $EndComp
+Text GLabel 9500 5500 2    79   Input ~ 0
+3V8_OUT
 $EndSCHEMATC

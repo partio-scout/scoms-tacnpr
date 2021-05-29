@@ -1506,7 +1506,7 @@ Text Notes 6150 4950 2    118  ~ 24
 12V -> 3V8 (TODO: UPDATE component values!!):
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_TO_BUCKC
-Text GLabel 4500 7050 2    79   Input ~ 0
+Text GLabel 4950 7050 2    79   Input ~ 0
 12V_TO_BUCKC
 Text GLabel 9050 1000 2    79   Input ~ 0
 12V_BUCK_A_OUT
@@ -1524,22 +1524,6 @@ Connection ~ 9050 4950
 Wire Wire Line
 	2600 1350 3000 1350
 $Comp
-L Connector:TestPoint_Small TP1
-U 1 1 608E13B9
-P 9050 800
-AR Path="/609A52E7/608E13B9" Ref="TP1"  Part="1" 
-AR Path="/607FB7F8/608E13B9" Ref="TP?"  Part="1" 
-F 0 "TP1" H 9002 754 50  0000 R CNN
-F 1 "TestPoint_Small" H 9002 845 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9250 800 50  0001 C CNN
-F 3 "~" H 9250 800 50  0001 C CNN
-	1    9050 800 
-	-1   0    0    1   
-$EndComp
-Connection ~ 9050 1000
-Wire Wire Line
-	9050 1000 9050 800 
-$Comp
 L Connector:TestPoint_Small TP2
 U 1 1 608F1362
 P 9100 2850
@@ -1555,23 +1539,6 @@ $EndComp
 Wire Wire Line
 	9100 3050 9100 2850
 Connection ~ 9100 3050
-$Comp
-L Connector:TestPoint_Small TP3
-U 1 1 607DC7D5
-P 9650 5250
-AR Path="/609A52E7/607DC7D5" Ref="TP3"  Part="1" 
-AR Path="/607FB7F8/607DC7D5" Ref="TP?"  Part="1" 
-F 0 "TP3" H 9602 5204 50  0000 R CNN
-F 1 "TestPoint_Small" H 9602 5295 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9850 5250 50  0001 C CNN
-F 3 "~" H 9850 5250 50  0001 C CNN
-	1    9650 5250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9500 5250 9650 5250
-Wire Wire Line
-	9500 5250 9500 4950
 Connection ~ 9500 4950
 Wire Wire Line
 	9500 4950 9600 4950
@@ -1634,14 +1601,14 @@ Wire Wire Line
 $Comp
 L Device:R_Small R21
 U 1 1 60BDFDEE
-P 4150 7050
+P 4600 7050
 AR Path="/609A52E7/60BDFDEE" Ref="R21"  Part="1" 
 AR Path="/607FB7F8/60BDFDEE" Ref="R?"  Part="1" 
-F 0 "R21" H 4209 7096 50  0000 L CNN
-F 1 "0" H 4209 7005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 4150 7050 50  0001 C CNN
-F 3 "~" H 4150 7050 50  0001 C CNN
-	1    4150 7050
+F 0 "R21" H 4659 7096 50  0000 L CNN
+F 1 "0" H 4659 7005 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4600 7050 50  0001 C CNN
+F 3 "~" H 4600 7050 50  0001 C CNN
+	1    4600 7050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1696,7 +1663,7 @@ Connection ~ 3400 6750
 Wire Wire Line
 	3950 7250 4050 7250
 Wire Wire Line
-	4500 7050 4250 7050
+	4950 7050 4700 7050
 Wire Wire Line
 	4000 6750 4500 6750
 Wire Wire Line
@@ -1713,7 +1680,7 @@ Wire Wire Line
 	3950 7050 3950 7250
 Connection ~ 3950 7050
 Wire Wire Line
-	3950 7050 4050 7050
+	3950 7050 4500 7050
 Text Notes 900  6450 0    79   ~ 16
 kolme lineaariregua? (XC6206, basic-valikoimasta)\n-ethernet+CPU\n-si4463\n-lna-osuus
 $Comp
@@ -1763,10 +1730,7 @@ F 3 "~" H 10350 5900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9500 5250 9500 5900
-Wire Wire Line
 	9500 5900 9900 5900
-Connection ~ 9500 5250
 $Comp
 L power:GND #PWR?
 U 1 1 60707C50
@@ -2001,4 +1965,21 @@ Wire Wire Line
 Connection ~ 4400 7250
 Wire Wire Line
 	4400 7250 4500 7250
+Wire Wire Line
+	9500 4950 9500 5900
+$Comp
+L Connector:TestPoint_Small TP3
+U 1 1 60BA0A4E
+P 9500 4750
+AR Path="/609A52E7/60BA0A4E" Ref="TP3"  Part="1" 
+AR Path="/607FB7F8/60BA0A4E" Ref="TP?"  Part="1" 
+F 0 "TP3" H 9452 4704 50  0000 R CNN
+F 1 "TestPoint_Small" H 9452 4795 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9700 4750 50  0001 C CNN
+F 3 "~" H 9700 4750 50  0001 C CNN
+	1    9500 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9500 4950 9500 4750
 $EndSCHEMATC
