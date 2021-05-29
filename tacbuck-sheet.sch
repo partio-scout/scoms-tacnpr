@@ -1506,7 +1506,7 @@ Text Notes 6150 4950 2    118  ~ 24
 12V -> 3V8 (TODO: UPDATE component values!!):
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_TO_BUCKC
-Text GLabel 4950 7050 2    79   Input ~ 0
+Text GLabel 5850 7050 2    79   Input ~ 0
 12V_TO_BUCKC
 Text GLabel 9050 1000 2    79   Input ~ 0
 12V_BUCK_A_OUT
@@ -1663,7 +1663,7 @@ Connection ~ 3400 6750
 Wire Wire Line
 	3950 7250 4050 7250
 Wire Wire Line
-	4950 7050 4700 7050
+	5850 7050 5700 7050
 Wire Wire Line
 	4000 6750 4500 6750
 Wire Wire Line
@@ -1982,4 +1982,36 @@ F 3 "~" H 9700 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9500 4950 9500 4750
+$Comp
+L Diode:SM6T10A D?
+U 1 1 60C36F5D
+P 5700 7200
+AR Path="/608A4C86/60C36F5D" Ref="D?"  Part="1" 
+AR Path="/609A52E7/60C36F5D" Ref="D7"  Part="1" 
+AR Path="/607FB7F8/60C36F5D" Ref="D?"  Part="1" 
+F 0 "D7" V 5654 7280 50  0000 L CNN
+F 1 "TVS DIODE" V 5745 7280 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 5700 7000 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 5650 7200 50  0001 C CNN
+	1    5700 7200
+	0    1    1    0   
+$EndComp
+Connection ~ 5700 7050
+Wire Wire Line
+	5700 7050 4700 7050
+$Comp
+L power:GND #PWR?
+U 1 1 60C37B91
+P 5700 7350
+AR Path="/60C37B91" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60C37B91" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/60C37B91" Ref="#PWR0103"  Part="1" 
+AR Path="/607FB7F8/60C37B91" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0103" H 5700 7100 50  0001 C CNN
+F 1 "GND" H 5705 7177 50  0000 C CNN
+F 2 "" H 5700 7350 50  0001 C CNN
+F 3 "" H 5700 7350 50  0001 C CNN
+	1    5700 7350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
