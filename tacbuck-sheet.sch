@@ -2014,4 +2014,18 @@ F 3 "" H 5700 7350 50  0001 C CNN
 	1    5700 7350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60CBD835
+P 9050 1000
+AR Path="/6096F497/60CBD835" Ref="TP?"  Part="1" 
+AR Path="/609A52E7/60CBD835" Ref="TP11"  Part="1" 
+F 0 "TP11" V 9245 1072 50  0000 C CNN
+F 1 "TestPoint" V 9154 1072 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9250 1000 50  0001 C CNN
+F 3 "~" H 9250 1000 50  0001 C CNN
+	1    9050 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 9050 1000
 $EndSCHEMATC

@@ -259,4 +259,8 @@ Text GLabel 5250 3750 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	5400 3750 5250 3750
+Text GLabel 8000 3500 2    79   Input ~ 0
+RF_PA_IN
+Wire Wire Line
+	8000 3500 7500 3500
 $EndSCHEMATC
