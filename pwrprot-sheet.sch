@@ -90,8 +90,6 @@ F 3 "" H 5750 1800 50  0001 C CNN
 	1    5750 1800
 	1    0    0    -1  
 $EndComp
-Text Notes 5650 1000 0    118  ~ 24
-TODO: find proper TVS'es from JLC
 Wire Wire Line
 	3700 3750 4450 3750
 $Comp
@@ -120,7 +118,7 @@ F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 3900 50  0001 C C
 $EndComp
 Text GLabel 3700 3750 0    79   Input ~ 0
 12V_TO_RFPA
-Text Notes 3950 2350 0    79   ~ 16
+Text Notes 3700 2600 0    79   ~ 16
 inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
 $Comp
 L Device:C_Small C?

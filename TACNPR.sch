@@ -293,7 +293,7 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 3000 6100 0    119  ~ 24
-TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit\n + levyn reunaa kiertämään viat\n+ tsekkaa SMD-ledien etuvastukset läpi
+TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit
 Text GLabel 9650 3300 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
