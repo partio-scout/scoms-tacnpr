@@ -1542,7 +1542,7 @@ Connection ~ 9100 3050
 Connection ~ 9500 4950
 Wire Wire Line
 	9500 4950 9600 4950
-Text Notes 900  3500 0    79   ~ 16
+Text Notes 1250 4100 0    79   ~ 16
 TODO:\n-manufacturing files: bommi (LCSC-koodi)\n\nkelan tilalle C357255 ?
 Wire Wire Line
 	5600 2050 5600 2150
@@ -1563,7 +1563,7 @@ Connection ~ 4550 3400
 Text Notes 750  4650 0    79   ~ 0
 lineaariregu: https://datasheet.lcsc.com/szlcsc/Torex-Semicon-XC6206P332MR_C5446.pdf
 Wire Wire Line
-	2600 5300 4500 5300
+	2600 5300 3500 5300
 Wire Wire Line
 	5600 6000 5600 6100
 Text Notes 4700 6050 0    79   ~ 16
@@ -1670,7 +1670,7 @@ Wire Wire Line
 	3150 6750 3400 6750
 Wire Wire Line
 	3400 6800 3400 6750
-Text Notes 1400 5700 0    39   ~ 8
+Text Notes 800  6500 0    79   ~ 16
 3V8 hakkurin sisäänmenoon \nhttps://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf kotelo 0805, \nLCSC-numero C1015, basic
 Wire Wire Line
 	3400 6750 3800 6750
@@ -1681,8 +1681,6 @@ Wire Wire Line
 Connection ~ 3950 7050
 Wire Wire Line
 	3950 7050 4500 7050
-Text Notes 900  6450 0    79   ~ 16
-kolme lineaariregua? (XC6206, basic-valikoimasta)\n-ethernet+CPU\n-si4463\n-lna-osuus
 $Comp
 L Device:R_Small R?
 U 1 1 60724037
@@ -2028,4 +2026,19 @@ F 3 "~" H 9250 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9050 1000
+$Comp
+L Device:L_Core_Iron L?
+U 1 1 60CB5F9E
+P 3650 5300
+AR Path="/60604CF2/60CB5F9E" Ref="L?"  Part="1" 
+AR Path="/609A52E7/60CB5F9E" Ref="L7"  Part="1" 
+F 0 "L7" H 3606 5254 50  0000 R CNN
+F 1 "L_Core_Iron" H 3606 5345 50  0000 R CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 3650 5300 50  0001 C CNN
+F 3 "~" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3800 5300 4500 5300
 $EndSCHEMATC
