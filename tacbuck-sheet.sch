@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 7
+Sheet 2 6
 Title "TACNPR"
 Date ""
 Rev "A"
@@ -197,8 +197,6 @@ F 3 "" H 5150 1550 50  0001 C CNN
 	1    5150 1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 2600 1350 0    79   Input ~ 0
-FILTERED_PSU_IN
 Connection ~ 3000 1350
 Connection ~ 3300 1350
 $Comp
@@ -1521,8 +1519,6 @@ Text GLabel 9600 4950 2    79   Input ~ 0
 Wire Wire Line
 	9050 4950 9500 4950
 Connection ~ 9050 4950
-Wire Wire Line
-	2600 1350 3000 1350
 $Comp
 L Connector:TestPoint_Small TP2
 U 1 1 608F1362
@@ -1671,7 +1667,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 6800 3400 6750
 Text Notes 800  6500 0    79   ~ 16
-3V8 hakkurin sisäänmenoon \nhttps://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf kotelo 0805, \nLCSC-numero C1015, basic
+TODO: 3V8 hakkurin sisäänmenoon \nhttps://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf kotelo 0805, \nLCSC-numero C1015, basic
 Wire Wire Line
 	3400 6750 3800 6750
 Wire Wire Line
@@ -2041,4 +2037,88 @@ F 3 "~" H 3650 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3800 5300 4500 5300
+Text GLabel 1450 1350 0    79   Input ~ 0
+RAW_PSU_IN
+$Comp
+L Device:Fuse_Small F?
+U 1 1 60D32374
+P 1750 1350
+AR Path="/608A4C86/60D32374" Ref="F?"  Part="1" 
+AR Path="/60D32374" Ref="F?"  Part="1" 
+AR Path="/609A52E7/60D32374" Ref="F?"  Part="1" 
+F 0 "F?" H 1750 1535 50  0000 C CNN
+F 1 "Fuse_Small" H 1750 1444 50  0000 C CNN
+F 2 "TACNPR:Fuseholder5x20_horiz_open_universal_Type-III" H 1750 1350 50  0001 C CNN
+F 3 "~" H 1750 1350 50  0001 C CNN
+	1    1750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D3237B
+P 2550 1450
+AR Path="/60D3237B" Ref="C?"  Part="1" 
+AR Path="/608A4C86/60D3237B" Ref="C?"  Part="1" 
+F 0 "C?" H 2642 1496 50  0000 L CNN
+F 1 "100nF" H 2642 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 1450 50  0001 C CNN
+F 3 "~" H 2550 1450 50  0001 C CNN
+	1    2550 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 1350
+Wire Wire Line
+	1450 1350 1650 1350
+$Comp
+L power:GND #PWR?
+U 1 1 60D32384
+P 2550 1750
+AR Path="/60D32384" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60D32384" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2550 1500 50  0001 C CNN
+F 1 "GND" H 2555 1577 50  0000 C CNN
+F 2 "" H 2550 1750 50  0001 C CNN
+F 3 "" H 2550 1750 50  0001 C CNN
+	1    2550 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1550 2550 1750
+$Comp
+L Diode:SM6T10A D?
+U 1 1 60D3238C
+P 2050 1500
+AR Path="/608A4C86/60D3238C" Ref="D?"  Part="1" 
+AR Path="/60D3238C" Ref="D?"  Part="1" 
+AR Path="/609A52E7/60D3238C" Ref="D?"  Part="1" 
+F 0 "D?" V 2004 1580 50  0000 L CNN
+F 1 "SMCJ28A" V 2095 1580 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 2050 1300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf" H 2000 1500 50  0001 C CNN
+F 4 "C10250" V 2200 1750 50  0000 C CNN "LCSC"
+	1    2050 1500
+	0    1    1    0   
+$EndComp
+Connection ~ 2050 1350
+Wire Wire Line
+	2050 1350 2550 1350
+$Comp
+L power:GND #PWR?
+U 1 1 60D32394
+P 2050 1650
+AR Path="/60D32394" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60D32394" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2050 1400 50  0001 C CNN
+F 1 "GND" H 2055 1477 50  0000 C CNN
+F 2 "" H 2050 1650 50  0001 C CNN
+F 3 "" H 2050 1650 50  0001 C CNN
+	1    2050 1650
+	1    0    0    -1  
+$EndComp
+Text Notes 950  2400 0    79   ~ 16
+TACPDU fuse holder code: \nC58066
+Wire Wire Line
+	1850 1350 2050 1350
+Wire Wire Line
+	2550 1350 3000 1350
 $EndSCHEMATC

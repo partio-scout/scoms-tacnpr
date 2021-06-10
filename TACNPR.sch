@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "TACNPR"
 Date "2021-03-22"
 Rev "A"
@@ -68,12 +68,12 @@ $EndComp
 Text GLabel 8100 3300 3    50   Input ~ 0
 RAW_PSU_IN
 $Sheet
-S 1450 4350 1450 750 
+S 1550 3150 1450 750 
 U 609A52E7
 F0 "tacbucks" 94
 F1 "tacbuck-sheet.sch" 94
 $EndSheet
-Text Notes 1600 4950 0    134  ~ 27
+Text Notes 1700 3750 0    134  ~ 27
 DC/DC\nconverters
 Text Notes 5350 3700 0    118  ~ 24
 Si4463 radio\nsubsystem
@@ -97,14 +97,6 @@ Text Notes 7400 2750 0    97   ~ 19
 Screw terminals
 Text Notes 2550 2650 0    118  ~ 24
 SUBSHEETS:
-$Sheet
-S 1450 3150 1450 700 
-U 608A4C86
-F0 "powerprot" 94
-F1 "pwrprot-sheet.sch" 94
-$EndSheet
-Text Notes 1600 3750 0    97   ~ 19
-POWER\nprotection&\nfiltering
 $Sheet
 S 3300 3150 1500 750 
 U 6096F497
@@ -292,17 +284,15 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 3000 6100 0    119  ~ 24
-TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit
-Text GLabel 9650 3300 2    79   Input ~ 0
+Text GLabel 10000 3300 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
-	9650 3300 9400 3300
+	10000 3300 9400 3300
 Connection ~ 9400 3300
-Text Notes 3450 4950 0    134  ~ 27
+Text Notes 1700 5000 0    134  ~ 27
 3V3 linear\nregulators
 $Sheet
-S 3300 4350 1450 750 
+S 1550 4400 1450 750 
 U 607FB7F8
 F0 "linear-regs" 94
 F1 "linreg-sheet.sch" 94
@@ -357,4 +347,6 @@ F 3 "" H 9450 3200 50  0001 C CNN
 $EndComp
 Text GLabel 9500 5500 2    79   Input ~ 0
 3V8_OUT
+Text Notes 4100 6050 0    119  ~ 24
+TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit
 $EndSCHEMATC

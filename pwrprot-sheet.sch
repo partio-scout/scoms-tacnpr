@@ -69,8 +69,9 @@ U 1 1 607DB5B8
 P 5750 1650
 F 0 "D5" V 5704 1730 50  0000 L CNN
 F 1 "SMCJ28A" V 5795 1730 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 5750 1450 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 5700 1650 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC" H 5750 1450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf" H 5700 1650 50  0001 C CNN
+F 4 "C10250" V 5900 1900 50  0000 C CNN "LCSC"
 	1    5750 1650
 	0    1    1    0   
 $EndComp
@@ -90,66 +91,9 @@ F 3 "" H 5750 1800 50  0001 C CNN
 	1    5750 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3700 3750 4450 3750
-$Comp
-L power:GND #PWR?
-U 1 1 607F3DD2
-P 4800 4050
-AR Path="/607F3DD2" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/607F3DD2" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 4800 3800 50  0001 C CNN
-F 1 "GND" H 4805 3877 50  0000 C CNN
-F 2 "" H 4800 4050 50  0001 C CNN
-F 3 "" H 4800 4050 50  0001 C CNN
-	1    4800 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:SM6T10A D10
-U 1 1 607F3DCC
-P 4800 3900
-F 0 "D10" V 4754 3980 50  0000 L CNN
-F 1 "TVS option, DNP" V 4845 3980 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 4800 3700 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 4750 3900 50  0001 C CNN
-	1    4800 3900
-	0    1    1    0   
-$EndComp
 Text GLabel 3700 3750 0    79   Input ~ 0
 12V_TO_RFPA
-Text Notes 3700 2600 0    79   ~ 16
-inputin suojaksi SMCJ28A\n(JLC extended, LCSC Part # C10250)\nhttps://datasheet.lcsc.com/szlcsc/Shenzhen-Ruilongyuan-Elec-SMCJ28A_C10250.pdf
-$Comp
-L Device:C_Small C?
-U 1 1 607F87DF
-P 4450 3850
-AR Path="/607F87DF" Ref="C?"  Part="1" 
-AR Path="/608A4C86/607F87DF" Ref="C64"  Part="1" 
-F 0 "C64" H 4542 3896 50  0000 L CNN
-F 1 "100nF" H 4542 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4450 3850 50  0001 C CNN
-F 3 "~" H 4450 3850 50  0001 C CNN
-	1    4450 3850
-	1    0    0    -1  
-$EndComp
-Connection ~ 4450 3750
-Wire Wire Line
-	4450 3750 4800 3750
-$Comp
-L power:GND #PWR?
-U 1 1 607F91F7
-P 4450 3950
-AR Path="/607F91F7" Ref="#PWR?"  Part="1" 
-AR Path="/608A4C86/607F91F7" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 4450 3700 50  0001 C CNN
-F 1 "GND" H 4455 3777 50  0000 C CNN
-F 2 "" H 4450 3950 50  0001 C CNN
-F 3 "" H 4450 3950 50  0001 C CNN
-	1    4450 3950
-	1    0    0    -1  
-$EndComp
-Text Notes 4600 1150 0    39   ~ 8
+Text Notes 4600 1150 0    79   ~ 16
 TACPDU fuse holder code: \nC58066
 Wire Wire Line
 	3750 1500 4950 1500

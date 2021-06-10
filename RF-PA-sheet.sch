@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -17,7 +17,7 @@ Text Notes 7150 6850 0    157  Italic 31
 TACNPR / RF power amplifier
 Text Notes 7200 7050 0    79   Italic 16
 20W RF PA based on Motorola ???, design: Tatu OH2EAT
-Text GLabel 2850 2150 0    79   Input ~ 0
+Text GLabel 2000 2150 0    79   Input ~ 0
 12V_TO_RFPA
 $Comp
 L Device:C_Small C?
@@ -382,7 +382,7 @@ Wire Wire Line
 Connection ~ 4850 2150
 Connection ~ 5150 2150
 Wire Wire Line
-	2850 2150 3250 2150
+	2000 2150 2350 2150
 Wire Wire Line
 	3250 2150 3250 3100
 Wire Wire Line
@@ -471,4 +471,65 @@ F 3 "" H 4850 2350 50  0001 C CNN
 	1    4850 2350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D1A3B5
+P 2850 2450
+AR Path="/60D1A3B5" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60D1A3B5" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/60D1A3B5" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 2850 2200 50  0001 C CNN
+F 1 "GND" H 2855 2277 50  0000 C CNN
+F 2 "" H 2850 2450 50  0001 C CNN
+F 3 "" H 2850 2450 50  0001 C CNN
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:SM6T10A D?
+U 1 1 60D1A3BB
+P 2850 2300
+AR Path="/608A4C86/60D1A3BB" Ref="D?"  Part="1" 
+AR Path="/60604CF2/60D1A3BB" Ref="D9"  Part="1" 
+F 0 "D9" V 2804 2380 50  0000 L CNN
+F 1 "TVS option, DNP" V 2895 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 2850 2100 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 2800 2300 50  0001 C CNN
+	1    2850 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60D1A3C1
+P 2350 2250
+AR Path="/60D1A3C1" Ref="C?"  Part="1" 
+AR Path="/608A4C86/60D1A3C1" Ref="C?"  Part="1" 
+AR Path="/60604CF2/60D1A3C1" Ref="C57"  Part="1" 
+F 0 "C57" H 2442 2296 50  0000 L CNN
+F 1 "100nF" H 2442 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2350 2250 50  0001 C CNN
+F 3 "~" H 2350 2250 50  0001 C CNN
+	1    2350 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60D1A3C9
+P 2350 2350
+AR Path="/60D1A3C9" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/60D1A3C9" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/60D1A3C9" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 2350 2100 50  0001 C CNN
+F 1 "GND" H 2355 2177 50  0000 C CNN
+F 2 "" H 2350 2350 50  0001 C CNN
+F 3 "" H 2350 2350 50  0001 C CNN
+	1    2350 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2350 2150
+Wire Wire Line
+	2350 2150 2850 2150
+Connection ~ 2850 2150
+Wire Wire Line
+	2850 2150 3250 2150
 $EndSCHEMATC
