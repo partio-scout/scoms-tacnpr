@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -211,8 +211,8 @@ P 5050 3200
 AR Path="/609A52E7/606BAEE3" Ref="C?"  Part="1" 
 AR Path="/60604CF2/606BAEE3" Ref="C62"  Part="1" 
 F 0 "C62" H 5138 3246 50  0000 L CNN
-F 1 "100u" H 5138 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 5050 3200 50  0001 C CNN
+F 1 "220u" H 5138 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 5050 3200 50  0001 C CNN
 F 3 "~" H 5050 3200 50  0001 C CNN
 	1    5050 3200
 	1    0    0    -1  
