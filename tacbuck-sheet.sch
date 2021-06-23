@@ -2047,9 +2047,10 @@ AR Path="/608A4C86/60D32374" Ref="F?"  Part="1"
 AR Path="/60D32374" Ref="F?"  Part="1" 
 AR Path="/609A52E7/60D32374" Ref="F1"  Part="1" 
 F 0 "F1" H 1750 1535 50  0000 C CNN
-F 1 "Fuse_Small" H 1750 1444 50  0000 C CNN
+F 1 "5x20 fuse 6.3A" H 1750 1444 50  0000 C CNN
 F 2 "TACNPR:Fuseholder5x20_horiz_open_universal_Type-III" H 1750 1350 50  0001 C CNN
-F 3 "~" H 1750 1350 50  0001 C CNN
+F 3 "" H 1750 1350 50  0001 C CNN
+F 4 "" H 1750 1350 50  0001 C CNN "LCSC"
 	1    1750 1350
 	1    0    0    -1  
 $EndComp

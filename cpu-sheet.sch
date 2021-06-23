@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title "TACNPR"
 Date ""
 Rev "A"
@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 2150 2850 2350
 Connection ~ 2850 2350
-Text GLabel 3300 3750 0    50   Output ~ 0
+Text GLabel 2350 3750 0    50   Output ~ 0
 MOSI_SPI3
 Text GLabel 3350 3550 0    50   Input ~ 0
 CLK_SPI3
@@ -107,8 +107,6 @@ Wire Wire Line
 	4500 3350 4350 3350
 Text GLabel 3350 3650 0    50   Input ~ 0
 MISO_SPI3
-Wire Wire Line
-	3300 3750 3350 3750
 Text GLabel 4500 3650 2    50   Output ~ 0
 LED_CON
 Text GLabel 4500 3150 2    50   Output ~ 0
@@ -937,7 +935,7 @@ F 3 "~" H 8850 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8650 4900 8100 4900
+	8650 4900 7600 4900
 $Comp
 L power:GND #PWR?
 U 1 1 607F5A9B
@@ -955,35 +953,35 @@ Text GLabel 9150 5200 2    50   Input ~ 0
 IRQ_W5500
 Text GLabel 8650 5300 0    50   Input ~ 0
 CLK_SPI3
-Text GLabel 8650 5000 0    50   Output ~ 0
+Text GLabel 8250 5000 0    50   Output ~ 0
 MISO_SPI3
 Text GLabel 8650 5100 0    50   Input ~ 0
 MOSI_SPI3
 $Comp
 L Device:C_Small C?
 U 1 1 6082112D
-P 7850 5000
+P 7400 5000
 AR Path="/6082112D" Ref="C?"  Part="1" 
 AR Path="/6096F497/6082112D" Ref="C40"  Part="1" 
-F 0 "C40" H 7942 5046 50  0000 L CNN
-F 1 "100n" H 7600 4950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7850 5000 50  0001 C CNN
-F 3 "~" H 7850 5000 50  0001 C CNN
-	1    7850 5000
+F 0 "C40" H 7492 5046 50  0000 L CNN
+F 1 "100n" H 7150 4950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7400 5000 50  0001 C CNN
+F 3 "~" H 7400 5000 50  0001 C CNN
+	1    7400 5000
 	1    0    0    1   
 $EndComp
-Connection ~ 7850 4900
+Connection ~ 7400 4900
 $Comp
 L power:GND #PWR?
 U 1 1 60827797
-P 7850 5100
+P 7400 5100
 AR Path="/60827797" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/60827797" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 7850 4850 50  0001 C CNN
-F 1 "GND" H 7855 4927 50  0000 C CNN
-F 2 "" H 7850 5100 50  0001 C CNN
-F 3 "" H 7850 5100 50  0001 C CNN
-	1    7850 5100
+F 0 "#PWR0130" H 7400 4850 50  0001 C CNN
+F 1 "GND" H 7405 4927 50  0000 C CNN
+F 2 "" H 7400 5100 50  0001 C CNN
+F 3 "" H 7400 5100 50  0001 C CNN
+	1    7400 5100
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -1009,7 +1007,7 @@ Connection ~ 3100 1750
 Wire Wire Line
 	2350 1750 3100 1750
 Wire Wire Line
-	7300 4900 7450 4900
+	6850 4900 6950 4900
 Text GLabel 9300 1900 2    79   Input ~ 0
 3V3_CPU
 Wire Wire Line
@@ -1019,7 +1017,7 @@ Wire Wire Line
 	5850 3950 5650 3950
 Text Notes 6350 6350 0    118  ~ 24
 TODO: F.BEAD VDDA-linjaan (pin5)\nTODO: datasheet 6.1.6 Power supply scheme  !!!\nTODO: tsekkaa RAND-kytkentä (NPR)\nTODO: bootmode-kytkin
-Text GLabel 7300 4900 0    79   Input ~ 0
+Text GLabel 6850 4900 0    79   Input ~ 0
 3V3_ETHERNET
 Text GLabel 9950 3250 2    50   BiDi ~ 0
 GPIO10_TERMINAL
@@ -1161,31 +1159,31 @@ Connection ~ 2250 5600
 $Comp
 L Connector:TestPoint TP5
 U 1 1 60A02860
-P 8100 4900
-F 0 "TP5" V 8295 4972 50  0000 C CNN
-F 1 "TestPoint" V 8204 4972 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8300 4900 50  0001 C CNN
-F 3 "~" H 8300 4900 50  0001 C CNN
-	1    8100 4900
+P 7600 4900
+F 0 "TP5" V 7795 4972 50  0000 C CNN
+F 1 "TestPoint" V 7704 4972 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7800 4900 50  0001 C CNN
+F 3 "~" H 7800 4900 50  0001 C CNN
+	1    7600 4900
 	1    0    0    -1  
 $EndComp
-Connection ~ 8100 4900
+Connection ~ 7600 4900
 Wire Wire Line
-	8100 4900 7850 4900
+	7600 4900 7400 4900
 $Comp
 L Connector:TestPoint TP6
 U 1 1 60A1EEDA
-P 7450 4900
-F 0 "TP6" V 7645 4972 50  0000 C CNN
-F 1 "TestPoint" V 7554 4972 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7650 4900 50  0001 C CNN
-F 3 "~" H 7650 4900 50  0001 C CNN
-	1    7450 4900
+P 6950 4900
+F 0 "TP6" V 7145 4972 50  0000 C CNN
+F 1 "TestPoint" V 7054 4972 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7150 4900 50  0001 C CNN
+F 3 "~" H 7150 4900 50  0001 C CNN
+	1    6950 4900
 	1    0    0    -1  
 $EndComp
-Connection ~ 7450 4900
+Connection ~ 6950 4900
 Wire Wire Line
-	7450 4900 7850 4900
+	6950 4900 7400 4900
 $Comp
 L power:GND #PWR?
 U 1 1 60A3C64B
@@ -1376,4 +1374,38 @@ F 3 "~" H 3100 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 2350 3350 2350
+$Comp
+L Device:R_Small R?
+U 1 1 60D515FE
+P 3050 3750
+AR Path="/60D515FE" Ref="R?"  Part="1" 
+AR Path="/6096F497/60D515FE" Ref="R27"  Part="1" 
+F 0 "R27" H 3109 3796 50  0000 L CNN
+F 1 "330" H 3109 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 3750 50  0001 C CNN
+F 3 "~" H 3050 3750 50  0001 C CNN
+	1    3050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60D9C077
+P 8400 5000
+AR Path="/60D9C077" Ref="R?"  Part="1" 
+AR Path="/6096F497/60D9C077" Ref="R28"  Part="1" 
+F 0 "R28" H 8459 5046 50  0000 L CNN
+F 1 "330" H 8459 4955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 5000 50  0001 C CNN
+F 3 "~" H 8400 5000 50  0001 C CNN
+	1    8400 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8650 5000 8500 5000
+Wire Wire Line
+	8300 5000 8250 5000
+Wire Wire Line
+	3150 3750 3350 3750
+Wire Wire Line
+	2950 3750 2350 3750
 $EndSCHEMATC
