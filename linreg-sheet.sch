@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 5 7
 Title "TACNPR"
 Date ""
 Rev "A"
@@ -88,7 +88,8 @@ P 5300 2300
 F 0 "U4" H 5300 2542 50  0000 C CNN
 F 1 "XC6206PxxxMR" H 5300 2451 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 2525 50  0001 C CIN
-F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 5300 2300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Torex-Semicon-XC6206P332MR_C5446.pdf" H 5300 2300 50  0001 C CNN
+F 4 "C5446" H 5500 2000 50  0000 C CNN "LCSC"
 	1    5300 2300
 	1    0    0    -1  
 $EndComp
@@ -99,7 +100,8 @@ P 5250 3500
 F 0 "U12" H 5250 3742 50  0000 C CNN
 F 1 "XC6206PxxxMR" H 5250 3651 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 3725 50  0001 C CIN
-F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 5250 3500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Torex-Semicon-XC6206P332MR_C5446.pdf" H 5250 3500 50  0001 C CNN
+F 4 "C5446" H 5500 3200 50  0000 C CNN "LCSC"
 	1    5250 3500
 	1    0    0    -1  
 $EndComp
@@ -257,6 +259,7 @@ F 0 "U13" H 5250 4992 50  0000 C CNN
 F 1 "XC6206PxxxMR" H 5250 4901 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5250 4975 50  0001 C CIN
 F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 5250 4750 50  0001 C CNN
+F 4 "C5446" H 5500 4450 50  0000 C CNN "LCSC"
 	1    5250 4750
 	1    0    0    -1  
 $EndComp

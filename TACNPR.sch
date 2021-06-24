@@ -21,7 +21,7 @@ F1 "tacbuck-sheet.sch" 94
 $EndSheet
 Text Notes 2650 3700 0    134  ~ 27
 DC/DC\nconverters
-Text Notes 6300 3650 0    118  ~ 24
+Text Notes 6200 3700 0    134  ~ 27
 Si4463 radio\nsubsystem
 $Sheet
 S 6150 3100 1450 750 
@@ -46,7 +46,7 @@ F0 "RF-PA" 79
 F1 "RF-PA-sheet.sch" 79
 $EndSheet
 Text Notes 6300 4950 0    158  ~ 32
-RF PA &\nLPF
+RF power\namplifier
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 6067BE98
@@ -172,8 +172,8 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 2650 4950 0    134  ~ 27
-3V3 linear\nregulators
+Text Notes 2600 4800 0    157  ~ 31
+3V3 lin.reg.
 $Sheet
 S 2500 4350 1500 700 
 U 607FB7F8
@@ -191,8 +191,8 @@ F 3 "~" H 6700 7350 50  0001 C CNN
 	1    6700 7350
 	1    0    0    -1  
 $EndComp
-Text Notes 4450 4900 0    118  ~ 24
-Pin headers &\nscrew terminals
+Text Notes 4500 5050 0    134  ~ 27
+Pin headers \n& screw \nterminals
 $Sheet
 S 4350 3100 1500 750 
 U 6096F497
