@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 108)
+    (drawings 109)
     (tracks 2045)
     (zones 0)
     (modules 206)
@@ -8254,6 +8254,7 @@
     )
   )
 
+  (gr_poly (pts (xy 118.95836 49.8094) (xy 118.45036 50.8254) (xy 119.46636 50.8254)) (layer B.SilkS) (width 0.1) (tstamp 60D7B420))
   (gr_poly (pts (xy 162.47364 52.57292) (xy 161.96564 53.58892) (xy 162.98164 53.58892)) (layer B.SilkS) (width 0.1) (tstamp 60D75A3A))
   (gr_poly (pts (xy 141.77518 49.48682) (xy 141.26718 50.50282) (xy 142.28318 50.50282)) (layer B.SilkS) (width 0.1) (tstamp 60DAC4C3))
   (gr_text "DRIVER STAGE\nSUPPLY" (at 142.5829 54.1909 270) (layer B.SilkS) (tstamp 60DAA792)
