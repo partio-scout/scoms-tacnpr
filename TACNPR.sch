@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "TACNPR"
 Date "2021-03-22"
 Rev "A"
@@ -13,109 +13,39 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Device:C C1
-U 1 1 6082D0F7
-P 9400 3450
-F 0 "C1" H 9515 3496 50  0000 L CNN
-F 1 "100n" H 9515 3405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 3300 50  0001 C CNN
-F 3 "~" H 9400 3450 50  0001 C CNN
-	1    9400 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9400 3300 9250 3300
-$Comp
-L power:GND #PWR04
-U 1 1 6082DD1E
-P 9400 3600
-F 0 "#PWR04" H 9400 3350 50  0001 C CNN
-F 1 "GND" H 9405 3427 50  0000 C CNN
-F 2 "" H 9400 3600 50  0001 C CNN
-F 3 "" H 9400 3600 50  0001 C CNN
-	1    9400 3600
-	1    0    0    -1  
-$EndComp
-Text GLabel 9700 5300 2    50   BiDi ~ 0
-GPIO10_TERMINAL
-Text GLabel 9700 5200 2    50   BiDi ~ 0
-GPIO11_TERMINAL
-Wire Wire Line
-	9250 3200 9450 3200
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 6089740C
-P 7750 3300
-F 0 "J1" H 7668 2975 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 7668 3066 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 7750 3300 50  0001 C CNN
-F 3 "~" H 7750 3300 50  0001 C CNN
-	1    7750 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 6096E90C
-P 8300 3200
-F 0 "#PWR01" H 8300 2950 50  0001 C CNN
-F 1 "GND" H 8305 3027 50  0000 C CNN
-F 2 "" H 8300 3200 50  0001 C CNN
-F 3 "" H 8300 3200 50  0001 C CNN
-	1    8300 3200
-	1    0    0    -1  
-$EndComp
-Text GLabel 8100 3300 3    50   Input ~ 0
-RAW_PSU_IN
 $Sheet
-S 1550 3150 1450 750 
+S 2500 3100 1500 750 
 U 609A52E7
 F0 "tacbucks" 94
 F1 "tacbuck-sheet.sch" 94
 $EndSheet
-Text Notes 1700 3750 0    134  ~ 27
+Text Notes 2650 3700 0    134  ~ 27
 DC/DC\nconverters
-Text Notes 5350 3700 0    118  ~ 24
+Text Notes 6300 3650 0    118  ~ 24
 Si4463 radio\nsubsystem
 $Sheet
-S 5200 3150 1450 750 
+S 6150 3100 1450 750 
 U 607946F5
 F0 "radio" 94
 F1 "radio-sheet.sch" 94
 $EndSheet
 Text Notes 7200 6850 0    197  ~ 39
 TACNPR project
-Wire Notes Line
-	7250 2450 10650 2450
-Wire Notes Line
-	10650 2450 10650 4350
-Wire Notes Line
-	10650 4350 7250 4350
-Wire Notes Line
-	7250 4350 7250 2450
-Text Notes 7400 2750 0    97   ~ 19
-Screw terminals
-Text Notes 2550 2650 0    118  ~ 24
+Text Notes 3500 2600 0    118  ~ 24
 SUBSHEETS:
-$Sheet
-S 3300 3150 1500 750 
-U 6096F497
-F0 "cpu" 94
-F1 "cpu-sheet.sch" 94
-$EndSheet
-Text Notes 3400 3700 0    118  ~ 24
-CPU & W5500\nEthernet mod.
+Text Notes 4500 3700 0    134  ~ 27
+CPU, SRAM, \nUSB UART
 Text Notes 3250 1450 0    394  ~ 79
 TACNPR project\n
 Text Notes 1150 7450 0    118  ~ 24
 Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL)
 $Sheet
-S 5200 4400 1450 750 
+S 6150 4350 1450 750 
 U 60604CF2
 F0 "RF-PA" 79
 F1 "RF-PA-sheet.sch" 79
 $EndSheet
-Text Notes 5350 5000 0    158  ~ 32
+Text Notes 6300 4950 0    158  ~ 32
 RF PA &\nLPF
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
@@ -139,42 +69,6 @@ F 3 "~" H 10830 6600 50  0001 C CNN
 	1    10800 6800
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	7250 4550 10650 4550
-Text Notes 7400 4850 0    97   ~ 19
-Pin headers
-$Comp
-L Connector:Conn_01x05_Male J3
-U 1 1 6066F496
-P 9050 5300
-F 0 "J3" H 9158 5681 50  0000 C CNN
-F 1 "Conn_01x05_Male" H 9158 5590 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left" H 9050 5300 50  0001 C CNN
-F 3 "~" H 9050 5300 50  0001 C CNN
-	1    9050 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 606796FD
-P 9500 5100
-F 0 "#PWR05" H 9500 4850 50  0001 C CNN
-F 1 "GND" H 9505 4927 50  0000 C CNN
-F 2 "" H 9500 5100 50  0001 C CNN
-F 3 "" H 9500 5100 50  0001 C CNN
-	1    9500 5100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9250 5100 9500 5100
-Wire Wire Line
-	9250 5200 9700 5200
-Wire Wire Line
-	9250 5300 9700 5300
-Wire Wire Line
-	9250 5400 9700 5400
-Wire Wire Line
-	9250 5500 9500 5500
 $Comp
 L Mechanical:MountingHole H7
 U 1 1 607CF1C5
@@ -267,12 +161,6 @@ Text Notes 7250 7050 0    97   ~ 19
 OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE
 Text Notes 3400 1950 0    97   ~ 19
 Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to Mikko OH2FLO & Vili OH5GE!
-Wire Notes Line
-	7250 4550 7250 5800
-Wire Notes Line
-	7250 5800 10650 5800
-Wire Notes Line
-	10650 5800 10650 4550
 $Comp
 L Graphic:SYM_ESD_Small #SYM1
 U 1 1 608032AF
@@ -284,15 +172,10 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 10000 3300 2    79   Input ~ 0
-12V_OUT
-Wire Wire Line
-	10000 3300 9400 3300
-Connection ~ 9400 3300
-Text Notes 1700 5000 0    134  ~ 27
+Text Notes 2650 4950 0    134  ~ 27
 3V3 linear\nregulators
 $Sheet
-S 1550 4400 1450 750 
+S 2500 4350 1500 700 
 U 607FB7F8
 F0 "linear-regs" 94
 F1 "linreg-sheet.sch" 94
@@ -308,45 +191,20 @@ F 3 "~" H 6700 7350 50  0001 C CNN
 	1    6700 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7950 3300 8100 3300
-Wire Wire Line
-	7950 3200 8300 3200
-$Comp
-L power:GND #PWR0143
-U 1 1 609D2232
-P 9700 5400
-F 0 "#PWR0143" H 9700 5150 50  0001 C CNN
-F 1 "GND" H 9705 5227 50  0000 C CNN
-F 2 "" H 9700 5400 50  0001 C CNN
-F 3 "" H 9700 5400 50  0001 C CNN
-	1    9700 5400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x02 J2
-U 1 1 609FD02C
-P 9050 3300
-F 0 "J2" H 8968 2975 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 8968 3066 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 9050 3300 50  0001 C CNN
-F 3 "~" H 9050 3300 50  0001 C CNN
-	1    9050 3300
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0144
-U 1 1 60A0111A
-P 9450 3200
-F 0 "#PWR0144" H 9450 2950 50  0001 C CNN
-F 1 "GND" H 9455 3027 50  0000 C CNN
-F 2 "" H 9450 3200 50  0001 C CNN
-F 3 "" H 9450 3200 50  0001 C CNN
-	1    9450 3200
-	0    -1   -1   0   
-$EndComp
-Text GLabel 9500 5500 2    79   Input ~ 0
-3V8_OUT
-Text Notes 4100 6050 0    119  ~ 24
-TODO: lopuks silkit kuntoon; logot, ykköspinnit, headerien pinnit
+Text Notes 4450 4900 0    118  ~ 24
+Pin headers &\nscrew terminals
+$Sheet
+S 4350 3100 1500 750 
+U 6096F497
+F0 "cpu" 94
+F1 "cpu-sheet.sch" 94
+$EndSheet
+$Sheet
+S 4350 4350 1500 750 
+U 60D4B6E6
+F0 "connectors" 94
+F1 "connectors.sch" 94
+$EndSheet
+Text Notes 8200 3050 0    119  ~ 24
+CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tackbuckin kelat
 $EndSCHEMATC

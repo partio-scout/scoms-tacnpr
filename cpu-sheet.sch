@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 7
 Title "TACNPR"
 Date ""
 Rev "A"
@@ -923,82 +923,6 @@ F 3 "~" H 4150 6100 50  0001 C CNN
 	1    4150 6100
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
-U 1 1 607EE601
-P 8850 5100
-F 0 "J4" H 8900 5517 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 8900 5426 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 8850 5100 50  0001 C CNN
-F 3 "~" H 8850 5100 50  0001 C CNN
-	1    8850 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 4900 7600 4900
-$Comp
-L power:GND #PWR?
-U 1 1 607F5A9B
-P 9300 5000
-AR Path="/607F5A9B" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/607F5A9B" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 9300 4750 50  0001 C CNN
-F 1 "GND" H 9305 4827 50  0000 C CNN
-F 2 "" H 9300 5000 50  0001 C CNN
-F 3 "" H 9300 5000 50  0001 C CNN
-	1    9300 5000
-	0    -1   -1   0   
-$EndComp
-Text GLabel 9150 5200 2    50   Input ~ 0
-IRQ_W5500
-Text GLabel 8650 5300 0    50   Input ~ 0
-CLK_SPI3
-Text GLabel 8250 5000 0    50   Output ~ 0
-MISO_SPI3
-Text GLabel 8650 5100 0    50   Input ~ 0
-MOSI_SPI3
-$Comp
-L Device:C_Small C?
-U 1 1 6082112D
-P 7400 5000
-AR Path="/6082112D" Ref="C?"  Part="1" 
-AR Path="/6096F497/6082112D" Ref="C40"  Part="1" 
-F 0 "C40" H 7492 5046 50  0000 L CNN
-F 1 "100n" H 7150 4950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7400 5000 50  0001 C CNN
-F 3 "~" H 7400 5000 50  0001 C CNN
-	1    7400 5000
-	1    0    0    1   
-$EndComp
-Connection ~ 7400 4900
-$Comp
-L power:GND #PWR?
-U 1 1 60827797
-P 7400 5100
-AR Path="/60827797" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/60827797" Ref="#PWR0130"  Part="1" 
-F 0 "#PWR0130" H 7400 4850 50  0001 C CNN
-F 1 "GND" H 7405 4927 50  0000 C CNN
-F 2 "" H 7400 5100 50  0001 C CNN
-F 3 "" H 7400 5100 50  0001 C CNN
-	1    7400 5100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 608383C7
-P 9800 5100
-F 0 "TP4" V 9995 5172 50  0000 C CNN
-F 1 "W5500_RST" V 9904 5172 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10000 5100 50  0001 C CNN
-F 3 "~" H 10000 5100 50  0001 C CNN
-	1    9800 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 5100 9800 5100
-Wire Wire Line
-	9300 5000 9150 5000
 Text GLabel 1850 1750 0    79   Input ~ 0
 3V3_CPU
 Wire Wire Line
@@ -1006,8 +930,6 @@ Wire Wire Line
 Connection ~ 3100 1750
 Wire Wire Line
 	2350 1750 3100 1750
-Wire Wire Line
-	6850 4900 6950 4900
 Text GLabel 9300 1900 2    79   Input ~ 0
 3V3_CPU
 Wire Wire Line
@@ -1017,8 +939,6 @@ Wire Wire Line
 	5850 3950 5650 3950
 Text Notes 6350 6350 0    118  ~ 24
 TODO: F.BEAD VDDA-linjaan (pin5)\nTODO: datasheet 6.1.6 Power supply scheme  !!!\nTODO: tsekkaa RAND-kytkentä (NPR)\nTODO: bootmode-kytkin
-Text GLabel 6850 4900 0    79   Input ~ 0
-3V3_ETHERNET
 Text GLabel 9950 3250 2    50   BiDi ~ 0
 GPIO10_TERMINAL
 $Comp
@@ -1156,47 +1076,6 @@ Wire Wire Line
 Wire Wire Line
 	2250 5150 2250 5600
 Connection ~ 2250 5600
-$Comp
-L Connector:TestPoint TP5
-U 1 1 60A02860
-P 7600 4900
-F 0 "TP5" V 7795 4972 50  0000 C CNN
-F 1 "TestPoint" V 7704 4972 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7800 4900 50  0001 C CNN
-F 3 "~" H 7800 4900 50  0001 C CNN
-	1    7600 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 7600 4900
-Wire Wire Line
-	7600 4900 7400 4900
-$Comp
-L Connector:TestPoint TP6
-U 1 1 60A1EEDA
-P 6950 4900
-F 0 "TP6" V 7145 4972 50  0000 C CNN
-F 1 "TestPoint" V 7054 4972 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7150 4900 50  0001 C CNN
-F 3 "~" H 7150 4900 50  0001 C CNN
-	1    6950 4900
-	1    0    0    -1  
-$EndComp
-Connection ~ 6950 4900
-Wire Wire Line
-	6950 4900 7400 4900
-$Comp
-L power:GND #PWR?
-U 1 1 60A3C64B
-P 9150 5300
-AR Path="/60A3C64B" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/60A3C64B" Ref="#PWR0148"  Part="1" 
-F 0 "#PWR0148" H 9150 5050 50  0001 C CNN
-F 1 "GND" H 9155 5127 50  0000 C CNN
-F 2 "" H 9150 5300 50  0001 C CNN
-F 3 "" H 9150 5300 50  0001 C CNN
-	1    9150 5300
-	0    -1   -1   0   
-$EndComp
 Text Notes 4100 4350 0    39   ~ 8
 PA15 = USART2_RX
 Text Notes 5400 2700 0    39   ~ 8
@@ -1335,24 +1214,6 @@ F 3 "" H 3950 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3950 4250
-Text GLabel 8400 5200 0    50   Input ~ 0
-CS_W5500
-Wire Wire Line
-	8400 5200 8500 5200
-$Comp
-L Connector:TestPoint TP9
-U 1 1 60A83989
-P 8500 5200
-F 0 "TP9" V 8695 5272 50  0000 C CNN
-F 1 "TestPoint" V 8604 5272 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8700 5200 50  0001 C CNN
-F 3 "~" H 8700 5200 50  0001 C CNN
-	1    8500 5200
-	1    0    0    -1  
-$EndComp
-Connection ~ 8500 5200
-Wire Wire Line
-	8500 5200 8650 5200
 Text GLabel 5350 3950 0    79   Input ~ 0
 3V3_CPU
 Text GLabel 9800 3050 2    79   Input ~ 0
@@ -1387,23 +1248,6 @@ F 3 "~" H 3050 3750 50  0001 C CNN
 	1    3050 3750
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 60D9C077
-P 8400 5000
-AR Path="/60D9C077" Ref="R?"  Part="1" 
-AR Path="/6096F497/60D9C077" Ref="R28"  Part="1" 
-F 0 "R28" H 8459 5046 50  0000 L CNN
-F 1 "330" H 8459 4955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8400 5000 50  0001 C CNN
-F 3 "~" H 8400 5000 50  0001 C CNN
-	1    8400 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8650 5000 8500 5000
-Wire Wire Line
-	8300 5000 8250 5000
 Wire Wire Line
 	3150 3750 3350 3750
 Wire Wire Line
