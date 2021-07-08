@@ -1149,7 +1149,7 @@ P 5600 5900
 AR Path="/609A52E7/6079B474" Ref="R14"  Part="1" 
 AR Path="/607FB7F8/6079B474" Ref="R?"  Part="1" 
 F 0 "R14" H 5659 5946 50  0000 L CNN
-F 1 "33k" H 5659 5855 50  0000 L CNN
+F 1 "100k" H 5659 5855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5600 5900 50  0001 C CNN
 F 3 "~" H 5600 5900 50  0001 C CNN
 	1    5600 5900
@@ -1338,7 +1338,7 @@ P 9050 5700
 AR Path="/609A52E7/6079B4FD" Ref="R13"  Part="1" 
 AR Path="/607FB7F8/6079B4FD" Ref="R?"  Part="1" 
 F 0 "R13" H 9109 5746 50  0000 L CNN
-F 1 "715R" H 9109 5655 50  0000 L CNN
+F 1 "2k7" H 9109 5655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9050 5700 50  0001 C CNN
 F 3 "~" H 9050 5700 50  0001 C CNN
 	1    9050 5700
@@ -1486,8 +1486,8 @@ F 3 "" H 6150 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 5850 6150 5850
-Text Notes 6150 4950 2    118  ~ 24
-12V -> 3V8 (TODO: UPDATE component values!!):
+Text Notes 2700 4900 2    118  ~ 24
+12V -> 3V8:
 Text GLabel 2600 5300 0    79   Input ~ 0
 12V_TO_BUCKC
 Text GLabel 5850 7050 2    79   Input ~ 0
@@ -1523,8 +1523,6 @@ Wire Wire Line
 Connection ~ 9500 4950
 Wire Wire Line
 	9500 4950 9600 4950
-Text Notes 1050 2750 0    79   ~ 16
-kelan tilalle C357255 ?
 Wire Wire Line
 	5600 2050 5600 2150
 Wire Wire Line
@@ -1539,10 +1537,8 @@ Connection ~ 4350 1350
 Wire Wire Line
 	4350 1350 4500 1350
 Connection ~ 4550 3400
-Wire Wire Line
-	2600 5300 3500 5300
 Text Notes 4700 6050 0    79   ~ 16
-UVLO TO BE \napprox 4V
+UVLO \napprox. 5V
 $Comp
 L Device:R_Small R17
 U 1 1 60BA6D4D
@@ -1645,8 +1641,6 @@ Wire Wire Line
 	3150 6750 3400 6750
 Wire Wire Line
 	3400 6800 3400 6750
-Text Notes 800  6500 0    79   ~ 16
-TODO: 3V8 hakkurin sisäänmenoon \nhttps://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf kotelo 0805, \nLCSC-numero C1015, basic
 Wire Wire Line
 	3400 6750 3800 6750
 Wire Wire Line
@@ -1994,21 +1988,6 @@ F 3 "~" H 9250 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9050 1000
-$Comp
-L Device:L_Core_Iron L?
-U 1 1 60CB5F9E
-P 3650 5300
-AR Path="/60604CF2/60CB5F9E" Ref="L?"  Part="1" 
-AR Path="/609A52E7/60CB5F9E" Ref="L7"  Part="1" 
-F 0 "L7" H 3606 5254 50  0000 R CNN
-F 1 "L_Core_Iron" H 3606 5345 50  0000 R CNN
-F 2 "Inductor_SMD:L_1210_3225Metric" H 3650 5300 50  0001 C CNN
-F 3 "~" H 3650 5300 50  0001 C CNN
-	1    3650 5300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3800 5300 4500 5300
 Text GLabel 1450 1350 0    79   Input ~ 0
 RAW_PSU_IN
 $Comp
@@ -2091,7 +2070,7 @@ F 3 "" H 2050 1650 50  0001 C CNN
 	1    2050 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 950  2400 0    79   ~ 16
+Text Notes 1050 2450 0    79   ~ 16
 TACPDU fuse holder code: \nC58066
 Wire Wire Line
 	1850 1350 2050 1350
@@ -2107,4 +2086,23 @@ Wire Wire Line
 Connection ~ 9100 3050
 Wire Wire Line
 	9100 3050 9500 3050
+Wire Wire Line
+	3800 5300 4500 5300
+Wire Wire Line
+	2600 5300 3500 5300
+$Comp
+L Device:L_Core_Iron L?
+U 1 1 60CB5F9E
+P 3650 5300
+AR Path="/60604CF2/60CB5F9E" Ref="L?"  Part="1" 
+AR Path="/609A52E7/60CB5F9E" Ref="L7"  Part="1" 
+F 0 "L7" H 3606 5254 50  0000 R CNN
+F 1 "L_Core_Iron" H 3606 5345 50  0000 R CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 3650 5300 50  0001 C CNN
+F 3 "~" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	0    -1   -1   0   
+$EndComp
+Text Notes 1050 2750 0    79   ~ 16
+kelan tilalle C357255 ?
 $EndSCHEMATC
