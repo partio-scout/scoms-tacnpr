@@ -1537,7 +1537,7 @@ Connection ~ 4350 1350
 Wire Wire Line
 	4350 1350 4500 1350
 Connection ~ 4550 3400
-Text Notes 4700 6050 0    79   ~ 16
+Text Notes 5550 5200 0    40   ~ 8
 UVLO \napprox. 5V
 $Comp
 L Device:R_Small R17
@@ -2070,8 +2070,6 @@ F 3 "" H 2050 1650 50  0001 C CNN
 	1    2050 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 1050 2450 0    79   ~ 16
-TACPDU fuse holder code: \nC58066
 Wire Wire Line
 	1850 1350 2050 1350
 Wire Wire Line
@@ -2103,6 +2101,4 @@ F 3 "~" H 3650 5300 50  0001 C CNN
 	1    3650 5300
 	0    -1   -1   0   
 $EndComp
-Text Notes 1050 2750 0    79   ~ 16
-kelan tilalle C357255 ?
 $EndSCHEMATC

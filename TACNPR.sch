@@ -205,6 +205,8 @@ U 60D4B6E6
 F0 "connectors" 94
 F1 "connectors.sch" 94
 $EndSheet
-Text Notes 8200 3050 0    119  ~ 24
-CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tackbuckin kelat
+Text Notes 7900 4550 0    119  ~ 24
+CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tackbuckin kelat\nTODO: CPU RAND-kytkentä (NPR)\nTODO: CPU bootmode-kytkin/padit
+Text Notes 8250 5350 0    118  ~ 24
+TACPDU fuse holder \nLCSC: C58066
 $EndSCHEMATC
