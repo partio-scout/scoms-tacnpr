@@ -372,7 +372,7 @@ F 3 "" H 4500 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 2150 4500 2150
+	4300 2150 4350 2150
 Wire Wire Line
 	4850 2150 5150 2150
 Connection ~ 4850 2150
@@ -385,7 +385,7 @@ Wire Wire Line
 	3750 3100 4000 3100
 Connection ~ 3750 2150
 Wire Wire Line
-	3750 2150 4000 2150
+	3750 2150 3950 2150
 Wire Wire Line
 	4300 3100 4450 3100
 $Comp
@@ -747,7 +747,7 @@ Connection ~ 3050 5150
 Wire Wire Line
 	3050 5150 3250 5150
 Wire Wire Line
-	4150 4500 3900 4500
+	4150 4500 4050 4500
 $Comp
 L Device:C_Small C?
 U 1 1 61035438
@@ -806,4 +806,56 @@ F 3 "~" H 2100 5150 50  0001 C CNN
 	1    2100 5150
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:TestPoint GPIOR?
+U 1 1 61048632
+P 4050 4500
+AR Path="/6096F497/61048632" Ref="GPIOR?"  Part="1" 
+AR Path="/607946F5/61048632" Ref="GPIOR?"  Part="1" 
+AR Path="/60604CF2/61048632" Ref="TP10"  Part="1" 
+F 0 "TP10" V 4000 4500 50  0000 C CNN
+F 1 "TestPoint" V 4050 4900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4250 4500 50  0001 C CNN
+F 3 "~" H 4250 4500 50  0001 C CNN
+	1    4050 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 4500
+Wire Wire Line
+	4050 4500 3900 4500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61051925
+P 4350 2150
+AR Path="/6096F497/61051925" Ref="TP?"  Part="1" 
+AR Path="/607946F5/61051925" Ref="TP?"  Part="1" 
+AR Path="/60604CF2/61051925" Ref="TP9"  Part="1" 
+F 0 "TP9" V 4300 2150 50  0000 C CNN
+F 1 "TestPoint" V 4350 2550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4550 2150 50  0001 C CNN
+F 3 "~" H 4550 2150 50  0001 C CNN
+	1    4350 2150
+	-1   0    0    1   
+$EndComp
+Connection ~ 3950 2150
+Wire Wire Line
+	3950 2150 4000 2150
+Connection ~ 4350 2150
+Wire Wire Line
+	4350 2150 4500 2150
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6105FBC0
+P 4300 3100
+AR Path="/6096F497/6105FBC0" Ref="TP?"  Part="1" 
+AR Path="/607946F5/6105FBC0" Ref="TP?"  Part="1" 
+AR Path="/60604CF2/6105FBC0" Ref="TP12"  Part="1" 
+F 0 "TP12" V 4250 3100 50  0000 C CNN
+F 1 "TestPoint" V 4300 3500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4500 3100 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4300 3100
+	-1   0    0    1   
+$EndComp
+Connection ~ 4300 3100
 $EndSCHEMATC
