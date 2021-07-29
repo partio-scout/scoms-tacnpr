@@ -526,14 +526,6 @@ Wire Wire Line
 Connection ~ 3350 2150
 Wire Wire Line
 	3350 2150 3750 2150
-Wire Wire Line
-	8200 5200 8200 5650
-Text Label 8300 5650 1    40   ~ 0
-10mm_100ohm
-Text Label 7650 4950 2    40   ~ 0
-33mm_100ohm
-Text Label 6200 5100 2    40   ~ 0
-33mm_100ohm
 Connection ~ 6450 5000
 Wire Wire Line
 	6450 5000 5500 5000
@@ -855,4 +847,25 @@ $EndComp
 Connection ~ 4300 3100
 Wire Wire Line
 	3750 2150 4000 2150
+Text Notes 7050 4950 0    40   ~ 8
+33mm_100ohm
+Text Notes 5750 5100 0    40   ~ 8
+33mm_100ohm
+Text Notes 8050 5700 1    40   ~ 8
+10mm_100ohm
+$Comp
+L Device:Net-Tie_2 NT1
+U 1 1 610D301D
+P 8200 5450
+F 0 "NT1" V 8154 5494 50  0000 L CNN
+F 1 "Net-Tie_2" V 8245 5494 50  0000 L CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 8200 5450 50  0001 C CNN
+F 3 "~" H 8200 5450 50  0001 C CNN
+	1    8200 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 5650 8200 5550
+Wire Wire Line
+	8200 5200 8200 5350
 $EndSCHEMATC
