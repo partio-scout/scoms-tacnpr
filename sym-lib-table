@@ -2,4 +2,5 @@
   (lib (name 23lc1024)(type Legacy)(uri /home/llatva/23lc1024.lib)(options "")(descr ""))
   (lib (name npr-parts)(type Legacy)(uri ${KIPRJMOD}/npr-parts.lib)(options "")(descr ""))
   (lib (name TACNPR-rescue)(type Legacy)(uri ${KIPRJMOD}/TACNPR-rescue.lib)(options "")(descr ""))
+  (lib (name taclna)(type Legacy)(uri /home/llatva/tmp/taclna.lib)(options "")(descr ""))
 )
