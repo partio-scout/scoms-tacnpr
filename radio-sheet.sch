@@ -263,4 +263,6 @@ Text GLabel 8000 3500 2    79   Input ~ 0
 RF_PA_IN
 Wire Wire Line
 	8000 3500 7500 3500
+Wire Wire Line
+	6400 3150 6200 3150
 $EndSCHEMATC
