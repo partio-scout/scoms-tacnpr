@@ -191,7 +191,7 @@ Connection ~ 7100 2700
 Text GLabel 3800 2700 0    79   Input ~ 0
 3V3_RADIO
 Wire Wire Line
-	3800 2700 5900 2700
+	3800 2700 4650 2700
 Connection ~ 5900 2700
 Text GLabel 5400 3150 0    50   Input ~ 0
 SDN_SI4463
@@ -213,27 +213,27 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 60AE80D1
-P 6700 3950
+P 8300 3950
 AR Path="/6096F497/60AE80D1" Ref="GPIOR?"  Part="1" 
 AR Path="/607946F5/60AE80D1" Ref="GPIOR1"  Part="1" 
-F 0 "GPIOR1" V 6650 3950 50  0000 C CNN
-F 1 "TestPoint" V 6700 4350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6900 3950 50  0001 C CNN
-F 3 "~" H 6900 3950 50  0001 C CNN
-	1    6700 3950
+F 0 "GPIOR1" V 8250 3950 50  0000 C CNN
+F 1 "TestPoint" V 8300 4350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8500 3950 50  0001 C CNN
+F 3 "~" H 8500 3950 50  0001 C CNN
+	1    8300 3950
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 60AE84EF
-P 6350 4050
+P 7550 4050
 AR Path="/6096F497/60AE84EF" Ref="GPIOR?"  Part="1" 
 AR Path="/607946F5/60AE84EF" Ref="GPIOR2"  Part="1" 
-F 0 "GPIOR2" V 6300 4050 50  0000 C CNN
-F 1 "TestPoint" V 6350 4450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6550 4050 50  0001 C CNN
-F 3 "~" H 6550 4050 50  0001 C CNN
-	1    6350 4050
+F 0 "GPIOR2" V 7500 4050 50  0000 C CNN
+F 1 "TestPoint" V 7550 4450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7750 4050 50  0001 C CNN
+F 3 "~" H 7750 4050 50  0001 C CNN
+	1    7550 4050
 	0    1    1    0   
 $EndComp
 $Comp
@@ -250,19 +250,257 @@ F 3 "~" H 6900 4150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6200 3950 6700 3950
-Wire Wire Line
-	6200 4050 6350 4050
+	6200 4050 7300 4050
 Wire Wire Line
 	6200 4150 6700 4150
 Text GLabel 5250 3750 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	5400 3750 5250 3750
-Text GLabel 8000 3500 2    79   Input ~ 0
+Text GLabel 8400 2800 2    79   Input ~ 0
 RF_PA_IN
 Wire Wire Line
-	8000 3500 7500 3500
-Wire Wire Line
 	6400 3150 6200 3150
+$Comp
+L Device:R_Small R?
+U 1 1 61440766
+P 8000 3650
+AR Path="/61440766" Ref="R?"  Part="1" 
+AR Path="/6096F497/61440766" Ref="R?"  Part="1" 
+AR Path="/607946F5/61440766" Ref="R44"  Part="1" 
+F 0 "R44" H 8059 3696 50  0000 L CNN
+F 1 "1.5k" H 8059 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8000 3650 50  0001 C CNN
+F 3 "~" H 8000 3650 50  0001 C CNN
+	1    8000 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3650 7900 3950
+$Comp
+L Device:LED D?
+U 1 1 6144076D
+P 8250 3500
+AR Path="/6144076D" Ref="D?"  Part="1" 
+AR Path="/609A52E7/6144076D" Ref="D?"  Part="1" 
+AR Path="/607FB7F8/6144076D" Ref="D?"  Part="1" 
+AR Path="/6096F497/6144076D" Ref="D?"  Part="1" 
+AR Path="/607946F5/6144076D" Ref="D19"  Part="1" 
+F 0 "D19" H 8250 3250 50  0000 C CNN
+F 1 "TX_LED" H 8250 3350 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8250 3500 50  0001 C CNN
+F 3 "~" H 8250 3500 50  0001 C CNN
+	1    8250 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61440773
+P 9050 3550
+AR Path="/61440773" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/61440773" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/61440773" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/61440773" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61440773" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 9050 3300 50  0001 C CNN
+F 1 "GND" H 9055 3377 50  0000 C CNN
+F 2 "" H 9050 3550 50  0001 C CNN
+F 3 "" H 9050 3550 50  0001 C CNN
+	1    9050 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7900 3950
+Wire Wire Line
+	7900 3950 8100 3950
+$Comp
+L Transistor_BJT:BC847 Q1
+U 1 1 6144BDBD
+P 8750 3600
+F 0 "Q1" V 9078 3600 50  0000 C CNN
+F 1 "BC847" V 8987 3600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8950 3525 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8750 3600 50  0001 L CNN
+	1    8750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9050 3500 8950 3500
+Wire Wire Line
+	8750 3800 8350 3800
+Wire Wire Line
+	8350 3800 8350 3650
+Wire Wire Line
+	8350 3650 8100 3650
+Text GLabel 7750 3500 0    79   Input ~ 0
+3V3_RADIO
+Wire Wire Line
+	6200 3950 7900 3950
+$Comp
+L Device:R_Small R?
+U 1 1 6147D407
+P 7950 3500
+AR Path="/6147D407" Ref="R?"  Part="1" 
+AR Path="/6096F497/6147D407" Ref="R?"  Part="1" 
+AR Path="/607946F5/6147D407" Ref="R38"  Part="1" 
+F 0 "R38" V 7700 3500 50  0000 L CNN
+F 1 "1.5k" V 7800 3450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7950 3500 50  0001 C CNN
+F 3 "~" H 7950 3500 50  0001 C CNN
+	1    7950 3500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7750 3500 7850 3500
+Wire Wire Line
+	8050 3500 8100 3500
+Wire Wire Line
+	8400 3500 8550 3500
+Wire Wire Line
+	9050 3500 9050 3550
+$Comp
+L Connector:TestPoint GPIOR?
+U 1 1 6148EF74
+P 4650 2700
+AR Path="/6096F497/6148EF74" Ref="GPIOR?"  Part="1" 
+AR Path="/607946F5/6148EF74" Ref="TP13"  Part="1" 
+F 0 "TP13" V 4600 2700 50  0000 C CNN
+F 1 "TestPoint" V 4650 3100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4850 2700 50  0001 C CNN
+F 3 "~" H 4850 2700 50  0001 C CNN
+	1    4650 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 2700
+Wire Wire Line
+	4650 2700 4900 2700
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 6149FB48
+P 8100 4400
+AR Path="/6149FB48" Ref="J?"  Part="1" 
+AR Path="/60D4B6E6/6149FB48" Ref="J?"  Part="1" 
+AR Path="/607946F5/6149FB48" Ref="J8"  Part="1" 
+F 0 "J8" H 8200 4650 50  0000 C CNN
+F 1 "TX_STATE" H 8200 4550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 8100 4400 50  0001 C CNN
+F 3 "~" H 8100 4400 50  0001 C CNN
+	1    8100 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8100 3950 8100 4200
+Connection ~ 8100 3950
+Wire Wire Line
+	8100 3950 8300 3950
+$Comp
+L power:GND #PWR?
+U 1 1 614AB3DE
+P 8400 4200
+AR Path="/614AB3DE" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/614AB3DE" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/614AB3DE" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/614AB3DE" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/614AB3DE" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 8400 3950 50  0001 C CNN
+F 1 "GND" H 8405 4027 50  0000 C CNN
+F 2 "" H 8400 4200 50  0001 C CNN
+F 3 "" H 8400 4200 50  0001 C CNN
+	1    8400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 4200 8400 4200
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 614BC78C
+P 7300 4400
+AR Path="/614BC78C" Ref="J?"  Part="1" 
+AR Path="/60D4B6E6/614BC78C" Ref="J?"  Part="1" 
+AR Path="/607946F5/614BC78C" Ref="J9"  Part="1" 
+F 0 "J9" H 7400 4650 50  0000 C CNN
+F 1 "RX_STATE" H 7400 4550 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7300 4400 50  0001 C CNN
+F 3 "~" H 7300 4400 50  0001 C CNN
+	1    7300 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614BD029
+P 7600 4200
+AR Path="/614BD029" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/614BD029" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/614BD029" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/614BD029" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/614BD029" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 7600 3950 50  0001 C CNN
+F 1 "GND" H 7605 4027 50  0000 C CNN
+F 2 "" H 7600 4200 50  0001 C CNN
+F 3 "" H 7600 4200 50  0001 C CNN
+	1    7600 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4200 7400 4200
+Wire Wire Line
+	7300 4050 7300 4200
+Connection ~ 7300 4050
+Wire Wire Line
+	7300 4050 7550 4050
+Text Notes 8150 4050 0    40   ~ 8
+TX_STATE
+Text Notes 7400 4150 0    40   ~ 8
+RX_STATE
+$Comp
+L Device:LED D?
+U 1 1 614F9144
+P 5500 2350
+AR Path="/614F9144" Ref="D?"  Part="1" 
+AR Path="/609A52E7/614F9144" Ref="D?"  Part="1" 
+AR Path="/607FB7F8/614F9144" Ref="D?"  Part="1" 
+AR Path="/6096F497/614F9144" Ref="D?"  Part="1" 
+AR Path="/607946F5/614F9144" Ref="D?"  Part="1" 
+F 0 "D?" H 5500 2100 50  0000 C CNN
+F 1 "3V3_RADIO" H 5500 2200 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5500 2350 50  0001 C CNN
+F 3 "~" H 5500 2350 50  0001 C CNN
+	1    5500 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 614F914A
+P 5100 2350
+AR Path="/614F914A" Ref="R?"  Part="1" 
+AR Path="/6096F497/614F914A" Ref="R?"  Part="1" 
+AR Path="/607946F5/614F914A" Ref="R?"  Part="1" 
+F 0 "R?" V 4850 2350 50  0000 L CNN
+F 1 "1.5k" V 4950 2300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 2350 50  0001 C CNN
+F 3 "~" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 2350 5000 2350
+Wire Wire Line
+	5200 2350 5350 2350
+Wire Wire Line
+	5650 2350 5700 2350
+Wire Wire Line
+	4900 2350 4900 2700
+Connection ~ 4900 2700
+Wire Wire Line
+	4900 2700 5900 2700
+$Comp
+L power:GND #PWR?
+U 1 1 614FC317
+P 5700 2350
+F 0 "#PWR?" H 5700 2100 50  0001 C CNN
+F 1 "GND" H 5800 2350 50  0000 C CNN
+F 2 "" H 5700 2350 50  0001 C CNN
+F 3 "" H 5700 2350 50  0001 C CNN
+	1    5700 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
