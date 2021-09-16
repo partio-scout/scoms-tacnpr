@@ -153,18 +153,16 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60836405
-P 5150 2250
+P 5550 2250
 AR Path="/609A52E7/60836405" Ref="C?"  Part="1" 
 AR Path="/60604CF2/60836405" Ref="C66"  Part="1" 
-F 0 "C66" H 5242 2296 50  0000 L CNN
-F 1 "1u" H 5242 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 2250 50  0001 C CNN
-F 3 "~" H 5150 2250 50  0001 C CNN
-	1    5150 2250
+F 0 "C66" H 5642 2296 50  0000 L CNN
+F 1 "1u" H 5642 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5550 2250 50  0001 C CNN
+F 3 "~" H 5550 2250 50  0001 C CNN
+	1    5550 2250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5150 2150 5550 2150
 $Comp
 L Device:C_Small C?
 U 1 1 60865271
@@ -249,9 +247,9 @@ $EndComp
 Wire Wire Line
 	4300 2150 4350 2150
 Wire Wire Line
-	4850 2150 5150 2150
+	4850 2150 5550 2150
 Connection ~ 4850 2150
-Connection ~ 5150 2150
+Connection ~ 5550 2150
 Wire Wire Line
 	2650 2150 2900 2150
 Wire Wire Line
@@ -262,14 +260,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 6083A7A3
-P 5150 2350
+P 5550 2350
 AR Path="/609A52E7/6083A7A3" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/6083A7A3" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 5150 2100 50  0001 C CNN
-F 1 "GND" H 5155 2177 50  0000 C CNN
-F 2 "" H 5150 2350 50  0001 C CNN
-F 3 "" H 5150 2350 50  0001 C CNN
-	1    5150 2350
+F 0 "#PWR0115" H 5550 2100 50  0001 C CNN
+F 1 "GND" H 5555 2177 50  0000 C CNN
+F 2 "" H 5550 2350 50  0001 C CNN
+F 3 "" H 5550 2350 50  0001 C CNN
+	1    5550 2350
 	1    0    0    -1  
 $EndComp
 Connection ~ 5050 2900
@@ -434,13 +432,13 @@ Wire Wire Line
 $Comp
 L npr-parts:PSA4-5043 U14
 U 1 1 611EE2D4
-P 8850 3700
-F 0 "U14" H 8850 4067 50  0000 C CNN
-F 1 "PSA4-5043" H 8850 3976 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-343_SC-70-4_Handsoldering" H 8850 3700 50  0001 C CNN
-F 3 "" H 8850 3700 50  0001 C CNN
-	1    8850 3700
-	-1   0    0    -1  
+P 9050 4800
+F 0 "U14" H 9050 5167 50  0000 C CNN
+F 1 "PSA4-5043" H 9050 5076 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-343_SC-70-4_Handsoldering" H 9050 4800 50  0001 C CNN
+F 3 "" H 9050 4800 50  0001 C CNN
+	1    9050 4800
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -890,4 +888,12 @@ F 3 "" H 5850 1245 50  0001 C CNN
 	1    5850 1300
 	1    0    0    -1  
 $EndComp
+Text Notes 5300 2450 1    40   ~ 8
+avainnus
+Text Notes 7000 2900 2    40   ~ 8
+JLC basic \nPMOS-trankku\nscoms drive (tacnet): \n"component sourcing"
+Text Notes 7400 4050 0    40   ~ 8
+ao3401a pmos\nlna-sähkö, pin-diodi, pa-driver\n\nhex inverter kääntämään
+Text Notes 7500 4650 0    79   ~ 16
+C40 pois? tsekkaa \nvielä Tatun skema!
 $EndSCHEMATC
