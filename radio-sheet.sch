@@ -734,10 +734,6 @@ Wire Wire Line
 	1600 4850 1800 4850
 Text GLabel 1600 5400 0    50   Output ~ 0
 GPIOR1
-Text Notes 3000 5750 2    79   ~ 16
-TX non-inverted
-Text Notes 2900 5050 2    79   ~ 16
-TX inverted
 Text GLabel 5800 4850 0    50   Output ~ 0
 GPIOR2
 $Comp
@@ -920,8 +916,6 @@ F 3 "~" H 8300 4500 50  0001 C CNN
 	1    8300 4500
 	-1   0    0    -1  
 $EndComp
-Text Notes 7250 5150 2    79   ~ 16
-TX non-inverted
 Wire Wire Line
 	7650 4300 7650 4850
 Wire Wire Line
@@ -938,7 +932,7 @@ Text GLabel 3150 5400 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2450 4700 2    50   Output ~ 0
 TXSTATE_INV
-Text GLabel 7200 4850 2    50   Output ~ 0
+Text GLabel 7150 4850 2    50   Output ~ 0
 RXSTATE
 Text GLabel 6600 4150 2    50   Output ~ 0
 RXSTATE_INV
@@ -956,8 +950,6 @@ Wire Wire Line
 Connection ~ 6550 4300
 Wire Wire Line
 	3100 5400 3150 5400
-Wire Wire Line
-	7150 4850 7200 4850
 $Comp
 L 74xx:74HC04 U15
 U 6 1 6168F698
