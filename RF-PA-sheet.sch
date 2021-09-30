@@ -223,12 +223,10 @@ Wire Wire Line
 	6700 1600 6700 1650
 Text GLabel 5150 2000 0    79   Input ~ 0
 RF_PA_IN
-Text GLabel 7250 2050 2    79   Output ~ 0
-RF_PA_OUT
 Wire Wire Line
 	6450 1750 6450 2050
 Wire Wire Line
-	6450 2050 7250 2050
+	6450 2050 6600 2050
 Wire Wire Line
 	5150 2000 5250 2000
 Wire Wire Line
@@ -443,14 +441,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 611EF393
-P 9200 4050
+P 6200 3450
 AR Path="/609A52E7/611EF393" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/611EF393" Ref="#PWR0166"  Part="1" 
-F 0 "#PWR0166" H 9200 3800 50  0001 C CNN
-F 1 "GND" H 9205 3877 50  0000 C CNN
-F 2 "" H 9200 4050 50  0001 C CNN
-F 3 "" H 9200 4050 50  0001 C CNN
-	1    9200 4050
+F 0 "#PWR0166" H 6200 3200 50  0001 C CNN
+F 1 "GND" H 6205 3277 50  0000 C CNN
+F 2 "" H 6200 3450 50  0001 C CNN
+F 3 "" H 6200 3450 50  0001 C CNN
+	1    6200 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -554,8 +552,6 @@ Wire Wire Line
 Wire Wire Line
 	7500 4800 7300 4800
 Connection ~ 7500 4800
-Wire Wire Line
-	7850 4800 7500 4800
 Wire Wire Line
 	7700 5350 7500 5350
 Wire Wire Line
@@ -689,21 +685,6 @@ F 2 "Inductor_SMD:L_1206_3216Metric" H 5700 4150 50  0001 C CNN
 F 3 "~" H 5700 4150 50  0001 C CNN
 	1    5700 4150
 	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	8050 4800 8150 4800
-$Comp
-L Device:C_Small C?
-U 1 1 60FAF9A9
-P 7950 4800
-AR Path="/609A52E7/60FAF9A9" Ref="C?"  Part="1" 
-AR Path="/60604CF2/60FAF9A9" Ref="C40"  Part="1" 
-F 0 "C40" H 8042 4846 50  0000 L CNN
-F 1 "??" H 8042 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 7950 4800 50  0001 C CNN
-F 3 "~" H 7950 4800 50  0001 C CNN
-	1    7950 4800
-	0    -1   1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -890,10 +871,8 @@ F 3 "" H 5850 1245 50  0001 C CNN
 $EndComp
 Text Notes 5300 2450 1    40   ~ 8
 avainnus
-Text Notes 7000 2900 2    40   ~ 8
-JLC basic \nPMOS-trankku\nscoms drive (tacnet): \n"component sourcing"
-Text Notes 7400 4050 0    40   ~ 8
-ao3401a pmos\nlna-sähkö, pin-diodi, pa-driver\n\nhex inverter kääntämään
-Text Notes 7500 4650 0    79   ~ 16
-C40 pois? tsekkaa \nvielä Tatun skema!
+Wire Wire Line
+	7500 4800 8150 4800
+Wire Wire Line
+	8550 4800 8750 4800
 $EndSCHEMATC
