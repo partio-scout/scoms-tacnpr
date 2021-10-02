@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "TACNPR"
 Date "2021-03-22"
 Rev "A"
@@ -14,48 +14,48 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 2500 3100 1500 750 
+S 6850 3500 1500 750 
 U 609A52E7
 F0 "tacbucks" 94
 F1 "tacbuck-sheet.sch" 94
 $EndSheet
-Text Notes 2650 3700 0    134  ~ 27
+Text Notes 7050 4100 0    157  ~ 31
 DC/DC\nconverters
-Text Notes 6200 3700 0    134  ~ 27
-Si4463 radio\nsubsystem
+Text Notes 3400 4100 0    134  ~ 27
+Si4463 & \nRF switching
 $Sheet
-S 6150 3100 1450 750 
+S 3350 3500 1450 750 
 U 607946F5
 F0 "radio" 94
 F1 "radio-sheet.sch" 94
 $EndSheet
 Text Notes 7200 6850 0    197  ~ 39
 TACNPR project
-Text Notes 3500 2600 0    118  ~ 24
+Text Notes 2450 3050 0    118  ~ 24
 SUBSHEETS:
-Text Notes 4500 3700 0    134  ~ 27
-CPU, SRAM, \nUSB UART
-Text Notes 3250 1450 0    394  ~ 79
+Text Notes 1700 4100 0    134  ~ 27
+CPU, SRAM, \nETH, SERIAL
+Text Notes 3300 1750 0    394  ~ 79
 TACNPR project\n
 Text Notes 1150 7450 0    118  ~ 24
-Licensed under the TAPR Open Hardware License \n(www.tapr.org/OHL)
+This HAM radio project is licensed under \nthe TAPR Open Hardware License \n(www.tapr.org/OHL)
 $Sheet
-S 6150 4350 1450 750 
+S 5100 3500 1450 750 
 U 60604CF2
 F0 "RF-PA" 79
 F1 "RF-PA-sheet.sch" 79
 $EndSheet
-Text Notes 6300 4950 0    158  ~ 32
-RF power\namplifier
+Text Notes 5350 4100 0    157  ~ 31
+RF LNA \n& PA
 $Comp
 L Graphic:Logo_Open_Hardware_Large #LOGO1
 U 1 1 6067BE98
-P 1850 6600
-F 0 "#LOGO1" H 1850 7100 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 1850 6200 50  0001 C CNN
-F 2 "" H 1850 6600 50  0001 C CNN
-F 3 "~" H 1850 6600 50  0001 C CNN
-	1    1850 6600
+P 1750 6300
+F 0 "#LOGO1" H 1750 6800 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 1750 5900 50  0001 C CNN
+F 2 "" H 1750 6300 50  0001 C CNN
+F 3 "~" H 1750 6300 50  0001 C CNN
+	1    1750 6300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -159,8 +159,8 @@ F 3 "~" H 6000 6700 50  0001 C CNN
 $EndComp
 Text Notes 7250 7050 0    97   ~ 19
 OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE
-Text Notes 3400 1950 0    97   ~ 19
-Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to Mikko OH2FLO & Vili OH5GE!
+Text Notes 3100 2350 0    118  ~ 24
+Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE
 $Comp
 L Graphic:SYM_ESD_Small #SYM1
 U 1 1 608032AF
@@ -172,10 +172,10 @@ F 3 "~" H 5450 6760 50  0001 C CNN
 	1    5450 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 2600 4800 0    157  ~ 31
-3V3 lin.reg.
+Text Notes 8800 4100 0    134  ~ 27
+3V3 lin.reg.\n& terminals
 $Sheet
-S 2500 4350 1500 700 
+S 8700 3500 1500 750 
 U 607FB7F8
 F0 "linear-regs" 94
 F1 "linreg-sheet.sch" 94
@@ -191,22 +191,14 @@ F 3 "~" H 6700 7350 50  0001 C CNN
 	1    6700 7350
 	1    0    0    -1  
 $EndComp
-Text Notes 4500 5050 0    134  ~ 27
-Pin headers \n& screw \nterminals
 $Sheet
-S 4350 3100 1500 750 
+S 1550 3500 1500 750 
 U 6096F497
 F0 "cpu" 94
 F1 "cpu-sheet.sch" 94
 $EndSheet
-$Sheet
-S 4350 4350 1500 750 
-U 60D4B6E6
-F0 "connectors" 94
-F1 "connectors.sch" 94
-$EndSheet
-Text Notes 7900 4550 0    119  ~ 24
+Text Notes 6350 5700 0    119  ~ 24
 CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tacbuckin kelat
-Text Notes 8250 5350 0    118  ~ 24
+Text Notes 3650 5450 0    118  ~ 24
 TACPDU fuse holder \nLCSC: C58066
 $EndSCHEMATC
