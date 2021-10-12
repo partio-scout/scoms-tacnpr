@@ -875,4 +875,54 @@ Wire Wire Line
 	7500 4800 8150 4800
 Wire Wire Line
 	8550 4800 8750 4800
+$Comp
+L Device:L_Small L?
+U 1 1 61801A7F
+P 9650 4500
+F 0 "L?" H 9698 4546 50  0000 L CNN
+F 1 "L_Small" H 9698 4455 50  0000 L CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 9650 4500 50  0001 C CNN
+F 3 "~" H 9650 4500 50  0001 C CNN
+	1    9650 4500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 618072BE
+P 10050 4450
+AR Path="/609A52E7/618072BE" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/618072BE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10050 4200 50  0001 C CNN
+F 1 "GND" H 10055 4277 50  0000 C CNN
+F 2 "" H 10050 4450 50  0001 C CNN
+F 3 "" H 10050 4450 50  0001 C CNN
+	1    10050 4450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 618072C4
+P 10050 4350
+AR Path="/609A52E7/618072C4" Ref="C?"  Part="1" 
+AR Path="/60604CF2/618072C4" Ref="C?"  Part="1" 
+F 0 "C?" H 10142 4396 50  0000 L CNN
+F 1 "100n" H 10142 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 4350 50  0001 C CNN
+F 3 "~" H 10050 4350 50  0001 C CNN
+	1    10050 4350
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9650 4600 9650 4800
+Wire Wire Line
+	9650 4800 9350 4800
+Wire Wire Line
+	9650 4400 9650 4250
+Wire Wire Line
+	9650 4250 10050 4250
+Text Notes 10100 4000 2    79   ~ 16
+switched supply 3v3
+Wire Wire Line
+	9650 4250 9650 4150
+Connection ~ 9650 4250
 $EndSCHEMATC
