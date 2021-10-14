@@ -797,7 +797,7 @@ Text GLabel 3450 5900 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2450 4700 2    50   Output ~ 0
 TXSTATE_INV
-Text GLabel 7150 4850 2    50   Output ~ 0
+Text GLabel 7200 4850 2    50   Output ~ 0
 RXSTATE
 Text GLabel 6600 4150 2    50   Output ~ 0
 RXSTATE_INV
@@ -844,8 +844,8 @@ U 1 1 61899DA5
 P 3950 6350
 AR Path="/609A52E7/61899DA5" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/61899DA5" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/61899DA5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3950 6100 50  0001 C CNN
+AR Path="/607946F5/61899DA5" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 3950 6100 50  0001 C CNN
 F 1 "GND" H 3955 6177 50  0000 C CNN
 F 2 "" H 3950 6350 50  0001 C CNN
 F 3 "" H 3950 6350 50  0001 C CNN
@@ -855,4 +855,24 @@ $EndComp
 Wire Wire Line
 	3150 6350 3150 5900
 Connection ~ 3150 5900
+$Comp
+L Connector:TestPoint TP?
+U 1 1 618DB860
+P 7100 5050
+AR Path="/6096F497/618DB860" Ref="TP?"  Part="1" 
+AR Path="/607946F5/618DB860" Ref="TP15"  Part="1" 
+F 0 "TP15" V 7050 5050 50  0000 C CNN
+F 1 "TestPoint" V 7100 5450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 5050 50  0001 C CNN
+F 3 "~" H 7300 5050 50  0001 C CNN
+	1    7100 5050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7200 4850 7150 4850
+Wire Wire Line
+	7100 4850 7100 5050
+Connection ~ 7150 4850
+Wire Wire Line
+	7150 4850 7100 4850
 $EndSCHEMATC

@@ -216,7 +216,7 @@ Wire Wire Line
 	6150 1400 6650 1400
 Connection ~ 6650 1400
 Wire Wire Line
-	6650 1400 7450 1400
+	6650 1400 7100 1400
 Wire Wire Line
 	6600 2600 7500 2600
 $Comp
@@ -517,4 +517,20 @@ Text Notes 1300 2800 0    97   ~ 19
 3V3 for \nSTM32 CPU
 Text Notes 1300 4000 0    97   ~ 19
 3V3 for \nSi4463 radio & LNA
+$Comp
+L Connector:TestPoint CTS?
+U 1 1 618CE153
+P 7100 1400
+AR Path="/6096F497/618CE153" Ref="CTS?"  Part="1" 
+AR Path="/607FB7F8/618CE153" Ref="TP14"  Part="1" 
+F 0 "TP14" V 7050 1400 50  0000 C CNN
+F 1 "TestPoint" V 7100 1800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 1400 50  0001 C CNN
+F 3 "~" H 7300 1400 50  0001 C CNN
+	1    7100 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 1400
+Wire Wire Line
+	7100 1400 7450 1400
 $EndSCHEMATC
