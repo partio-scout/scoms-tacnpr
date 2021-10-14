@@ -310,8 +310,6 @@ F 3 "" H 8650 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7500 2550
-Wire Wire Line
-	7500 2550 7700 2550
 $Comp
 L Transistor_BJT:BC847 Q1
 U 1 1 6144BDBD
@@ -373,80 +371,6 @@ $EndComp
 Connection ~ 4250 1300
 Wire Wire Line
 	4250 1300 4500 1300
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 6149FB48
-P 7700 3000
-AR Path="/6149FB48" Ref="J?"  Part="1" 
-AR Path="/60D4B6E6/6149FB48" Ref="J?"  Part="1" 
-AR Path="/607946F5/6149FB48" Ref="J8"  Part="1" 
-F 0 "J8" H 7750 3100 50  0000 C CNN
-F 1 "TX_STATE" H 7500 2950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 7700 3000 50  0001 C CNN
-F 3 "~" H 7700 3000 50  0001 C CNN
-	1    7700 3000
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7700 2550 7700 2800
-Connection ~ 7700 2550
-Wire Wire Line
-	7700 2550 7900 2550
-$Comp
-L power:GND #PWR?
-U 1 1 614AB3DE
-P 8000 2800
-AR Path="/614AB3DE" Ref="#PWR?"  Part="1" 
-AR Path="/609A52E7/614AB3DE" Ref="#PWR?"  Part="1" 
-AR Path="/607FB7F8/614AB3DE" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/614AB3DE" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/614AB3DE" Ref="#PWR0168"  Part="1" 
-F 0 "#PWR0168" H 8000 2550 50  0001 C CNN
-F 1 "GND" H 8005 2627 50  0000 C CNN
-F 2 "" H 8000 2800 50  0001 C CNN
-F 3 "" H 8000 2800 50  0001 C CNN
-	1    8000 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 2800 8000 2800
-$Comp
-L Connector:Conn_01x02_Male J?
-U 1 1 614BC78C
-P 6900 3000
-AR Path="/614BC78C" Ref="J?"  Part="1" 
-AR Path="/60D4B6E6/614BC78C" Ref="J?"  Part="1" 
-AR Path="/607946F5/614BC78C" Ref="J9"  Part="1" 
-F 0 "J9" H 6950 3100 50  0000 C CNN
-F 1 "RX_STATE" H 6700 2950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left" H 6900 3000 50  0001 C CNN
-F 3 "~" H 6900 3000 50  0001 C CNN
-	1    6900 3000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 614BD029
-P 7200 2800
-AR Path="/614BD029" Ref="#PWR?"  Part="1" 
-AR Path="/609A52E7/614BD029" Ref="#PWR?"  Part="1" 
-AR Path="/607FB7F8/614BD029" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/614BD029" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/614BD029" Ref="#PWR0169"  Part="1" 
-F 0 "#PWR0169" H 7200 2550 50  0001 C CNN
-F 1 "GND" H 7205 2627 50  0000 C CNN
-F 2 "" H 7200 2800 50  0001 C CNN
-F 3 "" H 7200 2800 50  0001 C CNN
-	1    7200 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7200 2800 7000 2800
-Wire Wire Line
-	6900 2650 6900 2800
-Connection ~ 6900 2650
-Wire Wire Line
-	6900 2650 7150 2650
 Text Notes 7750 2650 0    40   ~ 8
 TX_STATE
 Text Notes 7000 2750 0    40   ~ 8
@@ -512,8 +436,6 @@ Wire Wire Line
 Wire Wire Line
 	6650 2750 6650 2650
 Connection ~ 6650 2650
-Wire Wire Line
-	6650 2650 6900 2650
 Text GLabel 3650 3100 2    79   Output ~ 0
 RF_PA_OUT
 $Comp
@@ -782,9 +704,7 @@ Wire Wire Line
 Wire Wire Line
 	10600 4100 10600 4200
 Wire Wire Line
-	10250 5200 10600 5200
-Wire Wire Line
-	10600 5200 10600 4400
+	10250 5250 10600 5250
 $Comp
 L 74xx:74HC04 U15
 U 4 1 6168C5AA
@@ -966,4 +886,11 @@ Text GLabel 10150 4100 0    79   Input ~ 0
 Wire Wire Line
 	10250 4100 10150 4100
 Connection ~ 10250 4100
+Wire Wire Line
+	6650 2650 7150 2650
+Wire Wire Line
+	7500 2550 7900 2550
+Wire Wire Line
+	10600 4400 10600 5250
+Connection ~ 10250 5250
 $EndSCHEMATC
