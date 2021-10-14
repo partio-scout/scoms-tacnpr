@@ -262,99 +262,44 @@ RF_PA_IN
 Wire Wire Line
 	6000 1750 5800 1750
 $Comp
-L Device:R_Small R?
-U 1 1 61440766
-P 7600 2250
-AR Path="/61440766" Ref="R?"  Part="1" 
-AR Path="/6096F497/61440766" Ref="R?"  Part="1" 
-AR Path="/607946F5/61440766" Ref="R44"  Part="1" 
-F 0 "R44" H 7659 2296 50  0000 L CNN
-F 1 "1.5k" H 7659 2205 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7600 2250 50  0001 C CNN
-F 3 "~" H 7600 2250 50  0001 C CNN
-	1    7600 2250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7500 2250 7500 2550
-$Comp
 L Device:LED D?
 U 1 1 6144076D
-P 7850 2100
+P 3650 6350
 AR Path="/6144076D" Ref="D?"  Part="1" 
 AR Path="/609A52E7/6144076D" Ref="D?"  Part="1" 
 AR Path="/607FB7F8/6144076D" Ref="D?"  Part="1" 
 AR Path="/6096F497/6144076D" Ref="D?"  Part="1" 
 AR Path="/607946F5/6144076D" Ref="D19"  Part="1" 
-F 0 "D19" H 7850 1850 50  0000 C CNN
-F 1 "TX_LED" H 7850 1950 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 7850 2100 50  0001 C CNN
-F 3 "~" H 7850 2100 50  0001 C CNN
-	1    7850 2100
+F 0 "D19" H 3650 6100 50  0000 C CNN
+F 1 "TX_LED" H 3650 6200 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 3650 6350 50  0001 C CNN
+F 3 "~" H 3650 6350 50  0001 C CNN
+	1    3650 6350
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61440773
-P 8650 2150
-AR Path="/61440773" Ref="#PWR?"  Part="1" 
-AR Path="/609A52E7/61440773" Ref="#PWR?"  Part="1" 
-AR Path="/607FB7F8/61440773" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/61440773" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/61440773" Ref="#PWR0167"  Part="1" 
-F 0 "#PWR0167" H 8650 1900 50  0001 C CNN
-F 1 "GND" H 8655 1977 50  0000 C CNN
-F 2 "" H 8650 2150 50  0001 C CNN
-F 3 "" H 8650 2150 50  0001 C CNN
-	1    8650 2150
-	1    0    0    -1  
-$EndComp
 Connection ~ 7500 2550
-$Comp
-L Transistor_BJT:BC847 Q1
-U 1 1 6144BDBD
-P 8350 2200
-F 0 "Q1" V 8678 2200 50  0000 C CNN
-F 1 "BC847" V 8587 2200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8550 2125 50  0001 L CIN
-F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 8350 2200 50  0001 L CNN
-	1    8350 2200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8650 2100 8550 2100
-Wire Wire Line
-	8350 2400 7950 2400
-Wire Wire Line
-	7950 2400 7950 2250
-Wire Wire Line
-	7950 2250 7700 2250
-Text GLabel 7350 2100 0    79   Input ~ 0
-3V3_RADIO
 Wire Wire Line
 	5800 2550 7500 2550
 $Comp
 L Device:R_Small R?
 U 1 1 6147D407
-P 7550 2100
+P 3350 6350
 AR Path="/6147D407" Ref="R?"  Part="1" 
 AR Path="/6096F497/6147D407" Ref="R?"  Part="1" 
 AR Path="/607946F5/6147D407" Ref="R38"  Part="1" 
-F 0 "R38" V 7300 2100 50  0000 L CNN
-F 1 "1.5k" V 7400 2050 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7550 2100 50  0001 C CNN
-F 3 "~" H 7550 2100 50  0001 C CNN
-	1    7550 2100
+F 0 "R38" V 3100 6350 50  0000 L CNN
+F 1 "1.5k" V 3200 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3350 6350 50  0001 C CNN
+F 3 "~" H 3350 6350 50  0001 C CNN
+	1    3350 6350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7350 2100 7450 2100
+	3150 6350 3250 6350
 Wire Wire Line
-	7650 2100 7700 2100
+	3450 6350 3500 6350
 Wire Wire Line
-	8000 2100 8150 2100
-Wire Wire Line
-	8650 2100 8650 2150
+	3800 6350 3950 6350
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 6148EF74
@@ -441,14 +386,14 @@ RF_PA_OUT
 $Comp
 L 74xx:74HC04 U15
 U 1 1 6164928D
-P 2100 5400
+P 2150 5900
 AR Path="/607946F5/6164928D" Ref="U15"  Part="1" 
 AR Path="/60604CF2/6164928D" Ref="U?"  Part="1" 
-F 0 "U15" H 2100 5717 50  0000 C CNN
-F 1 "74HC04" H 2100 5626 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2100 5400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 5400 50  0001 C CNN
-	1    2100 5400
+F 0 "U15" H 2150 6217 50  0000 C CNN
+F 1 "74HC04" H 2150 6126 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2150 5900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2150 5900 50  0001 C CNN
+	1    2150 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -599,7 +544,7 @@ Text Notes 1150 2600 0    79   ~ 16
 TX_STATE will control:\n- inverted: PA DRIVER OFF\nRX_STATE\n- inverted: LNA PWR OFF\n
 Text Notes 5900 4700 2    79   ~ 16
 GPIOR2\nRX_STATE
-Text Notes 1700 5250 2    79   ~ 16
+Text Notes 1750 5750 2    79   ~ 16
 GPIOR1\nTX_STATE
 Text Notes 3850 5300 0    39   ~ 8
 driver\nstage
@@ -632,29 +577,29 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U?
 U 3 1 616492E5
-P 2800 5400
+P 2850 5900
 AR Path="/60604CF2/616492E5" Ref="U?"  Part="3" 
 AR Path="/607946F5/616492E5" Ref="U15"  Part="3" 
-F 0 "U15" H 2800 5717 50  0000 C CNN
-F 1 "74HC04" H 2800 5626 50  0000 C CNN
-F 2 "" H 2800 5400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2800 5400 50  0001 C CNN
-	3    2800 5400
+F 0 "U15" H 2850 6217 50  0000 C CNN
+F 1 "74HC04" H 2850 6126 50  0000 C CNN
+F 2 "" H 2850 5900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 5900 50  0001 C CNN
+	3    2850 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2400 5400 2500 5400
-Text Notes 2100 7050 0    79   ~ 16
+	2450 5900 2550 5900
+Text Notes 2150 7300 0    79   ~ 16
 ao3401a pmos-fetti\nlna-sähkö, pin-diodi, pa-driver\n\npin-diodin bias logiikka3v:sta, muutama 10 ma bias
 Text GLabel 5800 4300 0    50   Output ~ 0
 GPIOR2
 Text GLabel 1600 4850 0    50   Output ~ 0
 GPIOR1
 Wire Wire Line
-	1800 5400 1600 5400
+	1850 5900 1650 5900
 Wire Wire Line
 	1600 4850 1800 4850
-Text GLabel 1600 5400 0    50   Output ~ 0
+Text GLabel 1650 5900 0    50   Output ~ 0
 GPIOR1
 Text GLabel 5800 4850 0    50   Output ~ 0
 GPIOR2
@@ -848,7 +793,7 @@ Wire Wire Line
 	8300 4150 8300 4400
 Text Notes 7900 5400 0    39   ~ 8
 LNA\nPWR
-Text GLabel 3150 5400 2    50   Output ~ 0
+Text GLabel 3450 5900 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2450 4700 2    50   Output ~ 0
 TXSTATE_INV
@@ -869,7 +814,7 @@ Wire Wire Line
 	6550 4150 6550 4300
 Connection ~ 6550 4300
 Wire Wire Line
-	3100 5400 3150 5400
+	3150 5900 3450 5900
 $Comp
 L 74xx:74HC04 U15
 U 6 1 6168F698
@@ -893,4 +838,21 @@ Wire Wire Line
 Wire Wire Line
 	10600 4400 10600 5250
 Connection ~ 10250 5250
+$Comp
+L power:GND #PWR?
+U 1 1 61899DA5
+P 3950 6350
+AR Path="/609A52E7/61899DA5" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61899DA5" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61899DA5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3950 6100 50  0001 C CNN
+F 1 "GND" H 3955 6177 50  0000 C CNN
+F 2 "" H 3950 6350 50  0001 C CNN
+F 3 "" H 3950 6350 50  0001 C CNN
+	1    3950 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6350 3150 5900
+Connection ~ 3150 5900
 $EndSCHEMATC
