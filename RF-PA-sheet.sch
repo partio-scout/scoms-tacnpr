@@ -925,4 +925,14 @@ switched supply 3v3
 Wire Wire Line
 	9650 4250 9650 4150
 Connection ~ 9650 4250
+Text Notes 4700 7400 0    79   ~ 16
+RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
+Wire Notes Line
+	4500 6550 6650 6550
+Wire Notes Line
+	6650 6550 6650 7600
+Wire Notes Line
+	6650 7600 4500 7600
+Wire Notes Line
+	4500 7600 4500 6550
 $EndSCHEMATC

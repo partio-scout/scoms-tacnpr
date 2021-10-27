@@ -380,7 +380,7 @@ U 1 1 605F9615
 P 8000 1700
 F 0 "U7" H 8000 2203 60  0000 C CNN
 F 1 "23LC1024" H 8000 2097 60  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8000 1991 60  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8000 1991 60  0001 C CNN
 F 3 "" H 8000 1700 60  0000 C CNN
 	1    8000 1700
 	1    0    0    -1  
@@ -1364,7 +1364,7 @@ Text GLabel 10050 4650 2    50   BiDi ~ 0
 GPIO10_TERMINAL
 Text GLabel 10050 4550 2    50   BiDi ~ 0
 GPIO11_TERMINAL
-Text Notes 9000 4150 0    97   ~ 19
+Text Notes 9250 4150 0    97   ~ 19
 GPIO header
 $Comp
 L Connector:Conn_01x05_Male J?
@@ -1401,23 +1401,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 4650 10050 4650
 Wire Wire Line
-	9600 4750 10050 4750
-Wire Wire Line
 	9600 4850 9850 4850
-$Comp
-L power:GND #PWR?
-U 1 1 6160D21F
-P 10050 4750
-AR Path="/6160D21F" Ref="#PWR?"  Part="1" 
-AR Path="/60D4B6E6/6160D21F" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/6160D21F" Ref="#PWR0158"  Part="1" 
-F 0 "#PWR0158" H 10050 4500 50  0001 C CNN
-F 1 "GND" H 10055 4577 50  0000 C CNN
-F 2 "" H 10050 4750 50  0001 C CNN
-F 3 "" H 10050 4750 50  0001 C CNN
-	1    10050 4750
-	0    -1   -1   0   
-$EndComp
 Text GLabel 9850 4850 2    79   Input ~ 0
 3V8_OUT
 $Comp
@@ -1601,4 +1585,18 @@ $EndComp
 Connection ~ 9550 6100
 Wire Wire Line
 	9550 6100 9650 6100
+$Comp
+L power:GND #PWR?
+U 1 1 6160D21F
+P 9600 4750
+AR Path="/6160D21F" Ref="#PWR?"  Part="1" 
+AR Path="/60D4B6E6/6160D21F" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/6160D21F" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 9600 4500 50  0001 C CNN
+F 1 "GND" H 9605 4577 50  0000 C CNN
+F 2 "" H 9600 4750 50  0001 C CNN
+F 3 "" H 9600 4750 50  0001 C CNN
+	1    9600 4750
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
