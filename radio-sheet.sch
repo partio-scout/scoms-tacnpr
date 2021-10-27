@@ -875,4 +875,10 @@ Wire Wire Line
 Connection ~ 7150 4850
 Wire Wire Line
 	7150 4850 7100 4850
+Text GLabel 6250 5700 0    79   Input ~ 0
+SWDC_PA_TX_12V
+Text GLabel 5300 6000 2    79   Input ~ 0
+SWDC_PA_TX_3V3
+Text GLabel 5500 6300 2    79   Input ~ 0
+SWDC_LNA_3V3
 $EndSCHEMATC

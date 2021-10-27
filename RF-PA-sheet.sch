@@ -245,7 +245,7 @@ $EndComp
 Wire Wire Line
 	4300 2150 4350 2150
 Wire Wire Line
-	4850 2150 5550 2150
+	4850 2150 5300 2150
 Connection ~ 4850 2150
 Connection ~ 5550 2150
 Wire Wire Line
@@ -473,7 +473,7 @@ Text Notes 6050 4900 2    40   ~ 8
 Text Notes 4750 4750 2    40   ~ 8
 33mm_100ohm
 Wire Wire Line
-	6500 4150 6650 4150
+	6500 4150 6950 4150
 Connection ~ 6500 4150
 $Comp
 L Connector:TestPoint GPIOR?
@@ -636,8 +636,6 @@ F 3 "~" H 6300 4150 50  0001 C CNN
 	1    6300 4150
 	0    -1   1    0   
 $EndComp
-Text Notes 7000 4200 2    79   ~ 16
-bias
 Wire Wire Line
 	5800 4150 5950 4150
 Wire Wire Line
@@ -869,8 +867,8 @@ F 3 "" H 5850 1245 50  0001 C CNN
 	1    5850 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 2450 1    40   ~ 8
-avainnus
+Text Notes 5250 2550 1    40   ~ 8
+TX PWR \nswitching
 Wire Wire Line
 	7500 4800 8150 4800
 Wire Wire Line
@@ -920,10 +918,8 @@ Wire Wire Line
 	9650 4400 9650 4250
 Wire Wire Line
 	9650 4250 10050 4250
-Text Notes 10100 4000 2    79   ~ 16
-switched supply 3v3
-Wire Wire Line
-	9650 4250 9650 4150
+Text Notes 10600 3850 2    79   ~ 16
+LNA's switched \nDC supply 3v3
 Connection ~ 9650 4250
 Text Notes 4700 7400 0    79   ~ 16
 RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
@@ -935,4 +931,19 @@ Wire Notes Line
 	6650 7600 4500 7600
 Wire Notes Line
 	4500 7600 4500 6550
+Text GLabel 6950 4150 2    79   Input ~ 0
+SWDC_PA_TX_3V3
+Text GLabel 9650 4000 2    79   Input ~ 0
+SWDC_LNA_3V3
+Wire Wire Line
+	9650 4000 9650 4250
+Text GLabel 5300 2700 0    79   Input ~ 0
+SWDC_PA_TX_12V
+Wire Wire Line
+	5300 2700 5300 2150
+Connection ~ 5300 2150
+Wire Wire Line
+	5300 2150 5550 2150
+Text Notes 8050 4000 2    79   ~ 16
+Pin diode's switched \nbias from 3v3
 $EndSCHEMATC
