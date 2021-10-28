@@ -548,52 +548,23 @@ GPIOR1
 Text GLabel 5800 4850 0    50   Output ~ 0
 GPIOR2
 $Comp
-L 74xx:74HC04 U15
-U 7 1 6167EED7
-P 10250 4750
-F 0 "U15" H 10480 4796 50  0000 L CNN
-F 1 "74HC04" H 10480 4705 50  0000 L CNN
-F 2 "" H 10250 4750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 10250 4750 50  0001 C CNN
-	7    10250 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61680126
-P 10250 5250
-AR Path="/609A52E7/61680126" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/61680126" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/61680126" Ref="#PWR0172"  Part="1" 
-F 0 "#PWR0172" H 10250 5000 50  0001 C CNN
-F 1 "GND" H 10255 5077 50  0000 C CNN
-F 2 "" H 10250 5250 50  0001 C CNN
-F 3 "" H 10250 5250 50  0001 C CNN
-	1    10250 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10250 4100 10250 4250
-$Comp
 L Device:C_Small C?
 U 1 1 6168533C
-P 10600 4300
+P 10800 4700
 AR Path="/6168533C" Ref="C?"  Part="1" 
 AR Path="/6096F497/6168533C" Ref="C?"  Part="1" 
 AR Path="/607946F5/6168533C" Ref="C40"  Part="1" 
-F 0 "C40" H 10692 4346 50  0000 L CNN
-F 1 "100n" H 10692 4255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10600 4300 50  0001 C CNN
-F 3 "~" H 10600 4300 50  0001 C CNN
-	1    10600 4300
+F 0 "C40" H 10892 4746 50  0000 L CNN
+F 1 "100n" H 10892 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10800 4700 50  0001 C CNN
+F 3 "~" H 10800 4700 50  0001 C CNN
+	1    10800 4700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	10250 4100 10600 4100
+	10100 4100 10800 4100
 Wire Wire Line
-	10600 4100 10600 4200
-Wire Wire Line
-	10250 5250 10600 5250
+	10800 4100 10800 4600
 $Comp
 L 74xx:74HC04 U15
 U 4 1 6168C5AA
@@ -712,7 +683,7 @@ Wire Wire Line
 	8300 4150 8250 4150
 Wire Wire Line
 	8300 4150 8300 4400
-Text Notes 7650 5300 0    39   ~ 8
+Text Notes 7500 5300 0    39   ~ 8
 LNA PWR SUPPLY 3V3
 Text GLabel 4550 5900 2    50   Output ~ 0
 TXSTATE
@@ -720,7 +691,7 @@ Text GLabel 2450 4700 2    50   Output ~ 0
 TXSTATE_INV
 Text GLabel 7200 4850 2    50   Output ~ 0
 RXSTATE
-Text GLabel 6600 4150 2    50   Output ~ 0
+Text GLabel 6750 4150 2    50   Output ~ 0
 RXSTATE_INV
 Wire Wire Line
 	6550 4300 7650 4300
@@ -730,7 +701,7 @@ Wire Wire Line
 	2400 4700 2400 4850
 Connection ~ 2400 4850
 Wire Wire Line
-	6600 4150 6550 4150
+	6750 4150 6550 4150
 Wire Wire Line
 	6550 4150 6550 4300
 Connection ~ 6550 4300
@@ -747,18 +718,17 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6850 485
 	6    6850 4850
 	1    0    0    -1  
 $EndComp
-Text GLabel 10150 4100 0    50   Input ~ 0
+Text GLabel 9750 4100 0    50   Input ~ 0
 3V3_RADIO
 Wire Wire Line
-	10250 4100 10150 4100
-Connection ~ 10250 4100
+	10100 4100 9750 4100
+Connection ~ 10100 4100
 Wire Wire Line
 	6650 2650 7150 2650
 Wire Wire Line
 	7500 2550 7900 2550
 Wire Wire Line
-	10600 4400 10600 5250
-Connection ~ 10250 5250
+	10800 4800 10800 5250
 $Comp
 L power:GND #PWR?
 U 1 1 61899DA5
@@ -798,19 +768,19 @@ Wire Wire Line
 	7150 4850 7100 4850
 Text GLabel 4500 5050 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text GLabel 4200 6100 2    50   Input ~ 0
+Text GLabel 4850 6100 2    50   Input ~ 0
 SWDC_PA_TX_3V3
-Text GLabel 8200 5150 0    50   Input ~ 0
+Text GLabel 8100 5150 0    50   Input ~ 0
 SWDC_LNA_3V3
 Text GLabel 6600 2050 2    50   Input ~ 0
 RXP_FROM_LNA
 Text Notes 6100 950  0    40   ~ 8
 https://www.silabs.com/documents/public/application-notes/AN629.pdf\nfig 16 @ page 14?\n
 Wire Wire Line
-	8300 5150 8200 5150
+	8300 5150 8100 5150
 Connection ~ 8300 5150
 Wire Wire Line
-	4200 6100 4050 6100
+	4850 6100 4050 6100
 Wire Wire Line
 	4050 6100 4050 5900
 Connection ~ 4050 5900
@@ -850,4 +820,36 @@ F 3 "~" H 4800 5050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4600 5050
+Text Notes 4250 6200 0    40   ~ 8
+vastus tähän!
+Wire Wire Line
+	10100 4100 10100 4250
+Connection ~ 10100 5250
+Wire Wire Line
+	10100 5250 10800 5250
+$Comp
+L 74xx:74HC04 U15
+U 7 1 6167EED7
+P 10100 4750
+F 0 "U15" H 9650 5000 50  0000 L CNN
+F 1 "74HC04" H 9950 4750 50  0000 L CNN
+F 2 "" H 10100 4750 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 10100 4750 50  0001 C CNN
+	7    10100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61680126
+P 10100 5250
+AR Path="/609A52E7/61680126" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61680126" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61680126" Ref="#PWR0172"  Part="1" 
+F 0 "#PWR0172" H 10100 5000 50  0001 C CNN
+F 1 "GND" H 10105 5077 50  0000 C CNN
+F 2 "" H 10100 5250 50  0001 C CNN
+F 3 "" H 10100 5250 50  0001 C CNN
+	1    10100 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
