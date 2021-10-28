@@ -946,4 +946,6 @@ Wire Wire Line
 	5300 2150 5550 2150
 Text Notes 8050 4000 2    79   ~ 16
 Pin diode's switched \nbias from 3v3
+Text GLabel 9650 4800 2    79   Input ~ 0
+RXP_FROM_LNA
 $EndSCHEMATC
