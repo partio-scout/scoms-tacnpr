@@ -757,7 +757,7 @@ Connection ~ 3600 4800
 Wire Wire Line
 	3600 4800 4800 4800
 Wire Wire Line
-	3000 4800 3600 4800
+	2550 4800 3600 4800
 $Comp
 L Device:C_Small C?
 U 1 1 60C94A06
@@ -800,27 +800,27 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60C8FF84
-P 2900 4800
+P 2450 4800
 AR Path="/609A52E7/60C8FF84" Ref="C?"  Part="1" 
 AR Path="/60604CF2/60C8FF84" Ref="C46"  Part="1" 
-F 0 "C46" H 2992 4846 50  0000 L CNN
-F 1 "22p" H 2992 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 2900 4800 50  0001 C CNN
-F 3 "~" H 2900 4800 50  0001 C CNN
-	1    2900 4800
+F 0 "C46" H 2542 4846 50  0000 L CNN
+F 1 "22p" H 2542 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2450 4800 50  0001 C CNN
+F 3 "~" H 2450 4800 50  0001 C CNN
+	1    2450 4800
 	0    -1   1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60C8F6F8
-P 2600 5000
+P 2150 5000
 AR Path="/609A52E7/60C8F6F8" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/60C8F6F8" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 2600 4750 50  0001 C CNN
-F 1 "GND" H 2605 4827 50  0000 C CNN
-F 2 "" H 2600 5000 50  0001 C CNN
-F 3 "" H 2600 5000 50  0001 C CNN
-	1    2600 5000
+F 0 "#PWR0116" H 2150 4750 50  0001 C CNN
+F 1 "GND" H 2155 4827 50  0000 C CNN
+F 2 "" H 2150 5000 50  0001 C CNN
+F 3 "" H 2150 5000 50  0001 C CNN
+	1    2150 5000
 	-1   0    0    -1  
 $EndComp
 Text GLabel 5200 3900 0    50   Input ~ 0
@@ -828,12 +828,12 @@ RF_PA_OUT
 $Comp
 L Connector:Conn_Coaxial J7
 U 1 1 607DDDF1
-P 2600 4800
-F 0 "J7" H 2700 4775 50  0000 L CNN
-F 1 "Conn_Coaxial" H 2700 4684 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132134_Vertical" H 2600 4800 50  0001 C CNN
-F 3 " ~" H 2600 4800 50  0001 C CNN
-	1    2600 4800
+P 2150 4800
+F 0 "J7" H 2250 4775 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2250 4684 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134_Vertical" H 2150 4800 50  0001 C CNN
+F 3 " ~" H 2150 4800 50  0001 C CNN
+	1    2150 4800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -933,4 +933,10 @@ Text GLabel 9650 4800 2    50   Input ~ 0
 RXP_FROM_LNA
 Text GLabel 6600 2050 2    50   Input ~ 0
 RF_PA_OUT
+Text Notes 2350 5800 1    40   ~ 8
+100k tms iso vastus maihin keskikarvasta
+Text Notes 7650 5300 1    40   ~ 8
+vedot lyhyiksi!
+Text Notes 3950 6000 2    40   ~ 8
+TODO:\nkorjaa stubi keepoutin\npäälle (ei nyt ole!)
 $EndSCHEMATC

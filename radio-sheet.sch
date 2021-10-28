@@ -804,7 +804,7 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 
 $EndComp
 Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
-Text GLabel 3350 4000 0    50   Input ~ 0
+Text GLabel 2750 4000 0    50   Input ~ 0
 12V_TO_RFPA
 $Comp
 L Connector:TestPoint TP?
@@ -852,4 +852,8 @@ F 3 "" H 10100 5250 50  0001 C CNN
 	1    10100 5250
 	1    0    0    -1  
 $EndComp
+Text Notes 2700 6250 0    40   ~ 8
+kaks\nrinnan
+Text Notes 2650 5050 0    40   ~ 8
+tähän\ninvertteri\nlisää\n(alta)
 $EndSCHEMATC
