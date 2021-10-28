@@ -484,8 +484,6 @@ Wire Wire Line
 Wire Wire Line
 	3350 4000 3600 4000
 Connection ~ 3600 4000
-Text Notes 2800 4050 0    79   ~ 16
-+12V in
 Text Notes 1150 3000 0    79   ~ 16
 TX_STATE will control:\n- inverted: PA DRIVER OFF\nRX_STATE\n- inverted: LNA PWR OFF\n
 Text Notes 5900 4700 2    79   ~ 16
@@ -836,4 +834,20 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 
 $EndComp
 Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
+Text GLabel 3350 4000 0    50   Input ~ 0
+12V_TO_RFPA
+$Comp
+L Connector:TestPoint TP?
+U 1 1 6195A862
+P 4600 5050
+AR Path="/6096F497/6195A862" Ref="TP?"  Part="1" 
+AR Path="/607946F5/6195A862" Ref="TP16"  Part="1" 
+F 0 "TP16" V 4550 5050 50  0000 C CNN
+F 1 "TestPoint" V 4600 5450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4800 5050 50  0001 C CNN
+F 3 "~" H 4800 5050 50  0001 C CNN
+	1    4600 5050
+	0    1    1    0   
+$EndComp
+Connection ~ 4600 5050
 $EndSCHEMATC

@@ -244,9 +244,6 @@ F 3 "" H 4500 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4300 2150 4350 2150
-Wire Wire Line
-	4850 2150 5300 2150
-Connection ~ 4850 2150
 Connection ~ 5550 2150
 Wire Wire Line
 	2650 2150 2900 2150
@@ -928,7 +925,6 @@ Text GLabel 5300 2700 0    50   Input ~ 0
 SWDC_PA_TX_12V
 Wire Wire Line
 	5300 2700 5300 2150
-Connection ~ 5300 2150
 Wire Wire Line
 	5300 2150 5550 2150
 Text Notes 8050 4000 2    79   ~ 16
