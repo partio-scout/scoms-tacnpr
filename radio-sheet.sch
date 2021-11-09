@@ -369,14 +369,14 @@ $EndComp
 $Comp
 L 74xx:74HC04 U15
 U 2 1 61649293
-P 2100 4850
+P 2850 6100
 AR Path="/607946F5/61649293" Ref="U15"  Part="2" 
 AR Path="/60604CF2/61649293" Ref="U?"  Part="2" 
-F 0 "U15" H 2100 5167 50  0000 C CNN
-F 1 "74HC04" H 2100 5076 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2100 4850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 4850 50  0001 C CNN
-	2    2100 4850
+F 0 "U15" H 2850 6417 50  0000 C CNN
+F 1 "74HC04" H 2850 6326 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2850 6100 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6100 50  0001 C CNN
+	2    2850 6100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -492,8 +492,6 @@ Text Notes 1750 5750 2    79   ~ 16
 GPIOR1\nTX_STATE
 Text Notes 3900 5250 0    39   ~ 8
 PA driver stage\nDC supply 12V
-Wire Wire Line
-	2400 4850 3000 4850
 $Comp
 L Device:R_Small R?
 U 1 1 616492DA
@@ -521,14 +519,14 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U?
 U 3 1 616492E5
-P 2850 5900
+P 2850 5700
 AR Path="/60604CF2/616492E5" Ref="U?"  Part="3" 
 AR Path="/607946F5/616492E5" Ref="U15"  Part="3" 
-F 0 "U15" H 2850 6217 50  0000 C CNN
-F 1 "74HC04" H 2850 6126 50  0000 C CNN
-F 2 "" H 2850 5900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 5900 50  0001 C CNN
-	3    2850 5900
+F 0 "U15" H 2850 6017 50  0000 C CNN
+F 1 "74HC04" H 2850 5926 50  0000 C CNN
+F 2 "" H 2850 5700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 5700 50  0001 C CNN
+	3    2850 5700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -537,16 +535,14 @@ Text Notes 2150 7300 0    79   ~ 16
 ao3401a pmos-fetti\nlna-sähkö, pin-diodi, pa-driver\n\npin-diodin bias logiikka3v:sta, muutama 10 ma bias
 Text GLabel 5800 4300 0    50   Output ~ 0
 GPIOR2
-Text GLabel 1600 4850 0    50   Output ~ 0
+Text GLabel 1550 4850 0    50   Output ~ 0
 GPIOR1
 Wire Wire Line
 	1850 5900 1650 5900
 Wire Wire Line
-	1600 4850 1800 4850
+	1550 4850 1800 4850
 Text GLabel 1650 5900 0    50   Output ~ 0
 GPIOR1
-Text GLabel 5800 4850 0    50   Output ~ 0
-GPIOR2
 $Comp
 L Device:C_Small C?
 U 1 1 6168533C
@@ -579,18 +575,16 @@ $EndComp
 $Comp
 L 74xx:74HC04 U15
 U 5 1 6168E921
-P 6250 4850
-F 0 "U15" H 6250 5167 50  0000 C CNN
-F 1 "74HC04" H 6250 5076 50  0000 C CNN
-F 2 "" H 6250 4850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6250 4850 50  0001 C CNN
-	5    6250 4850
+P 2700 4850
+F 0 "U15" H 2700 5167 50  0000 C CNN
+F 1 "74HC04" H 2700 5076 50  0000 C CNN
+F 2 "" H 2700 4850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2700 4850 50  0001 C CNN
+	5    2700 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5800 4300 5950 4300
-Wire Wire Line
-	5800 4850 5950 4850
 $Comp
 L power:GND #PWR?
 U 1 1 616B1A7F
@@ -687,19 +681,12 @@ Text Notes 7500 5300 0    39   ~ 8
 LNA PWR SUPPLY 3V3
 Text GLabel 4550 5900 2    50   Output ~ 0
 TXSTATE
-Text GLabel 2450 4700 2    50   Output ~ 0
+Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
-Text GLabel 7200 4850 2    50   Output ~ 0
-RXSTATE
 Text GLabel 6750 4150 2    50   Output ~ 0
 RXSTATE_INV
 Wire Wire Line
 	6550 4300 7650 4300
-Wire Wire Line
-	2450 4700 2400 4700
-Wire Wire Line
-	2400 4700 2400 4850
-Connection ~ 2400 4850
 Wire Wire Line
 	6750 4150 6550 4150
 Wire Wire Line
@@ -710,12 +697,12 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U15
 U 6 1 6168F698
-P 6850 4850
-F 0 "U15" H 6850 5167 50  0000 C CNN
-F 1 "74HC04" H 6850 5076 50  0000 C CNN
-F 2 "" H 6850 4850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6850 4850 50  0001 C CNN
-	6    6850 4850
+P 2100 4850
+F 0 "U15" H 2100 5167 50  0000 C CNN
+F 1 "74HC04" H 2100 5076 50  0000 C CNN
+F 2 "" H 2100 4850 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 4850 50  0001 C CNN
+	6    2100 4850
 	1    0    0    -1  
 $EndComp
 Text GLabel 9750 4100 0    50   Input ~ 0
@@ -744,28 +731,7 @@ F 3 "" H 3950 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 6350 3150 5900
-Connection ~ 3150 5900
-$Comp
-L Connector:TestPoint TP?
-U 1 1 618DB860
-P 7100 5050
-AR Path="/6096F497/618DB860" Ref="TP?"  Part="1" 
-AR Path="/607946F5/618DB860" Ref="TP15"  Part="1" 
-F 0 "TP15" V 7050 5050 50  0000 C CNN
-F 1 "TestPoint" V 7100 5450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 5050 50  0001 C CNN
-F 3 "~" H 7300 5050 50  0001 C CNN
-	1    7100 5050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	7200 4850 7150 4850
-Wire Wire Line
-	7100 4850 7100 5050
-Connection ~ 7150 4850
-Wire Wire Line
-	7150 4850 7100 4850
+	3150 6350 3150 6100
 Text GLabel 4500 5050 0    50   Input ~ 0
 SWDC_PA_TX_12V
 Text GLabel 4850 6100 2    50   Input ~ 0
@@ -852,8 +818,18 @@ F 3 "" H 10100 5250 50  0001 C CNN
 	1    10100 5250
 	1    0    0    -1  
 $EndComp
-Text Notes 2700 6250 0    40   ~ 8
-kaks\nrinnan
-Text Notes 2650 5050 0    40   ~ 8
-tähän\ninvertteri\nlisää\n(alta)
+Wire Wire Line
+	2400 4400 2400 4850
+Connection ~ 2400 4850
+Connection ~ 3150 6100
+Wire Wire Line
+	3150 6100 3150 5900
+Wire Wire Line
+	2550 5900 2550 5700
+Wire Wire Line
+	2550 5900 2550 6100
+Connection ~ 2550 5900
+Wire Wire Line
+	3150 5700 3150 5900
+Connection ~ 3150 5900
 $EndSCHEMATC
