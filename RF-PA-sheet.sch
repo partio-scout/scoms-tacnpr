@@ -17,37 +17,8 @@ Text Notes 7150 6850 0    157  Italic 31
 TACNPR / RF PA & TRX switch
 Text Notes 7200 7050 0    79   Italic 16
 20W RF PA based on Motorola MHW720A, design: Tatu OH2EAT
-Text GLabel 2650 2150 0    50   Input ~ 0
+Text GLabel 2400 2900 0    50   Input ~ 0
 12V_TO_RFPA
-$Comp
-L Device:C_Small C?
-U 1 1 609C07FD
-P 4500 2250
-AR Path="/609A52E7/609C07FD" Ref="C?"  Part="1" 
-AR Path="/60604CF2/609C07FD" Ref="C58"  Part="1" 
-F 0 "C58" H 4592 2296 50  0000 L CNN
-F 1 "22u" H 4592 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4500 2250 50  0001 C CNN
-F 3 "~" H 4500 2250 50  0001 C CNN
-	1    4500 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 609C0803
-P 4850 2250
-AR Path="/609A52E7/609C0803" Ref="C?"  Part="1" 
-AR Path="/60604CF2/609C0803" Ref="C59"  Part="1" 
-F 0 "C59" H 4942 2296 50  0000 L CNN
-F 1 "22u" H 4942 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4850 2250 50  0001 C CNN
-F 3 "~" H 4850 2250 50  0001 C CNN
-	1    4850 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 2150 4500 2150
-Connection ~ 4500 2150
 $Comp
 L Device:C_Small C?
 U 1 1 607AB05C
@@ -116,22 +87,11 @@ $EndComp
 Wire Wire Line
 	5550 1750 5550 2150
 $Comp
-L Device:L_Core_Iron L5
-U 1 1 6081318C
-P 4150 2150
-F 0 "L5" V 4100 2200 50  0000 R CNN
-F 1 "L_Core_Iron" V 4300 2400 50  0000 R CNN
-F 2 "Inductor_SMD:L_1210_3225Metric" H 4150 2150 50  0001 C CNN
-F 3 "~" H 4150 2150 50  0001 C CNN
-	1    4150 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:L_Core_Iron L6
 U 1 1 60814461
 P 4150 2900
 F 0 "L6" V 4100 2950 50  0000 R CNN
-F 1 "L_Core_Iron" V 4300 3100 50  0000 R CNN
+F 1 "??" V 4300 2950 50  0000 R CNN
 F 2 "Inductor_SMD:L_1210_3225Metric" H 4150 2900 50  0001 C CNN
 F 3 "~" H 4150 2900 50  0001 C CNN
 	1    4150 2900
@@ -231,25 +191,9 @@ Wire Wire Line
 	5150 2000 5250 2000
 Wire Wire Line
 	5250 2000 5250 1750
-$Comp
-L power:GND #PWR078
-U 1 1 609C0946
-P 4500 2350
-F 0 "#PWR078" H 4500 2100 50  0001 C CNN
-F 1 "GND" H 4505 2177 50  0000 C CNN
-F 2 "" H 4500 2350 50  0001 C CNN
-F 3 "" H 4500 2350 50  0001 C CNN
-	1    4500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 2150 4350 2150
 Connection ~ 5550 2150
 Wire Wire Line
-	2650 2150 2900 2150
-Wire Wire Line
-	3750 2900 4000 2900
-Connection ~ 3750 2150
+	2400 2900 3050 2900
 Wire Wire Line
 	4300 2900 4600 2900
 $Comp
@@ -318,95 +262,63 @@ Wire Wire Line
 	6150 2900 5800 2900
 $Comp
 L power:GND #PWR?
-U 1 1 60C94495
-P 4850 2350
-AR Path="/609A52E7/60C94495" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/60C94495" Ref="#PWR0153"  Part="1" 
-F 0 "#PWR0153" H 4850 2100 50  0001 C CNN
-F 1 "GND" H 4855 2177 50  0000 C CNN
-F 2 "" H 4850 2350 50  0001 C CNN
-F 3 "" H 4850 2350 50  0001 C CNN
-	1    4850 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 60D1A3B5
-P 3350 2450
+P 3550 3200
 AR Path="/60D1A3B5" Ref="#PWR?"  Part="1" 
 AR Path="/608A4C86/60D1A3B5" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/60D1A3B5" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR0102" H 3350 2200 50  0001 C CNN
-F 1 "GND" H 3355 2277 50  0000 C CNN
-F 2 "" H 3350 2450 50  0001 C CNN
-F 3 "" H 3350 2450 50  0001 C CNN
-	1    3350 2450
+F 0 "#PWR0102" H 3550 2950 50  0001 C CNN
+F 1 "GND" H 3555 3027 50  0000 C CNN
+F 2 "" H 3550 3200 50  0001 C CNN
+F 3 "" H 3550 3200 50  0001 C CNN
+	1    3550 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Diode:SM6T10A D?
 U 1 1 60D1A3BB
-P 3350 2300
+P 3550 3050
 AR Path="/608A4C86/60D1A3BB" Ref="D?"  Part="1" 
 AR Path="/60604CF2/60D1A3BB" Ref="D9"  Part="1" 
-F 0 "D9" H 3300 2200 50  0000 L CNN
-F 1 "TVS option, DNP" H 3250 2450 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 3350 2100 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 3300 2300 50  0001 C CNN
-	1    3350 2300
+F 0 "D9" H 3500 2950 50  0000 L CNN
+F 1 "TVS option, DNP" H 3450 3200 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 3550 2850 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 3500 3050 50  0001 C CNN
+	1    3550 3050
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60D1A3C1
-P 2900 2250
+P 3050 3000
 AR Path="/60D1A3C1" Ref="C?"  Part="1" 
 AR Path="/608A4C86/60D1A3C1" Ref="C?"  Part="1" 
 AR Path="/60604CF2/60D1A3C1" Ref="C57"  Part="1" 
-F 0 "C57" H 2650 2250 50  0000 L CNN
-F 1 "100nF" H 2600 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2900 2250 50  0001 C CNN
-F 3 "~" H 2900 2250 50  0001 C CNN
-	1    2900 2250
+F 0 "C57" H 2800 3000 50  0000 L CNN
+F 1 "100nF" H 2750 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3050 3000 50  0001 C CNN
+F 3 "~" H 3050 3000 50  0001 C CNN
+	1    3050 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60D1A3C9
-P 2900 2350
+P 3050 3100
 AR Path="/60D1A3C9" Ref="#PWR?"  Part="1" 
 AR Path="/608A4C86/60D1A3C9" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/60D1A3C9" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 2900 2100 50  0001 C CNN
-F 1 "GND" H 2905 2177 50  0000 C CNN
-F 2 "" H 2900 2350 50  0001 C CNN
-F 3 "" H 2900 2350 50  0001 C CNN
-	1    2900 2350
+F 0 "#PWR0113" H 3050 2850 50  0001 C CNN
+F 1 "GND" H 3055 2927 50  0000 C CNN
+F 2 "" H 3050 3100 50  0001 C CNN
+F 3 "" H 3050 3100 50  0001 C CNN
+	1    3050 3100
 	1    0    0    -1  
 $EndComp
-Connection ~ 2900 2150
+Connection ~ 3050 2900
 Wire Wire Line
-	2900 2150 3350 2150
-Connection ~ 3350 2150
-Wire Wire Line
-	3350 2150 3750 2150
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61051925
-P 4350 2150
-AR Path="/6096F497/61051925" Ref="TP?"  Part="1" 
-AR Path="/607946F5/61051925" Ref="TP?"  Part="1" 
-AR Path="/60604CF2/61051925" Ref="TP9"  Part="1" 
-F 0 "TP9" H 4350 2350 50  0000 C CNN
-F 1 "TestPoint" V 4350 2550 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4550 2150 50  0001 C CNN
-F 3 "~" H 4550 2150 50  0001 C CNN
-	1    4350 2150
-	-1   0    0    1   
-$EndComp
-Connection ~ 4350 2150
-Wire Wire Line
-	4350 2150 4500 2150
+	3050 2900 3550 2900
+Connection ~ 3550 2900
 $Comp
 L Connector:TestPoint TP?
 U 1 1 6105FBC0
@@ -422,8 +334,6 @@ F 3 "~" H 4500 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Connection ~ 4300 2900
-Wire Wire Line
-	3750 2150 4000 2150
 $Comp
 L npr-parts:PSA4-5043 U14
 U 1 1 611EE2D4
@@ -533,36 +443,21 @@ F 3 "~" H 5350 5100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6400 4150 6500 4150
-Wire Wire Line
-	7500 4800 7300 4800
-Connection ~ 7500 4800
-Wire Wire Line
-	7700 5350 7500 5350
-Wire Wire Line
-	7500 5350 7250 5350
-Connection ~ 7500 5350
-Wire Wire Line
-	7500 5950 7700 5950
-Connection ~ 7500 5950
 $Comp
 L power:GND #PWR?
 U 1 1 6101AFA0
-P 7500 5950
+P 7700 6100
 AR Path="/609A52E7/6101AFA0" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/6101AFA0" Ref="#PWR0162"  Part="1" 
-F 0 "#PWR0162" H 7500 5700 50  0001 C CNN
-F 1 "GND" H 7505 5777 50  0000 C CNN
-F 2 "" H 7500 5950 50  0001 C CNN
-F 3 "" H 7500 5950 50  0001 C CNN
-	1    7500 5950
+F 0 "#PWR0162" H 7700 5850 50  0001 C CNN
+F 1 "GND" H 7705 5927 50  0000 C CNN
+F 2 "" H 7700 6100 50  0001 C CNN
+F 3 "" H 7700 6100 50  0001 C CNN
+	1    7700 6100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 5950 7500 5950
-Wire Wire Line
-	7500 5650 7450 5650
-Wire Wire Line
-	7500 4800 7500 5350
+	7650 5750 7700 5750
 Wire Wire Line
 	8150 4800 8350 4800
 Connection ~ 8150 4800
@@ -595,13 +490,13 @@ $EndComp
 $Comp
 L Diode:BAV99 D16
 U 1 1 610084F7
-P 7700 5650
-F 0 "D16" V 7746 5729 50  0000 L CNN
-F 1 "BAV99" V 7655 5729 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7700 5150 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7700 5650 50  0001 C CNN
-	1    7700 5650
-	0    1    -1   0   
+P 7450 5750
+F 0 "D16" V 7496 5829 50  0000 L CNN
+F 1 "BAV99" V 7405 5829 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 5250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7450 5750 50  0001 C CNN
+	1    7450 5750
+	0    -1   1    0   
 $EndComp
 Connection ~ 5950 4150
 Wire Wire Line
@@ -684,13 +579,13 @@ $EndComp
 $Comp
 L Diode:BAV99 D15
 U 1 1 60FADEC2
-P 7250 5650
-F 0 "D15" V 7204 5729 50  0000 L CNN
-F 1 "BAV99" V 7295 5729 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7250 5150 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7250 5650 50  0001 C CNN
-	1    7250 5650
-	0    -1   1    0   
+P 7900 5750
+F 0 "D15" V 7854 5829 50  0000 L CNN
+F 1 "BAV99" V 7945 5829 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 5250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7900 5750 50  0001 C CNN
+	1    7900 5750
+	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -838,23 +733,19 @@ F 3 " ~" H 1450 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6150 1750 6150 2900
-Wire Wire Line
-	3750 2150 3750 2900
 $Comp
 L npr-parts:MHW720A U10
 U 1 1 607E2DB2
 P 5850 1300
 F 0 "U10" H 6578 1303 50  0000 L CNN
-F 1 "MHW720A" H 4150 1300 118 0000 L CNB
+F 1 "MHW720A" H 5500 1850 118 0000 L CNB
 F 2 "NPR:MHW720A" H 5850 1245 50  0001 C CNN
 F 3 "" H 5850 1245 50  0001 C CNN
 	1    5850 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 5250 2550 1    40   ~ 8
+Text Notes 4100 2400 2    40   ~ 8
 TX PWR \nswitching
-Wire Wire Line
-	7500 4800 8150 4800
 Wire Wire Line
 	8550 4800 8750 4800
 $Comp
@@ -921,19 +812,15 @@ Text GLabel 9650 4000 2    50   Input ~ 0
 SWDC_LNA_3V3
 Wire Wire Line
 	9650 4000 9650 4250
-Text GLabel 5300 2700 0    50   Input ~ 0
+Text GLabel 4350 2150 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Wire Wire Line
-	5300 2700 5300 2150
-Wire Wire Line
-	5300 2150 5550 2150
 Text Notes 8050 4000 2    79   ~ 16
 Pin diode's switched \nbias from 3v3
 Text GLabel 9650 4800 2    50   Input ~ 0
 RXP_FROM_LNA
 Text GLabel 6600 2050 2    50   Input ~ 0
 RF_PA_OUT
-Text Notes 7650 5300 1    40   ~ 8
+Text Notes 7650 4900 3    40   ~ 8
 vedot lyhyiksi!
 $Comp
 L power:GND #PWR?
@@ -967,4 +854,27 @@ Wire Wire Line
 Wire Wire Line
 	2250 4800 1650 4800
 Connection ~ 2250 4800
+Wire Wire Line
+	7300 4800 7700 4800
+Wire Wire Line
+	7900 6050 7700 6050
+Wire Wire Line
+	7450 5450 7700 5450
+Wire Wire Line
+	7700 6100 7700 6050
+Connection ~ 7700 6050
+Wire Wire Line
+	7700 6050 7450 6050
+Wire Wire Line
+	7700 5450 7700 4800
+Connection ~ 7700 5450
+Wire Wire Line
+	7700 5450 7900 5450
+Connection ~ 7700 4800
+Wire Wire Line
+	7700 4800 8150 4800
+Wire Wire Line
+	4350 2150 5550 2150
+Wire Wire Line
+	3550 2900 4000 2900
 $EndSCHEMATC
