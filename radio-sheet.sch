@@ -19,7 +19,7 @@ Text GLabel 4850 2650 0    50   Input ~ 0
 CS_SI4463
 Text GLabel 4850 2450 0    50   Input ~ 0
 MOSI_SPI1
-Text Notes 1050 1900 0    118  Italic 24
+Text Notes 7150 6450 0    118  Italic 24
 TODO: double check pinout!
 Wire Wire Line
 	5400 1550 5500 1550
@@ -229,7 +229,7 @@ Text GLabel 4250 2350 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	5000 2350 4250 2350
-Text GLabel 6200 2200 2    50   Input ~ 0
+Text GLabel 6600 1750 2    50   Output ~ 0
 RF_PA_IN
 Wire Wire Line
 	6000 1750 5800 1750
@@ -242,8 +242,8 @@ AR Path="/609A52E7/6144076D" Ref="D?"  Part="1"
 AR Path="/607FB7F8/6144076D" Ref="D?"  Part="1" 
 AR Path="/6096F497/6144076D" Ref="D?"  Part="1" 
 AR Path="/607946F5/6144076D" Ref="D19"  Part="1" 
-F 0 "D19" H 3650 6100 50  0000 C CNN
-F 1 "TX_LED" H 3650 6200 50  0000 C CNN
+F 0 "D19" H 3650 6200 50  0000 C CNN
+F 1 "TX_LED" H 3650 6500 50  0000 C CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 3650 6350 50  0001 C CNN
 F 3 "~" H 3650 6350 50  0001 C CNN
 	1    3650 6350
@@ -259,8 +259,8 @@ P 3350 6350
 AR Path="/6147D407" Ref="R?"  Part="1" 
 AR Path="/6096F497/6147D407" Ref="R?"  Part="1" 
 AR Path="/607946F5/6147D407" Ref="R38"  Part="1" 
-F 0 "R38" V 3100 6350 50  0000 L CNN
-F 1 "1.5k" V 3200 6300 50  0000 L CNN
+F 0 "R38" V 3250 6250 50  0000 L CNN
+F 1 "1.5k" V 3450 6250 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3350 6350 50  0001 C CNN
 F 3 "~" H 3350 6350 50  0001 C CNN
 	1    3350 6350
@@ -372,8 +372,8 @@ U 2 1 61649293
 P 2850 6100
 AR Path="/607946F5/61649293" Ref="U15"  Part="2" 
 AR Path="/60604CF2/61649293" Ref="U?"  Part="2" 
-F 0 "U15" H 2850 6417 50  0000 C CNN
-F 1 "74HC04" H 2850 6326 50  0000 C CNN
+F 0 "U15" H 2850 5900 50  0000 C CNN
+F 1 "74HC04" H 2850 5800 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2850 6100 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6100 50  0001 C CNN
 	2    2850 6100
@@ -484,8 +484,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 3750 3600 3750
 Connection ~ 3600 3750
-Text Notes 1150 3000 0    79   ~ 16
-TX_STATE will control:\n- inverted: PA DRIVER OFF\nRX_STATE\n- inverted: LNA PWR OFF\n
 Text Notes 6250 4700 2    79   ~ 16
 GPIOR2\nRX_STATE
 Text Notes 1750 5750 2    79   ~ 16
@@ -593,20 +591,20 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 616B1AAC
-P 7850 4850
+P 7750 4850
 AR Path="/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/6096F497/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/60604CF2/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/607946F5/616B1AAC" Ref="R51"  Part="1" 
-F 0 "R51" H 7909 4896 50  0000 L CNN
-F 1 "10k" H 7909 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7850 4850 50  0001 C CNN
-F 3 "~" H 7850 4850 50  0001 C CNN
-	1    7850 4850
+F 0 "R51" H 7809 4896 50  0000 L CNN
+F 1 "10k" H 7809 4805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 4850 50  0001 C CNN
+F 3 "~" H 7750 4850 50  0001 C CNN
+	1    7750 4850
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	8000 4850 7950 4850
+	8000 4850 7850 4850
 $Comp
 L Device:D D?
 U 1 1 616B1A95
@@ -714,9 +712,9 @@ Text GLabel 4850 6100 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 8100 5150 0    50   Input ~ 0
 SWDC_LNA_3V3
-Text GLabel 6200 2000 2    50   Input ~ 0
+Text GLabel 6150 2150 2    50   Input ~ 0
 RXP_FROM_LNA
-Text Notes 6100 950  0    40   ~ 8
+Text Notes 5300 3700 0    79   ~ 16
 https://www.silabs.com/documents/public/application-notes/AN629.pdf\nfig 16 @ page 14?\n
 Wire Wire Line
 	8300 5150 8100 5150
@@ -874,7 +872,7 @@ Wire Wire Line
 	6900 4850 6950 4850
 Connection ~ 6950 4850
 Wire Wire Line
-	6950 4850 7750 4850
+	6950 4850 7650 4850
 $Comp
 L 74xx:74HC04 U15
 U 4 1 6168C5AA
@@ -887,7 +885,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6600 485
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 4550 6950 4850
-Text GLabel 6950 4550 2    50   Output ~ 0
+	6950 4750 6950 4850
+Text GLabel 6950 4750 2    50   Output ~ 0
 RXSTATE_INV
 $EndSCHEMATC
