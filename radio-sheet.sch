@@ -19,7 +19,7 @@ Text GLabel 4850 2650 0    50   Input ~ 0
 CS_SI4463
 Text GLabel 4850 2450 0    50   Input ~ 0
 MOSI_SPI1
-Text Notes 7150 6450 0    118  Italic 24
+Text Notes 1050 1900 0    118  Italic 24
 TODO: double check pinout!
 Wire Wire Line
 	5400 1550 5500 1550
@@ -229,7 +229,7 @@ Text GLabel 4250 2350 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	5000 2350 4250 2350
-Text GLabel 6650 1750 2    50   Input ~ 0
+Text GLabel 6200 2200 2    50   Input ~ 0
 RF_PA_IN
 Wire Wire Line
 	6000 1750 5800 1750
@@ -531,7 +531,7 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 570
 $EndComp
 Wire Wire Line
 	2450 5900 2550 5900
-Text Notes 2150 7300 0    79   ~ 16
+Text Notes 2350 6850 0    79   ~ 16
 pin-diodin bias logiikka3v:sta, muutama 10 ma bias
 Text GLabel 6150 4850 0    50   Output ~ 0
 GPIOR2
@@ -714,7 +714,7 @@ Text GLabel 4850 6100 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 8100 5150 0    50   Input ~ 0
 SWDC_LNA_3V3
-Text GLabel 6600 2050 2    50   Input ~ 0
+Text GLabel 6200 2000 2    50   Input ~ 0
 RXP_FROM_LNA
 Text Notes 6100 950  0    40   ~ 8
 https://www.silabs.com/documents/public/application-notes/AN629.pdf\nfig 16 @ page 14?\n
@@ -746,20 +746,6 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 
 $EndComp
 Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
-$Comp
-L Connector:TestPoint TP?
-U 1 1 6195A862
-P 4600 5050
-AR Path="/6096F497/6195A862" Ref="TP?"  Part="1" 
-AR Path="/607946F5/6195A862" Ref="TP16"  Part="1" 
-F 0 "TP16" V 4550 5050 50  0000 C CNN
-F 1 "TestPoint" V 4600 5450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4800 5050 50  0001 C CNN
-F 3 "~" H 4800 5050 50  0001 C CNN
-	1    4600 5050
-	0    1    1    0   
-$EndComp
-Connection ~ 4600 5050
 Text Notes 4250 6200 0    40   ~ 8
 vastus tähän!
 Wire Wire Line

@@ -396,9 +396,9 @@ F 3 "~" H 8450 4800 50  0001 C CNN
 	1    8450 4800
 	0    -1   1    0   
 $EndComp
-Text Notes 6950 4750 2    79   Italic 0
+Text Notes 6950 4750 2    40   Italic 8
 pin\ndiode
-Text Notes 5750 4550 2    79   Italic 0
+Text Notes 5600 4500 2    40   Italic 8
 pin\ndiode
 Wire Wire Line
 	5350 4800 5350 4600
@@ -457,46 +457,33 @@ F 3 "" H 7700 6100 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 5750 7700 5750
-Wire Wire Line
 	8150 4800 8350 4800
 Connection ~ 8150 4800
 Wire Wire Line
-	8150 5050 8150 4800
+	8150 4850 8150 4800
 $Comp
 L power:GND #PWR?
 U 1 1 61009D58
-P 8150 5250
+P 8150 5050
 AR Path="/609A52E7/61009D58" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/61009D58" Ref="#PWR0161"  Part="1" 
-F 0 "#PWR0161" H 8150 5000 50  0001 C CNN
-F 1 "GND" H 8155 5077 50  0000 C CNN
-F 2 "" H 8150 5250 50  0001 C CNN
-F 3 "" H 8150 5250 50  0001 C CNN
-	1    8150 5250
+F 0 "#PWR0161" H 8150 4800 50  0001 C CNN
+F 1 "GND" H 8155 4877 50  0000 C CNN
+F 2 "" H 8150 5050 50  0001 C CNN
+F 3 "" H 8150 5050 50  0001 C CNN
+	1    8150 5050
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:L_Small L9
 U 1 1 6100904D
-P 8150 5150
-F 0 "L9" H 8198 5196 50  0000 L CNN
-F 1 "L_Small" H 8198 5105 50  0000 L CNN
-F 2 "Inductor_SMD:L_1206_3216Metric" H 8150 5150 50  0001 C CNN
-F 3 "~" H 8150 5150 50  0001 C CNN
-	1    8150 5150
+P 8150 4950
+F 0 "L9" H 8200 4950 50  0000 L CNN
+F 1 "L_Small" H 8198 4905 50  0001 L CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8150 4950 50  0001 C CNN
+F 3 "~" H 8150 4950 50  0001 C CNN
+	1    8150 4950
 	-1   0    0    -1  
-$EndComp
-$Comp
-L Diode:BAV99 D16
-U 1 1 610084F7
-P 7450 5750
-F 0 "D16" V 7496 5829 50  0000 L CNN
-F 1 "BAV99" V 7405 5829 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 5250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7450 5750 50  0001 C CNN
-	1    7450 5750
-	0    -1   1    0   
 $EndComp
 Connection ~ 5950 4150
 Wire Wire Line
@@ -575,17 +562,6 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 7200 4800 50  0001 C CNN
 F 3 "~" H 7200 4800 50  0001 C CNN
 	1    7200 4800
 	0    -1   1    0   
-$EndComp
-$Comp
-L Diode:BAV99 D15
-U 1 1 60FADEC2
-P 7900 5750
-F 0 "D15" V 7854 5829 50  0000 L CNN
-F 1 "BAV99" V 7945 5829 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 5250 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7900 5750 50  0001 C CNN
-	1    7900 5750
-	0    1    -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -793,19 +769,19 @@ Wire Wire Line
 	9650 4400 9650 4250
 Wire Wire Line
 	9650 4250 10050 4250
-Text Notes 10600 3850 2    79   ~ 16
+Text Notes 10200 3900 2    40   ~ 8
 LNA's switched \nDC supply 3v3
 Connection ~ 9650 4250
-Text Notes 4700 7400 0    79   ~ 16
+Text Notes 1600 7300 0    79   ~ 16
 RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
 Wire Notes Line
-	4500 6550 6650 6550
+	1400 6450 3550 6450
 Wire Notes Line
-	6650 6550 6650 7600
+	3550 6450 3550 7500
 Wire Notes Line
-	6650 7600 4500 7600
+	3550 7500 1400 7500
 Wire Notes Line
-	4500 7600 4500 6550
+	1400 7500 1400 6450
 Text GLabel 6950 4150 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 9650 4000 2    50   Input ~ 0
@@ -814,14 +790,12 @@ Wire Wire Line
 	9650 4000 9650 4250
 Text GLabel 4350 2150 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text Notes 8050 4000 2    79   ~ 16
+Text Notes 7600 4050 2    40   ~ 8
 Pin diode's switched \nbias from 3v3
 Text GLabel 9650 4800 2    50   Input ~ 0
 RXP_FROM_LNA
 Text GLabel 6600 2050 2    50   Input ~ 0
 RF_PA_OUT
-Text Notes 7650 4900 3    40   ~ 8
-vedot lyhyiksi!
 $Comp
 L power:GND #PWR?
 U 1 1 618B4559
@@ -857,19 +831,9 @@ Connection ~ 2250 4800
 Wire Wire Line
 	7300 4800 7700 4800
 Wire Wire Line
-	7900 6050 7700 6050
-Wire Wire Line
-	7450 5450 7700 5450
-Wire Wire Line
 	7700 6100 7700 6050
 Connection ~ 7700 6050
-Wire Wire Line
-	7700 6050 7450 6050
-Wire Wire Line
-	7700 5450 7700 4800
 Connection ~ 7700 5450
-Wire Wire Line
-	7700 5450 7900 5450
 Connection ~ 7700 4800
 Wire Wire Line
 	7700 4800 8150 4800
@@ -877,4 +841,38 @@ Wire Wire Line
 	4350 2150 5550 2150
 Wire Wire Line
 	3550 2900 4000 2900
+Wire Wire Line
+	7700 5450 7700 4800
+Wire Wire Line
+	7700 5450 7900 5450
+Wire Wire Line
+	7900 6050 7700 6050
+$Comp
+L Diode:BAV99 D15
+U 1 1 60FADEC2
+P 7900 5750
+F 0 "D15" V 7854 5829 50  0000 L CNN
+F 1 "BAV99" V 7945 5829 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7900 5250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7900 5750 50  0001 C CNN
+	1    7900 5750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7650 5750 7700 5750
+Wire Wire Line
+	7700 6050 7450 6050
+Wire Wire Line
+	7450 5450 7700 5450
+$Comp
+L Diode:BAV99 D16
+U 1 1 610084F7
+P 7450 5750
+F 0 "D16" V 7496 5829 50  0000 L CNN
+F 1 "BAV99" V 7405 5829 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7450 5250 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7450 5750 50  0001 C CNN
+	1    7450 5750
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC
