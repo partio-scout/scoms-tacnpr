@@ -197,8 +197,8 @@ U 6096F497
 F0 "cpu" 94
 F1 "cpu-sheet.sch" 94
 $EndSheet
-Text Notes 6350 5700 0    119  ~ 24
-CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tacbuckin kelat
+Text Notes 5900 5900 0    119  ~ 24
+CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tacbuckin kelat\n-tsekkaa sähkönsyötöt (reguloinnit,0R:t, sarjavastukset)
 Text Notes 3650 5450 0    118  ~ 24
 TACPDU fuse holder \nLCSC: C58066
 $EndSCHEMATC

@@ -875,4 +875,21 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf" H 7450 5750
 	1    7450 5750
 	0    -1   1    0   
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BE0C02
+P 9150 4500
+AR Path="/609A52E7/61BE0C02" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61BE0C02" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9150 4250 50  0001 C CNN
+F 1 "GND" H 9155 4327 50  0000 C CNN
+F 2 "" H 9150 4500 50  0001 C CNN
+F 3 "" H 9150 4500 50  0001 C CNN
+	1    9150 4500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 4500 8950 4500
+Text Notes 9350 4950 0    55   ~ 11
+saw?
 $EndSCHEMATC

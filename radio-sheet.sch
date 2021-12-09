@@ -236,18 +236,18 @@ Wire Wire Line
 $Comp
 L Device:LED D?
 U 1 1 6144076D
-P 3650 6350
+P 2400 5300
 AR Path="/6144076D" Ref="D?"  Part="1" 
 AR Path="/609A52E7/6144076D" Ref="D?"  Part="1" 
 AR Path="/607FB7F8/6144076D" Ref="D?"  Part="1" 
 AR Path="/6096F497/6144076D" Ref="D?"  Part="1" 
 AR Path="/607946F5/6144076D" Ref="D19"  Part="1" 
-F 0 "D19" H 3650 6200 50  0000 C CNN
-F 1 "TX_LED" H 3650 6500 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 3650 6350 50  0001 C CNN
-F 3 "~" H 3650 6350 50  0001 C CNN
-	1    3650 6350
-	-1   0    0    1   
+F 0 "D19" H 2400 5150 50  0000 C CNN
+F 1 "TX_LED" H 2400 5450 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2400 5300 50  0001 C CNN
+F 3 "~" H 2400 5300 50  0001 C CNN
+	1    2400 5300
+	1    0    0    -1  
 $EndComp
 Connection ~ 7500 2550
 Wire Wire Line
@@ -255,23 +255,19 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 6147D407
-P 3350 6350
+P 2700 5300
 AR Path="/6147D407" Ref="R?"  Part="1" 
 AR Path="/6096F497/6147D407" Ref="R?"  Part="1" 
 AR Path="/607946F5/6147D407" Ref="R38"  Part="1" 
-F 0 "R38" V 3250 6250 50  0000 L CNN
-F 1 "1.5k" V 3450 6250 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3350 6350 50  0001 C CNN
-F 3 "~" H 3350 6350 50  0001 C CNN
-	1    3350 6350
-	0    1    1    0   
+F 0 "R38" V 2600 5200 50  0000 L CNN
+F 1 "1.5k" V 2800 5200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2700 5300 50  0001 C CNN
+F 3 "~" H 2700 5300 50  0001 C CNN
+	1    2700 5300
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3150 6350 3250 6350
-Wire Wire Line
-	3450 6350 3500 6350
-Wire Wire Line
-	3800 6350 3950 6350
+	2600 5300 2550 5300
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 6148EF74
@@ -356,27 +352,27 @@ Connection ~ 6650 2650
 $Comp
 L 74xx:74HC04 U15
 U 1 1 6164928D
-P 2150 5900
+P 1700 6200
 AR Path="/607946F5/6164928D" Ref="U15"  Part="1" 
 AR Path="/60604CF2/6164928D" Ref="U?"  Part="1" 
-F 0 "U15" H 2150 6217 50  0000 C CNN
-F 1 "74HC04" H 2150 6126 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2150 5900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2150 5900 50  0001 C CNN
-	1    2150 5900
+F 0 "U15" H 1700 6517 50  0000 C CNN
+F 1 "74HC04" H 1700 6426 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1700 6200 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1700 6200 50  0001 C CNN
+	1    1700 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC04 U15
 U 2 1 61649293
-P 2850 6100
+P 2850 6400
 AR Path="/607946F5/61649293" Ref="U15"  Part="2" 
 AR Path="/60604CF2/61649293" Ref="U?"  Part="2" 
-F 0 "U15" H 2850 5900 50  0000 C CNN
-F 1 "74HC04" H 2850 5800 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2850 6100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6100 50  0001 C CNN
-	2    2850 6100
+F 0 "U15" H 2850 6200 50  0000 C CNN
+F 1 "74HC04" H 2850 6100 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2850 6400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6400 50  0001 C CNN
+	2    2850 6400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -517,29 +513,25 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U?
 U 3 1 616492E5
-P 2850 5700
+P 2850 6000
 AR Path="/60604CF2/616492E5" Ref="U?"  Part="3" 
 AR Path="/607946F5/616492E5" Ref="U15"  Part="3" 
-F 0 "U15" H 2850 6017 50  0000 C CNN
-F 1 "74HC04" H 2850 5926 50  0000 C CNN
-F 2 "" H 2850 5700 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 5700 50  0001 C CNN
-	3    2850 5700
+F 0 "U15" H 2850 6317 50  0000 C CNN
+F 1 "74HC04" H 2850 6226 50  0000 C CNN
+F 2 "" H 2850 6000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6000 50  0001 C CNN
+	3    2850 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 5900 2550 5900
-Text Notes 2350 6850 0    79   ~ 16
+	2000 6200 2550 6200
+Text Notes 2350 7150 0    79   ~ 16
 pin-diodin bias logiikka3v:sta, muutama 10 ma bias
 Text GLabel 6150 4850 0    50   Output ~ 0
 GPIOR2
-Text GLabel 1550 4850 0    50   Output ~ 0
-GPIOR1
 Wire Wire Line
-	1850 5900 1650 5900
-Wire Wire Line
-	1550 4850 1800 4850
-Text GLabel 1650 5900 0    50   Output ~ 0
+	1400 6200 1250 6200
+Text GLabel 1250 6200 0    50   Output ~ 0
 GPIOR1
 $Comp
 L Device:C_Small C?
@@ -662,23 +654,12 @@ Wire Wire Line
 	8300 4150 8300 4400
 Text Notes 7500 5300 0    39   ~ 8
 LNA PWR SUPPLY 3V3
-Text GLabel 4550 5900 2    50   Output ~ 0
+Text GLabel 4550 6200 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
 Wire Wire Line
-	3150 5900 4050 5900
-$Comp
-L 74xx:74HC04 U15
-U 6 1 6168F698
-P 2100 4850
-F 0 "U15" H 2100 5167 50  0000 C CNN
-F 1 "74HC04" H 2100 5076 50  0000 C CNN
-F 2 "" H 2100 4850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2100 4850 50  0001 C CNN
-	6    2100 4850
-	1    0    0    -1  
-$EndComp
+	3150 6200 4050 6200
 Text GLabel 9450 4250 0    50   Input ~ 0
 3V3_RADIO
 Wire Wire Line
@@ -690,25 +671,9 @@ Wire Wire Line
 	7500 2550 7900 2550
 Wire Wire Line
 	10400 4950 10400 5400
-$Comp
-L power:GND #PWR?
-U 1 1 61899DA5
-P 3950 6350
-AR Path="/609A52E7/61899DA5" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/61899DA5" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/61899DA5" Ref="#PWR0167"  Part="1" 
-F 0 "#PWR0167" H 3950 6100 50  0001 C CNN
-F 1 "GND" H 3955 6177 50  0000 C CNN
-F 2 "" H 3950 6350 50  0001 C CNN
-F 3 "" H 3950 6350 50  0001 C CNN
-	1    3950 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 6350 3150 6100
 Text GLabel 4500 5050 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text GLabel 4850 6100 2    50   Input ~ 0
+Text GLabel 4850 6400 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 8100 5150 0    50   Input ~ 0
 SWDC_LNA_3V3
@@ -720,12 +685,12 @@ Wire Wire Line
 	8300 5150 8100 5150
 Connection ~ 8300 5150
 Wire Wire Line
-	4850 6100 4050 6100
+	4850 6400 4050 6400
 Wire Wire Line
-	4050 6100 4050 5900
-Connection ~ 4050 5900
+	4050 6400 4050 6200
+Connection ~ 4050 6200
 Wire Wire Line
-	4050 5900 4550 5900
+	4050 6200 4550 6200
 Wire Wire Line
 	4600 5050 4600 5100
 Wire Wire Line
@@ -744,7 +709,7 @@ F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 
 $EndComp
 Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
-Text Notes 4250 6200 0    40   ~ 8
+Text Notes 4250 6500 0    40   ~ 8
 vastus tähän!
 Wire Wire Line
 	9700 4250 9700 4400
@@ -778,18 +743,16 @@ F 3 "" H 9700 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 4400 2400 4850
-Connection ~ 2400 4850
-Connection ~ 3150 6100
 Wire Wire Line
-	3150 6100 3150 5900
+	3150 6400 3150 6200
 Wire Wire Line
-	2550 5900 2550 5700
+	2550 6200 2550 6000
 Wire Wire Line
-	2550 5900 2550 6100
-Connection ~ 2550 5900
+	2550 6200 2550 6400
+Connection ~ 2550 6200
 Wire Wire Line
-	3150 5700 3150 5900
-Connection ~ 3150 5900
+	3150 6000 3150 6200
+Connection ~ 3150 6200
 $Comp
 L Device:C_Small C?
 U 1 1 61A0D44D
@@ -888,4 +851,102 @@ Wire Wire Line
 	6950 4750 6950 4850
 Text GLabel 6950 4750 2    50   Output ~ 0
 RXSTATE_INV
+Wire Wire Line
+	2250 5300 2100 5300
+$Comp
+L power:GND #PWR?
+U 1 1 61899DA5
+P 2100 5300
+AR Path="/609A52E7/61899DA5" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61899DA5" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61899DA5" Ref="#PWR0167"  Part="1" 
+F 0 "#PWR0167" H 2100 5050 50  0001 C CNN
+F 1 "GND" H 2105 5127 50  0000 C CNN
+F 2 "" H 2100 5300 50  0001 C CNN
+F 3 "" H 2100 5300 50  0001 C CNN
+	1    2100 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4850 3000 5300
+Wire Wire Line
+	2800 5300 3000 5300
+Connection ~ 3000 4850
+Text GLabel 2250 6200 3    50   Output ~ 0
+TXSTATE_INV
+$Comp
+L 74xx:74HC04 U15
+U 6 1 6168F698
+P 1750 4600
+F 0 "U15" H 1750 4917 50  0000 C CNN
+F 1 "74HC04" H 1750 4826 50  0000 C CNN
+F 2 "" H 1750 4600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1750 4600 50  0001 C CNN
+	6    1750 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BA6570
+P 1050 4600
+AR Path="/609A52E7/61BA6570" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61BA6570" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61BA6570" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 1050 4350 50  0001 C CNN
+F 1 "GND" H 1055 4427 50  0000 C CNN
+F 2 "" H 1050 4600 50  0001 C CNN
+F 3 "" H 1050 4600 50  0001 C CNN
+	1    1050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61BA6CAA
+P 1250 4600
+AR Path="/61BA6CAA" Ref="R?"  Part="1" 
+AR Path="/6096F497/61BA6CAA" Ref="R?"  Part="1" 
+AR Path="/607946F5/61BA6CAA" Ref="R49"  Part="1" 
+F 0 "R49" V 1150 4500 50  0000 L CNN
+F 1 "1.5k" V 1350 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4600 50  0001 C CNN
+F 3 "~" H 1250 4600 50  0001 C CNN
+	1    1250 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1050 4600 1150 4600
+Wire Wire Line
+	1450 4600 1350 4600
+$Comp
+L Device:R_Small R?
+U 1 1 61BD4BF3
+P 5650 1450
+AR Path="/61BD4BF3" Ref="R?"  Part="1" 
+AR Path="/6096F497/61BD4BF3" Ref="R?"  Part="1" 
+AR Path="/607946F5/61BD4BF3" Ref="R?"  Part="1" 
+F 0 "R?" V 5400 1450 50  0000 L CNN
+F 1 "0" V 5500 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 1450 50  0001 C CNN
+F 3 "~" H 5650 1450 50  0001 C CNN
+	1    5650 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61BD7924
+P 5750 1450
+AR Path="/61BD7924" Ref="R?"  Part="1" 
+AR Path="/6096F497/61BD7924" Ref="R?"  Part="1" 
+AR Path="/607946F5/61BD7924" Ref="R?"  Part="1" 
+F 0 "R?" V 5500 1450 50  0000 L CNN
+F 1 "0" V 5600 1400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5750 1450 50  0001 C CNN
+F 3 "~" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	-1   0    0    1   
+$EndComp
+Text Notes 6000 1400 0    39   ~ 8
+100n:t piirin puolelle 0R:ää
+Text Notes 6800 800  0    79   ~ 16
+muuallekin IC:eiden käyttiksiin 0R:t
 $EndSCHEMATC
