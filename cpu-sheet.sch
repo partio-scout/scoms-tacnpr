@@ -1599,4 +1599,6 @@ F 3 "" H 9600 4750 50  0001 C CNN
 	1    9600 4750
 	0    -1   -1   0   
 $EndComp
+Text Notes 4400 5600 0    79   ~ 16
+HUOM HUOM!\nVCC-pinniin syöttöjännite?!\n(ja 0R...)
 $EndSCHEMATC

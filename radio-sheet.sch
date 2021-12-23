@@ -517,9 +517,7 @@ F 3 "~" H 10400 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9700 4250 10400 4250
-Wire Wire Line
-	10400 4250 10400 4750
+	10400 4300 10400 4750
 $Comp
 L 74xx:74HC04 U15
 U 5 1 6168E921
@@ -630,9 +628,6 @@ TXSTATE_INV
 Wire Wire Line
 	3150 6200 4050 6200
 Wire Wire Line
-	9700 4250 9350 4250
-Connection ~ 9700 4250
-Wire Wire Line
 	6650 2650 7150 2650
 Wire Wire Line
 	7500 2550 7900 2550
@@ -666,8 +661,6 @@ Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
 Text Notes 4250 6500 0    40   ~ 8
 vastus tähän!
-Wire Wire Line
-	9700 4250 9700 4400
 Connection ~ 9700 5400
 Wire Wire Line
 	9700 5400 10400 5400
@@ -900,8 +893,6 @@ F 3 "~" H 5500 1400 50  0001 C CNN
 	1    5500 1400
 	-1   0    0    1   
 $EndComp
-Text Notes 6800 800  0    79   ~ 16
-muuallekin IC:eiden käyttiksiin 0R:t
 $Comp
 L Device:LED D?
 U 1 1 61D4728B
@@ -970,7 +961,7 @@ $EndComp
 Connection ~ 7500 4150
 Wire Wire Line
 	7500 4150 7300 4150
-Text GLabel 9350 4250 0    50   Input ~ 0
+Text GLabel 9350 4000 0    50   Input ~ 0
 3V3_LNA
 Wire Wire Line
 	4500 1300 5400 1300
@@ -1017,4 +1008,27 @@ Wire Wire Line
 	7350 1550 5500 1550
 Connection ~ 7350 1550
 Connection ~ 5500 1550
+$Comp
+L Device:R_Small R?
+U 1 1 61E016FB
+P 9700 4100
+AR Path="/61E016FB" Ref="R?"  Part="1" 
+AR Path="/6096F497/61E016FB" Ref="R?"  Part="1" 
+AR Path="/607946F5/61E016FB" Ref="R55"  Part="1" 
+F 0 "R55" V 9800 4050 50  0000 L CNN
+F 1 "0" V 9900 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9700 4100 50  0001 C CNN
+F 3 "~" H 9700 4100 50  0001 C CNN
+	1    9700 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9350 4000 9700 4000
+Wire Wire Line
+	9700 4200 9700 4300
+Wire Wire Line
+	9700 4300 10400 4300
+Connection ~ 9700 4300
+Wire Wire Line
+	9700 4300 9700 4400
 $EndSCHEMATC
