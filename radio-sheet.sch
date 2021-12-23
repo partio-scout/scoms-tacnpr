@@ -22,10 +22,6 @@ MOSI_SPI1
 Text Notes 7150 6450 0    118  Italic 24
 TODO: double check pinout!
 Wire Wire Line
-	5400 1550 5500 1550
-Wire Wire Line
-	5500 1550 5500 1300
-Wire Wire Line
 	4350 2750 5000 2750
 Text GLabel 4350 2750 0    50   BiDi ~ 0
 IRQ_SI4463
@@ -71,15 +67,15 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 607A5B3D
-P 7650 1400
+P 4200 1650
 AR Path="/607A5B3D" Ref="C?"  Part="1" 
 AR Path="/6096F497/607A5B3D" Ref="C?"  Part="1" 
 AR Path="/607946F5/607A5B3D" Ref="C79"  Part="1" 
-F 0 "C79" H 7742 1446 50  0000 L CNN
-F 1 "100n" H 7742 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 1400 50  0001 C CNN
-F 3 "~" H 7650 1400 50  0001 C CNN
-	1    7650 1400
+F 0 "C79" H 4292 1696 50  0000 L CNN
+F 1 "100n" H 4292 1605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4200 1650 50  0001 C CNN
+F 3 "~" H 4200 1650 50  0001 C CNN
+	1    4200 1650
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -96,77 +92,70 @@ $EndComp
 $Comp
 L power:GND #PWR0125
 U 1 1 607A6558
-P 7650 1500
-F 0 "#PWR0125" H 7650 1250 50  0001 C CNN
-F 1 "GND" H 7655 1327 50  0000 C CNN
-F 2 "" H 7650 1500 50  0001 C CNN
-F 3 "" H 7650 1500 50  0001 C CNN
-	1    7650 1500
+P 4200 1750
+F 0 "#PWR0125" H 4200 1500 50  0001 C CNN
+F 1 "GND" H 4205 1577 50  0000 C CNN
+F 2 "" H 4200 1750 50  0001 C CNN
+F 3 "" H 4200 1750 50  0001 C CNN
+	1    4200 1750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7650 1300 5500 1300
 $Comp
 L Device:C_Small C?
 U 1 1 607A8005
-P 7900 1400
+P 7350 1650
 AR Path="/607A8005" Ref="C?"  Part="1" 
 AR Path="/6096F497/607A8005" Ref="C?"  Part="1" 
 AR Path="/607946F5/607A8005" Ref="C80"  Part="1" 
-F 0 "C80" H 7650 1450 50  0000 L CNN
-F 1 "100n" H 7600 1350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 1400 50  0001 C CNN
-F 3 "~" H 7900 1400 50  0001 C CNN
-	1    7900 1400
+F 0 "C80" H 7100 1700 50  0000 L CNN
+F 1 "100n" H 7050 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 1650 50  0001 C CNN
+F 3 "~" H 7350 1650 50  0001 C CNN
+	1    7350 1650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7900 1300 7650 1300
-Connection ~ 7650 1300
 $Comp
 L power:GND #PWR0126
 U 1 1 607A8B07
-P 7900 1500
-F 0 "#PWR0126" H 7900 1250 50  0001 C CNN
-F 1 "GND" H 7905 1327 50  0000 C CNN
-F 2 "" H 7900 1500 50  0001 C CNN
-F 3 "" H 7900 1500 50  0001 C CNN
-	1    7900 1500
+P 7350 1750
+F 0 "#PWR0126" H 7350 1500 50  0001 C CNN
+F 1 "GND" H 7355 1577 50  0000 C CNN
+F 2 "" H 7350 1750 50  0001 C CNN
+F 3 "" H 7350 1750 50  0001 C CNN
+	1    7350 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 607B1A36
-P 8300 1400
+P 7750 1650
 AR Path="/607B1A36" Ref="C?"  Part="1" 
 AR Path="/6096F497/607B1A36" Ref="C?"  Part="1" 
 AR Path="/607946F5/607B1A36" Ref="C39"  Part="1" 
-F 0 "C39" H 8050 1450 50  0000 L CNN
-F 1 "1u" H 8100 1350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8300 1400 50  0001 C CNN
-F 3 "~" H 8300 1400 50  0001 C CNN
-	1    8300 1400
+F 0 "C39" H 7500 1700 50  0000 L CNN
+F 1 "1u" H 7550 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7750 1650 50  0001 C CNN
+F 3 "~" H 7750 1650 50  0001 C CNN
+	1    7750 1650
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0127
 U 1 1 607B1F86
-P 8300 1500
-F 0 "#PWR0127" H 8300 1250 50  0001 C CNN
-F 1 "GND" H 8305 1327 50  0000 C CNN
-F 2 "" H 8300 1500 50  0001 C CNN
-F 3 "" H 8300 1500 50  0001 C CNN
-	1    8300 1500
+P 7750 1750
+F 0 "#PWR0127" H 7750 1500 50  0001 C CNN
+F 1 "GND" H 7755 1577 50  0000 C CNN
+F 2 "" H 7750 1750 50  0001 C CNN
+F 3 "" H 7750 1750 50  0001 C CNN
+	1    7750 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 1300 7900 1300
-Connection ~ 7900 1300
+	7750 1550 7350 1550
 Text GLabel 4000 1300 0    50   Input ~ 0
 3V3_RADIO
 Wire Wire Line
 	4000 1300 4250 1300
-Connection ~ 5500 1300
 $Comp
 L Connector:TestPoint CTS?
 U 1 1 60AE7BA1
@@ -304,31 +293,11 @@ F 3 "~" H 5150 950 50  0001 C CNN
 	1    5150 950 
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 614F914A
-P 4700 950
-AR Path="/614F914A" Ref="R?"  Part="1" 
-AR Path="/6096F497/614F914A" Ref="R?"  Part="1" 
-AR Path="/607946F5/614F914A" Ref="R45"  Part="1" 
-F 0 "R45" V 4450 950 50  0000 L CNN
-F 1 "1.5k" V 4550 900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 950 50  0001 C CNN
-F 3 "~" H 4700 950 50  0001 C CNN
-	1    4700 950 
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4500 950  4600 950 
-Wire Wire Line
-	4800 950  5000 950 
 Wire Wire Line
 	5300 950  5500 950 
 Wire Wire Line
 	4500 950  4500 1300
 Connection ~ 4500 1300
-Wire Wire Line
-	4500 1300 5500 1300
 $Comp
 L power:GND #PWR0170
 U 1 1 614FC317
@@ -693,18 +662,6 @@ Wire Wire Line
 	4600 5050 4600 5100
 Wire Wire Line
 	4500 3750 4500 4400
-Connection ~ 5500 1550
-$Comp
-L RF:Si4463 U5
-U 1 1 60646347
-P 5400 2250
-F 0 "U5" H 5400 2250 50  0000 C CNN
-F 1 "Si4463" H 5100 3000 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 5400 3450 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 5100 2150 50  0001 C CNN
-	1    5400 2250
-	1    0    0    -1  
-$EndComp
 Text GLabel 5000 1750 0    50   Input ~ 0
 SDN_SI4463
 Text Notes 4250 6500 0    40   ~ 8
@@ -918,33 +875,31 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 61BD4BF3
-P 5650 1450
+P 5400 1400
 AR Path="/61BD4BF3" Ref="R?"  Part="1" 
 AR Path="/6096F497/61BD4BF3" Ref="R?"  Part="1" 
 AR Path="/607946F5/61BD4BF3" Ref="R52"  Part="1" 
-F 0 "R52" V 5400 1450 50  0000 L CNN
-F 1 "0" V 5500 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 1450 50  0001 C CNN
-F 3 "~" H 5650 1450 50  0001 C CNN
-	1    5650 1450
+F 0 "R52" V 5500 1350 50  0000 L CNN
+F 1 "0" V 5600 1350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5400 1400 50  0001 C CNN
+F 3 "~" H 5400 1400 50  0001 C CNN
+	1    5400 1400
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61BD7924
-P 5750 1450
+P 5500 1400
 AR Path="/61BD7924" Ref="R?"  Part="1" 
 AR Path="/6096F497/61BD7924" Ref="R?"  Part="1" 
 AR Path="/607946F5/61BD7924" Ref="R53"  Part="1" 
-F 0 "R53" V 5500 1450 50  0000 L CNN
-F 1 "0" V 5600 1400 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5750 1450 50  0001 C CNN
-F 3 "~" H 5750 1450 50  0001 C CNN
-	1    5750 1450
+F 0 "R53" V 5400 1350 50  0000 L CNN
+F 1 "0" V 5300 1350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5500 1400 50  0001 C CNN
+F 3 "~" H 5500 1400 50  0001 C CNN
+	1    5500 1400
 	-1   0    0    1   
 $EndComp
-Text Notes 6000 1400 0    39   ~ 8
-100n:t piirin puolelle 0R:ää
 Text Notes 6800 800  0    79   ~ 16
 muuallekin IC:eiden käyttiksiin 0R:t
 $Comp
@@ -1017,4 +972,49 @@ Wire Wire Line
 	7500 4150 7300 4150
 Text GLabel 9350 4250 0    50   Input ~ 0
 3V3_LNA
+Wire Wire Line
+	4500 1300 5400 1300
+Wire Wire Line
+	4500 950  4600 950 
+Wire Wire Line
+	4800 950  5000 950 
+$Comp
+L Device:R_Small R?
+U 1 1 614F914A
+P 4700 950
+AR Path="/614F914A" Ref="R?"  Part="1" 
+AR Path="/6096F497/614F914A" Ref="R?"  Part="1" 
+AR Path="/607946F5/614F914A" Ref="R45"  Part="1" 
+F 0 "R45" V 4450 950 50  0000 L CNN
+F 1 "1.5k" V 4550 900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 950 50  0001 C CNN
+F 3 "~" H 4700 950 50  0001 C CNN
+	1    4700 950 
+	0    1    1    0   
+$EndComp
+Connection ~ 5400 1300
+Wire Wire Line
+	5400 1300 5500 1300
+$Comp
+L RF:Si4463 U5
+U 1 1 60646347
+P 5400 2250
+F 0 "U5" H 5400 2250 50  0000 C CNN
+F 1 "Si4463" H 4900 3050 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 5400 3450 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 5100 2150 50  0001 C CNN
+	1    5400 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1500 5500 1550
+Wire Wire Line
+	5400 1550 5400 1500
+Wire Wire Line
+	4200 1550 5400 1550
+Connection ~ 5400 1550
+Wire Wire Line
+	7350 1550 5500 1550
+Connection ~ 7350 1550
+Connection ~ 5500 1550
 $EndSCHEMATC
