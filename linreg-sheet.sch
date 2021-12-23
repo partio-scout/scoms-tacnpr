@@ -106,7 +106,7 @@ F 4 "C5446" H 5650 2300 50  0000 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 1400 4700 1400
+	4200 1400 4400 1400
 Wire Wire Line
 	4200 2600 4700 2600
 Text GLabel 7450 1400 2    79   Input ~ 0
@@ -215,8 +215,6 @@ Connection ~ 6150 1400
 Wire Wire Line
 	6150 1400 6650 1400
 Connection ~ 6650 1400
-Wire Wire Line
-	6650 1400 7100 1400
 Wire Wire Line
 	6600 2600 7500 2600
 $Comp
@@ -413,102 +411,102 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 61618C3C
-P 6250 5850
+P 4650 6850
 AR Path="/61618C3C" Ref="C?"  Part="1" 
 AR Path="/60D4B6E6/61618C3C" Ref="C?"  Part="1" 
 AR Path="/607FB7F8/61618C3C" Ref="C67"  Part="1" 
-F 0 "C67" H 6365 5896 50  0000 L CNN
-F 1 "100n" H 6365 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6288 5700 50  0001 C CNN
-F 3 "~" H 6250 5850 50  0001 C CNN
-	1    6250 5850
+F 0 "C67" H 4765 6896 50  0000 L CNN
+F 1 "100n" H 4765 6805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 6700 50  0001 C CNN
+F 3 "~" H 4650 6850 50  0001 C CNN
+	1    4650 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5700 6100 5700
+	4650 6700 4500 6700
 $Comp
 L power:GND #PWR?
 U 1 1 61618C43
-P 6250 6000
+P 4650 7000
 AR Path="/61618C43" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C43" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C43" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 6250 5750 50  0001 C CNN
-F 1 "GND" H 6255 5827 50  0000 C CNN
-F 2 "" H 6250 6000 50  0001 C CNN
-F 3 "" H 6250 6000 50  0001 C CNN
-	1    6250 6000
+F 0 "#PWR0144" H 4650 6750 50  0001 C CNN
+F 1 "GND" H 4655 6827 50  0000 C CNN
+F 2 "" H 4650 7000 50  0001 C CNN
+F 3 "" H 4650 7000 50  0001 C CNN
+	1    4650 7000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 5600 6300 5600
+	4500 6600 4700 6600
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 61618C4A
-P 4600 5700
+P 3000 6700
 AR Path="/61618C4A" Ref="J?"  Part="1" 
 AR Path="/60D4B6E6/61618C4A" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C4A" Ref="J1"  Part="1" 
-F 0 "J1" H 4518 5375 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 4518 5466 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4600 5700 50  0001 C CNN
-F 3 "~" H 4600 5700 50  0001 C CNN
-	1    4600 5700
+F 0 "J1" H 2918 6375 50  0000 C CNN
+F 1 "Screw_Terminal_PWR_IN" H 2918 6466 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3000 6700 50  0001 C CNN
+F 3 "~" H 3000 6700 50  0001 C CNN
+	1    3000 6700
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61618C50
-P 5150 5600
+P 3550 6600
 AR Path="/61618C50" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C50" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C50" Ref="#PWR0148"  Part="1" 
-F 0 "#PWR0148" H 5150 5350 50  0001 C CNN
-F 1 "GND" H 5155 5427 50  0000 C CNN
-F 2 "" H 5150 5600 50  0001 C CNN
-F 3 "" H 5150 5600 50  0001 C CNN
-	1    5150 5600
+F 0 "#PWR0148" H 3550 6350 50  0001 C CNN
+F 1 "GND" H 3555 6427 50  0000 C CNN
+F 2 "" H 3550 6600 50  0001 C CNN
+F 3 "" H 3550 6600 50  0001 C CNN
+	1    3550 6600
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 5700 3    50   Input ~ 0
+Text GLabel 3350 6700 3    50   Input ~ 0
 RAW_PSU_IN
-Text Notes 4250 5150 0    97   ~ 19
+Text Notes 2650 6150 0    97   ~ 19
 Screw terminals
-Text GLabel 6850 5700 2    79   Input ~ 0
+Text GLabel 5250 6700 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
-	6850 5700 6250 5700
-Connection ~ 6250 5700
+	5250 6700 4650 6700
+Connection ~ 4650 6700
 Wire Wire Line
-	4800 5700 4950 5700
+	3200 6700 3350 6700
 Wire Wire Line
-	4800 5600 5150 5600
+	3200 6600 3550 6600
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 61618C5D
-P 5900 5700
+P 4300 6700
 AR Path="/61618C5D" Ref="J?"  Part="1" 
 AR Path="/60D4B6E6/61618C5D" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C5D" Ref="J2"  Part="1" 
-F 0 "J2" H 5818 5375 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 5818 5466 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 5900 5700 50  0001 C CNN
-F 3 "~" H 5900 5700 50  0001 C CNN
-	1    5900 5700
+F 0 "J2" H 4218 6375 50  0000 C CNN
+F 1 "Screw_Terminal_PWR_IN" H 4218 6466 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4300 6700 50  0001 C CNN
+F 3 "~" H 4300 6700 50  0001 C CNN
+	1    4300 6700
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61618C63
-P 6300 5600
+P 4700 6600
 AR Path="/61618C63" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C63" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C63" Ref="#PWR0156"  Part="1" 
-F 0 "#PWR0156" H 6300 5350 50  0001 C CNN
-F 1 "GND" H 6305 5427 50  0000 C CNN
-F 2 "" H 6300 5600 50  0001 C CNN
-F 3 "" H 6300 5600 50  0001 C CNN
-	1    6300 5600
+F 0 "#PWR0156" H 4700 6350 50  0001 C CNN
+F 1 "GND" H 4705 6427 50  0000 C CNN
+F 2 "" H 4700 6600 50  0001 C CNN
+F 3 "" H 4700 6600 50  0001 C CNN
+	1    4700 6600
 	0    -1   -1   0   
 $EndComp
 Text Notes 1300 1600 0    97   ~ 19
@@ -516,21 +514,156 @@ Text Notes 1300 1600 0    97   ~ 19
 Text Notes 1300 2800 0    97   ~ 19
 3V3 for \nSTM32 CPU
 Text Notes 1300 4000 0    97   ~ 19
-3V3 for \nSi4463 radio & LNA
+3V3 for \nSi4463 radio chip
 $Comp
 L Connector:TestPoint CTS?
-U 1 1 618CE153
-P 7100 1400
-AR Path="/6096F497/618CE153" Ref="CTS?"  Part="1" 
-AR Path="/607FB7F8/618CE153" Ref="TP14"  Part="1" 
-F 0 "TP14" V 7050 1400 50  0000 C CNN
-F 1 "TestPoint" V 7100 1800 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 1400 50  0001 C CNN
-F 3 "~" H 7300 1400 50  0001 C CNN
-	1    7100 1400
+U 1 1 61CAB531
+P 4400 1400
+AR Path="/6096F497/61CAB531" Ref="CTS?"  Part="1" 
+AR Path="/607FB7F8/61CAB531" Ref="TP9"  Part="1" 
+F 0 "TP9" V 4350 1400 50  0000 C CNN
+F 1 "TestPoint" V 4400 1800 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4600 1400 50  0001 C CNN
+F 3 "~" H 4600 1400 50  0001 C CNN
+	1    4400 1400
 	1    0    0    -1  
 $EndComp
-Connection ~ 7100 1400
+Connection ~ 4400 1400
 Wire Wire Line
-	7100 1400 7450 1400
+	4400 1400 4700 1400
+Wire Wire Line
+	6650 1400 7450 1400
+Text GLabel 7550 5000 2    79   Input ~ 0
+3V3_LNA
+$Comp
+L power:GND #PWR?
+U 1 1 61CF7555
+P 6150 5350
+AR Path="/61CF7555" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/61CF7555" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/61CF7555" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 6150 5100 50  0001 C CNN
+F 1 "GND" H 6155 5177 50  0000 C CNN
+F 2 "" H 6150 5350 50  0001 C CNN
+F 3 "" H 6150 5350 50  0001 C CNN
+	1    6150 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61CF755F
+P 6150 5150
+AR Path="/61CF755F" Ref="C?"  Part="1" 
+AR Path="/609A52E7/61CF755F" Ref="C?"  Part="1" 
+AR Path="/607FB7F8/61CF755F" Ref="C88"  Part="1" 
+F 0 "C88" H 6265 5196 50  0000 L CNN
+F 1 "1u" H 6265 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6188 5000 50  0001 C CNN
+F 3 "~" H 6150 5150 50  0001 C CNN
+	1    6150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5350 6150 5300
+Text GLabel 4150 5000 0    79   Input ~ 0
+3V8_OUT
+$Comp
+L Regulator_Linear:XC6206PxxxMR U16
+U 1 1 61CF756C
+P 5400 5000
+F 0 "U16" H 5400 5242 50  0000 C CNN
+F 1 "XC6206PxxxMR" H 5400 5151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5400 5225 50  0001 C CIN
+F 3 "https://www.torexsemi.com/file/xc6206/XC6206.pdf" H 5400 5000 50  0001 C CNN
+F 4 "C5446" H 5650 4700 50  0000 C CNN "LCSC"
+	1    5400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61CF7577
+P 6600 5350
+AR Path="/61CF7577" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/61CF7577" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/61CF7577" Ref="#PWR0177"  Part="1" 
+F 0 "#PWR0177" H 6600 5100 50  0001 C CNN
+F 1 "GND" H 6605 5177 50  0000 C CNN
+F 2 "" H 6600 5350 50  0001 C CNN
+F 3 "" H 6600 5350 50  0001 C CNN
+	1    6600 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 61CF7581
+P 6600 5150
+AR Path="/61CF7581" Ref="C?"  Part="1" 
+AR Path="/609A52E7/61CF7581" Ref="C?"  Part="1" 
+AR Path="/607FB7F8/61CF7581" Ref="C89"  Part="1" 
+F 0 "C89" H 6715 5196 50  0000 L CNN
+F 1 "22u" H 6715 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6638 5000 50  0001 C CNN
+F 3 "~" H 6600 5150 50  0001 C CNN
+	1    6600 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5350 6600 5300
+Wire Wire Line
+	5700 5000 6150 5000
+Connection ~ 6150 5000
+Wire Wire Line
+	6150 5000 6600 5000
+Connection ~ 6600 5000
+$Comp
+L power:GND #PWR?
+U 1 1 61CF7590
+P 5400 5300
+AR Path="/61CF7590" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/61CF7590" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/61CF7590" Ref="#PWR0178"  Part="1" 
+F 0 "#PWR0178" H 5400 5050 50  0001 C CNN
+F 1 "GND" H 5405 5127 50  0000 C CNN
+F 2 "" H 5400 5300 50  0001 C CNN
+F 3 "" H 5400 5300 50  0001 C CNN
+	1    5400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5000 7550 5000
+Text Notes 1300 5150 0    97   ~ 19
+3V3 for \nLNA
+$Comp
+L power:GND #PWR?
+U 1 1 61CF75A7
+P 4650 5300
+AR Path="/61CF75A7" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/61CF75A7" Ref="#PWR?"  Part="1" 
+AR Path="/607FB7F8/61CF75A7" Ref="#PWR0179"  Part="1" 
+F 0 "#PWR0179" H 4650 5050 50  0001 C CNN
+F 1 "GND" H 4655 5127 50  0000 C CNN
+F 2 "" H 4650 5300 50  0001 C CNN
+F 3 "" H 4650 5300 50  0001 C CNN
+	1    4650 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 5000 5100 5000
+Wire Wire Line
+	4150 5000 4650 5000
+Connection ~ 4650 5000
+$Comp
+L Device:C C?
+U 1 1 61CF759B
+P 4650 5150
+AR Path="/61CF759B" Ref="C?"  Part="1" 
+AR Path="/609A52E7/61CF759B" Ref="C?"  Part="1" 
+AR Path="/607FB7F8/61CF759B" Ref="C82"  Part="1" 
+F 0 "C82" H 4765 5196 50  0000 L CNN
+F 1 "1u" H 4765 5105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 5000 50  0001 C CNN
+F 3 "~" H 4650 5150 50  0001 C CNN
+	1    4650 5150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

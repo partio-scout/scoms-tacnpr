@@ -629,8 +629,8 @@ Wire Wire Line
 	8600 5200 8600 5150
 Wire Wire Line
 	8600 5150 8300 5150
-Text GLabel 8250 4150 0    50   Input ~ 0
-3V3_RADIO
+Text GLabel 7300 4150 0    50   Input ~ 0
+3V3_LNA
 $Comp
 L Device:R_Small R?
 U 1 1 6170BBDC
@@ -649,7 +649,7 @@ $EndComp
 Wire Wire Line
 	8300 4650 8300 4600
 Wire Wire Line
-	8300 4150 8250 4150
+	8300 4150 7700 4150
 Wire Wire Line
 	8300 4150 8300 4400
 Text Notes 7500 5300 0    39   ~ 8
@@ -660,10 +660,8 @@ Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
 Wire Wire Line
 	3150 6200 4050 6200
-Text GLabel 9450 4250 0    50   Input ~ 0
-3V3_RADIO
 Wire Wire Line
-	9700 4250 9450 4250
+	9700 4250 9350 4250
 Connection ~ 9700 4250
 Wire Wire Line
 	6650 2650 7150 2650
@@ -679,7 +677,7 @@ Text GLabel 8100 5150 0    50   Input ~ 0
 SWDC_LNA_3V3
 Text GLabel 6150 2150 2    50   Input ~ 0
 RXP_FROM_LNA
-Text Notes 5300 3700 0    79   ~ 16
+Text Notes 4900 3500 0    79   ~ 16
 https://www.silabs.com/documents/public/application-notes/AN629.pdf\nfig 16 @ page 14?\n
 Wire Wire Line
 	8300 5150 8100 5150
@@ -923,8 +921,8 @@ U 1 1 61BD4BF3
 P 5650 1450
 AR Path="/61BD4BF3" Ref="R?"  Part="1" 
 AR Path="/6096F497/61BD4BF3" Ref="R?"  Part="1" 
-AR Path="/607946F5/61BD4BF3" Ref="R?"  Part="1" 
-F 0 "R?" V 5400 1450 50  0000 L CNN
+AR Path="/607946F5/61BD4BF3" Ref="R52"  Part="1" 
+F 0 "R52" V 5400 1450 50  0000 L CNN
 F 1 "0" V 5500 1400 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 1450 50  0001 C CNN
 F 3 "~" H 5650 1450 50  0001 C CNN
@@ -937,8 +935,8 @@ U 1 1 61BD7924
 P 5750 1450
 AR Path="/61BD7924" Ref="R?"  Part="1" 
 AR Path="/6096F497/61BD7924" Ref="R?"  Part="1" 
-AR Path="/607946F5/61BD7924" Ref="R?"  Part="1" 
-F 0 "R?" V 5500 1450 50  0000 L CNN
+AR Path="/607946F5/61BD7924" Ref="R53"  Part="1" 
+F 0 "R53" V 5500 1450 50  0000 L CNN
 F 1 "0" V 5600 1400 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5750 1450 50  0001 C CNN
 F 3 "~" H 5750 1450 50  0001 C CNN
@@ -949,4 +947,74 @@ Text Notes 6000 1400 0    39   ~ 8
 100n:t piirin puolelle 0R:ää
 Text Notes 6800 800  0    79   ~ 16
 muuallekin IC:eiden käyttiksiin 0R:t
+$Comp
+L Device:LED D?
+U 1 1 61D4728B
+P 8350 3800
+AR Path="/61D4728B" Ref="D?"  Part="1" 
+AR Path="/609A52E7/61D4728B" Ref="D?"  Part="1" 
+AR Path="/607FB7F8/61D4728B" Ref="D?"  Part="1" 
+AR Path="/6096F497/61D4728B" Ref="D?"  Part="1" 
+AR Path="/607946F5/61D4728B" Ref="D23"  Part="1" 
+F 0 "D23" H 8350 3550 50  0000 C CNN
+F 1 "3V3_LNA" H 8350 3650 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 8350 3800 50  0001 C CNN
+F 3 "~" H 8350 3800 50  0001 C CNN
+	1    8350 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61D47291
+P 7900 3800
+AR Path="/61D47291" Ref="R?"  Part="1" 
+AR Path="/6096F497/61D47291" Ref="R?"  Part="1" 
+AR Path="/607946F5/61D47291" Ref="R54"  Part="1" 
+F 0 "R54" V 7650 3800 50  0000 L CNN
+F 1 "1.5k" V 7750 3750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 3800 50  0001 C CNN
+F 3 "~" H 7900 3800 50  0001 C CNN
+	1    7900 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 3800 7800 3800
+Wire Wire Line
+	8000 3800 8200 3800
+Wire Wire Line
+	8500 3800 8700 3800
+Wire Wire Line
+	7700 3800 7700 4150
+$Comp
+L power:GND #PWR0180
+U 1 1 61D4729B
+P 8700 3800
+F 0 "#PWR0180" H 8700 3550 50  0001 C CNN
+F 1 "GND" H 8800 3800 50  0000 C CNN
+F 2 "" H 8700 3800 50  0001 C CNN
+F 3 "" H 8700 3800 50  0001 C CNN
+	1    8700 3800
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 4150
+Wire Wire Line
+	7700 4150 7500 4150
+$Comp
+L Connector:TestPoint TP?
+U 1 1 61D6676C
+P 7500 4150
+AR Path="/6096F497/61D6676C" Ref="TP?"  Part="1" 
+AR Path="/607946F5/61D6676C" Ref="TP14"  Part="1" 
+F 0 "TP14" H 7500 4400 50  0000 C CNN
+F 1 "TestPoint" V 7500 4550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7700 4150 50  0001 C CNN
+F 3 "~" H 7700 4150 50  0001 C CNN
+	1    7500 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7500 4150
+Wire Wire Line
+	7500 4150 7300 4150
+Text GLabel 9350 4250 0    50   Input ~ 0
+3V3_LNA
 $EndSCHEMATC
