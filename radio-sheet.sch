@@ -955,17 +955,6 @@ $EndComp
 Connection ~ 4900 1600
 Wire Wire Line
 	4900 1600 5000 1600
-$Comp
-L RF:Si4463 U5
-U 1 1 60646347
-P 4900 2550
-F 0 "U5" H 4900 2550 50  0000 C CNN
-F 1 "Si4463" H 4400 3350 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 4900 3750 50  0001 C CNN
-F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 4600 2450 50  0001 C CNN
-	1    4900 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5000 1800 5000 1850
 Wire Wire Line
@@ -1007,7 +996,7 @@ AR Path="/60604CF2/61DA37D3" Ref="L?"  Part="1"
 AR Path="/607946F5/61DA37D3" Ref="L12"  Part="1" 
 F 0 "L12" H 6450 2050 50  0000 L CNN
 F 1 "L_Small" H 6448 2005 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 6400 2050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 6400 2050 50  0001 C CNN
 F 3 "~" H 6400 2050 50  0001 C CNN
 	1    6400 2050
 	0    1    -1   0   
@@ -1102,7 +1091,7 @@ AR Path="/6096F497/61E05C58" Ref="C?"  Part="1"
 AR Path="/607946F5/61E05C58" Ref="C90"  Part="1" 
 F 0 "C90" H 6792 2096 50  0000 L CNN
 F 1 "??" H 6792 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6700 2050 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 2050 50  0001 C CNN
 F 3 "~" H 6700 2050 50  0001 C CNN
 	1    6700 2050
 	0    -1   -1   0   
@@ -1172,7 +1161,7 @@ AR Path="/60604CF2/61E224A1" Ref="L?"  Part="1"
 AR Path="/607946F5/61E224A1" Ref="L13"  Part="1" 
 F 0 "L13" H 7700 2050 50  0000 L CNN
 F 1 "L_Small" H 7698 2005 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 7650 2050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 7650 2050 50  0001 C CNN
 F 3 "~" H 7650 2050 50  0001 C CNN
 	1    7650 2050
 	0    1    -1   0   
@@ -1185,7 +1174,7 @@ AR Path="/60604CF2/61E2427B" Ref="L?"  Part="1"
 AR Path="/607946F5/61E2427B" Ref="L14"  Part="1" 
 F 0 "L14" H 8250 2050 50  0000 L CNN
 F 1 "L_Small" H 8248 2005 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 8200 2050 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8200 2050 50  0001 C CNN
 F 3 "~" H 8200 2050 50  0001 C CNN
 	1    8200 2050
 	0    1    -1   0   
@@ -1228,7 +1217,7 @@ AR Path="/60604CF2/61E4AC74" Ref="L?"  Part="1"
 AR Path="/607946F5/61E4AC74" Ref="L16"  Part="1" 
 F 0 "L16" H 5800 2500 50  0000 L CNN
 F 1 "L_Small" H 5798 2455 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 5750 2500 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 5750 2500 50  0001 C CNN
 F 3 "~" H 5750 2500 50  0001 C CNN
 	1    5750 2500
 	1    0    0    1   
@@ -1255,7 +1244,7 @@ AR Path="/60604CF2/61E4BD3F" Ref="L?"  Part="1"
 AR Path="/607946F5/61E4BD3F" Ref="L15"  Part="1" 
 F 0 "L15" H 6100 2350 50  0000 L CNN
 F 1 "L_Small" H 6098 2305 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 6050 2350 50  0001 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 6050 2350 50  0001 C CNN
 F 3 "~" H 6050 2350 50  0001 C CNN
 	1    6050 2350
 	0    1    -1   0   
@@ -1348,4 +1337,15 @@ Wire Notes Line
 	11000 2950 7950 2950
 Wire Notes Line
 	7950 2950 7950 2550
+$Comp
+L RF:Si4463 U5
+U 1 1 60646347
+P 4900 2550
+F 0 "U5" H 4900 2550 50  0000 C CNN
+F 1 "Si4463" H 4400 3350 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias" H 4900 3750 50  0001 C CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/Si4464-63-61-60.pdf" H 4600 2450 50  0001 C CNN
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
