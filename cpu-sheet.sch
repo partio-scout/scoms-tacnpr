@@ -297,14 +297,14 @@ Connection ~ 2700 3050
 $Comp
 L Device:R_Small R?
 U 1 1 605DDA6F
-P 2600 2850
+P 2900 2850
 AR Path="/605DDA6F" Ref="R?"  Part="1" 
 AR Path="/6096F497/605DDA6F" Ref="R35"  Part="1" 
-F 0 "R35" H 2659 2896 50  0000 L CNN
-F 1 "10k" H 2659 2805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2600 2850 50  0001 C CNN
-F 3 "~" H 2600 2850 50  0001 C CNN
-	1    2600 2850
+F 0 "R35" H 2959 2896 50  0000 L CNN
+F 1 "10k" H 2959 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2900 2850 50  0001 C CNN
+F 3 "~" H 2900 2850 50  0001 C CNN
+	1    2900 2850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -334,17 +334,6 @@ $EndComp
 Wire Wire Line
 	3350 2350 3350 2450
 $Comp
-L Device:Jumper JP1
-U 1 1 606196F9
-P 3050 2850
-F 0 "JP1" H 3050 3114 50  0000 C CNN
-F 1 "Jumper" H 3050 3023 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3050 2850 50  0001 C CNN
-F 3 "~" H 3050 2850 50  0001 C CNN
-	1    3050 2850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDD #PWR?
 U 1 1 6062B07A
 P 2350 2850
@@ -358,9 +347,7 @@ F 3 "" H 2350 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 2850 2500 2850
-Wire Wire Line
-	2700 2850 2750 2850
+	2350 2850 2800 2850
 $Comp
 L Connector:TestPoint TP7
 U 1 1 60697EB7
@@ -625,17 +612,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 4250 3800 4250
 $Comp
-L Interface_USB:CH340G U11
-U 1 1 607D90C8
-P 4100 6650
-F 0 "U11" H 4100 5961 50  0000 C CNN
-F 1 "CH340G" H 4350 7250 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4150 6100 50  0001 L CNN
-F 3 "http://www.datasheet5.com/pdf-local-2195953" H 3750 7450 50  0001 C CNN
-	1    4100 6650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro J5
 U 1 1 607DC572
 P 1250 6550
@@ -785,47 +761,28 @@ Connection ~ 3100 7150
 $Comp
 L Device:C_Small C?
 U 1 1 6078E9C6
-P 4000 5850
+P 3550 5950
 AR Path="/6078E9C6" Ref="C?"  Part="1" 
 AR Path="/6096F497/6078E9C6" Ref="C76"  Part="1" 
-F 0 "C76" H 4092 5896 50  0000 L CNN
-F 1 "470n" H 4092 5805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4000 5850 50  0001 C CNN
-F 3 "~" H 4000 5850 50  0001 C CNN
-	1    4000 5850
+F 0 "C76" H 3700 6000 50  0000 L CNN
+F 1 "470n" H 3650 5900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3550 5950 50  0001 C CNN
+F 3 "~" H 3550 5950 50  0001 C CNN
+	1    3550 5950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4000 6050 4000 5950
 $Comp
 L power:GND #PWR?
 U 1 1 607950DB
-P 4250 5650
+P 3550 6050
 AR Path="/607950DB" Ref="#PWR?"  Part="1" 
 AR Path="/6096F497/607950DB" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 4250 5400 50  0001 C CNN
-F 1 "GND" H 4255 5477 50  0000 C CNN
-F 2 "" H 4250 5650 50  0001 C CNN
-F 3 "" H 4250 5650 50  0001 C CNN
-	1    4250 5650
+F 0 "#PWR0122" H 3550 5800 50  0001 C CNN
+F 1 "GND" H 3700 6000 50  0000 C CNN
+F 2 "" H 3550 6050 50  0001 C CNN
+F 3 "" H 3550 6050 50  0001 C CNN
+	1    3550 6050
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 5650 4000 5650
-Wire Wire Line
-	4000 5650 4000 5750
-$Comp
-L Device:C_Small C?
-U 1 1 6079A383
-P 5150 5950
-AR Path="/6079A383" Ref="C?"  Part="1" 
-AR Path="/6096F497/6079A383" Ref="C77"  Part="1" 
-F 0 "C77" H 5242 5996 50  0000 L CNN
-F 1 "100n" H 5250 5900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 5950 50  0001 C CNN
-F 3 "~" H 5150 5950 50  0001 C CNN
-	1    5150 5950
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C?
@@ -849,8 +806,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 5800 4100 6050
 Connection ~ 5250 5850
-Wire Wire Line
-	5250 5850 5150 5850
 $Comp
 L power:GND #PWR?
 U 1 1 607AE242
@@ -865,8 +820,6 @@ F 3 "" H 5250 6050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5250 6050
-Wire Wire Line
-	5250 6050 5150 6050
 Wire Wire Line
 	4100 5800 5250 5800
 $Comp
@@ -1599,6 +1552,64 @@ F 3 "" H 9600 4750 50  0001 C CNN
 	1    9600 4750
 	0    -1   -1   0   
 $EndComp
-Text Notes 4400 5600 0    79   ~ 16
-HUOM HUOM!\nVCC-pinniin syöttöjännite?!\n(ja 0R...)
+Wire Wire Line
+	3000 2850 3350 2850
+Text Notes 750  2950 0    79   ~ 16
+TODO: tsekkaa \nprossukiteen pinoutti!\n(ja nucleon kellot!)
+Text Notes 2750 7700 0    118  ~ 24
+TODO: tsekkaa kiteen pinout!
+Text GLabel 3600 5450 0    79   Input ~ 0
+3V3_CPU
+$Comp
+L Device:R_Small R?
+U 1 1 61F03C76
+P 4100 5700
+AR Path="/61F03C76" Ref="R?"  Part="1" 
+AR Path="/6096F497/61F03C76" Ref="R59"  Part="1" 
+F 0 "R59" V 4000 5700 50  0000 C CNN
+F 1 "0" V 3900 5700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4100 5700 50  0001 C CNN
+F 3 "~" H 4100 5700 50  0001 C CNN
+	1    4100 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Interface_USB:CH340G U11
+U 1 1 607D90C8
+P 4100 6650
+F 0 "U11" H 4100 5961 50  0000 C CNN
+F 1 "CH340G" H 4350 7250 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 4150 6100 50  0001 L CNN
+F 3 "http://www.datasheet5.com/pdf-local-2195953" H 3750 7450 50  0001 C CNN
+	1    4100 6650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 5800
+Wire Wire Line
+	4000 6050 4000 5800
+Wire Wire Line
+	4000 5800 3550 5800
+Wire Wire Line
+	3550 5800 3550 5850
+Wire Wire Line
+	5250 5850 5150 5850
+Wire Wire Line
+	5250 6050 5150 6050
+$Comp
+L Device:C_Small C?
+U 1 1 6079A383
+P 5150 5950
+AR Path="/6079A383" Ref="C?"  Part="1" 
+AR Path="/6096F497/6079A383" Ref="C77"  Part="1" 
+F 0 "C77" H 5242 5996 50  0000 L CNN
+F 1 "100n" H 5250 5900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5150 5950 50  0001 C CNN
+F 3 "~" H 5150 5950 50  0001 C CNN
+	1    5150 5950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 5450 4100 5600
+Wire Wire Line
+	3600 5450 4100 5450
 $EndSCHEMATC

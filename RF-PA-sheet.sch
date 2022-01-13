@@ -727,51 +727,51 @@ Wire Wire Line
 $Comp
 L Device:L_Small L10
 U 1 1 61801A7F
-P 9650 4500
-F 0 "L10" H 9698 4546 50  0000 L CNN
-F 1 "L_Small" H 9698 4455 50  0000 L CNN
-F 2 "Inductor_SMD:L_1206_3216Metric" H 9650 4500 50  0001 C CNN
-F 3 "~" H 9650 4500 50  0001 C CNN
-	1    9650 4500
+P 10300 4500
+F 0 "L10" H 10348 4546 50  0000 L CNN
+F 1 "L_Small" H 10348 4455 50  0000 L CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 10300 4500 50  0001 C CNN
+F 3 "~" H 10300 4500 50  0001 C CNN
+	1    10300 4500
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 618072BE
-P 10050 4450
+P 10650 4450
 AR Path="/609A52E7/618072BE" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/618072BE" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR0143" H 10050 4200 50  0001 C CNN
-F 1 "GND" H 10055 4277 50  0000 C CNN
-F 2 "" H 10050 4450 50  0001 C CNN
-F 3 "" H 10050 4450 50  0001 C CNN
-	1    10050 4450
+F 0 "#PWR0143" H 10650 4200 50  0001 C CNN
+F 1 "GND" H 10655 4277 50  0000 C CNN
+F 2 "" H 10650 4450 50  0001 C CNN
+F 3 "" H 10650 4450 50  0001 C CNN
+	1    10650 4450
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 618072C4
-P 10050 4350
+P 10650 4350
 AR Path="/609A52E7/618072C4" Ref="C?"  Part="1" 
 AR Path="/60604CF2/618072C4" Ref="C64"  Part="1" 
-F 0 "C64" H 10142 4396 50  0000 L CNN
-F 1 "100n" H 10142 4305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 10050 4350 50  0001 C CNN
-F 3 "~" H 10050 4350 50  0001 C CNN
-	1    10050 4350
+F 0 "C64" H 10742 4396 50  0000 L CNN
+F 1 "100n" H 10742 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10650 4350 50  0001 C CNN
+F 3 "~" H 10650 4350 50  0001 C CNN
+	1    10650 4350
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	9650 4600 9650 4800
+	10300 4600 10300 4800
 Wire Wire Line
-	9650 4800 9350 4800
+	10300 4800 9350 4800
 Wire Wire Line
-	9650 4400 9650 4250
+	10300 4400 10250 4250
 Wire Wire Line
-	9650 4250 10050 4250
-Text Notes 10200 3900 2    40   ~ 8
+	10250 4250 10650 4250
+Text Notes 10750 3900 2    40   ~ 8
 LNA's switched \nDC supply 3v3
-Connection ~ 9650 4250
+Connection ~ 10250 4250
 Text Notes 1600 7300 0    79   ~ 16
 RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
 Wire Notes Line
@@ -784,15 +784,15 @@ Wire Notes Line
 	1400 7500 1400 6450
 Text GLabel 6950 4150 2    50   Input ~ 0
 SWDC_PA_TX_3V3
-Text GLabel 9650 4000 2    50   Input ~ 0
+Text GLabel 10250 4000 2    50   Input ~ 0
 SWDC_LNA_3V3
 Wire Wire Line
-	9650 4000 9650 4250
+	10250 4000 10250 4250
 Text GLabel 4350 2150 0    50   Input ~ 0
 SWDC_PA_TX_12V
 Text Notes 7600 4050 2    40   ~ 8
 Pin diode's switched \nbias from 3v3
-Text GLabel 9650 4800 2    50   Input ~ 0
+Text GLabel 10300 4800 2    50   Input ~ 0
 RXP_FROM_LNA
 Text GLabel 6600 2050 2    50   Input ~ 0
 RF_PA_OUT
@@ -890,6 +890,6 @@ F 3 "" H 9150 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9150 4500 8950 4500
-Text Notes 9350 4950 0    55   ~ 11
-saw?
+Text Notes 9550 5050 0    118  ~ 24
+SAW?
 $EndSCHEMATC

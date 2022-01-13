@@ -366,43 +366,21 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 616492B5
-P 4300 5600
+P 3600 5150
 AR Path="/609A52E7/616492B5" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/616492B5" Ref="#PWR?"  Part="1" 
 AR Path="/607946F5/616492B5" Ref="#PWR0171"  Part="1" 
-F 0 "#PWR0171" H 4300 5350 50  0001 C CNN
-F 1 "GND" H 4305 5427 50  0000 C CNN
-F 2 "" H 4300 5600 50  0001 C CNN
-F 3 "" H 4300 5600 50  0001 C CNN
-	1    4300 5600
+F 0 "#PWR0171" H 3600 4900 50  0001 C CNN
+F 1 "GND" H 3605 4977 50  0000 C CNN
+F 2 "" H 3600 5150 50  0001 C CNN
+F 3 "" H 3600 5150 50  0001 C CNN
+	1    3600 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 5600 3600 5600
-Wire Wire Line
-	3600 5600 3600 5050
-$Comp
-L Device:D D?
-U 1 1 616492C3
-P 4600 5250
-AR Path="/60604CF2/616492C3" Ref="D?"  Part="1" 
-AR Path="/607946F5/616492C3" Ref="D21"  Part="1" 
-F 0 "D21" V 4646 5170 50  0000 R CNN
-F 1 "D" V 4555 5170 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 4600 5250 50  0001 C CNN
-F 3 "~" H 4600 5250 50  0001 C CNN
-	1    4600 5250
-	0    -1   1    0   
-$EndComp
-Connection ~ 4300 5600
-Wire Wire Line
-	4500 5050 4600 5050
+	3600 5150 3600 5050
 Wire Wire Line
 	4500 5050 4500 4800
-Wire Wire Line
-	4600 5400 4600 5600
-Wire Wire Line
-	4600 5600 4300 5600
 Wire Wire Line
 	3200 3750 3600 3750
 Connection ~ 3600 3750
@@ -451,8 +429,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 600
 $EndComp
 Wire Wire Line
 	2000 6200 2550 6200
-Text Notes 2350 7150 0    79   ~ 16
-pin-diodin bias logiikka3v:sta, muutama 10 ma bias
 Text GLabel 6150 4850 0    50   Output ~ 0
 GPIOR2
 Wire Wire Line
@@ -489,22 +465,6 @@ $EndComp
 Wire Wire Line
 	6150 4850 6300 4850
 $Comp
-L power:GND #PWR?
-U 1 1 616B1A7F
-P 8600 5550
-AR Path="/609A52E7/616B1A7F" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/616B1A7F" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/616B1A7F" Ref="#PWR0173"  Part="1" 
-F 0 "#PWR0173" H 8600 5300 50  0001 C CNN
-F 1 "GND" H 8605 5377 50  0000 C CNN
-F 2 "" H 8600 5550 50  0001 C CNN
-F 3 "" H 8600 5550 50  0001 C CNN
-	1    8600 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 5500 8600 5550
-$Comp
 L Device:R_Small R?
 U 1 1 616B1AAC
 P 7750 4850
@@ -522,19 +482,6 @@ $EndComp
 Wire Wire Line
 	8000 4850 7850 4850
 $Comp
-L Device:D D?
-U 1 1 616B1A95
-P 8600 5350
-AR Path="/60604CF2/616B1A95" Ref="D?"  Part="1" 
-AR Path="/607946F5/616B1A95" Ref="D22"  Part="1" 
-F 0 "D22" V 8646 5270 50  0000 R CNN
-F 1 "D" V 8555 5270 50  0000 R CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 8600 5350 50  0001 C CNN
-F 3 "~" H 8600 5350 50  0001 C CNN
-	1    8600 5350
-	0    -1   1    0   
-$EndComp
-$Comp
 L Transistor_FET:AO3401A Q?
 U 1 1 616B1A72
 P 8200 4850
@@ -549,10 +496,6 @@ F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8200 4850 50  0001 L CNN
 $EndComp
 Wire Wire Line
 	8300 5050 8300 5150
-Wire Wire Line
-	8600 5200 8600 5150
-Wire Wire Line
-	8600 5150 8300 5150
 Text GLabel 7300 4150 0    50   Input ~ 0
 3V3_LNA
 $Comp
@@ -600,22 +543,17 @@ Text GLabel 6650 2450 2    50   Input ~ 0
 RXP_FROM_LNA
 Wire Wire Line
 	8300 5150 8100 5150
-Connection ~ 8300 5150
 Wire Wire Line
-	4850 6400 4050 6400
+	4850 6400 4550 6400
 Wire Wire Line
 	4050 6400 4050 6200
 Connection ~ 4050 6200
 Wire Wire Line
 	4050 6200 4550 6200
 Wire Wire Line
-	4600 5050 4600 5100
-Wire Wire Line
 	4500 3750 4500 4400
 Text GLabel 4500 2050 0    50   Input ~ 0
 SDN_SI4463
-Text Notes 4250 6500 0    40   ~ 8
-vastus tähän!
 Connection ~ 9700 5400
 Wire Wire Line
 	9700 5400 10400 5400
@@ -1377,4 +1315,22 @@ F 3 "" H 8350 2250 50  0001 C CNN
 	1    8350 2250
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61E58F6E
+P 4450 6400
+AR Path="/61E58F6E" Ref="R?"  Part="1" 
+AR Path="/6096F497/61E58F6E" Ref="R?"  Part="1" 
+AR Path="/607946F5/61E58F6E" Ref="R57"  Part="1" 
+F 0 "R57" V 4350 6300 50  0000 L CNN
+F 1 "100" V 4250 6350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 6400 50  0001 C CNN
+F 3 "~" H 4450 6400 50  0001 C CNN
+	1    4450 6400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4350 6400 4050 6400
+Text Notes 1700 2400 0    79   ~ 16
+TODO: tsekkaa kiteen pinout!
 $EndSCHEMATC
