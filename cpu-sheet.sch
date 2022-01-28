@@ -262,14 +262,14 @@ $EndComp
 Wire Wire Line
 	2250 3100 2400 3100
 Wire Wire Line
-	2250 3350 2400 3350
+	2250 3350 2350 3350
 $Comp
-L Device:Crystal_Small Y2
+L Device:Crystal_GND24_Small Y2
 U 1 1 605C7982
 P 2700 3200
 F 0 "Y2" V 2654 3288 50  0000 L CNN
 F 1 "32.768K" V 2745 3288 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 2700 3200 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 2700 3200 50  0001 C CNN
 F 3 "~" H 2700 3200 50  0001 C CNN
 	1    2700 3200
 	0    1    1    0   
@@ -279,11 +279,9 @@ Wire Wire Line
 Wire Wire Line
 	2700 3050 3350 3050
 Wire Wire Line
-	2800 3150 2800 3350
+	3000 3150 2800 3350
 Wire Wire Line
 	2800 3350 2700 3350
-Wire Wire Line
-	2800 3150 3350 3150
 Wire Wire Line
 	2700 3300 2700 3350
 Connection ~ 2700 3350
@@ -447,7 +445,7 @@ AR Path="/60648C13" Ref="C?"  Part="1"
 AR Path="/6096F497/60648C13" Ref="C52"  Part="1" 
 F 0 "C52" H 3542 1996 50  0000 L CNN
 F 1 "10u" H 3542 1905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3450 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3450 1950 50  0001 C CNN
 F 3 "~" H 3450 1950 50  0001 C CNN
 	1    3450 1950
 	1    0    0    -1  
@@ -678,13 +676,14 @@ USB_DM
 Text GLabel 3500 6550 0    40   Input ~ 0
 USB_DP
 $Comp
-L Device:Crystal_Small Y3
+L Device:Crystal_GND24_Small Y3
 U 1 1 607FBE6A
 P 3500 6950
 F 0 "Y3" V 3454 7038 50  0000 L CNN
 F 1 "12M" V 3545 7038 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_5032-4Pin_5.0x3.2mm" H 3500 6950 50  0001 C CNN
-F 3 "~" H 3500 6950 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 3500 6950 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2103291203_Yangxing-Tech-X322512MSB4SI_C9002.pdf," H 3500 6950 50  0001 C CNN
+F 4 "C9002" V 3500 6950 50  0001 C CNN "LCSC"
 	1    3500 6950
 	0    1    1    0   
 $EndComp
@@ -753,8 +752,6 @@ F 3 "" H 3100 7150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 6850 3100 6850
-Wire Wire Line
-	3100 6850 3100 7150
 Wire Wire Line
 	3100 7150 3200 7150
 Connection ~ 3100 7150
@@ -837,8 +834,6 @@ F 3 "~" H 3600 6650 50  0001 C CNN
 $EndComp
 Text GLabel 1850 1750 0    79   Input ~ 0
 3V3_CPU
-Wire Wire Line
-	1850 1750 1900 1750
 Wire Wire Line
 	2350 1750 2950 1750
 Text GLabel 9800 1550 2    79   Input ~ 0
@@ -1161,20 +1156,6 @@ Wire Wire Line
 	3250 3750 3350 3750
 Wire Wire Line
 	3050 3750 2950 3750
-$Comp
-L Device:Ferrite_Bead_Small FB1
-U 1 1 60F1204A
-P 2000 1750
-F 0 "FB1" V 1763 1750 50  0000 C CNN
-F 1 "Ferrite_Bead_Small" H 2100 1750 50  0001 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" V 1930 1750 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Sunlord-GZ2012D101TF_C1015.pdf" H 2000 1750 50  0001 C CNN
-F 4 "C1015" V 1854 1750 50  0000 C CNN "LCSC"
-	1    2000 1750
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2100 1750 2150 1750
 Wire Wire Line
 	3750 1750 3750 2250
 Text GLabel 9200 2900 0    50   Output ~ 0
@@ -1554,10 +1535,6 @@ F 3 "" H 9600 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3000 2850 3350 2850
-Text Notes 750  2950 0    79   ~ 16
-TODO: tsekkaa \nprossukiteen pinoutti!\n(ja nucleon kellot!)
-Text Notes 2750 7700 0    118  ~ 24
-TODO: tsekkaa kiteen pinout!
 Text GLabel 3600 5450 0    79   Input ~ 0
 3V3_CPU
 $Comp
@@ -1612,4 +1589,54 @@ Wire Wire Line
 	4100 5450 4100 5600
 Wire Wire Line
 	3600 5450 4100 5450
+Wire Wire Line
+	3100 6850 3100 6950
+Connection ~ 3100 6950
+Wire Wire Line
+	3100 6950 3100 7150
+Wire Wire Line
+	3100 6950 3400 6950
+$Comp
+L power:GND #PWR?
+U 1 1 6221362F
+P 3600 7150
+AR Path="/6221362F" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/6221362F" Ref="#PWR0189"  Part="1" 
+F 0 "#PWR0189" H 3600 6900 50  0001 C CNN
+F 1 "GND" H 3605 6977 50  0000 C CNN
+F 2 "" H 3600 7150 50  0001 C CNN
+F 3 "" H 3600 7150 50  0001 C CNN
+	1    3600 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6950 3600 7150
+Wire Wire Line
+	3000 3150 3350 3150
+Wire Wire Line
+	2600 3200 2350 3200
+Wire Wire Line
+	2350 3200 2350 3350
+Connection ~ 2350 3350
+Wire Wire Line
+	2350 3350 2400 3350
+$Comp
+L power:GNDD #PWR?
+U 1 1 6223B311
+P 2850 3400
+AR Path="/6223B311" Ref="#PWR?"  Part="1" 
+AR Path="/6096F497/6223B311" Ref="#PWR0190"  Part="1" 
+F 0 "#PWR0190" H 2850 3150 50  0001 C CNN
+F 1 "GNDD" H 2854 3245 50  0000 C CNN
+F 2 "" H 2850 3400 50  0001 C CNN
+F 3 "" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3400 2850 3200
+Wire Wire Line
+	2850 3200 2800 3200
+Wire Wire Line
+	1850 1750 2150 1750
 $EndSCHEMATC
