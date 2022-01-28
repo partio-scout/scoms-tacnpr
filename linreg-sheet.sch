@@ -448,7 +448,7 @@ AR Path="/61618C4A" Ref="J?"  Part="1"
 AR Path="/60D4B6E6/61618C4A" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C4A" Ref="J1"  Part="1" 
 F 0 "J1" H 2918 6375 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 2918 6466 50  0000 C CNN
+F 1 "PWR_TERM" H 2918 6466 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3000 6700 50  0001 C CNN
 F 3 "~" H 3000 6700 50  0001 C CNN
 	1    3000 6700
@@ -489,7 +489,7 @@ AR Path="/61618C5D" Ref="J?"  Part="1"
 AR Path="/60D4B6E6/61618C5D" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C5D" Ref="J2"  Part="1" 
 F 0 "J2" H 4218 6375 50  0000 C CNN
-F 1 "Screw_Terminal_PWR_IN" H 4218 6466 50  0000 C CNN
+F 1 "PWR_TERM" H 4218 6466 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4300 6700 50  0001 C CNN
 F 3 "~" H 4300 6700 50  0001 C CNN
 	1    4300 6700

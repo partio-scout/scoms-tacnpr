@@ -74,7 +74,7 @@ L Mechanical:MountingHole H7
 U 1 1 607CF1C5
 P 6000 7500
 F 0 "H7" H 6100 7546 50  0000 L CNN
-F 1 "MountingHole" H 6100 7455 50  0001 L CNN
+F 1 "MH" H 6100 7455 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 7500 50  0001 C CNN
 F 3 "~" H 6000 7500 50  0001 C CNN
 	1    6000 7500
@@ -85,7 +85,7 @@ L Mechanical:MountingHole H6
 U 1 1 607CF952
 P 6400 7250
 F 0 "H6" H 6500 7296 50  0000 L CNN
-F 1 "MountingHole" H 6500 7205 50  0001 L CNN
+F 1 "MH" H 6500 7205 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 7250 50  0001 C CNN
 F 3 "~" H 6400 7250 50  0001 C CNN
 	1    6400 7250
@@ -96,7 +96,7 @@ L Mechanical:MountingHole H8
 U 1 1 607CF95C
 P 6400 7500
 F 0 "H8" H 6500 7546 50  0000 L CNN
-F 1 "MountingHole" H 6500 7455 50  0001 L CNN
+F 1 "MH" H 6500 7455 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 7500 50  0001 C CNN
 F 3 "~" H 6400 7500 50  0001 C CNN
 	1    6400 7500
@@ -107,7 +107,7 @@ L Mechanical:MountingHole H5
 U 1 1 607CEFE0
 P 6000 7250
 F 0 "H5" H 6100 7296 50  0000 L CNN
-F 1 "MountingHole" H 6100 7205 50  0001 L CNN
+F 1 "MH" H 6100 7205 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 7250 50  0001 C CNN
 F 3 "~" H 6000 7250 50  0001 C CNN
 	1    6000 7250
@@ -118,7 +118,7 @@ L Mechanical:MountingHole H4
 U 1 1 607CF948
 P 6400 6950
 F 0 "H4" H 6500 6996 50  0000 L CNN
-F 1 "MountingHole" H 6500 6905 50  0001 L CNN
+F 1 "MH" H 6500 6905 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 6950 50  0001 C CNN
 F 3 "~" H 6400 6950 50  0001 C CNN
 	1    6400 6950
@@ -129,7 +129,7 @@ L Mechanical:MountingHole H2
 U 1 1 607CF8BE
 P 6400 6700
 F 0 "H2" H 6500 6746 50  0000 L CNN
-F 1 "MountingHole" H 6500 6655 50  0001 L CNN
+F 1 "MH" H 6500 6655 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6400 6700 50  0001 C CNN
 F 3 "~" H 6400 6700 50  0001 C CNN
 	1    6400 6700
@@ -140,7 +140,7 @@ L Mechanical:MountingHole H3
 U 1 1 607CEE86
 P 6000 6950
 F 0 "H3" H 6100 6996 50  0000 L CNN
-F 1 "MountingHole" H 6100 6905 50  0001 L CNN
+F 1 "MH" H 6100 6905 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 6950 50  0001 C CNN
 F 3 "~" H 6000 6950 50  0001 C CNN
 	1    6000 6950
@@ -151,7 +151,7 @@ L Mechanical:MountingHole H1
 U 1 1 6087E1A0
 P 6000 6700
 F 0 "H1" H 6100 6746 50  0000 L CNN
-F 1 "MountingHole" H 6100 6655 50  0001 L CNN
+F 1 "MH" H 6100 6655 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6000 6700 50  0001 C CNN
 F 3 "~" H 6000 6700 50  0001 C CNN
 	1    6000 6700
@@ -185,7 +185,7 @@ L Mechanical:MountingHole H9
 U 1 1 608AE660
 P 6700 7350
 F 0 "H9" H 6800 7396 50  0000 L CNN
-F 1 "MountingHole" H 6800 7305 50  0001 L CNN
+F 1 "MH" H 6800 7305 50  0001 L CNN
 F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6700 7350 50  0001 C CNN
 F 3 "~" H 6700 7350 50  0001 C CNN
 	1    6700 7350

@@ -19,8 +19,6 @@ Text GLabel 4350 2950 0    50   Input ~ 0
 CS_SI4463
 Text GLabel 4350 2750 0    50   Input ~ 0
 MOSI_SPI1
-Text Notes 7150 6450 0    118  Italic 24
-TODO: double check pinout!
 Wire Wire Line
 	3850 3050 4500 3050
 Text GLabel 3850 3050 0    50   BiDi ~ 0
@@ -34,20 +32,20 @@ Wire Wire Line
 Wire Wire Line
 	4500 2950 4350 2950
 Wire Wire Line
-	4200 2250 4500 2250
+	4100 2250 4500 2250
 Wire Wire Line
-	4200 2450 4500 2450
+	4100 2450 4500 2450
 $Comp
-L Device:Crystal_Small Y?
+L Device:Crystal_GND24_Small Y?
 U 1 1 607A0BC6
-P 4200 2350
+P 4100 2350
 AR Path="/6096F497/607A0BC6" Ref="Y?"  Part="1" 
 AR Path="/607946F5/607A0BC6" Ref="Y4"  Part="1" 
-F 0 "Y4" V 4154 2438 50  0000 L CNN
-F 1 "30M" V 4245 2438 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 4200 2350 50  0001 C CNN
-F 3 "" H 4200 2350 50  0001 C CNN
-	1    4200 2350
+F 0 "Y4" V 4054 2438 50  0000 L CNN
+F 1 "30M" V 4145 2438 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 4100 2350 50  0001 C CNN
+F 3 "" H 4100 2350 50  0001 C CNN
+	1    4100 2350
 	0    1    1    0   
 $EndComp
 $Comp
@@ -716,49 +714,6 @@ Connection ~ 3000 4850
 Text GLabel 2250 6200 3    50   Output ~ 0
 TXSTATE_INV
 $Comp
-L 74xx:74HC04 U15
-U 6 1 6168F698
-P 1750 4600
-F 0 "U15" H 1750 4917 50  0000 C CNN
-F 1 "74HC04" H 1750 4826 50  0000 C CNN
-F 2 "" H 1750 4600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1750 4600 50  0001 C CNN
-	6    1750 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61BA6570
-P 1050 4600
-AR Path="/609A52E7/61BA6570" Ref="#PWR?"  Part="1" 
-AR Path="/60604CF2/61BA6570" Ref="#PWR?"  Part="1" 
-AR Path="/607946F5/61BA6570" Ref="#PWR0174"  Part="1" 
-F 0 "#PWR0174" H 1050 4350 50  0001 C CNN
-F 1 "GND" H 1055 4427 50  0000 C CNN
-F 2 "" H 1050 4600 50  0001 C CNN
-F 3 "" H 1050 4600 50  0001 C CNN
-	1    1050 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 61BA6CAA
-P 1250 4600
-AR Path="/61BA6CAA" Ref="R?"  Part="1" 
-AR Path="/6096F497/61BA6CAA" Ref="R?"  Part="1" 
-AR Path="/607946F5/61BA6CAA" Ref="R49"  Part="1" 
-F 0 "R49" V 1150 4500 50  0000 L CNN
-F 1 "1.5k" V 1350 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4600 50  0001 C CNN
-F 3 "~" H 1250 4600 50  0001 C CNN
-	1    1250 4600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1050 4600 1150 4600
-Wire Wire Line
-	1450 4600 1350 4600
-$Comp
 L Device:R_Small R?
 U 1 1 61BD4BF3
 P 4900 1700
@@ -1329,8 +1284,69 @@ F 3 "~" H 4450 6400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4350 6400 4050 6400
-Text Notes 1700 2400 0    79   ~ 16
-TODO: tsekkaa kiteen pinout!
 Wire Wire Line
 	8750 2050 8950 2050
+$Comp
+L power:GND #PWR0193
+U 1 1 6243D012
+P 3900 2350
+F 0 "#PWR0193" H 3900 2100 50  0001 C CNN
+F 1 "GND" H 3905 2177 50  0000 C CNN
+F 2 "" H 3900 2350 50  0001 C CNN
+F 3 "" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 2350 3900 2350
+Wire Wire Line
+	4200 2350 4200 2150
+Wire Wire Line
+	4200 2150 3900 2150
+Wire Wire Line
+	3900 2150 3900 2350
+Connection ~ 3900 2350
+Wire Wire Line
+	1450 4600 1350 4600
+Wire Wire Line
+	1050 4600 1150 4600
+$Comp
+L Device:R_Small R?
+U 1 1 61BA6CAA
+P 1250 4600
+AR Path="/61BA6CAA" Ref="R?"  Part="1" 
+AR Path="/6096F497/61BA6CAA" Ref="R?"  Part="1" 
+AR Path="/607946F5/61BA6CAA" Ref="R49"  Part="1" 
+F 0 "R49" V 1150 4500 50  0000 L CNN
+F 1 "1.5k" V 1350 4500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1250 4600 50  0001 C CNN
+F 3 "~" H 1250 4600 50  0001 C CNN
+	1    1250 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61BA6570
+P 1050 4600
+AR Path="/609A52E7/61BA6570" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/61BA6570" Ref="#PWR?"  Part="1" 
+AR Path="/607946F5/61BA6570" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 1050 4350 50  0001 C CNN
+F 1 "GND" H 1055 4427 50  0000 C CNN
+F 2 "" H 1050 4600 50  0001 C CNN
+F 3 "" H 1050 4600 50  0001 C CNN
+	1    1050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC04 U15
+U 6 1 6168F698
+P 1750 4600
+F 0 "U15" H 1750 4917 50  0000 C CNN
+F 1 "74HC04" H 1750 4826 50  0000 C CNN
+F 2 "" H 1750 4600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1750 4600 50  0001 C CNN
+	6    1750 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
