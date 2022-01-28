@@ -177,7 +177,7 @@ Text GLabel 3750 2650 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	4500 2650 3750 2650
-Text GLabel 8900 2050 2    50   Output ~ 0
+Text GLabel 10150 2050 2    50   Output ~ 0
 RF_PA_IN
 $Comp
 L Device:LED D?
@@ -1126,8 +1126,8 @@ Connection ~ 7850 2050
 Wire Wire Line
 	8300 2050 8350 2050
 Wire Wire Line
-	8900 2050 8750 2050
-Text Notes 8900 1950 0    39   ~ 8
+	10150 2050 9700 2050
+Text Notes 10200 1950 0    39   ~ 8
 To hybrid PA
 $Comp
 L Device:L_Small L?
@@ -1333,4 +1333,69 @@ Wire Wire Line
 	4350 6400 4050 6400
 Text Notes 1700 2400 0    79   ~ 16
 TODO: tsekkaa kiteen pinout!
+$Comp
+L npr-parts:SAW-DCC6C U?
+U 1 1 6219F981
+P 9350 2050
+F 0 "U?" H 9350 2465 50  0000 C CNN
+F 1 "B39431B3710U410" H 9350 2374 50  0000 C CNN
+F 2 "NPR:DCC6C" H 9350 2050 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/B39431B3710U410.pdf" H 9350 2050 50  0001 C CNN
+	1    9350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2050 8750 2050
+$Comp
+L power:GND #PWR?
+U 1 1 621B1B0F
+P 8900 2150
+F 0 "#PWR?" H 8900 1900 50  0001 C CNN
+F 1 "GND" H 8905 1977 50  0000 C CNN
+F 2 "" H 8900 2150 50  0001 C CNN
+F 3 "" H 8900 2150 50  0001 C CNN
+	1    8900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 621B1F4B
+P 9850 2150
+F 0 "#PWR?" H 9850 1900 50  0001 C CNN
+F 1 "GND" H 9855 1977 50  0000 C CNN
+F 2 "" H 9850 2150 50  0001 C CNN
+F 3 "" H 9850 2150 50  0001 C CNN
+	1    9850 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2150 9850 2150
+Wire Wire Line
+	8900 2150 9000 2150
+$Comp
+L power:GND #PWR?
+U 1 1 621BAB13
+P 9800 1950
+F 0 "#PWR?" H 9800 1700 50  0001 C CNN
+F 1 "GND" H 9805 1777 50  0000 C CNN
+F 2 "" H 9800 1950 50  0001 C CNN
+F 3 "" H 9800 1950 50  0001 C CNN
+	1    9800 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 1950 9700 1950
+$Comp
+L power:GND #PWR?
+U 1 1 621C42B0
+P 8950 1950
+F 0 "#PWR?" H 8950 1700 50  0001 C CNN
+F 1 "GND" H 8955 1777 50  0000 C CNN
+F 2 "" H 8950 1950 50  0001 C CNN
+F 3 "" H 8950 1950 50  0001 C CNN
+	1    8950 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 1950 8950 1950
 $EndSCHEMATC
