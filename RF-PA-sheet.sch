@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7150 6850 0    157  Italic 31
-TACNPR / RF PA & TRX switch
-Text Notes 7200 7050 0    79   Italic 16
-20W RF PA based on Motorola MHW720A, design: Tatu OH2EAT
 Text GLabel 2400 2900 0    50   Input ~ 0
 12V_TO_RFPA
 $Comp
@@ -362,7 +358,7 @@ F 3 "~" H 2550 5250 50  0001 C CNN
 $EndComp
 Text Notes 2700 5450 1    40   ~ 8
 10mm_100ohm
-Text Notes 4650 4900 2    40   ~ 8
+Text Notes 4600 4900 2    40   ~ 8
 33mm_100ohm
 Text Notes 3350 4700 2    40   ~ 8
 33mm_100ohm
@@ -398,7 +394,7 @@ F 3 "~" H 6950 4800 50  0001 C CNN
 $EndComp
 Text Notes 5500 4750 2    40   Italic 8
 pin\ndiode
-Text Notes 4150 4600 2    40   Italic 8
+Text Notes 4100 4600 2    40   Italic 8
 pin\ndiode
 Wire Wire Line
 	3850 4800 3850 4700
@@ -716,7 +712,7 @@ F 3 "" H 5850 1245 50  0001 C CNN
 	1    5850 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 4100 2400 2    40   ~ 8
+Text Notes 4250 2500 2    79   ~ 16
 TX PWR \nswitching
 Wire Wire Line
 	7050 4800 7250 4800
@@ -761,19 +757,9 @@ Wire Wire Line
 	8050 4200 8550 4200
 Wire Wire Line
 	8550 4200 8750 4200
-Text Notes 9150 3950 2    40   ~ 8
+Text Notes 9500 3600 2    79   ~ 16
 LNA's switched \nDC supply 3v3
 Connection ~ 8550 4200
-Text Notes 1600 7300 0    79   ~ 16
-RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
-Wire Notes Line
-	1400 6450 3550 6450
-Wire Notes Line
-	3550 6450 3550 7500
-Wire Notes Line
-	3550 7500 1400 7500
-Wire Notes Line
-	1400 7500 1400 6450
 Text GLabel 5850 4300 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 8550 3750 2    50   Input ~ 0
@@ -782,7 +768,7 @@ Wire Wire Line
 	8550 3750 8550 4200
 Text GLabel 4350 2150 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text Notes 6400 4200 2    40   ~ 8
+Text Notes 6850 4150 2    79   ~ 16
 Pin diode's switched \nbias from 3v3
 Text GLabel 10350 4800 2    50   Input ~ 0
 RXP_FROM_LNA
@@ -852,8 +838,8 @@ F 3 "" H 7600 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7600 4500 7450 4500
-Text Notes 9650 4250 0    79   ~ 16
-SAW BPF\n
+Text Notes 9700 5350 0    79   ~ 16
+SAW\nBPF\n
 $Comp
 L npr-parts:SAW-DCC6C U?
 U 1 1 622A739E
@@ -959,15 +945,15 @@ Wire Wire Line
 $Comp
 L Device:R_Small R?
 U 1 1 623ABED7
-P 8900 4800
+P 8850 4800
 AR Path="/623ABED7" Ref="R?"  Part="1" 
 AR Path="/6096F497/623ABED7" Ref="R?"  Part="1" 
 AR Path="/60604CF2/623ABED7" Ref="R58"  Part="1" 
-F 0 "R58" H 8959 4846 50  0000 L CNN
-F 1 "??" H 8959 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8900 4800 50  0001 C CNN
-F 3 "~" H 8900 4800 50  0001 C CNN
-	1    8900 4800
+F 0 "R58" H 8909 4846 50  0000 L CNN
+F 1 "??" H 8909 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8850 4800 50  0001 C CNN
+F 3 "~" H 8850 4800 50  0001 C CNN
+	1    8850 4800
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -987,24 +973,24 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 623AD273
-P 9150 4900
+P 9000 4900
 AR Path="/623AD273" Ref="R?"  Part="1" 
 AR Path="/6096F497/623AD273" Ref="R?"  Part="1" 
 AR Path="/60604CF2/623AD273" Ref="R61"  Part="1" 
-F 0 "R61" H 9209 4946 50  0000 L CNN
-F 1 "??" H 9209 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9150 4900 50  0001 C CNN
-F 3 "~" H 9150 4900 50  0001 C CNN
-	1    9150 4900
+F 0 "R61" H 8800 4950 50  0000 L CNN
+F 1 "??" H 8850 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9000 4900 50  0001 C CNN
+F 3 "~" H 9000 4900 50  0001 C CNN
+	1    9000 4900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8450 4800 8700 4800
 Wire Wire Line
-	8700 4800 8800 4800
+	8700 4800 8750 4800
 Connection ~ 8700 4800
 Wire Wire Line
-	9000 4800 9150 4800
+	8950 4800 9000 4800
 $Comp
 L power:GND #PWR?
 U 1 1 623B538D
@@ -1021,21 +1007,21 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 623B57FF
-P 9150 5000
+P 9000 5000
 AR Path="/609A52E7/623B57FF" Ref="#PWR?"  Part="1" 
 AR Path="/60604CF2/623B57FF" Ref="#PWR0192"  Part="1" 
-F 0 "#PWR0192" H 9150 4750 50  0001 C CNN
-F 1 "GND" H 9155 4827 50  0000 C CNN
-F 2 "" H 9150 5000 50  0001 C CNN
-F 3 "" H 9150 5000 50  0001 C CNN
-	1    9150 5000
+F 0 "#PWR0192" H 9000 4750 50  0001 C CNN
+F 1 "GND" H 9005 4827 50  0000 C CNN
+F 2 "" H 9000 5000 50  0001 C CNN
+F 3 "" H 9000 5000 50  0001 C CNN
+	1    9000 5000
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10350 4800 10200 4800
 Wire Wire Line
-	9500 4800 9150 4800
-Connection ~ 9150 4800
+	9500 4800 9000 4800
+Connection ~ 9000 4800
 Wire Wire Line
 	6150 4800 6150 5750
 Wire Wire Line
@@ -1065,4 +1051,18 @@ Wire Wire Line
 Connection ~ 6250 5450
 Wire Wire Line
 	6150 5750 6100 5750
+Text Notes 8300 1900 0    118  ~ 24
+RF strip widths \non the keepout area:\n\n50 ohm: 2 mm (millimeters)\n100 ohm: 0,5 mm
+Wire Notes Line width 12
+	8100 750  11000 750 
+Wire Notes Line width 16
+	11000 750  11000 2100
+Wire Notes Line width 12
+	11000 2100 8100 2100
+Wire Notes Line width 12
+	8100 2100 8100 750 
+Text Notes 7050 6850 0    157  Italic 31
+TACNPR / RF PA & TRX switch
+Text Notes 7050 7050 0    79   Italic 16
+Motorola MHW720A 20W RF PA, design & simulations: Tatu OH2EAT
 $EndSCHEMATC

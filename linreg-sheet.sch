@@ -411,110 +411,110 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 61618C3C
-P 4650 6850
+P 4850 6950
 AR Path="/61618C3C" Ref="C?"  Part="1" 
 AR Path="/60D4B6E6/61618C3C" Ref="C?"  Part="1" 
 AR Path="/607FB7F8/61618C3C" Ref="C67"  Part="1" 
-F 0 "C67" H 4765 6896 50  0000 L CNN
-F 1 "100n" H 4765 6805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 6700 50  0001 C CNN
-F 3 "~" H 4650 6850 50  0001 C CNN
-	1    4650 6850
+F 0 "C67" H 4965 6996 50  0000 L CNN
+F 1 "100n" H 4965 6905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 6800 50  0001 C CNN
+F 3 "~" H 4850 6950 50  0001 C CNN
+	1    4850 6950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 6700 4500 6700
+	4850 6800 4700 6800
 $Comp
 L power:GND #PWR?
 U 1 1 61618C43
-P 4650 7000
+P 4850 7100
 AR Path="/61618C43" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C43" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C43" Ref="#PWR0144"  Part="1" 
-F 0 "#PWR0144" H 4650 6750 50  0001 C CNN
-F 1 "GND" H 4655 6827 50  0000 C CNN
-F 2 "" H 4650 7000 50  0001 C CNN
-F 3 "" H 4650 7000 50  0001 C CNN
-	1    4650 7000
+F 0 "#PWR0144" H 4850 6850 50  0001 C CNN
+F 1 "GND" H 4855 6927 50  0000 C CNN
+F 2 "" H 4850 7100 50  0001 C CNN
+F 3 "" H 4850 7100 50  0001 C CNN
+	1    4850 7100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 6600 4700 6600
+	4700 6700 4900 6700
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 61618C4A
-P 3000 6700
+P 3200 6800
 AR Path="/61618C4A" Ref="J?"  Part="1" 
 AR Path="/60D4B6E6/61618C4A" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C4A" Ref="J1"  Part="1" 
-F 0 "J1" H 2918 6375 50  0000 C CNN
-F 1 "PWR_TERM" H 2918 6466 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3000 6700 50  0001 C CNN
-F 3 "~" H 3000 6700 50  0001 C CNN
-	1    3000 6700
+F 0 "J1" H 3118 6475 50  0000 C CNN
+F 1 "PWR_TERM" H 3118 6566 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3200 6800 50  0001 C CNN
+F 3 "~" H 3200 6800 50  0001 C CNN
+	1    3200 6800
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61618C50
-P 3550 6600
+P 3750 6700
 AR Path="/61618C50" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C50" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C50" Ref="#PWR0148"  Part="1" 
-F 0 "#PWR0148" H 3550 6350 50  0001 C CNN
-F 1 "GND" H 3555 6427 50  0000 C CNN
-F 2 "" H 3550 6600 50  0001 C CNN
-F 3 "" H 3550 6600 50  0001 C CNN
-	1    3550 6600
+F 0 "#PWR0148" H 3750 6450 50  0001 C CNN
+F 1 "GND" H 3755 6527 50  0000 C CNN
+F 2 "" H 3750 6700 50  0001 C CNN
+F 3 "" H 3750 6700 50  0001 C CNN
+	1    3750 6700
 	1    0    0    -1  
 $EndComp
-Text GLabel 3350 6700 3    50   Input ~ 0
+Text GLabel 3550 6800 3    50   Input ~ 0
 RAW_PSU_IN
-Text Notes 2650 6150 0    97   ~ 19
+Text Notes 2850 6250 0    97   ~ 19
 Screw terminals
-Text GLabel 5250 6700 2    79   Input ~ 0
+Text GLabel 5450 6800 2    79   Input ~ 0
 12V_OUT
 Wire Wire Line
-	5250 6700 4650 6700
-Connection ~ 4650 6700
+	5450 6800 4850 6800
+Connection ~ 4850 6800
 Wire Wire Line
-	3200 6700 3350 6700
+	3400 6800 3550 6800
 Wire Wire Line
-	3200 6600 3550 6600
+	3400 6700 3750 6700
 $Comp
 L Connector:Screw_Terminal_01x02 J?
 U 1 1 61618C5D
-P 4300 6700
+P 4500 6800
 AR Path="/61618C5D" Ref="J?"  Part="1" 
 AR Path="/60D4B6E6/61618C5D" Ref="J?"  Part="1" 
 AR Path="/607FB7F8/61618C5D" Ref="J2"  Part="1" 
-F 0 "J2" H 4218 6375 50  0000 C CNN
-F 1 "PWR_TERM" H 4218 6466 50  0000 C CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4300 6700 50  0001 C CNN
-F 3 "~" H 4300 6700 50  0001 C CNN
-	1    4300 6700
+F 0 "J2" H 4418 6475 50  0000 C CNN
+F 1 "PWR_TERM" H 4418 6566 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4500 6800 50  0001 C CNN
+F 3 "~" H 4500 6800 50  0001 C CNN
+	1    4500 6800
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61618C63
-P 4700 6600
+P 4900 6700
 AR Path="/61618C63" Ref="#PWR?"  Part="1" 
 AR Path="/60D4B6E6/61618C63" Ref="#PWR?"  Part="1" 
 AR Path="/607FB7F8/61618C63" Ref="#PWR0156"  Part="1" 
-F 0 "#PWR0156" H 4700 6350 50  0001 C CNN
-F 1 "GND" H 4705 6427 50  0000 C CNN
-F 2 "" H 4700 6600 50  0001 C CNN
-F 3 "" H 4700 6600 50  0001 C CNN
-	1    4700 6600
+F 0 "#PWR0156" H 4900 6450 50  0001 C CNN
+F 1 "GND" H 4905 6527 50  0000 C CNN
+F 2 "" H 4900 6700 50  0001 C CNN
+F 3 "" H 4900 6700 50  0001 C CNN
+	1    4900 6700
 	0    -1   -1   0   
 $EndComp
-Text Notes 1300 1600 0    97   ~ 19
-3V3 for \nEthernet transceiver
-Text Notes 1300 2800 0    97   ~ 19
+Text Notes 2500 1600 0    97   ~ 19
+3V3 for \nEthernet \ntransceiver
+Text Notes 2500 2800 0    97   ~ 19
 3V3 for \nSTM32 CPU
-Text Notes 1300 4000 0    97   ~ 19
-3V3 for \nSi4463 radio chip
+Text Notes 2500 4000 0    97   ~ 19
+3V3 for \nSi4463 \nradio chip
 $Comp
 L Connector:TestPoint CTS?
 U 1 1 61CAB531
@@ -631,7 +631,7 @@ F 3 "" H 5400 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6600 5000 7550 5000
-Text Notes 1300 5150 0    97   ~ 19
+Text Notes 2500 5150 0    97   ~ 19
 3V3 for \nLNA
 $Comp
 L power:GND #PWR?

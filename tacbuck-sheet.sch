@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7100 6850 0    158  ~ 32
+Text Notes 7250 6850 0    158  ~ 32
 TACNPR / DC/DC converters
 $Comp
 L npr-parts:TPS54331DR U1
@@ -28,7 +28,7 @@ F 3 "https://www.ti.com/lit/ds/symlink/tps54331.pdf" H 6750 1300 50  0001 C CNN
 	1    6750 1300
 	1    0    0    -1  
 $EndComp
-Text Notes 7100 7050 0    98   Italic 20
+Text Notes 7300 7050 0    79   Italic 16
 based on TACBUCK-A design by Tommi OH1GJV
 $Comp
 L Device:C_Small C12

@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7150 6950 0    157  Italic 31
-TACNPR / Si4463 radio
+Text Notes 7300 6850 0    157  Italic 31
+TACNPR / Radio sheet
 Text GLabel 4350 2950 0    50   Input ~ 0
 CS_SI4463
 Text GLabel 4350 2750 0    50   Input ~ 0
@@ -276,27 +276,27 @@ Connection ~ 6150 2950
 $Comp
 L 74xx:74HC04 U15
 U 1 1 6164928D
-P 1700 6200
+P 1900 6600
 AR Path="/607946F5/6164928D" Ref="U15"  Part="1" 
 AR Path="/60604CF2/6164928D" Ref="U?"  Part="1" 
-F 0 "U15" H 1700 6517 50  0000 C CNN
-F 1 "74HC04" H 1700 6426 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1700 6200 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1700 6200 50  0001 C CNN
-	1    1700 6200
+F 0 "U15" H 1900 6917 50  0000 C CNN
+F 1 "74HC04" H 1900 6826 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1900 6600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1900 6600 50  0001 C CNN
+	1    1900 6600
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC04 U15
 U 2 1 61649293
-P 2850 6400
+P 3050 6800
 AR Path="/607946F5/61649293" Ref="U15"  Part="2" 
 AR Path="/60604CF2/61649293" Ref="U?"  Part="2" 
-F 0 "U15" H 2850 6200 50  0000 C CNN
-F 1 "74HC04" H 2850 6100 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2850 6400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6400 50  0001 C CNN
-	2    2850 6400
+F 0 "U15" H 3050 6600 50  0000 C CNN
+F 1 "74HC04" H 3050 6500 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3050 6800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3050 6800 50  0001 C CNN
+	2    3050 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -382,9 +382,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 3750 3600 3750
 Connection ~ 3600 3750
-Text Notes 6250 4700 2    79   ~ 16
+Text Notes 5800 4900 2    79   ~ 16
 GPIOR2\nRX_STATE
-Text Notes 1750 5750 2    79   ~ 16
+Text Notes 1950 6150 2    79   ~ 16
 GPIOR1\nTX_STATE
 Text Notes 3900 5250 0    39   ~ 8
 PA driver stage\nDC supply 12V
@@ -415,23 +415,23 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U?
 U 3 1 616492E5
-P 2850 6000
+P 3050 6400
 AR Path="/60604CF2/616492E5" Ref="U?"  Part="3" 
 AR Path="/607946F5/616492E5" Ref="U15"  Part="3" 
-F 0 "U15" H 2850 6317 50  0000 C CNN
-F 1 "74HC04" H 2850 6226 50  0000 C CNN
-F 2 "" H 2850 6000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2850 6000 50  0001 C CNN
-	3    2850 6000
+F 0 "U15" H 3050 6717 50  0000 C CNN
+F 1 "74HC04" H 3050 6626 50  0000 C CNN
+F 2 "" H 3050 6400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3050 6400 50  0001 C CNN
+	3    3050 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2000 6200 2550 6200
-Text GLabel 6150 4850 0    50   Output ~ 0
+	2200 6600 2750 6600
+Text GLabel 5700 5050 0    50   Output ~ 0
 GPIOR2
 Wire Wire Line
-	1400 6200 1250 6200
-Text GLabel 1250 6200 0    50   Output ~ 0
+	1600 6600 1450 6600
+Text GLabel 1450 6600 0    50   Output ~ 0
 GPIOR1
 $Comp
 L Device:C_Small C?
@@ -461,70 +461,70 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 2700 485
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6150 4850 6300 4850
+	5700 5050 5850 5050
 $Comp
 L Device:R_Small R?
 U 1 1 616B1AAC
-P 7750 4850
+P 7300 5050
 AR Path="/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/6096F497/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/60604CF2/616B1AAC" Ref="R?"  Part="1" 
 AR Path="/607946F5/616B1AAC" Ref="R51"  Part="1" 
-F 0 "R51" H 7809 4896 50  0000 L CNN
-F 1 "10k" H 7809 4805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7750 4850 50  0001 C CNN
-F 3 "~" H 7750 4850 50  0001 C CNN
-	1    7750 4850
+F 0 "R51" H 7359 5096 50  0000 L CNN
+F 1 "10k" H 7359 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 5050 50  0001 C CNN
+F 3 "~" H 7300 5050 50  0001 C CNN
+	1    7300 5050
 	0    1    -1   0   
 $EndComp
 Wire Wire Line
-	8000 4850 7850 4850
+	7550 5050 7400 5050
 $Comp
 L Transistor_FET:AO3401A Q?
 U 1 1 616B1A72
-P 8200 4850
+P 7750 5050
 AR Path="/60604CF2/616B1A72" Ref="Q?"  Part="1" 
 AR Path="/607946F5/616B1A72" Ref="Q4"  Part="1" 
-F 0 "Q4" H 8405 4896 50  0000 L CNN
-F 1 "AO3401A" H 8405 4805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8400 4775 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 8200 4850 50  0001 L CNN
-	1    8200 4850
+F 0 "Q4" H 7955 5096 50  0000 L CNN
+F 1 "AO3401A" H 7955 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7950 4975 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 7750 5050 50  0001 L CNN
+	1    7750 5050
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	8300 5050 8300 5150
-Text GLabel 7300 4150 0    50   Input ~ 0
+	7850 5250 7850 5350
+Text GLabel 6850 4350 0    50   Input ~ 0
 3V3_LNA
 $Comp
 L Device:R_Small R?
 U 1 1 6170BBDC
-P 8300 4500
+P 7850 4700
 AR Path="/6170BBDC" Ref="R?"  Part="1" 
 AR Path="/6096F497/6170BBDC" Ref="R?"  Part="1" 
 AR Path="/60604CF2/6170BBDC" Ref="R?"  Part="1" 
 AR Path="/607946F5/6170BBDC" Ref="R50"  Part="1" 
-F 0 "R50" H 8359 4546 50  0000 L CNN
-F 1 "?" H 8359 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8300 4500 50  0001 C CNN
-F 3 "~" H 8300 4500 50  0001 C CNN
-	1    8300 4500
+F 0 "R50" H 7909 4746 50  0000 L CNN
+F 1 "?" H 7909 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7850 4700 50  0001 C CNN
+F 3 "~" H 7850 4700 50  0001 C CNN
+	1    7850 4700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 4650 8300 4600
+	7850 4850 7850 4800
 Wire Wire Line
-	8300 4150 7700 4150
+	7850 4350 7250 4350
 Wire Wire Line
-	8300 4150 8300 4400
-Text Notes 7500 5300 0    39   ~ 8
+	7850 4350 7850 4600
+Text Notes 7050 5500 0    39   ~ 8
 LNA PWR SUPPLY 3V3
-Text GLabel 4550 6200 2    50   Output ~ 0
+Text GLabel 4750 6600 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
 Wire Wire Line
-	3150 6200 4050 6200
+	3350 6600 4250 6600
 Wire Wire Line
 	6150 2950 6650 2950
 Wire Wire Line
@@ -533,21 +533,21 @@ Wire Wire Line
 	10400 4950 10400 5400
 Text GLabel 4500 5050 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text GLabel 4850 6400 2    50   Input ~ 0
+Text GLabel 5050 6800 2    50   Input ~ 0
 SWDC_PA_TX_3V3
-Text GLabel 8100 5150 0    50   Input ~ 0
+Text GLabel 7650 5350 0    50   Input ~ 0
 SWDC_LNA_3V3
 Text GLabel 6650 2450 2    50   Input ~ 0
 RXP_FROM_LNA
 Wire Wire Line
-	8300 5150 8100 5150
+	7850 5350 7650 5350
 Wire Wire Line
-	4850 6400 4550 6400
+	5050 6800 4750 6800
 Wire Wire Line
-	4050 6400 4050 6200
-Connection ~ 4050 6200
+	4250 6800 4250 6600
+Connection ~ 4250 6600
 Wire Wire Line
-	4050 6200 4550 6200
+	4250 6600 4750 6600
 Wire Wire Line
 	4500 3750 4500 4400
 Text GLabel 4500 2050 0    50   Input ~ 0
@@ -583,15 +583,15 @@ $EndComp
 Wire Wire Line
 	2400 4400 2400 4850
 Wire Wire Line
-	3150 6400 3150 6200
+	3350 6800 3350 6600
 Wire Wire Line
-	2550 6200 2550 6000
+	2750 6600 2750 6400
 Wire Wire Line
-	2550 6200 2550 6400
-Connection ~ 2550 6200
+	2750 6600 2750 6800
+Connection ~ 2750 6600
 Wire Wire Line
-	3150 6000 3150 6200
-Connection ~ 3150 6200
+	3350 6400 3350 6600
+Connection ~ 3350 6600
 $Comp
 L Device:C_Small C?
 U 1 1 61A0D44D
@@ -671,24 +671,24 @@ Text GLabel 1800 3750 0    50   Input ~ 0
 Wire Wire Line
 	2500 3750 2800 3750
 Wire Wire Line
-	6900 4850 6950 4850
-Connection ~ 6950 4850
+	6450 5050 6500 5050
+Connection ~ 6500 5050
 Wire Wire Line
-	6950 4850 7650 4850
+	6500 5050 7200 5050
 $Comp
 L 74xx:74HC04 U15
 U 4 1 6168C5AA
-P 6600 4850
-F 0 "U15" H 6600 5167 50  0000 C CNN
-F 1 "74HC04" H 6600 5076 50  0000 C CNN
-F 2 "" H 6600 4850 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6600 4850 50  0001 C CNN
-	4    6600 4850
+P 6150 5050
+F 0 "U15" H 6150 5367 50  0000 C CNN
+F 1 "74HC04" H 6150 5276 50  0000 C CNN
+F 2 "" H 6150 5050 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6150 5050 50  0001 C CNN
+	4    6150 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6950 4750 6950 4850
-Text GLabel 6950 4750 2    50   Output ~ 0
+	6500 4950 6500 5050
+Text GLabel 6500 4950 2    50   Output ~ 0
 RXSTATE_INV
 Wire Wire Line
 	2250 5300 2100 5300
@@ -711,7 +711,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 5300 3000 5300
 Connection ~ 3000 4850
-Text GLabel 2250 6200 3    50   Output ~ 0
+Text GLabel 2450 6600 3    50   Output ~ 0
 TXSTATE_INV
 $Comp
 L Device:R_Small R?
@@ -744,72 +744,72 @@ $EndComp
 $Comp
 L Device:LED D?
 U 1 1 61D4728B
-P 8350 3800
+P 7900 4000
 AR Path="/61D4728B" Ref="D?"  Part="1" 
 AR Path="/609A52E7/61D4728B" Ref="D?"  Part="1" 
 AR Path="/607FB7F8/61D4728B" Ref="D?"  Part="1" 
 AR Path="/6096F497/61D4728B" Ref="D?"  Part="1" 
 AR Path="/607946F5/61D4728B" Ref="D23"  Part="1" 
-F 0 "D23" H 8350 3550 50  0000 C CNN
-F 1 "3V3_LNA" H 8350 3650 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8350 3800 50  0001 C CNN
-F 3 "~" H 8350 3800 50  0001 C CNN
-	1    8350 3800
+F 0 "D23" H 7900 3750 50  0000 C CNN
+F 1 "3V3_LNA" H 7900 3850 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 7900 4000 50  0001 C CNN
+F 3 "~" H 7900 4000 50  0001 C CNN
+	1    7900 4000
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61D47291
-P 7900 3800
+P 7450 4000
 AR Path="/61D47291" Ref="R?"  Part="1" 
 AR Path="/6096F497/61D47291" Ref="R?"  Part="1" 
 AR Path="/607946F5/61D47291" Ref="R54"  Part="1" 
-F 0 "R54" V 7650 3800 50  0000 L CNN
-F 1 "1.5k" V 7750 3750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 3800 50  0001 C CNN
-F 3 "~" H 7900 3800 50  0001 C CNN
-	1    7900 3800
+F 0 "R54" V 7200 4000 50  0000 L CNN
+F 1 "1.5k" V 7300 3950 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7450 4000 50  0001 C CNN
+F 3 "~" H 7450 4000 50  0001 C CNN
+	1    7450 4000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7700 3800 7800 3800
+	7250 4000 7350 4000
 Wire Wire Line
-	8000 3800 8200 3800
+	7550 4000 7750 4000
 Wire Wire Line
-	8500 3800 8700 3800
+	8050 4000 8250 4000
 Wire Wire Line
-	7700 3800 7700 4150
+	7250 4000 7250 4350
 $Comp
 L power:GND #PWR0180
 U 1 1 61D4729B
-P 8700 3800
-F 0 "#PWR0180" H 8700 3550 50  0001 C CNN
-F 1 "GND" H 8800 3800 50  0000 C CNN
-F 2 "" H 8700 3800 50  0001 C CNN
-F 3 "" H 8700 3800 50  0001 C CNN
-	1    8700 3800
+P 8250 4000
+F 0 "#PWR0180" H 8250 3750 50  0001 C CNN
+F 1 "GND" H 8350 4000 50  0000 C CNN
+F 2 "" H 8250 4000 50  0001 C CNN
+F 3 "" H 8250 4000 50  0001 C CNN
+	1    8250 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 7700 4150
+Connection ~ 7250 4350
 Wire Wire Line
-	7700 4150 7500 4150
+	7250 4350 7050 4350
 $Comp
 L Connector:TestPoint TP?
 U 1 1 61D6676C
-P 7500 4150
+P 7050 4350
 AR Path="/6096F497/61D6676C" Ref="TP?"  Part="1" 
 AR Path="/607946F5/61D6676C" Ref="TP14"  Part="1" 
-F 0 "TP14" H 7500 4400 50  0000 C CNN
-F 1 "TestPoint" V 7500 4550 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7700 4150 50  0001 C CNN
-F 3 "~" H 7700 4150 50  0001 C CNN
-	1    7500 4150
+F 0 "TP14" H 7050 4600 50  0000 C CNN
+F 1 "TestPoint" V 7050 4750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7250 4350 50  0001 C CNN
+F 3 "~" H 7250 4350 50  0001 C CNN
+	1    7050 4350
 	1    0    0    -1  
 $EndComp
-Connection ~ 7500 4150
+Connection ~ 7050 4350
 Wire Wire Line
-	7500 4150 7300 4150
-Text GLabel 9350 4000 0    50   Input ~ 0
+	7050 4350 6850 4350
+Text GLabel 8900 4200 0    50   Input ~ 0
 3V3_LNA
 Wire Wire Line
 	4000 1600 4900 1600
@@ -1200,16 +1200,16 @@ Wire Wire Line
 	6000 1250 6100 1250
 Wire Wire Line
 	6100 1250 6100 1350
-Text Notes 8000 2850 0    52   ~ 10
+Text Notes 7950 1450 0    52   ~ 10
 Matching network is based on manufacturer's Application Note AN629 \nhttps://www.silabs.com/documents/public/application-notes/AN629.pdf \n(fig. 16 on page 14)\n
 Wire Notes Line
-	7950 2550 11000 2550
+	7900 1150 10950 1150
 Wire Notes Line
-	11000 2550 11000 2950
+	10950 1150 10950 1550
 Wire Notes Line
-	11000 2950 7950 2950
+	10950 1550 7900 1550
 Wire Notes Line
-	7950 2950 7950 2550
+	7900 1550 7900 1150
 $Comp
 L RF:Si4463 U5
 U 1 1 60646347
@@ -1271,19 +1271,19 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 61E58F6E
-P 4450 6400
+P 4650 6800
 AR Path="/61E58F6E" Ref="R?"  Part="1" 
 AR Path="/6096F497/61E58F6E" Ref="R?"  Part="1" 
 AR Path="/607946F5/61E58F6E" Ref="R57"  Part="1" 
-F 0 "R57" V 4350 6300 50  0000 L CNN
-F 1 "100" V 4250 6350 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 6400 50  0001 C CNN
-F 3 "~" H 4450 6400 50  0001 C CNN
-	1    4450 6400
+F 0 "R57" V 4550 6700 50  0000 L CNN
+F 1 "100" V 4450 6750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4650 6800 50  0001 C CNN
+F 3 "~" H 4650 6800 50  0001 C CNN
+	1    4650 6800
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4350 6400 4050 6400
+	4550 6800 4250 6800
 Wire Wire Line
 	8750 2050 8950 2050
 $Comp
@@ -1349,4 +1349,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1750 460
 	6    1750 4600
 	1    0    0    -1  
 $EndComp
+Text Notes 7350 7050 0    79   Italic 16
+Si4463 RFIC & RF switching logic
 $EndSCHEMATC

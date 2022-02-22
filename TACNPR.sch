@@ -21,7 +21,7 @@ F1 "tacbuck-sheet.sch" 94
 $EndSheet
 Text Notes 7050 4100 0    157  ~ 31
 DC/DC\nconverters
-Text Notes 3400 4100 0    134  ~ 27
+Text Notes 3450 4100 0    134  ~ 27
 Si4463 & \nRF switching
 $Sheet
 S 3350 3500 1450 750 
@@ -159,17 +159,15 @@ F 3 "~" H 6000 6700 50  0001 C CNN
 $EndComp
 Text Notes 7250 7050 0    97   ~ 19
 OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE
-Text Notes 3100 2350 0    118  ~ 24
-Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE
 $Comp
 L Graphic:SYM_ESD_Small #SYM1
 U 1 1 608032AF
-P 5450 6750
-F 0 "#SYM1" H 5450 6890 50  0001 C CNN
-F 1 "SYM_ESD_Small" H 5450 6625 50  0001 C CNN
-F 2 "Symbol:ESD-Logo_8.9x8mm_SilkScreen" H 5450 6760 50  0001 C CNN
-F 3 "~" H 5450 6760 50  0001 C CNN
-	1    5450 6750
+P 5600 7000
+F 0 "#SYM1" H 5600 7140 50  0001 C CNN
+F 1 "SYM_ESD_Small" H 5600 6875 50  0001 C CNN
+F 2 "Symbol:ESD-Logo_8.9x8mm_SilkScreen" H 5600 7010 50  0001 C CNN
+F 3 "~" H 5600 7010 50  0001 C CNN
+	1    5600 7000
 	1    0    0    -1  
 $EndComp
 Text Notes 8800 4100 0    134  ~ 27
@@ -183,12 +181,12 @@ $EndSheet
 $Comp
 L Mechanical:MountingHole H9
 U 1 1 608AE660
-P 6700 7350
-F 0 "H9" H 6800 7396 50  0000 L CNN
-F 1 "MH" H 6800 7305 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 6700 7350 50  0001 C CNN
-F 3 "~" H 6700 7350 50  0001 C CNN
-	1    6700 7350
+P 5600 7400
+F 0 "H9" H 5700 7446 50  0000 L CNN
+F 1 "MH" H 5700 7355 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_TopBottom" H 5600 7400 50  0001 C CNN
+F 3 "~" H 5600 7400 50  0001 C CNN
+	1    5600 7400
 	1    0    0    -1  
 $EndComp
 $Sheet
@@ -201,4 +199,6 @@ Text Notes 5900 5900 0    119  ~ 24
 CHECKLIST:\n-silkscreenit; logos, texts etc.\n-W5500-headerin paikka\n-tacbuckin kelat\n-tsekkaa sähkönsyötöt (reguloinnit,0R:t, sarjavastukset)
 Text Notes 3650 5450 0    118  ~ 24
 TACPDU fuse holder \nLCSC: C58066
+Text Notes 3100 2350 0    118  ~ 24
+Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE
 $EndSCHEMATC

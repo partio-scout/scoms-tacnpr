@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7250 7100 0    157  Italic 31
-TACNPR / CPU, SRAM, GPIO,\nETHERNET, SERIAL\n
+Text Notes 7250 6850 0    157  Italic 31
+TACNPR / CPU sheet\n
 Text GLabel 7050 5050 0    50   BiDi ~ 0
 GPIO11_TERMINAL
 $Comp
@@ -1639,4 +1639,6 @@ Wire Wire Line
 	2850 3200 2800 3200
 Wire Wire Line
 	1850 1750 2150 1750
+Text Notes 7300 7050 0    79   Italic 16
+(CPU, SRAM, GPIO, ETHERNET, USB SERIAL)
 $EndSCHEMATC
