@@ -496,27 +496,8 @@ Wire Wire Line
 	7850 5250 7850 5350
 Text GLabel 6850 4350 0    50   Input ~ 0
 3V3_LNA
-$Comp
-L Device:R_Small R?
-U 1 1 6170BBDC
-P 7850 4700
-AR Path="/6170BBDC" Ref="R?"  Part="1" 
-AR Path="/6096F497/6170BBDC" Ref="R?"  Part="1" 
-AR Path="/60604CF2/6170BBDC" Ref="R?"  Part="1" 
-AR Path="/607946F5/6170BBDC" Ref="R50"  Part="1" 
-F 0 "R50" H 7909 4746 50  0000 L CNN
-F 1 "?" H 7909 4655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7850 4700 50  0001 C CNN
-F 3 "~" H 7850 4700 50  0001 C CNN
-	1    7850 4700
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	7850 4850 7850 4800
 Wire Wire Line
 	7850 4350 7250 4350
-Wire Wire Line
-	7850 4350 7850 4600
 Text Notes 7050 5500 0    39   ~ 8
 LNA PWR SUPPLY 3V3
 Text GLabel 4750 6600 2    50   Output ~ 0
@@ -660,9 +641,10 @@ P 2350 3750
 AR Path="/60604CF2/61A0D45B" Ref="L?"  Part="1" 
 AR Path="/607946F5/61A0D45B" Ref="L5"  Part="1" 
 F 0 "L5" V 2300 3800 50  0000 R CNN
-F 1 "??" V 2500 3800 50  0000 R CNN
-F 2 "Inductor_SMD:L_1210_3225Metric" H 2350 3750 50  0001 C CNN
+F 1 "GZ2012D101TF" V 2500 3800 50  0000 R CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 2350 3750 50  0001 C CNN
 F 3 "~" H 2350 3750 50  0001 C CNN
+F 4 "C1015" H 2350 3750 50  0001 C CNN "LCSC"
 	1    2350 3750
 	0    -1   -1   0   
 $EndComp
@@ -1351,4 +1333,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1750 460
 $EndComp
 Text Notes 7350 7050 0    79   Italic 16
 Si4463 RFIC & RF switching logic
+Wire Wire Line
+	7850 4350 7850 4850
 $EndSCHEMATC
