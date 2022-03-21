@@ -535,6 +535,7 @@ F 0 "TP9" H 4400 1650 50  0000 C CNN
 F 1 "TestPoint" V 4400 1800 50  0001 C CNN
 F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4600 1400 50  0001 C CNN
 F 3 "~" H 4600 1400 50  0001 C CNN
+F 4 "TRUE" H 4400 1400 50  0001 C CNN "DNP"
 	1    4400 1400
 	1    0    0    -1  
 $EndComp
