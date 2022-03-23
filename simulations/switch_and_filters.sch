@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-83,-10,2471,1797,0.751315,185,369>
+  <View=-83,-60,2855,1656,0.751315,0,0>
   <Grid=10,10,1>
   <DataSet=switch_and_filters.dat>
   <DataDisplay=switch_and_filters.dpl>
@@ -51,8 +51,6 @@
   <Pac P3 1 1200 150 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 5 1200 180 0 0 0 0>
   <MLIN MS2 1 1720 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
-  <Pac P2 1 2020 410 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
-  <GND * 5 2020 440 0 0 0 0>
   <C C8 1 1090 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <MLIN MS6 1 1170 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <L L7 1 860 530 10 -26 0 1 "1.25 nH" 1 "" 0>
@@ -64,6 +62,17 @@
   <MLIN MS9 1 860 650 15 -26 0 1 "Subst1" 1 "0.5 mm" 1 "2.6 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS7 1 380 650 15 -26 0 1 "Subst1" 1 "0.5 mm" 1 "9 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MVIA VIA5 1 400 700 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MLIN MS10 1 2250 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MLIN MS11 1 2490 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <C C11 1 2610 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
+  <MLIN MS12 1 2360 480 15 -26 0 1 "Subst1" 1 "0.25 mm" 1 "25 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <GND *1 5 2360 510 0 0 0 0>
+  <C C12 1 2360 310 17 -26 0 1 "0.6 pF" 1 "" 0 "neutral" 0>
+  <GND *2 5 2360 260 0 0 0 2>
+  <MLIN MS13 1 2070 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <C C10 1 2170 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
+  <Pac P2 1 2700 410 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
+  <GND * 5 2700 440 0 0 0 0>
 </Components>
 <Wires>
   <70 380 180 380 "" 0 0 0 "">
@@ -90,7 +99,6 @@
   <1200 120 1320 120 "" 0 0 0 "">
   <1750 380 1820 380 "" 0 0 0 "">
   <1600 380 1690 380 "" 0 0 0 "">
-  <1820 380 2020 380 "" 0 0 0 "">
   <1200 380 1320 380 "" 0 0 0 "">
   <780 380 860 380 "" 0 0 0 "">
   <1120 380 1140 380 "" 0 0 0 "">
@@ -99,6 +107,16 @@
   <860 380 860 440 "" 0 0 0 "">
   <860 680 860 700 "" 0 0 0 "">
   <380 680 380 700 "" 0 0 0 "">
+  <2280 380 2360 380 "" 0 0 0 "">
+  <2520 380 2580 380 "" 0 0 0 "">
+  <2360 380 2460 380 "" 0 0 0 "">
+  <2360 380 2360 450 "" 0 0 0 "">
+  <2360 340 2360 380 "" 0 0 0 "">
+  <2360 260 2360 280 "" 0 0 0 "">
+  <1820 380 2040 380 "" 0 0 0 "">
+  <2200 380 2220 380 "" 0 0 0 "">
+  <2100 380 2140 380 "" 0 0 0 "">
+  <2640 380 2700 380 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 70 1199 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -107,12 +125,12 @@
 	<"S22dB" #55aaff 0 3 0 0 0>
 	<"S33dB" #ffaaff 0 3 0 0 0>
   </Rect>
-  <Tab 230 1776 493 296 3 #c0c0c0 1 00 1 137 1 1 1 0 1 1 1 0 1 2000 315 0 225 "" "" "" "">
+  <Tab 90 1636 493 296 3 #c0c0c0 1 00 1 137 1 1 1 0 1 1 1 0 1 2000 315 0 225 "" "" "" "">
 	<"S[3,1]" #0000ff 0 3 1 0 0>
 	<"S[3,3]" #0000ff 0 3 1 0 0>
 	<"S[1,1]" #0000ff 0 3 1 0 0>
   </Tab>
-  <Tab 800 1773 523 293 3 #c0c0c0 1 00 1 1137 1 1 1 0 1 1 1 0 1 2000 315 0 225 "" "" "" "">
+  <Tab 660 1633 523 293 3 #c0c0c0 1 00 1 1137 1 1 1 0 1 1 1 0 1 2000 315 0 225 "" "" "" "">
 	<"S[2,1]" #0000ff 0 3 1 0 0>
 	<"S[2,2]" #0000ff 0 3 1 0 0>
 	<"S[1,1]" #0000ff 0 3 1 0 0>
@@ -127,9 +145,14 @@
   <Text 1340 90 12 #000000 0 "PIN diode model">
   <Text 1190 70 12 #000000 0 "TX port">
   <Text 1330 330 12 #000000 0 "90° phase shift circuit of PIN diode switch">
-  <Text 360 1320 12 #000000 0 "Capacitor model: 1.25 nH ESL assumed for 1206 package\n( https://www.renesas.com/us/en/document/apn/an1325-choosing-and-using-bypass-capacitors )">
-  <Text 10 10 12 #000000 0 "Simulation of the PIN diode switch together with the antenna line band-pass filter\n\nTODO: make all microstrip lengths correspond to the actual layout\nTODO: try to fine-tune component values and line lengths to optimize matching and reduce resonance peaks above the passband\n">
-  <Text 2000 330 12 #000000 0 "RX port">
-  <Text 2010 490 12 #000000 0 "TODO: add RX protection and high-pass filter circuit,\nbut first try to optimize RX matching without it in place">
+  <Text 10 10 12 #000000 0 "Simulation of the PIN diode switch together with the antenna line band-pass filter and RX filter\n\nTODO: make all microstrip lengths correspond to the actual layout\n">
   <Text 480 310 12 #000000 0 "TODO: try to model layout better here.\nMaybe model MS4 and MS5 as coupled lines.">
+  <Line 1130 -40 0 820 #000000 0 1>
+  <Rectangle 2250 190 230 160 #000000 0 1 #c0c0c0 1 0>
+  <Text 2260 210 12 #000000 0 "Protection diode capacitance">
+  <Text 2660 330 12 #000000 0 "RX port,\ngoes to LNA input pin">
+  <Text 10 100 12 #000000 0 "Capacitor model: 1.25 nH ESL assumed for 1206 package\n( https://www.renesas.com/us/en/document/apn/an1325-choosing-and-using-bypass-capacitors )">
+  <Line 2000 780 0 -820 #000000 0 1>
+  <Text 1770 -20 12 #000000 0 "PIN diode switch">
+  <Text 2070 -20 12 #000000 0 "RX protection and high-pass filtering">
 </Paintings>
