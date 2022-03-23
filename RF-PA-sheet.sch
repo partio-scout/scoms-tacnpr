@@ -1046,7 +1046,7 @@ $EndComp
 Wire Wire Line
 	10850 4950 10850 4800
 Wire Wire Line
-	9900 4800 8850 4800
+	9900 4800 9450 4800
 Connection ~ 8850 4800
 Wire Wire Line
 	6600 4800 6600 5750
@@ -1103,4 +1103,22 @@ Wire Wire Line
 	10850 4800 10600 4800
 Wire Wire Line
 	11000 4700 10600 4700
+$Comp
+L Device:R_Small R?
+U 1 1 623E987C
+P 9350 4800
+AR Path="/623E987C" Ref="R?"  Part="1" 
+AR Path="/6096F497/623E987C" Ref="R?"  Part="1" 
+AR Path="/607946F5/623E987C" Ref="R?"  Part="1" 
+AR Path="/60604CF2/623E987C" Ref="R?"  Part="1" 
+F 0 "R?" V 9250 4750 50  0000 L CNN
+F 1 "0" V 9150 4750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9350 4800 50  0001 C CNN
+F 3 "~" H 9350 4800 50  0001 C CNN
+F 4 "C17477" H 9350 4800 50  0001 C CNN "LCSC"
+	1    9350 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 4800 8850 4800
 $EndSCHEMATC

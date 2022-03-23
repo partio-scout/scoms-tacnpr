@@ -205,7 +205,7 @@ F0 "cpu" 94
 F1 "cpu-sheet.sch" 94
 $EndSheet
 Text Notes 6650 5350 0    119  ~ 24
-CHECKLIST:\n-W5500-headerin paikka\n-tacbuckin kelat
+CHECKLIST:\n-tacbuckin kelat
 Text Notes 9350 5200 0    118  ~ 24
 TACPDU fuse holder \nLCSC: C58066
 Text Notes 3100 2350 0    118  ~ 24
