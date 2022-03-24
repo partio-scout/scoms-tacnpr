@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-83,-60,2855,1656,0.751315,0,0>
+  <View=-83,-60,2855,1656,0.751315,0,300>
   <Grid=10,10,1>
   <DataSet=switch_and_filters.dat>
   <DataDisplay=switch_and_filters.dpl>
@@ -45,11 +45,6 @@
   <L L4 1 1820 640 10 -26 0 1 "1 nH" 1 "" 0>
   <C C4 1 1820 560 17 -26 0 1 "1 pF" 1 "" 0 "neutral" 0>
   <R R4 1 1900 560 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <L L1 1 1320 230 10 -26 0 1 "1 nH" 1 "" 0>
-  <C C1 1 1320 150 17 -26 0 1 "1 pF" 1 "" 0 "neutral" 0>
-  <R R1 1 1400 150 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <Pac P3 1 1200 150 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
-  <GND * 5 1200 180 0 0 0 0>
   <MLIN MS2 1 1720 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <C C8 1 1090 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <MLIN MS6 1 1170 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
@@ -73,6 +68,12 @@
   <C C10 1 2170 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <Pac P2 1 2700 410 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 5 2700 440 0 0 0 0>
+  <MLIN MS14 1 1320 270 15 -26 0 1 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <L L1 1 1320 170 10 -26 0 1 "1 nH" 1 "" 0>
+  <C C1 1 1320 90 17 -26 0 1 "1 pF" 1 "" 0 "neutral" 0>
+  <R R1 1 1400 90 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <Pac P3 1 1200 90 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
+  <GND * 5 1200 120 0 0 0 0>
 </Components>
 <Wires>
   <70 380 180 380 "" 0 0 0 "">
@@ -92,11 +93,6 @@
   <1820 530 1900 530 "" 0 0 0 "">
   <1820 590 1900 590 "" 0 0 0 "">
   <1820 380 1820 530 "" 0 0 0 "">
-  <1320 180 1320 200 "" 0 0 0 "">
-  <1320 120 1400 120 "" 0 0 0 "">
-  <1320 180 1400 180 "" 0 0 0 "">
-  <1320 260 1320 380 "" 0 0 0 "">
-  <1200 120 1320 120 "" 0 0 0 "">
   <1750 380 1820 380 "" 0 0 0 "">
   <1600 380 1690 380 "" 0 0 0 "">
   <1200 380 1320 380 "" 0 0 0 "">
@@ -117,6 +113,12 @@
   <2200 380 2220 380 "" 0 0 0 "">
   <2100 380 2140 380 "" 0 0 0 "">
   <2640 380 2700 380 "" 0 0 0 "">
+  <1320 300 1320 380 "" 0 0 0 "">
+  <1320 200 1320 240 "" 0 0 0 "">
+  <1320 120 1320 140 "" 0 0 0 "">
+  <1320 60 1400 60 "" 0 0 0 "">
+  <1320 120 1400 120 "" 0 0 0 "">
+  <1200 60 1320 60 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 70 1199 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -141,10 +143,6 @@
   <Text 1480 850 12 #000000 0 "Parameter sweep simulates the switch in both RX and TX state\nby changing the resistance of the PIN diode.">
   <Rectangle 1800 480 190 210 #000000 0 1 #c0c0c0 1 0>
   <Text 1840 500 12 #000000 0 "PIN diode model">
-  <Rectangle 1300 70 190 210 #000000 0 1 #c0c0c0 1 0>
-  <Text 1340 90 12 #000000 0 "PIN diode model">
-  <Text 1190 70 12 #000000 0 "TX port">
-  <Text 1330 330 12 #000000 0 "90° phase shift circuit of PIN diode switch">
   <Text 10 10 12 #000000 0 "Simulation of the PIN diode switch together with the antenna line band-pass filter and RX filter\n\nTODO: make all microstrip lengths correspond to the actual layout\n">
   <Text 480 310 12 #000000 0 "TODO: try to model layout better here.\nMaybe model MS4 and MS5 as coupled lines.">
   <Line 1130 -40 0 820 #000000 0 1>
@@ -155,4 +153,8 @@
   <Line 2000 780 0 -820 #000000 0 1>
   <Text 1770 -20 12 #000000 0 "PIN diode switch">
   <Text 2070 -20 12 #000000 0 "RX protection and high-pass filtering">
+  <Text 1340 350 12 #000000 0 "90° phase shift circuit of PIN diode switch">
+  <Rectangle 1300 10 190 210 #000000 0 1 #c0c0c0 1 0>
+  <Text 1340 30 12 #000000 0 "PIN diode model">
+  <Text 1190 10 12 #000000 0 "TX port">
 </Paintings>
