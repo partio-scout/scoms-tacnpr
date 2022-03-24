@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-83,-60,2855,1656,0.751315,870,300>
+  <View=-130,-60,2855,1656,0.751315,0,240>
   <Grid=10,10,1>
   <DataSet=switch_and_filters.dat>
   <DataDisplay=switch_and_filters.dpl>
@@ -16,30 +16,24 @@
 <Symbol>
 </Symbol>
 <Components>
-  <Pac P1 1 70 410 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
-  <GND * 5 70 440 0 0 0 0>
   <.SP SP1 1 1630 930 0 70 0 0 "lin" 1 "3 MHz" 1 "3 GHz" 1 "1000" 1 "no" 0 "1" 0 "2" 0 "no" 0 "no" 0>
   <SUBST Subst1 1 1420 1100 -30 24 0 0 "4.65" 1 "1.3 mm" 1 "35 um" 1 "2e-4" 1 "0.022e-6" 1 "0.15e-6" 1>
   <.SW SW1 1 1820 930 0 68 0 0 "SP1" 1 "lin" 1 "pin_r" 1 "0.3 Ohm" 1 "1 MOhm" 1 "2" 1>
   <Eqn Eqn1 1 1660 1130 -34 16 0 0 "S21dB=dB(S[2,1])" 1 "S31dB=dB(S[3,1])" 1 "S11dB=dB(S[1,1])" 1 "S22dB=dB(S[2,2])" 1 "S33dB=dB(S[3,3])" 1 "yes" 0>
   <MLIN MS3 1 290 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
-  <C C5 1 210 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <L L5 1 380 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <R R5 1 380 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <C C6 1 380 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
-  <MLIN MS4 1 530 380 -26 15 0 0 "Subst1" 1 "0.5 mm" 1 "25 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MLIN MS4 1 530 380 -26 15 0 0 "Subst1" 1 "0.5 mm" 1 "24 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <L L6 1 640 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <R R6 1 640 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <MVIA VIA6 1 660 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
-  <MLIN MS5 1 750 380 -26 15 0 0 "Subst1" 1 "0.5 mm" 1 "13 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MLIN MS5 1 750 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <L L2 1 1320 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <R R2 1 1320 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <C C2 1 1320 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
   <MVIA VIA2 1 1340 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <R R3 1 1600 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <L L3 1 1600 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <MVIA VIA3 1 1620 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
-  <C C3 1 1600 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
   <L L4 1 1820 640 10 -26 0 1 "1 nH" 1 "" 0>
   <C C4 1 1820 560 17 -26 0 1 "1 pF" 1 "" 0 "neutral" 0>
   <R R4 1 1900 560 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
@@ -49,11 +43,7 @@
   <L L7 1 860 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <R R7 1 860 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <MLIN MS8 1 970 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
-  <C C7 1 640 470 17 -26 0 1 "2.2 pF" 1 "" 0 "neutral" 0>
-  <C C9 1 860 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
-  <MVIA VIA7 1 880 700 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
-  <MLIN MS9 1 860 650 15 -26 0 1 "Subst1" 1 "0.5 mm" 1 "2.6 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
-  <MLIN MS7 1 380 650 15 -26 0 1 "Subst1" 1 "0.5 mm" 1 "9 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MLIN MS7 1 380 650 15 -26 0 1 "Subst1" 1 "0.5 mm" 1 "7.5 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MVIA VIA5 1 400 700 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MLIN MS10 1 2250 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS11 1 2490 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
@@ -72,15 +62,31 @@
   <R R1 1 1400 90 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Pac P3 1 1200 90 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 5 1200 120 0 0 0 0>
-  <CLIN CL1 1 1480 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "38 mm" 1 "Metal" 0 "yes" 0>
+  <CLIN CL1 1 1480 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "36 mm" 1 "Metal" 0 "yes" 0>
   <MVIA VIA8 1 1300 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MVIA VIA9 1 1580 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MVIA VIA4 1 1840 700 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MVIA VIA10 1 1800 700 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <C C2 1 1320 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <C C3 1 1600 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <C C6 1 380 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <C C9 1 860 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <MVIA VIA7 1 880 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MVIA VIA11 1 840 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MVIA VIA12 1 620 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <C C7 1 640 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <Pac P1 1 -90 410 18 -26 0 1 "1" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
+  <GND * 5 -90 440 0 0 0 0>
+  <C C5 1 50 380 -26 17 0 0 "10 pF" 1 "" 0 "neutral" 0>
+  <MLIN MS15 1 130 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <L L8 1 200 530 10 -26 0 1 "1.25 nH" 1 "" 0>
+  <R R8 1 200 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <MVIA VIA13 1 220 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MVIA VIA14 1 180 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <C C13 1 200 470 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
+  <MVIA VIA15 1 360 700 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
 </Components>
 <Wires>
-  <70 380 180 380 "" 0 0 0 "">
-  <240 380 260 380 "" 0 0 0 "">
   <320 380 380 380 "" 0 0 0 "">
   <380 380 500 380 "" 0 0 0 "">
   <380 380 380 440 "" 0 0 0 "">
@@ -103,7 +109,6 @@
   <1000 380 1060 380 "" 0 0 0 "">
   <860 380 940 380 "" 0 0 0 "">
   <860 380 860 440 "" 0 0 0 "">
-  <860 680 860 700 "" 0 0 0 "">
   <380 680 380 700 "" 0 0 0 "">
   <2280 380 2360 380 "" 0 0 0 "">
   <2520 380 2580 380 "" 0 0 0 "">
@@ -122,6 +127,11 @@
   <1320 120 1400 120 "" 0 0 0 "">
   <1200 60 1320 60 "" 0 0 0 "">
   <1820 670 1820 700 "" 0 0 0 "">
+  <80 380 100 380 "" 0 0 0 "">
+  <-90 380 20 380 "" 0 0 0 "">
+  <160 380 200 380 "" 0 0 0 "">
+  <200 380 260 380 "" 0 0 0 "">
+  <200 380 200 440 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 70 1199 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -142,12 +152,11 @@
   </Tab>
 </Diagrams>
 <Paintings>
-  <Text 50 330 12 #000000 0 "Antenna port">
   <Text 1480 850 12 #000000 0 "Parameter sweep simulates the switch in both RX and TX state\nby changing the resistance of the PIN diode.">
   <Rectangle 1800 480 190 210 #000000 0 1 #c0c0c0 1 0>
   <Text 1840 500 12 #000000 0 "PIN diode model">
   <Text 10 10 12 #000000 0 "Simulation of the PIN diode switch together with the antenna line band-pass filter and RX filter\n\nTODO: make all microstrip lengths correspond to the actual layout\n">
-  <Text 480 310 12 #000000 0 "TODO: try to model layout better here.\nMaybe model MS4 and MS5 as coupled lines.">
+  <Text 480 310 12 #000000 0 "TODO: try to model layout better here">
   <Line 1130 -40 0 820 #000000 0 1>
   <Rectangle 2250 190 230 160 #000000 0 1 #c0c0c0 1 0>
   <Text 2260 210 12 #000000 0 "Protection diode capacitance">
@@ -160,4 +169,5 @@
   <Rectangle 1300 10 190 210 #000000 0 1 #c0c0c0 1 0>
   <Text 1340 30 12 #000000 0 "PIN diode model">
   <Text 1190 10 12 #000000 0 "TX port">
+  <Text -110 330 12 #000000 0 "Antenna port">
 </Paintings>
