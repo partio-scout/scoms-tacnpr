@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-83,-10,2291,1352,0.751315,0,120>
+  <View=-83,-10,2291,1332,0.751315,0,76>
   <Grid=10,10,1>
   <DataSet=pinswitch.dat>
   <DataDisplay=pinswitch.dpl>
@@ -26,14 +26,12 @@
   <R R2 1 340 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C2 1 340 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
   <MVIA VIA2 1 360 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
-  <MLIN MS1 1 500 380 -26 15 0 0 "Subst1" 1 "0.5 mm" 1 "34 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <R R3 1 620 590 15 -26 0 1 "0.1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <L L3 1 620 530 10 -26 0 1 "1.25 nH" 1 "" 0>
   <MVIA VIA3 1 640 620 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <C C3 1 620 470 17 -26 0 1 "4.7 pF" 1 "" 0 "neutral" 0>
   <Pac P2 1 1000 410 18 -26 0 1 "2" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 5 1000 440 0 0 0 0>
-  <MVIA VIA4 1 860 720 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <L L4 1 840 640 10 -26 0 1 "1 nH" 1 "" 0>
   <C C4 1 840 560 17 -26 0 1 "1 pF" 1 "" 0 "neutral" 0>
   <R R4 1 920 560 15 -26 0 1 "pin_r" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
@@ -43,6 +41,11 @@
   <Pac P3 1 220 150 18 -26 0 1 "3" 1 "50 Ohm" 1 "0 dBm" 0 "1 GHz" 0 "26.85" 0>
   <GND * 5 220 180 0 0 0 0>
   <MLIN MS2 1 740 380 -26 15 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MVIA VIA5 1 320 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MVIA VIA6 1 600 620 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <CLIN CL1 1 500 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "38 mm" 1 "Metal" 0 "yes" 0>
+  <MVIA VIA4 1 860 700 20 0 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
+  <MVIA VIA7 1 820 700 -120 0 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
 </Components>
 <Wires>
   <530 380 620 380 "" 0 0 0 "">
@@ -50,7 +53,6 @@
   <340 380 470 380 "" 0 0 0 "">
   <340 380 340 440 "" 0 0 0 "">
   <620 380 620 440 "" 0 0 0 "">
-  <840 670 840 720 "" 0 0 0 "">
   <840 590 840 610 "" 0 0 0 "">
   <840 530 920 530 "" 0 0 0 "">
   <840 590 920 590 "" 0 0 0 "">
@@ -63,6 +65,7 @@
   <220 120 340 120 "" 0 0 0 "">
   <770 380 840 380 "" 0 0 0 "">
   <620 380 710 380 "" 0 0 0 "">
+  <840 670 840 700 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 70 1199 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -82,6 +85,6 @@
   <Text 210 70 12 #000000 0 "TX port">
   <Text 350 330 12 #000000 0 "90° phase shift circuit of PIN diode switch">
   <Text 1480 670 12 #000000 0 "Parameter sweep simulates the switch in both RX and TX state\nby changing the resistance of the PIN diode.">
-  <Text 80 680 12 #000000 0 "Capacitor model: 1.25 nH ESL\nassumed for 1206 package\n( https://www.renesas.com/us/en/document/apn/an1325-choosing-and-using-bypass-capacitors )">
   <Text 20 10 12 #000000 0 "Simulation of the PIN diode switch alone">
+  <Text 50 750 12 #000000 0 "Capacitor model: 1.25 nH ESL\nassumed for 1206 package\n( https://www.renesas.com/us/en/document/apn/an1325-choosing-and-using-bypass-capacitors )">
 </Paintings>
