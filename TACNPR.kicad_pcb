@@ -4065,11 +4065,11 @@
   )
 
   (module NPR:scomslogo locked (layer B.Cu) (tedit 0) (tstamp 6190031B)
-    (at 132.588 50.038 180)
-    (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
+    (at 132.5372 49.0728 270)
+    (fp_text reference G*** (at 0 0 90) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
-    (fp_text value LOGO (at 0.75 0) (layer B.SilkS) hide
+    (fp_text value LOGO (at 0.75 0 90) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_poly (pts (xy 3.996529 4.958557) (xy 3.990292 4.949587) (xy 3.95832 4.930288) (xy 3.90602 4.903645)
@@ -5038,7 +5038,7 @@
   )
 
   (module Symbol:ESD-Logo_8.9x8mm_SilkScreen locked (layer B.Cu) (tedit 0) (tstamp 609D3F49)
-    (at 179.959 120.269 270)
+    (at 178.4604 119.7356 270)
     (descr "Electrostatic discharge Logo")
     (tags "Logo ESD")
     (attr virtual)
@@ -10974,7 +10974,7 @@
   (gr_text LED_CON (at 151.257 102.235 90) (layer F.SilkS) (tstamp 6141A062)
     (effects (font (size 0.8 0.8) (thickness 0.2)) (justify left))
   )
-  (gr_text "Attention! ESD \nsensitive devices" (at 180.6575 99.314 90) (layer B.SilkS) (tstamp 616AAFA0)
+  (gr_text "Attention! ESD \nsensitive devices" (at 179.5272 96.8756 90) (layer B.SilkS) (tstamp 616AAFA0)
     (effects (font (size 1.4 1.2) (thickness 0.3)) (justify left mirror))
   )
   (gr_text "CPU: STM32L432KC" (at 160.274 113.4745) (layer F.SilkS) (tstamp 6122BE50)
