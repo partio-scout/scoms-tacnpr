@@ -1237,4 +1237,30 @@ F 3 "" H 2250 5000 50  0001 C CNN
 	1    2250 5000
 	-1   0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 624ADD23
+P 9700 5550
+AR Path="/624ADD23" Ref="TP?"  Part="1" 
+AR Path="/60604CF2/624ADD23" Ref="TP15"  Part="1" 
+F 0 "TP15" H 9758 5668 50  0000 L CNN
+F 1 "TestPoint" H 9758 5577 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 9900 5550 50  0001 C CNN
+F 3 "~" H 9900 5550 50  0001 C CNN
+	1    9700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 624ADD29
+P 9700 5550
+AR Path="/624ADD29" Ref="#PWR?"  Part="1" 
+AR Path="/60604CF2/624ADD29" Ref="#PWR0206"  Part="1" 
+F 0 "#PWR0206" H 9700 5300 50  0001 C CNN
+F 1 "GND" H 9705 5377 50  0000 C CNN
+F 2 "" H 9700 5550 50  0001 C CNN
+F 3 "" H 9700 5550 50  0001 C CNN
+	1    9700 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
