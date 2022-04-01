@@ -790,20 +790,6 @@ F 3 "" H 8250 3800 50  0001 C CNN
 	1    8250 3800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61D6676C
-P 7450 4350
-AR Path="/6096F497/61D6676C" Ref="TP?"  Part="1" 
-AR Path="/607946F5/61D6676C" Ref="TP14"  Part="1" 
-F 0 "TP14" H 7450 4600 50  0000 C CNN
-F 1 "TestPoint" V 7450 4750 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7650 4350 50  0001 C CNN
-F 3 "~" H 7650 4350 50  0001 C CNN
-F 4 "TRUE" H 7450 4350 50  0001 C CNN "DNP"
-	1    7450 4350
-	1    0    0    -1  
-$EndComp
 Text GLabel 9350 4000 0    50   Input ~ 0
 3V3_LNA
 Wire Wire Line
@@ -1372,11 +1358,6 @@ F 4 "C1015" H 7100 4350 50  0001 C CNN "LCSC"
 $EndComp
 Text Label 7850 4350 0    39   ~ 0
 3V3_LNA_FILTERED
-Wire Wire Line
-	7250 4350 7450 4350
-Connection ~ 7450 4350
-Wire Wire Line
-	7450 4350 7550 4350
 Text GLabel 7250 3800 0    50   Input ~ 0
 3V3_LNA
 $Comp
@@ -1408,4 +1389,6 @@ F 3 "" H 7550 4550 50  0001 C CNN
 	1    7550 4550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7250 4350 7550 4350
 $EndSCHEMATC
