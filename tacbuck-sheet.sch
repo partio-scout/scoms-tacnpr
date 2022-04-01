@@ -1559,20 +1559,6 @@ Text GLabel 9600 4950 2    79   Input ~ 0
 Wire Wire Line
 	9050 4950 9500 4950
 Connection ~ 9050 4950
-$Comp
-L Connector:TestPoint_Small TP2
-U 1 1 608F1362
-P 9100 2850
-AR Path="/609A52E7/608F1362" Ref="TP2"  Part="1" 
-AR Path="/607FB7F8/608F1362" Ref="TP?"  Part="1" 
-F 0 "TP2" H 9052 2804 50  0000 R CNN
-F 1 "BB_12V" H 9052 2895 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9300 2850 50  0001 C CNN
-F 3 "~" H 9300 2850 50  0001 C CNN
-F 4 "TRUE" H 9100 2850 50  0001 C CNN "DNP"
-	1    9100 2850
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	9100 3050 9100 2850
 Connection ~ 9500 4950
@@ -1962,22 +1948,6 @@ Wire Wire Line
 Wire Wire Line
 	9500 4950 9500 5400
 $Comp
-L Connector:TestPoint_Small TP3
-U 1 1 60BA0A4E
-P 9500 4750
-AR Path="/609A52E7/60BA0A4E" Ref="TP3"  Part="1" 
-AR Path="/607FB7F8/60BA0A4E" Ref="TP?"  Part="1" 
-F 0 "TP3" H 9452 4704 50  0000 R CNN
-F 1 "BC_3V8" H 9452 4795 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9700 4750 50  0001 C CNN
-F 3 "~" H 9700 4750 50  0001 C CNN
-F 4 "TRUE" H 9500 4750 50  0001 C CNN "DNP"
-	1    9500 4750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9500 4950 9500 4750
-$Comp
 L power:GND #PWR?
 U 1 1 60C37B91
 P 5550 7250
@@ -2059,7 +2029,7 @@ $EndComp
 Wire Wire Line
 	2550 1550 2550 1750
 $Comp
-L Device:D_TVS D?
+L Device:D_Zener D?
 U 1 1 60D3238C
 P 2050 1500
 AR Path="/608A4C86/60D3238C" Ref="D?"  Part="1" 
@@ -2126,7 +2096,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 1350 2050 1350
 $Comp
-L Device:D_TVS D?
+L Device:D_Zener D?
 U 1 1 60824983
 P 5550 7100
 AR Path="/608A4C86/60824983" Ref="D?"  Part="1" 
@@ -2134,9 +2104,9 @@ AR Path="/609A52E7/60824983" Ref="D8"  Part="1"
 AR Path="/607FB7F8/60824983" Ref="D?"  Part="1" 
 F 0 "D8" V 5504 7180 50  0000 L CNN
 F 1 "TVS DIODE" V 5595 7180 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 5550 6900 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC" H 5550 6900 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 5500 7100 50  0001 C CNN
-F 4 "C78395" H 5550 7100 50  0001 C CNN "LCSC"
+F 4 "TRUE" V 5700 7300 50  0000 C CNN "DNP"
 	1    5550 7100
 	0    1    1    0   
 $EndComp
@@ -2148,4 +2118,34 @@ Wire Wire Line
 	5550 6950 5700 6950
 Wire Wire Line
 	3350 6950 3800 6950
+Wire Wire Line
+	9500 4950 9500 4750
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60BA0A4E
+P 9500 4750
+AR Path="/609A52E7/60BA0A4E" Ref="TP3"  Part="1" 
+AR Path="/607FB7F8/60BA0A4E" Ref="TP?"  Part="1" 
+F 0 "TP3" H 9452 4704 50  0000 R CNN
+F 1 "BC_3V8" H 9452 4795 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9700 4750 50  0001 C CNN
+F 3 "~" H 9700 4750 50  0001 C CNN
+F 4 "TRUE" H 9500 4750 50  0001 C CNN "DNP"
+	1    9500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 608F1362
+P 9100 2850
+AR Path="/609A52E7/608F1362" Ref="TP2"  Part="1" 
+AR Path="/607FB7F8/608F1362" Ref="TP?"  Part="1" 
+F 0 "TP2" H 9052 2804 50  0000 R CNN
+F 1 "BB_12V" H 9052 2895 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9300 2850 50  0001 C CNN
+F 3 "~" H 9300 2850 50  0001 C CNN
+F 4 "TRUE" H 9100 2850 50  0001 C CNN "DNP"
+	1    9100 2850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
