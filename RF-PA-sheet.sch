@@ -321,7 +321,7 @@ F 4 "TRUE" H 7550 4800 50  0001 C CNN "DNP"
 	1    0    0    1   
 $EndComp
 Text Notes 5350 4900 2    40   ~ 8
-33mm_100ohm
+36mm_100ohm
 $Comp
 L Device:C_Small C?
 U 1 1 61049E1B
@@ -562,7 +562,7 @@ AR Path="/609A52E7/60C94A06" Ref="C?"  Part="1"
 AR Path="/60604CF2/60C94A06" Ref="C45"  Part="1" 
 F 0 "C45" H 4592 4846 50  0000 L CNN
 F 1 "10p" H 4592 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4500 4800 50  0001 C CNN
+F 2 "NPR:C_1206_0805_WIDE" H 4500 4800 50  0001 C CNN
 F 3 "~" H 4500 4800 50  0001 C CNN
 F 4 "" H 4500 4800 50  0001 C CNN "LCSC"
 	1    4500 4800
@@ -602,7 +602,7 @@ AR Path="/609A52E7/60C8FF84" Ref="C?"  Part="1"
 AR Path="/60604CF2/60C8FF84" Ref="C46"  Part="1" 
 F 0 "C46" H 1792 4846 50  0000 L CNN
 F 1 "10p" H 1792 4755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 1700 4800 50  0001 C CNN
+F 2 "NPR:C_1206_0805_WIDE" H 1700 4800 50  0001 C CNN
 F 3 "~" H 1700 4800 50  0001 C CNN
 F 4 "" H 1700 4800 50  0001 C CNN "LCSC"
 	1    1700 4800
@@ -984,8 +984,6 @@ Text Notes 7050 6850 0    157  Italic 31
 TACNPR / RF PA & TRX switch
 Text Notes 7050 7050 0    79   Italic 16
 Motorola MHW720A 20W RF PA, design & simulations: Tatu OH2EAT
-Text Notes 2250 7200 0    79   ~ 16
-RF-testpadit:\n\nPIN-kytkimen ja LNA:n suojapiirin välissä (D14 ja C63 väli): \nPIN-kytkimen mittaus / LNA:n inputin mittaus\n\nLNA-vaimentimen ja SAW-suodattimen välissä (R61 ja U17 väli):\nLNA:n outputin mittaus / SAW-suodattimen mittaus
 Connection ~ 6600 4800
 Wire Wire Line
 	6600 4800 6850 4800
@@ -1159,7 +1157,7 @@ L Device:Net-Tie_2 NT1
 U 1 1 625CE746
 P 2750 4800
 F 0 "NT1" H 2750 4981 50  0000 C CNN
-F 1 "Net-Tie_2" H 2750 4890 50  0000 C CNN
+F 1 "10mm" H 2750 4890 50  0000 C CNN
 F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 2750 4800 50  0001 C CNN
 F 3 "~" H 2750 4800 50  0001 C CNN
 	1    2750 4800
@@ -1170,7 +1168,7 @@ L Device:Net-Tie_2 NT3
 U 1 1 6263F5EB
 P 3150 4800
 F 0 "NT3" H 3150 4981 50  0000 C CNN
-F 1 "Net-Tie_2" H 3150 4890 50  0000 C CNN
+F 1 "10,5mm" H 3150 4890 50  0000 C CNN
 F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 3150 4800 50  0001 C CNN
 F 3 "~" H 3150 4800 50  0001 C CNN
 	1    3150 4800
@@ -1181,7 +1179,7 @@ L Device:Net-Tie_2 NT2
 U 1 1 6263FBF7
 P 2950 5050
 F 0 "NT2" V 2904 5094 50  0000 L CNN
-F 1 "Net-Tie_2" V 2995 5094 50  0000 L CNN
+F 1 "4,5mm+" V 2995 5094 50  0000 L CNN
 F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 2950 5050 50  0001 C CNN
 F 3 "~" H 2950 5050 50  0001 C CNN
 	1    2950 5050
@@ -1217,4 +1215,8 @@ $EndComp
 Wire Wire Line
 	5300 4300 5500 4300
 Connection ~ 6650 6050
+Text Notes 3500 4500 2    40   ~ 8
+1mm clearance from groundplane
+Text Notes 3050 5350 0    39   ~ 0
++: 5mm \ntuning tolerance
 $EndSCHEMATC

@@ -1578,7 +1578,7 @@ Connection ~ 4350 1350
 Wire Wire Line
 	4350 1350 4500 1350
 Connection ~ 4550 3400
-Text Notes 5550 5200 0    40   ~ 8
+Text Notes 5400 5200 0    79   ~ 16
 UVLO \napprox. 5V
 $Comp
 L Device:R_Small R17
