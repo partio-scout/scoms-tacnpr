@@ -287,29 +287,29 @@ Connection ~ 6150 2950
 $Comp
 L 74xx:74HC04 U15
 U 1 1 6164928D
-P 1900 6600
+P 3700 6500
 AR Path="/607946F5/6164928D" Ref="U15"  Part="1" 
 AR Path="/60604CF2/6164928D" Ref="U?"  Part="1" 
-F 0 "U15" H 1900 6917 50  0000 C CNN
-F 1 "74HC04" H 1900 6826 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1900 6600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 1900 6600 50  0001 C CNN
-F 4 "C86613" H 1900 6600 50  0001 C CNN "LCSC"
-	1    1900 6600
+F 0 "U15" H 3700 6817 50  0000 C CNN
+F 1 "74HC04" H 3700 6726 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3700 6500 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3700 6500 50  0001 C CNN
+F 4 "C86613" H 3700 6500 50  0001 C CNN "LCSC"
+	1    3700 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC04 U15
 U 2 1 61649293
-P 3050 6800
+P 4850 6700
 AR Path="/607946F5/61649293" Ref="U15"  Part="2" 
 AR Path="/60604CF2/61649293" Ref="U?"  Part="2" 
-F 0 "U15" H 3050 6600 50  0000 C CNN
-F 1 "74HC04" H 3050 6500 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3050 6800 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3050 6800 50  0001 C CNN
-F 4 "C86613" H 3050 6800 50  0001 C CNN "LCSC"
-	2    3050 6800
+F 0 "U15" H 4850 6500 50  0000 C CNN
+F 1 "74HC04" H 4850 6400 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 6700 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4850 6700 50  0001 C CNN
+F 4 "C86613" H 4850 6700 50  0001 C CNN "LCSC"
+	2    4850 6700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -401,7 +401,7 @@ Wire Wire Line
 Connection ~ 3600 3750
 Text Notes 5800 4900 2    79   ~ 16
 GPIOR2\nRX_STATE
-Text Notes 1950 6150 2    79   ~ 16
+Text Notes 3750 6050 2    79   ~ 16
 GPIOR1\nTX_STATE
 Text Notes 3900 5250 0    39   ~ 8
 PA driver stage\nDC supply 12V
@@ -433,24 +433,24 @@ Wire Wire Line
 $Comp
 L 74xx:74HC04 U?
 U 3 1 616492E5
-P 3050 6400
+P 4850 6300
 AR Path="/60604CF2/616492E5" Ref="U?"  Part="3" 
 AR Path="/607946F5/616492E5" Ref="U15"  Part="3" 
-F 0 "U15" H 3050 6717 50  0000 C CNN
-F 1 "74HC04" H 3050 6626 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3050 6400 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 3050 6400 50  0001 C CNN
-F 4 "C86613" H 3050 6400 50  0001 C CNN "LCSC"
-	3    3050 6400
+F 0 "U15" H 4850 6617 50  0000 C CNN
+F 1 "74HC04" H 4850 6526 50  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4850 6300 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4850 6300 50  0001 C CNN
+F 4 "C86613" H 4850 6300 50  0001 C CNN "LCSC"
+	3    4850 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2200 6600 2750 6600
+	4000 6500 4550 6500
 Text GLabel 5700 5050 0    50   Output ~ 0
 GPIOR2
 Wire Wire Line
-	1600 6600 1450 6600
-Text GLabel 1450 6600 0    50   Output ~ 0
+	3400 6500 3250 6500
+Text GLabel 3250 6500 0    50   Output ~ 0
 GPIOR1
 $Comp
 L Device:C_Small C?
@@ -523,12 +523,10 @@ Wire Wire Line
 	7850 4350 7250 4350
 Text Notes 7050 5500 0    39   ~ 8
 LNA PWR SUPPLY 3V3
-Text GLabel 4750 6600 2    50   Output ~ 0
+Text GLabel 3350 5600 2    50   Output ~ 0
 TXSTATE
 Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
-Wire Wire Line
-	3350 6600 4250 6600
 Wire Wire Line
 	6150 2950 6650 2950
 Wire Wire Line
@@ -537,7 +535,7 @@ Wire Wire Line
 	10400 4950 10400 5400
 Text GLabel 4500 5050 0    50   Input ~ 0
 SWDC_PA_TX_12V
-Text GLabel 4750 6800 2    50   Input ~ 0
+Text GLabel 5500 6500 2    50   Input ~ 0
 SWDC_PA_TX_3V3
 Text GLabel 7650 5350 0    50   Input ~ 0
 SWDC_LNA_3V3
@@ -545,13 +543,6 @@ Text GLabel 6650 2450 2    50   Input ~ 0
 RXP_FROM_LNA
 Wire Wire Line
 	7850 5350 7650 5350
-Wire Wire Line
-	4750 6800 4550 6800
-Wire Wire Line
-	4250 6800 4250 6600
-Connection ~ 4250 6600
-Wire Wire Line
-	4250 6600 4750 6600
 Wire Wire Line
 	4500 3750 4500 4400
 Text GLabel 4500 2050 0    50   Input ~ 0
@@ -588,15 +579,15 @@ $EndComp
 Wire Wire Line
 	2400 4400 2400 4850
 Wire Wire Line
-	3350 6800 3350 6600
+	5150 6700 5150 6500
 Wire Wire Line
-	2750 6600 2750 6400
+	4550 6500 4550 6300
 Wire Wire Line
-	2750 6600 2750 6800
-Connection ~ 2750 6600
+	4550 6500 4550 6700
+Connection ~ 4550 6500
 Wire Wire Line
-	3350 6400 3350 6600
-Connection ~ 3350 6600
+	5150 6300 5150 6500
+Connection ~ 5150 6500
 $Comp
 L Device:C_Small C?
 U 1 1 61A0D44D
@@ -720,7 +711,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 5300 3000 5300
 Connection ~ 3000 4850
-Text GLabel 2450 6600 3    50   Output ~ 0
+Text GLabel 4250 6500 3    50   Output ~ 0
 TXSTATE_INV
 $Comp
 L Device:R_Small R?
@@ -1297,23 +1288,6 @@ F 3 "" H 8350 2250 50  0001 C CNN
 	1    8350 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 61E58F6E
-P 4450 6800
-AR Path="/61E58F6E" Ref="R?"  Part="1" 
-AR Path="/6096F497/61E58F6E" Ref="R?"  Part="1" 
-AR Path="/607946F5/61E58F6E" Ref="R57"  Part="1" 
-F 0 "R57" V 4350 6700 50  0000 L CNN
-F 1 "100" V 4250 6750 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 6800 50  0001 C CNN
-F 3 "~" H 4450 6800 50  0001 C CNN
-F 4 "C22775" H 4450 6800 50  0001 C CNN "LCSC"
-	1    4450 6800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4350 6800 4250 6800
 Wire Wire Line
 	8750 2050 8950 2050
 $Comp
@@ -1385,4 +1359,11 @@ Text Notes 7350 7050 0    79   Italic 16
 Si4463 RFIC & RF switching logic
 Wire Wire Line
 	7850 4350 7850 4850
+Wire Wire Line
+	3000 5300 3000 5600
+Wire Wire Line
+	3000 5600 3350 5600
+Connection ~ 3000 5300
+Wire Wire Line
+	5150 6500 5500 6500
 $EndSCHEMATC
