@@ -1443,8 +1443,6 @@ F 4 "TRUE" H 10800 6000 50  0001 C CNN "DNP"
 $EndComp
 Wire Wire Line
 	10150 6000 10800 6000
-Wire Wire Line
-	7500 5800 7650 5800
 Text GLabel 7500 5800 0    79   Input ~ 0
 3V3_ETHERNET
 $Comp
@@ -1464,23 +1462,6 @@ $EndComp
 Connection ~ 8150 5800
 Wire Wire Line
 	8150 5800 8000 5800
-$Comp
-L Connector:TestPoint TP1
-U 1 1 6161CB66
-P 7650 5800
-AR Path="/6096F497/6161CB66" Ref="TP1"  Part="1" 
-AR Path="/60D4B6E6/6161CB66" Ref="TP?"  Part="1" 
-F 0 "TP1" V 7845 5872 50  0000 C CNN
-F 1 "TestPoint" V 7754 5872 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7850 5800 50  0001 C CNN
-F 3 "~" H 7850 5800 50  0001 C CNN
-F 4 "TRUE" H 7650 5800 50  0001 C CNN "DNP"
-	1    7650 5800
-	1    0    0    -1  
-$EndComp
-Connection ~ 7650 5800
-Wire Wire Line
-	7650 5800 8000 5800
 $Comp
 L power:GND #PWR?
 U 1 1 6161CB6E
@@ -1542,25 +1523,6 @@ Text Notes 6950 3700 0    97   ~ 19
 GPIO ESD protection
 Text Notes 7950 2550 0    97   ~ 19
 CONN LEDs
-Wire Wire Line
-	9300 6100 9550 6100
-$Comp
-L Connector:TestPoint TP6
-U 1 1 616D132F
-P 9550 6100
-AR Path="/6096F497/616D132F" Ref="TP6"  Part="1" 
-AR Path="/60D4B6E6/616D132F" Ref="TP?"  Part="1" 
-F 0 "TP6" V 9650 6250 50  0000 C CNN
-F 1 "W5500_CS" V 9450 6200 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9750 6100 50  0001 C CNN
-F 3 "~" H 9750 6100 50  0001 C CNN
-F 4 "TRUE" H 9550 6100 50  0001 C CNN "DNP"
-	1    9550 6100
-	1    0    0    -1  
-$EndComp
-Connection ~ 9550 6100
-Wire Wire Line
-	9550 6100 9650 6100
 $Comp
 L power:GND #PWR?
 U 1 1 6160D21F
@@ -1691,4 +1653,8 @@ Wire Wire Line
 	2950 1750 3450 1750
 Wire Wire Line
 	3450 1750 3750 1750
+Wire Wire Line
+	9300 6100 9650 6100
+Wire Wire Line
+	7500 5800 8000 5800
 $EndSCHEMATC
