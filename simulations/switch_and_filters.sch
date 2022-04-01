@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-150,-60,2853,1656,0.620922,0,202>
+  <View=-150,-60,2853,1656,0.620922,0,180>
   <Grid=10,10,1>
   <DataSet=switch_and_filters.dat>
   <DataDisplay=switch_and_filters.dpl>
@@ -82,14 +82,14 @@
   <MVIA VIA17 1 940 640 -68 33 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MVIA VIA18 1 900 640 -28 33 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <C C12 1 920 490 17 -26 0 1 "5.6 pF" 1 "" 0 "neutral" 0>
-  <CLIN CL2 1 410 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "10.5 mm" 1 "Metal" 0 "yes" 0>
+  <CLIN CL2 1 410 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "10 mm" 1 "Metal" 0 "yes" 0>
   <CLIN CL3 1 610 380 -26 28 0 0 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "10.5 mm" 1 "Metal" 0 "yes" 0>
-  <MTEE MS12 1 510 380 -26 -110 0 0 "Subst1" 1 "0.5 mm" 1 "0.5 mm" 1 "0.5 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0 "showNumbers" 0>
-  <CLIN CL4 1 510 520 28 -26 0 1 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "5.5 mm" 1 "Metal" 0 "yes" 0>
+  <CLIN CL4 1 510 520 28 -26 0 1 "Subst1" 1 "0.5 mm" 1 "1 mm" 1 "4.5 mm" 1 "Metal" 0 "yes" 0>
   <MVIA VIA19 1 530 640 -68 26 0 0 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <MVIA VIA20 1 490 640 -29 26 1 2 "Subst1" 1 "0.4 mm" 1 "26.85" 0>
   <C C13 1 1090 380 -29 -54 0 0 "10 pF" 1 "" 0 "neutral" 0>
   <MLIN MS11 1 1010 380 -24 -90 0 0 "Subst1" 1 "2 mm" 1 "2 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
+  <MTEE MS12 1 480 380 -37 -123 1 0 "Subst1" 1 "0.5 mm" 1 "0.5 mm" 1 "0.5 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0 "showNumbers" 0>
 </Components>
 <Wires>
   <1320 380 1320 440 "" 0 0 0 "">
@@ -130,14 +130,15 @@
   <780 380 780 460 "" 0 0 0 "">
   <900 380 920 380 "" 0 0 0 "">
   <920 380 920 460 "" 0 0 0 "">
-  <440 380 480 380 "" 0 0 0 "">
-  <540 380 580 380 "" 0 0 0 "">
-  <510 410 510 490 "" 0 0 0 "">
   <510 550 510 640 "" 0 0 0 "">
   <1120 380 1140 380 "" 0 0 0 "">
   <920 380 980 380 "" 0 0 0 "">
   <1040 380 1060 380 "" 0 0 0 "">
   <640 380 780 380 "" 0 0 0 "">
+  <510 380 510 490 "" 0 0 0 "">
+  <440 380 450 380 "" 0 0 0 "">
+  <480 350 580 350 "" 0 0 0 "">
+  <580 350 580 380 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 70 1199 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -175,5 +176,4 @@
   <Text -110 330 12 #000000 0 "Antenna port">
   <Rectangle 2250 140 230 210 #000000 0 1 #c0c0c0 1 0>
   <Text 2260 160 12 #000000 0 "Protection diode capacitance">
-  <Text 380 160 12 #000000 0 "TODO: try to model layout better here">
 </Paintings>
