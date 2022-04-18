@@ -182,7 +182,7 @@ Text GLabel 3750 2650 0    50   Input ~ 0
 CLK_SPI1
 Wire Wire Line
 	4500 2650 3750 2650
-Text GLabel 8950 2050 2    50   Output ~ 0
+Text GLabel 8350 2050 2    50   Output ~ 0
 RF_PA_IN
 $Comp
 L Device:LED D?
@@ -857,7 +857,7 @@ P 6400 2050
 AR Path="/60604CF2/61DA37D3" Ref="L?"  Part="1" 
 AR Path="/607946F5/61DA37D3" Ref="L12"  Part="1" 
 F 0 "L12" V 6350 2000 50  0000 L CNN
-F 1 "30n" V 6250 2000 50  0000 L CNN
+F 1 "27n" V 6250 2000 50  0000 L CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" H 6400 2050 50  0001 C CNN
 F 3 "~" H 6400 2050 50  0001 C CNN
 	1    6400 2050
@@ -943,28 +943,11 @@ Wire Wire Line
 	6850 1100 5350 1100
 Text GLabel 6200 1250 2    50   Input ~ 0
 3V3_RADIO
-$Comp
-L Device:C_Small C?
-U 1 1 61E05C58
-P 6700 2050
-AR Path="/61E05C58" Ref="C?"  Part="1" 
-AR Path="/6096F497/61E05C58" Ref="C?"  Part="1" 
-AR Path="/607946F5/61E05C58" Ref="C90"  Part="1" 
-F 0 "C90" H 6792 2096 50  0000 L CNN
-F 1 "8p2" H 6792 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 2050 50  0001 C CNN
-F 3 "~" H 6700 2050 50  0001 C CNN
-F 4 "C1685" H 6700 2050 50  0001 C CNN "LCSC"
-	1    6700 2050
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6300 2050 6100 2050
 Connection ~ 6100 2050
 Wire Wire Line
 	5300 2050 6100 2050
-Wire Wire Line
-	6600 2050 6500 2050
 $Comp
 L Device:C_Small C?
 U 1 1 61E1842F
@@ -973,10 +956,10 @@ AR Path="/61E1842F" Ref="C?"  Part="1"
 AR Path="/6096F497/61E1842F" Ref="C?"  Part="1" 
 AR Path="/607946F5/61E1842F" Ref="C92"  Part="1" 
 F 0 "C92" H 7550 2150 50  0000 L CNN
-F 1 "13p" H 7550 2050 50  0000 L CNN
+F 1 "8p2" H 7550 2050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7450 2150 50  0001 C CNN
 F 3 "~" H 7450 2150 50  0001 C CNN
-F 4 "C34243" H 7450 2150 50  0001 C CNN "LCSC"
+F 4 "" H 7450 2150 50  0001 C CNN "LCSC"
 	1    7450 2150
 	1    0    0    -1  
 $EndComp
@@ -999,10 +982,11 @@ AR Path="/61E19CA9" Ref="C?"  Part="1"
 AR Path="/6096F497/61E19CA9" Ref="C?"  Part="1" 
 AR Path="/607946F5/61E19CA9" Ref="C93"  Part="1" 
 F 0 "C93" H 7950 2150 50  0000 L CNN
-F 1 "9p1" H 7950 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7850 2150 50  0001 C CNN
+F 1 "DNP" H 7950 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7850 2150 50  0001 C CNN
 F 3 "~" H 7850 2150 50  0001 C CNN
-F 4 "C61817" H 7850 2150 50  0001 C CNN "LCSC"
+F 4 "" H 7850 2150 50  0001 C CNN "LCSC"
+F 5 "TRUE" H 7850 2150 50  0001 C CNN "DNP"
 	1    7850 2150
 	1    0    0    -1  
 $EndComp
@@ -1031,46 +1015,27 @@ F 3 "~" H 7650 2050 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L Device:L_Small L?
-U 1 1 61E2427B
-P 8200 2050
-AR Path="/60604CF2/61E2427B" Ref="L?"  Part="1" 
-AR Path="/607946F5/61E2427B" Ref="L14"  Part="1" 
-F 0 "L14" H 8250 2000 50  0000 L CNN
-F 1 "22n" H 8250 2100 50  0000 L CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8200 2050 50  0001 C CNN
-F 3 "~" H 8200 2050 50  0001 C CNN
-	1    8200 2050
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:C_Small C?
 U 1 1 61E24911
-P 8650 2050
+P 8150 2050
 AR Path="/61E24911" Ref="C?"  Part="1" 
 AR Path="/6096F497/61E24911" Ref="C?"  Part="1" 
 AR Path="/607946F5/61E24911" Ref="C91"  Part="1" 
-F 0 "C91" H 8742 2096 50  0000 L CNN
-F 1 "30p" H 8742 2005 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8650 2050 50  0001 C CNN
-F 3 "~" H 8650 2050 50  0001 C CNN
-F 4 "C22397" H 8650 2050 50  0001 C CNN "LCSC"
-	1    8650 2050
+F 0 "C91" H 8242 2096 50  0000 L CNN
+F 1 "100p" H 8242 2005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8150 2050 50  0001 C CNN
+F 3 "~" H 8150 2050 50  0001 C CNN
+F 4 "" H 8150 2050 50  0001 C CNN "LCSC"
+	1    8150 2050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6800 2050 7450 2050
 Wire Wire Line
 	7550 2050 7450 2050
 Connection ~ 7450 2050
 Wire Wire Line
 	7750 2050 7850 2050
-Wire Wire Line
-	7850 2050 8100 2050
 Connection ~ 7850 2050
-Wire Wire Line
-	8300 2050 8350 2050
-Text Notes 8950 1950 0    39   ~ 8
+Text Notes 8400 1950 0    39   ~ 8
 To hybrid PA
 $Comp
 L Device:L_Small L?
@@ -1193,16 +1158,6 @@ Wire Wire Line
 	6200 1250 6100 1250
 Wire Wire Line
 	6100 1250 6100 1350
-Text Notes 7950 1450 0    52   ~ 10
-Matching network is based on manufacturer's Application Note AN629 \nhttps://www.silabs.com/documents/public/application-notes/AN629.pdf \n(fig. 16 on page 14)\n
-Wire Notes Line
-	7900 1150 10950 1150
-Wire Notes Line
-	10950 1150 10950 1550
-Wire Notes Line
-	10950 1550 7900 1550
-Wire Notes Line
-	7900 1550 7900 1150
 $Comp
 L RF:Si4463 U5
 U 1 1 60646347
@@ -1234,38 +1189,8 @@ F 4 "C14858" H 5900 1650 50  0001 C CNN "LCSC"
 	1    5900 1650
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 61DCCA93
-P 8350 2150
-AR Path="/61DCCA93" Ref="C?"  Part="1" 
-AR Path="/6096F497/61DCCA93" Ref="C?"  Part="1" 
-AR Path="/607946F5/61DCCA93" Ref="C97"  Part="1" 
-F 0 "C97" H 8442 2196 50  0000 L CNN
-F 1 "8p2" H 8442 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8350 2150 50  0001 C CNN
-F 3 "~" H 8350 2150 50  0001 C CNN
-F 4 "" H 8500 2000 50  0000 C CNN "DNP"
-F 5 "C1685" H 8350 2150 50  0001 C CNN "LCSC"
-	1    8350 2150
-	1    0    0    -1  
-$EndComp
-Connection ~ 8350 2050
 Wire Wire Line
-	8350 2050 8550 2050
-$Comp
-L power:GND #PWR0185
-U 1 1 61DCD785
-P 8350 2250
-F 0 "#PWR0185" H 8350 2000 50  0001 C CNN
-F 1 "GND" H 8355 2077 50  0000 C CNN
-F 2 "" H 8350 2250 50  0001 C CNN
-F 3 "" H 8350 2250 50  0001 C CNN
-	1    8350 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2050 8950 2050
+	8250 2050 8350 2050
 $Comp
 L power:GND #PWR0193
 U 1 1 6243D012
@@ -1391,4 +1316,8 @@ F 3 "" H 7550 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7250 4350 7550 4350
+Wire Wire Line
+	6500 2050 7450 2050
+Wire Wire Line
+	7850 2050 8050 2050
 $EndSCHEMATC
