@@ -204,10 +204,6 @@ U 6096F497
 F0 "cpu" 94
 F1 "cpu-sheet.sch" 94
 $EndSheet
-Text Notes 6650 5350 0    119  ~ 24
-CHECKLIST:\n-tacbuckin kelat
-Text Notes 9350 5200 0    118  ~ 24
-TACPDU fuse holder \nLCSC: C58066
 Text Notes 3100 2350 0    118  ~ 24
 Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE
 $Comp
