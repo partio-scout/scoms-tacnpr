@@ -2148,4 +2148,35 @@ F 4 "TRUE" H 9100 2850 50  0001 C CNN "DNP"
 	1    9100 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 626A6023
+P 3800 7300
+AR Path="/608A4C86/626A6023" Ref="D?"  Part="1" 
+AR Path="/609A52E7/626A6023" Ref="D7"  Part="1" 
+AR Path="/607FB7F8/626A6023" Ref="D?"  Part="1" 
+F 0 "D7" H 3800 7050 50  0000 L CNN
+F 1 "TVS DIODE" H 3650 7150 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 3800 7100 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sm6t.pdf" H 3750 7300 50  0001 C CNN
+F 4 "TRUE" V 4100 7100 50  0000 C CNN "DNP"
+	1    3800 7300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 626BBFB6
+P 3800 7450
+AR Path="/626BBFB6" Ref="#PWR?"  Part="1" 
+AR Path="/608A4C86/626BBFB6" Ref="#PWR?"  Part="1" 
+AR Path="/609A52E7/626BBFB6" Ref="#PWR0206"  Part="1" 
+AR Path="/607FB7F8/626BBFB6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0206" H 3800 7200 50  0001 C CNN
+F 1 "GND" H 3805 7277 50  0000 C CNN
+F 2 "" H 3800 7450 50  0001 C CNN
+F 3 "" H 3800 7450 50  0001 C CNN
+	1    3800 7450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 7150
 $EndSCHEMATC
