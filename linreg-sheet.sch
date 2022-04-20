@@ -461,6 +461,7 @@ F 0 "J1" H 3118 6475 50  0000 C CNN
 F 1 "PWR_TERM" H 3118 6566 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3200 6800 50  0001 C CNN
 F 3 "~" H 3200 6800 50  0001 C CNN
+F 4 "C474881" H 3200 6800 50  0001 C CNN "LCSC"
 	1    3200 6800
 	-1   0    0    1   
 $EndComp
@@ -502,6 +503,7 @@ F 0 "J2" H 4418 6475 50  0000 C CNN
 F 1 "PWR_TERM" H 4418 6566 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4500 6800 50  0001 C CNN
 F 3 "~" H 4500 6800 50  0001 C CNN
+F 4 "C474881" H 4500 6800 50  0001 C CNN "LCSC"
 	1    4500 6800
 	-1   0    0    1   
 $EndComp
