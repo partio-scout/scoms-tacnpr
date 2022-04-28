@@ -269,37 +269,22 @@ F 3 "" H 2250 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2250 3100 2400 3100
-Wire Wire Line
-	2250 3350 2350 3350
 $Comp
-L Device:Crystal_GND24_Small Y2
+L Device:Crystal Y2
 U 1 1 605C7982
 P 2700 3200
 F 0 "Y2" V 2654 3288 50  0000 L CNN
 F 1 "32.768K" V 2745 3288 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm" H 2700 3200 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 2700 3200 50  0001 C CNN
 F 3 "~" H 2700 3200 50  0001 C CNN
+F 4 "C32346" H 2700 3200 50  0001 C CNN "LCSC"
 	1    2700 3200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2700 3100 2700 3050
-Wire Wire Line
-	2700 3050 3350 3050
-Wire Wire Line
 	3000 3150 2800 3350
 Wire Wire Line
-	2800 3350 2700 3350
-Wire Wire Line
-	2700 3300 2700 3350
-Connection ~ 2700 3350
-Wire Wire Line
-	2700 3350 2600 3350
-Wire Wire Line
 	2600 3100 2600 3050
-Wire Wire Line
-	2600 3050 2700 3050
-Connection ~ 2700 3050
 $Comp
 L Device:R_Small R?
 U 1 1 605DDA6F
@@ -1625,30 +1610,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 3150 3350 3150
 Wire Wire Line
-	2600 3200 2350 3200
-Wire Wire Line
-	2350 3200 2350 3350
-Connection ~ 2350 3350
-Wire Wire Line
-	2350 3350 2400 3350
-$Comp
-L power:GNDD #PWR?
-U 1 1 6223B311
-P 2850 3400
-AR Path="/6223B311" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/6223B311" Ref="#PWR0190"  Part="1" 
-F 0 "#PWR0190" H 2850 3150 50  0001 C CNN
-F 1 "GNDD" H 2854 3245 50  0000 C CNN
-F 2 "" H 2850 3400 50  0001 C CNN
-F 3 "" H 2850 3400 50  0001 C CNN
-	1    2850 3400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 3400 2850 3200
-Wire Wire Line
-	2850 3200 2800 3200
-Wire Wire Line
 	1850 1750 2150 1750
 Text Notes 7300 7050 0    79   Italic 16
 (CPU, SRAM, GPIO, ETHERNET, USB SERIAL)
@@ -1676,4 +1637,16 @@ F 3 "" H 1150 7000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 6950 1150 7000
+Wire Wire Line
+	2250 3350 2400 3350
+Connection ~ 2700 3050
+Wire Wire Line
+	2700 3050 3350 3050
+Connection ~ 2700 3350
+Wire Wire Line
+	2700 3350 2800 3350
+Wire Wire Line
+	2600 3050 2700 3050
+Wire Wire Line
+	2600 3350 2700 3350
 $EndSCHEMATC
