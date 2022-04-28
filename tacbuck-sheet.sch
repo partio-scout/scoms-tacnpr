@@ -2087,8 +2087,6 @@ F 4 "C1015" H 4150 5300 50  0001 C CNN "LCSC"
 	1    4150 5300
 	0    -1   -1   0   
 $EndComp
-Text Notes 3650 1050 0    79   ~ 16
-paketti!
 Text Notes 7200 700  0    79   ~ 16
 tackbuckin LCSC
 Wire Wire Line
