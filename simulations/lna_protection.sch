@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.20>
 <Properties>
-  <View=-3,40,1625,1284,0.75,77,240>
+  <View=-3,40,1625,1284,0.75,77,107>
   <Grid=10,10,1>
   <DataSet=lna_protection.dat>
   <DataDisplay=lna_protection.dpl>
@@ -39,7 +39,8 @@
   <L L4 1 720 550 10 -26 0 1 "15 nH" 1 "" 0>
   <GND *1 5 720 640 0 0 0 0>
   <MLIN MS8 1 720 460 15 -26 0 1 "Subst2" 1 "0.8 mm" 1 "0.8 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
-  <R R1 1 720 610 15 -26 0 1 "1 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <R R1 1 720 610 15 -26 0 1 "2 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <C C4 1 630 580 17 -26 0 1 "0.3 pF" 1 "" 0 "neutral" 0>
 </Components>
 <Wires>
   <410 300 440 300 "" 0 0 0 "">
@@ -57,6 +58,10 @@
   <720 260 720 300 "" 0 0 0 "">
   <720 410 720 430 "" 0 0 0 "">
   <720 490 720 520 "" 0 0 0 "">
+  <630 520 720 520 "" 0 0 0 "">
+  <630 520 630 550 "" 0 0 0 "">
+  <630 640 720 640 "" 0 0 0 "">
+  <630 610 630 640 "" 0 0 0 "">
 </Wires>
 <Diagrams>
   <Rect 190 1189 1064 379 3 #c0c0c0 1 00 0 0 4.35e+08 3e+09 0 -70 10 0 1 -1 0.2 1 315 0 225 "" "" "" "">
@@ -67,4 +72,5 @@
 <Paintings>
   <Rectangle 610 60 230 210 #000000 0 1 #c0c0c0 1 0>
   <Text 620 80 12 #000000 0 "Protection diode capacitance">
+  <Text 840 560 12 #000000 0 "Inductor: https://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1608C15NJTDF_C23651.pdf">
 </Paintings>

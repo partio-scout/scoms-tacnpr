@@ -27,7 +27,6 @@
   <MLIN MS3 1 950 300 -26 15 0 0 "Subst1" 1 "0.8 mm" 1 "0.4 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS4 1 950 140 -45 -81 0 0 "Subst1" 1 "0.8 mm" 1 "0.4 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <L L3 1 860 190 10 -26 0 1 "47 nH" 1 "" 0>
-  <R R2 1 860 250 15 -26 0 1 "2 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <MLIN MS5 1 810 140 -45 -81 0 0 "Subst1" 1 "0.8 mm" 1 "0.4 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS6 1 810 300 -26 15 0 0 "Subst1" 1 "0.8 mm" 1 "0.4 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS7 1 710 140 -40 -80 0 0 "Subst1" 1 "0.25 mm" 1 "0.6 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
@@ -49,8 +48,9 @@
   <MLIN MS15 1 170 300 -26 15 0 0 "Subst1" 1 "0.25 mm" 1 "0.6 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <MLIN MS14 1 260 300 -26 15 0 0 "Subst1" 1 "0.8 mm" 1 "0.8 mm" 1 "Hammerstad" 0 "Kirschning" 0 "26.85" 0>
   <L L1 1 360 300 -26 10 0 0 "47 nH" 1 "" 0>
-  <R R1 1 420 300 -26 15 0 0 "2 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C3 1 390 240 -26 17 0 0 "0.5 pF" 1 "" 0 "neutral" 0>
+  <R R1 1 420 300 -26 15 0 0 "6 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <R R2 1 860 250 15 -26 0 1 "6 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
 </Components>
 <Wires>
   <1240 200 1240 220 "" 0 0 0 "">
@@ -108,4 +108,5 @@
 </Diagrams>
 <Paintings>
   <Text 930 -60 12 #000000 0 "SI4463 differential input impedance is \n480 Ω in parallel with 0.97 pF (AN643).\nHere, it's modeled as two ports of half the impedance\nso that we can also see how good the balance is.">
+  <Text 580 490 12 #000000 0 "Inductors:\nhttps://datasheet.lcsc.com/lcsc/2110081230_Sunlord-SDCL1608C47NJTDF_C29683.pdf">
 </Paintings>
