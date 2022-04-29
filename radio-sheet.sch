@@ -135,29 +135,29 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 60AE80D1
-P 7400 2850
+P 7100 2850
 AR Path="/6096F497/60AE80D1" Ref="GPIOR?"  Part="1" 
 AR Path="/607946F5/60AE80D1" Ref="GPIOR1"  Part="1" 
-F 0 "GPIOR1" V 7350 2800 50  0000 C CNN
-F 1 "TestPoint" V 7400 3250 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7600 2850 50  0001 C CNN
-F 3 "~" H 7600 2850 50  0001 C CNN
-F 4 "TRUE" H 7400 2850 50  0001 C CNN "DNP"
-	1    7400 2850
+F 0 "GPIOR1" V 7050 2800 50  0000 C CNN
+F 1 "TestPoint" V 7100 3250 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7300 2850 50  0001 C CNN
+F 3 "~" H 7300 2850 50  0001 C CNN
+F 4 "TRUE" H 7100 2850 50  0001 C CNN "DNP"
+	1    7100 2850
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:TestPoint GPIOR?
 U 1 1 60AE84EF
-P 6650 2950
+P 6400 2950
 AR Path="/6096F497/60AE84EF" Ref="GPIOR?"  Part="1" 
 AR Path="/607946F5/60AE84EF" Ref="GPIOR2"  Part="1" 
-F 0 "GPIOR2" V 6600 2900 50  0000 C CNN
-F 1 "TestPoint" V 6650 3350 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6850 2950 50  0001 C CNN
-F 3 "~" H 6850 2950 50  0001 C CNN
-F 4 "TRUE" H 6650 2950 50  0001 C CNN "DNP"
-	1    6650 2950
+F 0 "GPIOR2" V 6350 2900 50  0000 C CNN
+F 1 "TestPoint" V 6400 3350 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6600 2950 50  0001 C CNN
+F 3 "~" H 6600 2950 50  0001 C CNN
+F 4 "TRUE" H 6400 2950 50  0001 C CNN "DNP"
+	1    6400 2950
 	0    1    1    0   
 $EndComp
 $Comp
@@ -201,9 +201,9 @@ F 4 "C2286" H 2400 5300 50  0001 C CNN "LCSC"
 	1    2400 5300
 	1    0    0    -1  
 $EndComp
-Connection ~ 7000 2850
+Connection ~ 6850 2850
 Wire Wire Line
-	5300 2850 7000 2850
+	5300 2850 6850 2850
 $Comp
 L Device:R_Small R?
 U 1 1 6147D407
@@ -238,9 +238,9 @@ $EndComp
 Connection ~ 3750 1600
 Wire Wire Line
 	3750 1600 4000 1600
-Text Notes 7200 2950 0    40   ~ 8
+Text Notes 6950 2950 0    40   ~ 8
 TX_STATE
-Text Notes 6450 3050 0    40   ~ 8
+Text Notes 6250 3050 0    40   ~ 8
 RX_STATE
 $Comp
 L Device:LED D?
@@ -275,12 +275,12 @@ F 3 "" H 4900 1250 50  0001 C CNN
 	1    4900 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2950 3    50   Output ~ 0
+Text GLabel 6850 2950 3    50   Output ~ 0
 GPIOR1
 Text GLabel 6150 3050 3    50   Output ~ 0
 GPIOR2
 Wire Wire Line
-	7000 2950 7000 2850
+	6850 2950 6850 2850
 Wire Wire Line
 	6150 3050 6150 2950
 Connection ~ 6150 2950
@@ -526,9 +526,9 @@ TXSTATE
 Text GLabel 2400 4400 2    50   Output ~ 0
 TXSTATE_INV
 Wire Wire Line
-	6150 2950 6650 2950
+	6150 2950 6400 2950
 Wire Wire Line
-	7000 2850 7400 2850
+	6850 2850 7100 2850
 Wire Wire Line
 	10400 4950 10400 5400
 Text GLabel 4500 5050 0    50   Input ~ 0
@@ -1324,4 +1324,6 @@ Wire Wire Line
 	6500 2050 7450 2050
 Wire Wire Line
 	7850 2050 8050 2050
+Text Notes 5600 3150 0    40   ~ 8
+TX_STATE
 $EndSCHEMATC

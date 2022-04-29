@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 2400 2900 0    50   Input ~ 0
-12V_TO_RFPA
 $Comp
 L Device:C_Small C?
 U 1 1 607AB05C
@@ -183,8 +181,6 @@ Wire Wire Line
 	6650 1600 6700 1600
 Wire Wire Line
 	6700 1600 6700 1650
-Text GLabel 5150 2000 0    50   Input ~ 0
-RF_PA_IN
 Wire Wire Line
 	6450 1750 6450 2050
 Wire Wire Line
@@ -625,8 +621,6 @@ F 3 "" H 950 5000 50  0001 C CNN
 	1    950  5000
 	-1   0    0    -1  
 $EndComp
-Text GLabel 4650 3950 0    50   Input ~ 0
-RF_PA_OUT
 $Comp
 L Connector:Conn_Coaxial J7
 U 1 1 607DDDF1
@@ -703,20 +697,10 @@ Wire Wire Line
 Text Notes 9500 3600 2    79   ~ 16
 LNA's switched \nDC supply 3v3
 Connection ~ 8550 4200
-Text GLabel 6100 4300 2    50   Input ~ 0
-SWDC_PA_TX_3V3
-Text GLabel 8550 3750 2    50   Input ~ 0
-SWDC_LNA_3V3
 Wire Wire Line
 	8550 3750 8550 4200
-Text GLabel 4350 2150 0    50   Input ~ 0
-SWDC_PA_TX_12V
 Text Notes 6850 4150 2    79   ~ 16
 Pin diode's switched \nbias from 3v3
-Text GLabel 10850 4950 3    50   Input ~ 0
-RXP_FROM_LNA
-Text GLabel 6600 2050 2    50   Input ~ 0
-RF_PA_OUT
 $Comp
 L power:GND #PWR?
 U 1 1 618B4559
@@ -1233,4 +1217,20 @@ F 3 "" H 8900 5300 50  0001 C CNN
 	1    8900 5300
 	-1   0    0    -1  
 $EndComp
+Text GLabel 6600 2050 2    50   Input ~ 0
+RF_PA_OUT
+Text GLabel 5150 2000 0    50   Input ~ 0
+RF_PA_IN
+Text GLabel 10850 4950 3    50   Input ~ 0
+RXP_FROM_LNA
+Text GLabel 4350 2150 0    50   Input ~ 0
+SWDC_PA_TX_12V
+Text GLabel 2400 2900 0    50   Input ~ 0
+12V_TO_RFPA
+Text GLabel 8550 3750 2    50   Input ~ 0
+SWDC_LNA_3V3
+Text GLabel 6100 4300 2    50   Input ~ 0
+SWDC_PA_TX_3V3
+Text GLabel 4650 3950 0    50   Input ~ 0
+RF_PA_OUT
 $EndSCHEMATC
