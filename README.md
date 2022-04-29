@@ -4,7 +4,7 @@ NPR (New Packet Radio protocol) compatible Ethernet-connected radio w/ integrate
 
 Designed by Lasse OH3HZB & Tatu OH2EAT & SCOMS team (special thanks to Mikko OH2FLO, Vili OH5GE and Tommi OH1GJV (TACBUCK design))
 
-Requires a W5500 based Ethernet (SPI) module to work, see photo w5500-module-photo.JPG to find proper model.
+Requires W5500 based Ethernet (SPI) module to work, see photo w5500-module-photo.JPG to find the proper model.
 
 ![3D](TACNPR-revA-3D-top.jpg)
 
