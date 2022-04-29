@@ -228,3 +228,9 @@ U16,XC6206PxxxMR,SOT-23,152.3492,-75.311,90,top
 Y2,32.768K,Crystal_SMD_3215-2Pin_3.2x1.5mm,168.9608,-99.9744,270,top
 Y3,12M,Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm,155.194,-119.507,180,top
 Y4,30M,Crystal_SMD_SeikoEpson_TSX3225-4Pin_3.2x2.5mm,173.012,-73.703,270,top
+F1,5x20 fuse 6.3A,Fuseholder5x20_H_universal,94.996,-121.412,90,top
+J1,PWR_TERM,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",105.664,-127.0508,0,top
+J2,PWR_TERM,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",120.5992,-126.8984,0,top
+J4,W5500_HEADER,PinSocket_2x05_P2.54mm_Vertical,181.7624,-81.915,180,top
+J6,PROG_CONN,PinSocket_1x04_P2.54mm_Vertical,133.7564,-126.5936,90,top
+J7,SMA_F,SMA_Amphenol_132134_Vertical,94.996,-54.102,0,top
