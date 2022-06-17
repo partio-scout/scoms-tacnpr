@@ -81,62 +81,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 6450 5900 6450
 Connection ~ 5600 6450
-$Comp
-L Device:C C107
-U 1 1 62B27987
-P 4450 6600
-F 0 "C107" H 4565 6646 50  0000 L CNN
-F 1 "100n" H 4565 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 6450 50  0001 C CNN
-F 3 "~" H 4450 6600 50  0001 C CNN
-	1    4450 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C109
-U 1 1 62B27D11
-P 4850 6600
-F 0 "C109" H 4965 6646 50  0000 L CNN
-F 1 "100n" H 4965 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4888 6450 50  0001 C CNN
-F 3 "~" H 4850 6600 50  0001 C CNN
-	1    4850 6600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4050 6450 4450 6450
-Connection ~ 4450 6450
-Wire Wire Line
-	4450 6450 4850 6450
-Connection ~ 4850 6450
-Wire Wire Line
-	4850 6450 5250 6450
-Wire Wire Line
-	4050 6750 4450 6750
 Connection ~ 4050 6750
-Connection ~ 4450 6750
-Wire Wire Line
-	4450 6750 4850 6750
-Connection ~ 4850 6750
-Wire Wire Line
-	4850 6750 5250 6750
-$Comp
-L Device:C C110
-U 1 1 62B2A231
-P 5250 6600
-F 0 "C110" H 5365 6646 50  0000 L CNN
-F 1 "100n" H 5365 6555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 6450 50  0001 C CNN
-F 3 "~" H 5250 6600 50  0001 C CNN
-	1    5250 6600
-	1    0    0    -1  
-$EndComp
-Connection ~ 5250 6450
-Wire Wire Line
-	5250 6450 5600 6450
-Connection ~ 5250 6750
-Wire Wire Line
-	5250 6750 5600 6750
 Wire Notes Line
 	7500 700  10850 700 
 Wire Notes Line
@@ -1099,4 +1044,25 @@ Wire Wire Line
 	2850 3050 2750 3050
 Text Notes 3350 2200 0    197  ~ 39
 !!!!
+Wire Wire Line
+	4050 6750 4450 6750
+Connection ~ 4450 6750
+Wire Wire Line
+	4050 6450 4450 6450
+Connection ~ 4450 6450
+$Comp
+L Device:C C107
+U 1 1 62B27987
+P 4450 6600
+F 0 "C107" H 4565 6646 50  0000 L CNN
+F 1 "100n" H 4565 6555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4488 6450 50  0001 C CNN
+F 3 "~" H 4450 6600 50  0001 C CNN
+	1    4450 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6450 5600 6450
+Wire Wire Line
+	4450 6750 5600 6750
 $EndSCHEMATC
