@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
-Title "Ethernet part"
+Title "TACNPR  (Ethernet)"
 Date ""
-Rev ""
+Rev "B"
 Comp "Scoms"
 Comment1 "By OH3HZB 2022"
 Comment2 ""
