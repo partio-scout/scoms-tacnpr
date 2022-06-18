@@ -34,7 +34,7 @@ TACNPR project
 Text Notes 3000 3000 0    118  ~ 24
 SUBSHEETS:
 Text Notes 1700 4150 0    134  ~ 27
-CPU, SRAM, \nSERIAL
+MCU, SRAM, \nSERIAL
 Text Notes 3300 1750 0    394  ~ 79
 TACNPR project\n
 Text Notes 2750 7350 0    118  ~ 24

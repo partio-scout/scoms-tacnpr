@@ -193,7 +193,7 @@ Wire Wire Line
 Text GLabel 4500 3550 2    50   Output ~ 0
 CS_W5500
 Text Notes 2600 1300 0    94   ~ 19
-CPU: STM32L432KC (256 kB Flash)
+MCU: STM32L432KC (256 kB Flash)
 $Comp
 L power:GNDD #PWR?
 U 1 1 60991F37
