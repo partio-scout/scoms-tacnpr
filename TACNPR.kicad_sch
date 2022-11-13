@@ -734,8 +734,7 @@
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e)
   )
-  (text "TODO: \n-fix broken symbols\n-check vias for ret. currents\n-GPIOR's to header?"
-    (at 195.58 92.71 0)
+  (text "TODO: \n-GPIOR's to header?\n-W5500 reset circuit" (at 195.58 92.71 0)
     (effects (font (size 4.0038 4.0038) (thickness 0.8008) bold) (justify left bottom))
     (uuid 2ef29cd8-c5d1-43d4-8983-b8285b86cd96)
   )
@@ -1543,12 +1542,6 @@
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-0000606e2113"
       (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-00006072dc3c"
-      (reference "#PWR0109") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-00006073942c"
-      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-0000607bfba5"
       (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
     )
@@ -2272,12 +2265,6 @@
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-000060faba19"
       (reference "D10") (unit 1) (value "BA591") (footprint "Diode_SMD:D_SOD-323")
     )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-000060739438"
-      (reference "D11") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
-    )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-00006072dc44"
-      (reference "D12") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
-    )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-0000607bfbb1"
       (reference "D13") (unit 1) (value "LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
@@ -2565,12 +2552,6 @@
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-0000608e3d46"
       (reference "R40") (unit 1) (value "100") (footprint "Resistor_SMD:R_0603_1608Metric")
-    )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-000060738f2c"
-      (reference "R41") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0603_1608Metric")
-    )
-    (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-00006072dc36"
-      (reference "R42") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-0000607bf509"
       (reference "R43") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0603_1608Metric")
