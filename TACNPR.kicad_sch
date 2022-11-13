@@ -2304,15 +2304,6 @@
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000060ae7ba1"
       (reference "GPIOR0") (unit 1) (value "GPIO_R1") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000060ae80d1"
-      (reference "GPIOR1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
-    )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000060ae84ef"
-      (reference "GPIOR2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
-    )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000060ae8838"
-      (reference "GPIOR3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
-    )
     (path "/00000000-0000-0000-0000-00006087e1a0"
       (reference "H1") (unit 1) (value "MH") (footprint "MountingHole:MountingHole_3.5mm_Pad_TopBottom")
     )
@@ -2345,6 +2336,9 @@
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-00006160d20e"
       (reference "J3") (unit 1) (value "GPIO_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left")
+    )
+    (path "/00000000-0000-0000-0000-00006096f497/22b4f0d3-88c3-4474-937b-1a9c1c18d89b"
+      (reference "J4") (unit 1) (value "GPIOR_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left")
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-0000607dc572"
       (reference "J5") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal")
@@ -2687,9 +2681,6 @@
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060a08243"
       (reference "RTS1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
-    )
-    (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060985553"
-      (reference "SW1") (unit 1) (value "RESET") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062a8184a"
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
