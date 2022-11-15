@@ -734,7 +734,7 @@
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e)
   )
-  (text "TODO: \n-GPIOR's to header?\n-W5500 reset circuit" (at 195.58 92.71 0)
+  (text "TODO: \n-W5500 reset circuit" (at 195.58 92.71 0)
     (effects (font (size 4.0038 4.0038) (thickness 0.8008) bold) (justify left bottom))
     (uuid 2ef29cd8-c5d1-43d4-8983-b8285b86cd96)
   )
