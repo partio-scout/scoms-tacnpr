@@ -734,7 +734,8 @@
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e)
   )
-  (text "TODO: \n-W5500 reset circuit" (at 195.58 92.71 0)
+  (text "TODO: \n-check ethernet schema (pull-ups etc)\n-C112 to be 1206 to save BOM ?\n"
+    (at 195.58 92.71 0)
     (effects (font (size 4.0038 4.0038) (thickness 0.8008) bold) (justify left bottom))
     (uuid 2ef29cd8-c5d1-43d4-8983-b8285b86cd96)
   )
@@ -2206,7 +2207,7 @@
       (reference "C105") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062ad9b2b"
-      (reference "C106") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C106") (unit 1) (value "10n") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062b27987"
       (reference "C107") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -2218,19 +2219,19 @@
       (reference "C111") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-0000630c097d"
-      (reference "C112") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C112") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062bffe31"
       (reference "C113") (unit 1) (value "10nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062beeada"
-      (reference "C114") (unit 1) (value "6.8nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C114") (unit 1) (value "6.8nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062bf5636"
-      (reference "C115") (unit 1) (value "6.8nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C115") (unit 1) (value "6.8nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062c155bb"
-      (reference "C116") (unit 1) (value "22nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+      (reference "C116") (unit 1) (value "22nF") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062b54548"
       (reference "C117") (unit 1) (value "1nF 2kV") (footprint "Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm")
@@ -2394,9 +2395,6 @@
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000061e224a1"
       (reference "L13") (unit 1) (value "15n") (footprint "Inductor_SMD:L_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062e2b345"
-      (reference "L14") (unit 1) (value "15uH 1A") (footprint "Inductor_SMD:L_0805_2012Metric")
-    )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000061e4bd3f"
       (reference "L15") (unit 1) (value "47n") (footprint "Inductor_SMD:L_0603_1608Metric")
     )
@@ -2546,6 +2544,9 @@
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-0000608e3d46"
       (reference "R40") (unit 1) (value "100") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/00000000-0000-0000-0000-000062ae4073/83289206-0a4b-4299-9748-5767cc958ea7"
+      (reference "R41") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-0000607bf509"
       (reference "R43") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0603_1608Metric")
