@@ -725,7 +725,7 @@
   )
 
 
-  (text "SUBSHEETS:" (at 76.2 76.2 0)
+  (text "SUBSHEETS (revB with onboard Ethernet):" (at 76.2 76.2 0)
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 02165243-61a3-4857-84ba-71a77cb9a387)
   )
@@ -733,10 +733,6 @@
     (at 69.85 186.69 0)
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e)
-  )
-  (text "TODO: \n-verify Ethernet schema \n(pull-ups etc)\n" (at 186.69 95.25 0)
-    (effects (font (size 4.0038 4.0038) (thickness 0.8008) bold) (justify left bottom))
-    (uuid 2ef29cd8-c5d1-43d4-8983-b8285b86cd96)
   )
   (text "3V3 lin.reg.\n& terminals" (at 88.9 138.43 0)
     (effects (font (size 3.4036 3.4036) (thickness 0.6807) bold) (justify left bottom))
@@ -1544,6 +1540,9 @@
     )
     (path "/00000000-0000-0000-0000-000062ae4073/1712bce1-82b2-4061-8271-332eb75bb1a6"
       (reference "#PWR0109") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000062ae4073/13ae8662-81b9-4e31-8752-a0ffb3b21f1b"
+      (reference "#PWR0110") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-0000607bfba5"
       (reference "#PWR0111") (unit 1) (value "GND") (footprint "")
