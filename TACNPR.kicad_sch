@@ -1688,6 +1688,9 @@
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-00006160d21f"
       (reference "#PWR0158") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000062ae4073/0e8b75bd-5724-4e32-aae7-693beabfe10e"
+      (reference "#PWR0159") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-000061009d58"
       (reference "#PWR0161") (unit 1) (value "GND") (footprint "")
     )
@@ -1711,9 +1714,6 @@
     )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000061a0d468"
       (reference "#PWR0169") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-0000614fc317"
-      (reference "#PWR0170") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-0000616492b5"
       (reference "#PWR0171") (unit 1) (value "GND") (footprint "")
@@ -2258,9 +2258,6 @@
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-00006144076d"
       (reference "D19") (unit 1) (value "TX_LED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-0000614f9144"
-      (reference "D20") (unit 1) (value "3V3_RADIO") (footprint "LED_SMD:LED_0603_1608Metric")
-    )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-000061d4728b"
       (reference "D23") (unit 1) (value "3V3_LNA") (footprint "LED_SMD:LED_0603_1608Metric")
     )
@@ -2534,9 +2531,6 @@
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-0000618c9278"
       (reference "R44") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
-    (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-0000614f914a"
-      (reference "R45") (unit 1) (value "1.5k") (footprint "Resistor_SMD:R_0603_1608Metric")
-    )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-00006164929f"
       (reference "R46") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
@@ -2683,6 +2677,12 @@
     )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-000060ba0a4e"
       (reference "TP3") (unit 1) (value "BC_3V8") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/00000000-0000-0000-0000-000062ae4073/77da96a7-4d3c-42ec-ac2f-2039aab5c40d"
+      (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
+    )
+    (path "/00000000-0000-0000-0000-000062ae4073/f4ec3913-74df-4039-a985-f14fe692f8fc"
+      (reference "TP5") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
     )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062e69924"
       (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D2.0mm")
