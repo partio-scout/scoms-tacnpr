@@ -10,6 +10,6 @@ Designed by Lasse OH3HZB & Tatu OH2EAT & Scoms team (special thanks to Mikko OH2
 Licensed under the TAPR Open Hardware License 
 www.tapr.org/OHL
 
-Please note that you need to be a certified HAM radio operator to use this radio.
+Please note that you need to be licensed HAM radio operator to use this radio.
 
 /1/: NPR by Guillaume F4HDK (2018-): https://hackaday.io/project/164092-npr-new-packet-radio 
