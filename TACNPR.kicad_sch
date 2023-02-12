@@ -2078,6 +2078,9 @@
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-000061035438"
       (reference "C69") (unit 1) (value "5p6") (footprint "NPR:C_1206_0805_WIDE")
     )
+    (path "/00000000-0000-0000-0000-000062ae4073/32d9f80f-e162-428f-8be2-f2b9ea6593d4"
+      (reference "C70") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-000060865271"
       (reference "C71") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
