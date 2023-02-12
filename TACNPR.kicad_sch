@@ -2195,6 +2195,9 @@
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062adc53d"
       (reference "C108") (unit 1) (value "4u7") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/00000000-0000-0000-0000-000062ae4073/c1c16033-4896-4ff7-bd67-9aa083dbda68"
+      (reference "C109") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
     (path "/00000000-0000-0000-0000-000062ae4073/00000000-0000-0000-0000-000062b022c7"
       (reference "C111") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
