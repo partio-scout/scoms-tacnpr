@@ -2745,7 +2745,7 @@
       (reference "U13") (unit 1) (value "XC6206PxxxMR") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-0000611ee2d4"
-      (reference "U14") (unit 1) (value "PSA4-5043") (footprint "Package_TO_SOT_SMD:SOT-343_SC-70-4_Handsoldering")
+      (reference "U14") (unit 1) (value "PSA4-5043 (SPF5043Z)") (footprint "Package_TO_SOT_SMD:SOT-343_SC-70-4_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-00006164928d"
       (reference "U15") (unit 1) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
