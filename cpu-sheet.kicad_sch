@@ -2644,7 +2644,7 @@
     (property "Datasheet" "" (id 3) (at 203.2 43.18 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "DNP" "TRUE" (id 4) (at 203.2 43.18 0)
+    (property "DNP" "" (id 4) (at 203.2 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 83084769-073a-41bd-9515-0bb9974896f2))

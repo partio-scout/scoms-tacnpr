@@ -2558,7 +2558,7 @@
     (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/TDK%20PDFs/B39431B3710U410.pdf" (id 3) (at 260.35 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DNP" "TRUE" (id 4) (at 260.35 121.92 0)
+    (property "DNP" "" (id 4) (at 260.35 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e16a76e6-cad8-4260-a33e-6598f2a146a8))
