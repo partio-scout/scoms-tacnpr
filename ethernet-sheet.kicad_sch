@@ -1939,7 +1939,7 @@
     (property "Datasheet" "~" (id 3) (at 162.56 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C172203" (id 4) (at 162.56 99.06 0)
+    (property "LCSC" "C227572" (id 4) (at 162.56 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3c7dc640-9a19-443d-9566-d301493d8a2c))
