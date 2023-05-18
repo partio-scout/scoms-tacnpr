@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "TACNPR"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -114,8 +114,6 @@ F 3 "" H 7300 1300 50  0001 C CNN
 $EndComp
 Text GLabel 3500 1600 0    50   Input ~ 0
 3V3_RADIO
-Wire Wire Line
-	3500 1600 3750 1600
 $Comp
 L Connector:TestPoint CTS?
 U 1 1 60AE7BA1
@@ -221,23 +219,6 @@ F 4 "C22843" H 2700 5300 50  0001 C CNN "LCSC"
 $EndComp
 Wire Wire Line
 	2600 5300 2550 5300
-$Comp
-L Connector:TestPoint GPIOR?
-U 1 1 6148EF74
-P 3750 1600
-AR Path="/6096F497/6148EF74" Ref="GPIOR?"  Part="1" 
-AR Path="/607946F5/6148EF74" Ref="TP13"  Part="1" 
-F 0 "TP13" H 3750 1850 50  0000 C CNN
-F 1 "TestPoint" V 3750 2000 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3950 1600 50  0001 C CNN
-F 3 "~" H 3950 1600 50  0001 C CNN
-F 4 "TRUE" H 3750 1600 50  0001 C CNN "DNP"
-	1    3750 1600
-	1    0    0    -1  
-$EndComp
-Connection ~ 3750 1600
-Wire Wire Line
-	3750 1600 4000 1600
 Text Notes 6950 2950 0    40   ~ 8
 TX_STATE
 Text Notes 6250 3050 0    40   ~ 8
@@ -1326,4 +1307,6 @@ Wire Wire Line
 	7850 2050 8050 2050
 Text Notes 5600 3150 0    40   ~ 8
 TX_STATE
+Wire Wire Line
+	3500 1600 4000 1600
 $EndSCHEMATC

@@ -1,13 +1,22 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP HR911105A
-F http://www.kosmodrom.com.ua/pdf/HR911105A.pdf
+$CMP PSA4-5043
+D PSA4-5043+ LNA by Mini-Circuits
+$ENDCMP
+#
+$CMP SAW-DCC6C
+D 434 MHz SAW filter
 $ENDCMP
 #
 $CMP TPS54331DR
 D TPS54331 3-A, 28-V Input, Step Down DC-DC Converter With Eco-mode
 K step down, buck, DC-DC converter
 F https://www.ti.com/lit/ds/symlink/tps54331.pdf
+$ENDCMP
+#
+$CMP W5500
+D Wiznet W5500 SPI ethernet
+F DOCUMENTATION
 $ENDCMP
 #
 #End Doc Library

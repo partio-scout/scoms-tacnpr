@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
-Title "TACNPR"
+Sheet 6 7
+Title "TACNPR (CPU sheet)"
 Date ""
-Rev "A"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -193,7 +193,7 @@ Wire Wire Line
 Text GLabel 4500 3550 2    50   Output ~ 0
 CS_W5500
 Text Notes 2600 1300 0    94   ~ 19
-CPU: STM32L432KC (256 kB Flash)
+MCU: STM32L432KC (256 kB Flash)
 $Comp
 L power:GNDD #PWR?
 U 1 1 60991F37
@@ -1363,152 +1363,6 @@ Wire Wire Line
 	9600 4850 9850 4850
 Text GLabel 9850 4850 2    79   Input ~ 0
 3V8_OUT
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J4
-U 1 1 6161CB3D
-P 9850 6000
-AR Path="/6096F497/6161CB3D" Ref="J4"  Part="1" 
-AR Path="/60D4B6E6/6161CB3D" Ref="J?"  Part="1" 
-F 0 "J4" H 9900 6417 50  0000 C CNN
-F 1 "W5500_HEADER" H 9900 6326 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical" H 9850 6000 50  0001 C CNN
-F 3 "~" H 9850 6000 50  0001 C CNN
-F 4 "C239345" H 9850 6000 50  0001 C CNN "LCSC"
-	1    9850 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 5800 8150 5800
-Text GLabel 10150 6100 2    50   Input ~ 0
-IRQ_W5500
-Text GLabel 9300 6200 0    50   Input ~ 0
-CLK_SPI3
-Text GLabel 8750 5900 0    50   Output ~ 0
-MISO_SPI3
-Text GLabel 9350 6000 0    50   Input ~ 0
-MOSI_SPI3
-$Comp
-L Device:C_Small C?
-U 1 1 6161CB48
-P 8000 5900
-AR Path="/6161CB48" Ref="C?"  Part="1" 
-AR Path="/6096F497/6161CB48" Ref="C70"  Part="1" 
-AR Path="/60D4B6E6/6161CB48" Ref="C?"  Part="1" 
-F 0 "C70" H 8092 5946 50  0000 L CNN
-F 1 "100n" V 7850 5850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8000 5900 50  0001 C CNN
-F 3 "~" H 8000 5900 50  0001 C CNN
-F 4 "C14663" H 8000 5900 50  0001 C CNN "LCSC"
-	1    8000 5900
-	1    0    0    1   
-$EndComp
-Connection ~ 8000 5800
-$Comp
-L power:GND #PWR?
-U 1 1 6161CB4F
-P 8000 6000
-AR Path="/6161CB4F" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/6161CB4F" Ref="#PWR0159"  Part="1" 
-AR Path="/60D4B6E6/6161CB4F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0159" H 8000 5750 50  0001 C CNN
-F 1 "GND" H 8005 5827 50  0000 C CNN
-F 2 "" H 8000 6000 50  0001 C CNN
-F 3 "" H 8000 6000 50  0001 C CNN
-	1    8000 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP5
-U 1 1 6161CB55
-P 10800 6000
-AR Path="/6096F497/6161CB55" Ref="TP5"  Part="1" 
-AR Path="/60D4B6E6/6161CB55" Ref="TP?"  Part="1" 
-F 0 "TP5" V 10900 6150 50  0000 C CNN
-F 1 "W5500_RST" V 10700 6100 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 11000 6000 50  0001 C CNN
-F 3 "~" H 11000 6000 50  0001 C CNN
-F 4 "TRUE" H 10800 6000 50  0001 C CNN "DNP"
-	1    10800 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10150 6000 10800 6000
-Text GLabel 7500 5800 0    79   Input ~ 0
-3V3_ETHERNET
-$Comp
-L Connector:TestPoint TP4
-U 1 1 6161CB5E
-P 8150 5800
-AR Path="/6096F497/6161CB5E" Ref="TP4"  Part="1" 
-AR Path="/60D4B6E6/6161CB5E" Ref="TP?"  Part="1" 
-F 0 "TP4" V 8345 5872 50  0000 C CNN
-F 1 "TestPoint" V 8254 5872 50  0000 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8350 5800 50  0001 C CNN
-F 3 "~" H 8350 5800 50  0001 C CNN
-F 4 "TRUE" H 8150 5800 50  0001 C CNN "DNP"
-	1    8150 5800
-	1    0    0    -1  
-$EndComp
-Connection ~ 8150 5800
-Wire Wire Line
-	8150 5800 8000 5800
-$Comp
-L power:GND #PWR?
-U 1 1 6161CB6E
-P 10150 6200
-AR Path="/6161CB6E" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/6161CB6E" Ref="#PWR0160"  Part="1" 
-AR Path="/60D4B6E6/6161CB6E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0160" H 10150 5950 50  0001 C CNN
-F 1 "GND" H 10155 6027 50  0000 C CNN
-F 2 "" H 10150 6200 50  0001 C CNN
-F 3 "" H 10150 6200 50  0001 C CNN
-	1    10150 6200
-	1    0    0    -1  
-$EndComp
-Text GLabel 9300 6100 0    50   Input ~ 0
-CS_W5500
-$Comp
-L Device:R_Small R?
-U 1 1 6161CB7E
-P 8900 5900
-AR Path="/6161CB7E" Ref="R?"  Part="1" 
-AR Path="/6096F497/6161CB7E" Ref="R29"  Part="1" 
-AR Path="/60D4B6E6/6161CB7E" Ref="R?"  Part="1" 
-F 0 "R29" V 8850 5800 50  0000 L CNN
-F 1 "330" V 8850 6000 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8900 5900 50  0001 C CNN
-F 3 "~" H 8900 5900 50  0001 C CNN
-F 4 "C23138" H 8900 5900 50  0001 C CNN "LCSC"
-	1    8900 5900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9650 5900 9000 5900
-Wire Wire Line
-	8800 5900 8750 5900
-Text Notes 8500 5400 0    97   ~ 19
-Ethernet module (W5500)
-Wire Wire Line
-	9300 6200 9650 6200
-Wire Wire Line
-	9650 6000 9350 6000
-Wire Wire Line
-	10300 5900 10150 5900
-$Comp
-L power:GND #PWR?
-U 1 1 6161CB8A
-P 10300 5900
-AR Path="/6161CB8A" Ref="#PWR?"  Part="1" 
-AR Path="/6096F497/6161CB8A" Ref="#PWR0168"  Part="1" 
-AR Path="/60D4B6E6/6161CB8A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0168" H 10300 5650 50  0001 C CNN
-F 1 "GND" H 10305 5727 50  0000 C CNN
-F 2 "" H 10300 5900 50  0001 C CNN
-F 3 "" H 10300 5900 50  0001 C CNN
-	1    10300 5900
-	0    -1   -1   0   
-$EndComp
 Text Notes 6950 3700 0    97   ~ 19
 GPIO ESD protection
 Text Notes 7950 2550 0    97   ~ 19
@@ -1619,10 +1473,6 @@ Wire Wire Line
 	2950 1750 3450 1750
 Wire Wire Line
 	3450 1750 3750 1750
-Wire Wire Line
-	9300 6100 9650 6100
-Wire Wire Line
-	7500 5800 8000 5800
 $Comp
 L power:GND #PWR?
 U 1 1 62621B6B

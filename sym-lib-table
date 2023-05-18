@@ -4,4 +4,5 @@
   (lib (name TACNPR-rescue)(type Legacy)(uri ${KIPRJMOD}/TACNPR-rescue.lib)(options "")(descr ""))
   (lib (name taclna)(type Legacy)(uri /home/llatva/tmp/taclna.lib)(options "")(descr ""))
   (lib (name SAW-DCC6C)(type Legacy)(uri ${KIPRJMOD}/scratch/SAW-DCC6C.lib)(options "")(descr ""))
+  (lib (name tm-kicad-lib)(type Legacy)(uri /home/llatva/kicad-projects/tacnpr-eth/tm-kicad-lib.lib)(options "")(descr ""))
 )
