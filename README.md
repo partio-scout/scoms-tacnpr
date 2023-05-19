@@ -7,6 +7,8 @@ Designed by Lasse OH3HZB & Tatu OH2EAT & Scoms team (special thanks to Mikko OH2
 
 ![3D](TACNPR-revB-3D-top.jpg)
 
+![photo](TACNPR-revB-photo.jpg)
+
 Licensed under the TAPR Open Hardware License 
 www.tapr.org/OHL
 
