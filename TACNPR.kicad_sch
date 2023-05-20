@@ -775,8 +775,7 @@
     (effects (font (size 4 4) (thickness 0.7976) bold) (justify left bottom))
     (uuid e6521bef-4109-48f7-8b88-4121b0468927)
   )
-  (text "revC todo:\n-more room for fuse holder\n-PWR LED HEADER (with 330R resistor)"
-    (at 220.98 80.01 0)
+  (text "revC todo:\n-PWR LED HEADER (with 330R resistor)" (at 220.98 80.01 0)
     (effects (font (size 3 3) (thickness 0.4) bold) (justify left bottom))
     (uuid f6680641-9cbc-4ce4-9157-1ba73bd79451)
   )
