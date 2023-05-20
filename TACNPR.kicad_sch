@@ -2534,6 +2534,9 @@
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-0000618c9278"
       (reference "R44") (unit 1) (value "100k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
+    (path "/00000000-0000-0000-0000-00006096f497/01192dee-6c26-4748-8ab6-05eddaadfe5e"
+      (reference "R45") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
     (path "/00000000-0000-0000-0000-0000607946f5/00000000-0000-0000-0000-00006164929f"
       (reference "R46") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
