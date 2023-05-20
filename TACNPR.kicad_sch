@@ -2469,7 +2469,7 @@
       (reference "R22") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060a75042"
-      (reference "R23") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R23") (unit 1) (value "1.5k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060a62b34"
       (reference "R24") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric")
