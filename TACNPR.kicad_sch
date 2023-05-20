@@ -775,10 +775,6 @@
     (effects (font (size 4 4) (thickness 0.7976) bold) (justify left bottom))
     (uuid e6521bef-4109-48f7-8b88-4121b0468927)
   )
-  (text "revC todo:\n-PWR LED HEADER (with 330R resistor)" (at 220.98 80.01 0)
-    (effects (font (size 3 3) (thickness 0.4) bold) (justify left bottom))
-    (uuid f6680641-9cbc-4ce4-9157-1ba73bd79451)
-  )
 
   (symbol (lib_id "Graphic:Logo_Open_Hardware_Large") (at 53.34 173.99 0) (unit 1)
     (in_bom yes) (on_board yes)
@@ -1695,6 +1691,9 @@
     (path "/00000000-0000-0000-0000-000062ae4073/0e8b75bd-5724-4e32-aae7-693beabfe10e"
       (reference "#PWR0159") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006096f497/e8df2748-f998-4ba3-868c-150c8c0288bf"
+      (reference "#PWR0160") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-000060604cf2/00000000-0000-0000-0000-000061009d58"
       (reference "#PWR0161") (unit 1) (value "GND") (footprint "")
     )
@@ -2314,10 +2313,10 @@
       (reference "J2") (unit 1) (value "PWR_TERM") (footprint "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-00006160d20e"
-      (reference "J3") (unit 1) (value "GPIO_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left")
+      (reference "J3") (unit 1) (value "GPIO_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left")
     )
     (path "/00000000-0000-0000-0000-00006096f497/22b4f0d3-88c3-4474-937b-1a9c1c18d89b"
-      (reference "J4") (unit 1) (value "GPIOR_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical_SMD_Pin1Left")
+      (reference "J4") (unit 1) (value "GPIOR_HEADER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left")
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-0000607dc572"
       (reference "J5") (unit 1) (value "USB_B_Micro") (footprint "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal")
@@ -2676,6 +2675,9 @@
     (path "/00000000-0000-0000-0000-000062ae4073/d508f2bc-e1ae-4432-91f6-6bd41ba3f16e"
       (reference "R90") (unit 1) (value "0") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
+    (path "/00000000-0000-0000-0000-00006096f497/1e909073-d045-48f7-9734-4a84b596bb12"
+      (reference "R91") (unit 1) (value "330") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060a08243"
       (reference "RTS1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
@@ -2702,9 +2704,6 @@
     )
     (path "/00000000-0000-0000-0000-00006096f497/00000000-0000-0000-0000-000060698d2d"
       (reference "TP8") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
-    )
-    (path "/00000000-0000-0000-0000-0000607fb7f8/00000000-0000-0000-0000-000061cab531"
-      (reference "TP9") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
     )
     (path "/00000000-0000-0000-0000-0000609a52e7/00000000-0000-0000-0000-000060cbd835"
       (reference "TP11") (unit 1) (value "BA_12V") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
