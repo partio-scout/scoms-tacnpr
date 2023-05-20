@@ -7,7 +7,7 @@
   (title_block
     (title "TACNPR")
     (date "2021-03-22")
-    (rev "A")
+    (rev "C")
   )
 
   (lib_symbols
@@ -725,7 +725,7 @@
   )
 
 
-  (text "SUBSHEETS (revB with onboard Ethernet):" (at 76.2 76.2 0)
+  (text "SUBSHEETS (revision C):" (at 76.2 76.2 0)
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 02165243-61a3-4857-84ba-71a77cb9a387)
   )

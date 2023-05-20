@@ -6,7 +6,7 @@
 
   (title_block
     (title "TACNPR (TACBUCKs)")
-    (rev "B")
+    (rev "C")
   )
 
   (lib_symbols
