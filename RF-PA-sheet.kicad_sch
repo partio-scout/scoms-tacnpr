@@ -1487,10 +1487,6 @@
     (effects (font (size 2.0066 2.0066) (thickness 0.4013) bold) (justify right bottom))
     (uuid 81a15393-727e-448b-a777-b18773023d89)
   )
-  (text "+: 5mm \ntuning tolerance" (at 77.47 135.89 0)
-    (effects (font (size 0.9906 0.9906)) (justify left bottom))
-    (uuid 8458d41c-5d62-455d-b6e1-9f718c0faac9)
-  )
   (text "pin\ndiode" (at 127 116.84 0)
     (effects (font (size 1.016 1.016) (thickness 0.2032) bold italic) (justify right bottom))
     (uuid 85b7594c-358f-454b-b2ad-dd0b1d67ed76)
@@ -3477,7 +3473,7 @@
     (property "Reference" "NT2" (at 76.0476 127.1016 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "4,5mm+" (at 76.0476 129.413 90)
+    (property "Value" "2,5mm" (at 76.0476 129.413 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 74.93 128.27 0)
@@ -3489,8 +3485,8 @@
     (property "DNP" "TRUE" (at 74.93 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid da2c7f1b-534d-43a3-9d84-159b4aaa41f5))
-    (pin "2" (uuid f8ce6c6b-3ccb-47b4-ae18-49cabe079ae3))
+    (pin "1" (uuid 33767411-6561-4328-94ff-8d64eab4b3a8))
+    (pin "2" (uuid 84267276-0d17-4a15-9fe3-2c7d0c3d45a0))
     (instances
       (project "TACNPR"
         (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-000060604cf2"
