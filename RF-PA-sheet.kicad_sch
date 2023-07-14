@@ -2739,7 +2739,7 @@
     (property "Value" "PSA4-5043 (SPF5043Z)" (at 191.77 128.9304 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-343_SC-70-4_Handsoldering" (at 191.77 121.92 0)
+    (property "Footprint" "NPR:SOT-343_SC-70-4-widepad_Handsoldering" (at 191.77 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://datasheet.lcsc.com/lcsc/1912181407_Qorvo-SPF5043Z_C470902.pdf" (at 191.77 121.92 0)
