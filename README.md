@@ -12,4 +12,13 @@ www.tapr.org/OHL
 
 Please note that you need to be licensed HAM radio operator to use this radio.
 
+### Modifications for revA and revB to optimize RF performance
+
+(these modifications are included in revC)
+
+* C65 and C102: replace by 6p8
+* C100: replace by 8p2
+
+The tuning stub should be shorted according to the latest revC layout.
+
 /1/: NPR by Guillaume F4HDK (2018-): https://hackaday.io/project/164092-npr-new-packet-radio 
