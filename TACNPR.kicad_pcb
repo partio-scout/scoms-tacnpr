@@ -649,9 +649,9 @@
       (net 30 "Net-(D5-K)") (pintype "passive") (tstamp bae5a6a4-3699-415f-b29a-39ae946f398f))
     (pad "2" smd rect (at 2.725 0) (size 2.95 3.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 32 "Net-(U1-VIN)") (pintype "passive") (tstamp df061186-527d-43e1-bdec-8bf66802d80f))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP7028A_7.3x6.6mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD.3dshapes/L_Bourns_SRR1260.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.6 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
@@ -1381,9 +1381,9 @@
       (net 26 "Net-(D1-K)") (pintype "passive") (tstamp 385a10eb-0c10-4ed2-ac1c-b815d43d0c49))
     (pad "2" smd rect (at 2.725 0) (size 2.95 3.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 18 "12V_BUCK_A_OUT") (pintype "passive") (tstamp 1e5e9787-2a48-4463-a79b-7a5d1f1700f4))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP7028A_7.3x6.6mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD.3dshapes/L_Bourns_SRR1260.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
@@ -2079,9 +2079,9 @@
       (net 49 "Net-(D3-K)") (pintype "passive") (tstamp 8788d993-8cab-4684-846a-fb37bcfa7036))
     (pad "2" smd rect (at 2.725 0 270) (size 2.95 3.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 25 "3V8_OUT") (pintype "passive") (tstamp 3bb9d5f1-ab12-450e-b178-7b812d444291))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP7028A_7.3x6.6mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD.3dshapes/L_Bourns_SRR1260.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
@@ -3950,9 +3950,9 @@
       (net 35 "Net-(D2-K)") (pintype "passive") (tstamp 8a30ba53-18fc-47fc-9438-e24315f1f0eb))
     (pad "2" smd rect (at 2.725 0) (size 2.95 3.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 19 "12V_BUCK_B_OUT") (pintype "passive") (tstamp 00d9357e-d3ae-4eba-8217-d70db8dfb052))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP7028A_7.3x6.6mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD.3dshapes/L_Bourns_SRR1260.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
@@ -5267,9 +5267,9 @@
       (net 1 "GND") (pinfunction "Ext") (pintype "passive") (tstamp 985bed17-531a-4dba-bbe8-ba7a210bb465))
     (pad "2" thru_hole circle (at 2.54 2.54 90) (size 2.25 2.25) (drill 1.7) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Ext") (pintype "passive") (tstamp 179d261f-20d9-4c49-a6b6-94a9c367920f))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_Coaxial.3dshapes/SMA_Amphenol_132134_Vertical.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Connector_Coaxial.3dshapes/SMA_Amphenol_132291_Vertical.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 1 1 0.7))
       (rotate (xyz 0 0 0))
     )
   )
@@ -5527,9 +5527,9 @@
       (net 28 "12V_TO_RFPA") (pinfunction "1") (pintype "passive") (tstamp 1c6f45cf-d2a8-4fba-9dc4-7e0c8743fb36))
     (pad "2" smd rect (at 2.725 0 180) (size 2.95 3.5) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 96 "12V_PA_SUPPLY_FILTERED") (pinfunction "2") (pintype "passive") (tstamp acb3c692-024e-4f9a-a52d-2ac92a4076cd))
-    (model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRP7028A_7.3x6.6mm.wrl"
+    (model ":KICAD7_3DMODEL_DIR:Inductor_SMD.3dshapes/L_Bourns_SRR1260.step"
       (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
+      (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
   )
@@ -5930,6 +5930,11 @@
     (pad "21" thru_hole circle (at 1.05 1.05 270) (size 0.5 0.5) (drill 0.2) (layers "*.Cu")
       (net 1 "GND") (pinfunction "GND") (pintype "power_in") (tstamp bf3edbed-7e5e-41bd-bb39-0387a4c7e294))
     (model "${KICAD6_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Package_DFN_QFN.3dshapes/QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -12337,7 +12342,7 @@
       (net 24 "12V_TO_BUCKC") (pinfunction "K") (pintype "passive") (tstamp 63f0f727-08ca-4b68-897d-6e38b82f4a8d))
     (pad "2" smd roundrect (at 3.4 0 180) (size 3.3 2.5) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1)
       (net 1 "GND") (pinfunction "A") (pintype "passive") (tstamp e69a04f9-fabf-4252-a971-58cefb4248d2))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMC.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -13779,6 +13784,11 @@
       (net 30 "Net-(D5-K)") (pintype "passive") (tstamp 985a32c5-5ed2-4c0f-b27f-4071ad309559))
     (pad "2" thru_hole circle (at 22.86 0 90) (size 2.35 2.35) (drill 1.35) (layers "*.Cu" "*.Mask")
       (net 30 "Net-(D5-K)") (pintype "passive") (tstamp 0db99407-0fa0-4c7f-a127-5a742252ed68))
+    (model ":KICAD7_3DMODEL_DIR:Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open.step"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 0.7 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (footprint "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal" (layer "F.Cu")
@@ -13876,6 +13886,11 @@
     (pad "6" thru_hole oval (at 3.5 1.3) (size 0.89 1.55) (drill oval 0.5 1.15) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Shield") (pintype "passive") (tstamp e0195049-eddc-4476-a380-6ad65233b2a6))
     (model "${KICAD6_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Amphenol_10118194_Horizontal.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ":KICAD7_3DMODEL_DIR:Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -13999,7 +14014,7 @@
       (net 58 "Net-(D7-K)") (pinfunction "K") (pintype "passive") (tstamp 80feba79-417f-4736-b168-975a33ce20f6))
     (pad "2" smd roundrect (at 2.15 0) (size 2.5 2.3) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1086956522)
       (net 1 "GND") (pinfunction "A") (pintype "passive") (tstamp 48ab640f-b07d-41e3-aedc-ba515d47d24e))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMB.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -15828,6 +15843,11 @@
       (net 1 "GND") (pinfunction "Shell") (pintype "input") (tstamp dd8e9d6e-d31a-4940-89b8-43a117e3991b))
     (pad "14" thru_hole circle (at -7.745 3.05 180) (size 2 2) (drill 1.65) (layers "*.Cu" "*.Mask" "F.SilkS")
       (net 1 "GND") (pinfunction "Shell") (pintype "input") (tstamp e0b51d12-b495-4ced-a15d-e6e4a4e4ab4e))
+    (model "${KIPRJMOD}/HR911105A.STEP"
+      (offset (xyz 8 10.5 13.5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -180))
+    )
   )
 
   (footprint "Capacitor_SMD:C_0603_1608Metric" (layer "F.Cu")
