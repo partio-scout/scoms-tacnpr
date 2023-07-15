@@ -3476,7 +3476,7 @@
     (property "Value" "2,5mm" (at 76.0476 129.413 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "NetTie:NetTie-2_SMD_Pad0.5mm" (at 74.93 128.27 0)
+    (property "Footprint" "NPR:NetTie-2_longer_SMD_Pad0.5mm" (at 74.93 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 74.93 128.27 0)
