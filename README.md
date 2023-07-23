@@ -1,6 +1,6 @@
 # TACNPR project 'Neppari'
 
-NPR (New Packet Radio protocol) compatible Ethernet-connected radio w/ integrated RF PA. Revision B with integrated Ethernet.
+NPR (New Packet Radio protocol) compatible Ethernet-connected radio w/ integrated RF PA. Revision B brought integrated Ethernet and revision C some RF performance enhancements (see modifications guidance for revA & revB below).
 TACNPR is binary-compatible with the original design /1/ by Guillaume F4HDK.
 
 Designed by Lasse OH3HZB & Tatu OH2EAT & Scoms team (special thanks to Mikko OH2FLO, Vili OH5GE and Tommi OH1GJV (TACBUCK design))
