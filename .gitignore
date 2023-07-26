@@ -2,6 +2,7 @@
 *.bck
 *.kicad_pcb-bak
 *.sch-bak
+*.sch
 *-cache.lib
 fp-info-cache
 *.net
