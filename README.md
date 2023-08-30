@@ -23,4 +23,8 @@ Please note that you need to be licensed HAM radio operator to use this radio.
 
 The tuning stub should be shorted according to the latest revC layout.
 
+### Recommended TX power setting for maximum power with this PA module
+
+set RF_power 55
+
 /1/: NPR by Guillaume F4HDK (2018-): https://hackaday.io/project/164092-npr-new-packet-radio 
