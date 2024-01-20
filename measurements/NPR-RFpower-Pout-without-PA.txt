@@ -1,0 +1,13 @@
+RF power output (measured from power amplifier input without PA module installed) 
+corresponding to different RF_power setting values.
+
+RF_power
+
+4	-3 dBm
+8	3.3 dBm
+16	9.17 dBm
+32	15.33 dBm
+48	18.5 dBm	
+64	20.17 dBm
+96	21.17 dBm
+127	21.33 dBm
