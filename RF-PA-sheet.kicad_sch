@@ -6,7 +6,7 @@
 
   (title_block
     (title "TACNPR (RF PA & LNA)")
-    (rev "C")
+    (rev "D")
   )
 
   (lib_symbols

@@ -6,7 +6,7 @@
 
   (title_block
     (title "TACNPR (linear regulators)")
-    (rev "C")
+    (rev "D")
   )
 
   (lib_symbols
