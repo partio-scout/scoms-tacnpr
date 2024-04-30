@@ -762,6 +762,11 @@
     (effects (font (size 5.0038 5.0038) (thickness 1.0008) bold) (justify left bottom))
     (uuid 9ff4672a-e1a4-4a1e-887d-1b9a3429d278)
   )
+  (text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector"
+    (at 199.39 77.47 0)
+    (effects (font (size 2.0038 2.0038) (thickness 0.4008) bold) (justify left bottom))
+    (uuid b7ddc24d-18a4-45d9-987d-b903562de2a5)
+  )
   (text "TACNPR project\n" (at 83.82 44.45 0)
     (effects (font (size 10.0076 10.0076) (thickness 2.0015) bold) (justify left bottom))
     (uuid bbb15673-6d42-42b8-9d51-7515b3ad9ee9)
