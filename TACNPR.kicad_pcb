@@ -71474,7 +71474,7 @@
 		(uuid "c3d61854-049f-4374-898f-b1c15e5cfa98")
 		(at 116.345 116.1062 180)
 		(property "Reference" "J10"
-			(at 4.2294 -2.461 180)
+			(at 4.1786 -1.7498 180)
 			(layer "F.SilkS")
 			(uuid "37959539-e291-4a8a-a925-820bc7becfb5")
 			(effects
@@ -71878,7 +71878,6 @@
 			(uuid "3c88864b-57cc-4c4b-a435-372bb54d647a")
 		)
 		(model "${KIPRJMOD}/NPR.pretty/45A-VERT-PAIR.wrl"
-			(hide yes)
 			(offset
 				(xyz 3.5 2.5 4)
 			)
