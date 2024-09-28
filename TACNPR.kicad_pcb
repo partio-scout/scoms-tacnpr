@@ -35131,7 +35131,7 @@
 		(descr "Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm^2 drill 1.3mm pad 2.6mm")
 		(property "Reference" "J1"
-			(at 8.89 3.0988 90)
+			(at 9.2056 2.794 0)
 			(layer "F.SilkS")
 			(uuid "1ee7444b-f95e-437b-a442-47146d0f7e64")
 			(effects
@@ -71474,7 +71474,7 @@
 		(uuid "c3d61854-049f-4374-898f-b1c15e5cfa98")
 		(at 116.345 116.1062 180)
 		(property "Reference" "J10"
-			(at 14.7958 -14.145 90)
+			(at 4.2294 -2.461 180)
 			(layer "F.SilkS")
 			(uuid "37959539-e291-4a8a-a925-820bc7becfb5")
 			(effects
@@ -73925,8 +73925,8 @@
 		(uuid "6d399eb0-5f7f-4372-9326-c7f53ca44525")
 	)
 	(gr_circle
-		(center 118.3132 126.917641)
-		(end 119.456795 126.219141)
+		(center 119.0752 126.875385)
+		(end 119.9896 126.488226)
 		(stroke
 			(width 0.2)
 			(type solid)
@@ -75200,7 +75200,7 @@
 		)
 	)
 	(gr_text "-"
-		(at 118.3132 126.917641 0)
+		(at 119.0752 126.777559 0)
 		(layer "F.SilkS")
 		(uuid "5068b2a7-2e03-4cd6-af64-7072f1312e41")
 		(effects
@@ -75278,7 +75278,7 @@
 		)
 	)
 	(gr_text "Vin: +12...28VDC"
-		(at 122.4788 126.492 90)
+		(at 103.5812 125.222 90)
 		(layer "F.SilkS")
 		(uuid "72c289fa-f3ff-421f-b058-bd05982cfdcb")
 		(effects
