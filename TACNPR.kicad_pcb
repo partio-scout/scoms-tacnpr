@@ -88288,14 +88288,6 @@
 		(uuid "cb0db401-9a13-404e-8b34-bb2daf2f4b0b")
 	)
 	(via
-		(at 114.427 126.873)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net 1)
-		(uuid "ce3b887c-1901-43f0-ba19-8e4166247e9d")
-	)
-	(via
 		(at 128.27 38.9128)
 		(size 0.8)
 		(drill 0.4)
