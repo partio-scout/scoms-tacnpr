@@ -11488,7 +11488,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 63.5 144.78 0)
 			(effects
 				(font
@@ -11515,7 +11515,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72043"
+		(property "LCSC" "C2297"
 			(at 63.5 144.78 0)
 			(effects
 				(font
@@ -12069,7 +12069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 203.2 73.66 0)
 			(effects
 				(font
@@ -12096,7 +12096,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72043"
+		(property "LCSC" "C2297"
 			(at 203.2 73.66 0)
 			(effects
 				(font
@@ -12210,7 +12210,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
 			(at 254 73.66 0)
 			(effects
 				(font
@@ -12237,7 +12237,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C72043"
+		(property "LCSC" "C2297"
 			(at 254 73.66 0)
 			(effects
 				(font
