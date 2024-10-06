@@ -3950,6 +3950,18 @@
 		)
 		(uuid "fead07ab-5a70-40db-ada8-c72dcc827bfc")
 	)
+	(text "33k"
+		(exclude_from_sim no)
+		(at 139.7 49.784 90)
+		(effects
+			(font
+				(size 1.5038 1.5038)
+				(thickness 1.0008)
+				(bold yes)
+			)
+		)
+		(uuid "1dd32816-117f-4ce5-9a27-a2283d158652")
+	)
 	(text "UVLO \napprox. 5V"
 		(exclude_from_sim no)
 		(at 137.16 132.08 0)
@@ -3989,6 +4001,18 @@
 		)
 		(uuid "44b926bf-8bdd-4191-846d-2dfabab2cecb")
 	)
+	(text "330k"
+		(exclude_from_sim no)
+		(at 141.224 89.408 90)
+		(effects
+			(font
+				(size 1.538 1.538)
+				(thickness 1.0008)
+				(bold yes)
+			)
+		)
+		(uuid "584cfb73-ffc9-4b5f-86f9-4b12951ac8cc")
+	)
 	(text "IN -> 12V:"
 		(exclude_from_sim no)
 		(at 68.58 25.4 0)
@@ -4001,6 +4025,18 @@
 			(justify right bottom)
 		)
 		(uuid "6cb93665-0bcd-4104-8633-fffd1811eee0")
+	)
+	(text "33k"
+		(exclude_from_sim no)
+		(at 141.478 101.6 90)
+		(effects
+			(font
+				(size 1.5038 1.5038)
+				(thickness 1.0008)
+				(bold yes)
+			)
+		)
+		(uuid "7c8c4a68-c4f7-4a2d-bf1b-88444162712c")
 	)
 	(text "based on TACBUCK-A design by Tommi OH1GJV"
 		(exclude_from_sim no)
@@ -4015,6 +4051,18 @@
 			(justify left bottom)
 		)
 		(uuid "7d76d925-f900-42af-a03f-bb32d2381b09")
+	)
+	(text "330k"
+		(exclude_from_sim no)
+		(at 139.954 38.1 90)
+		(effects
+			(font
+				(size 1.538 1.538)
+				(thickness 1.0008)
+				(bold yes)
+			)
+		)
+		(uuid "ac34cd1a-84ae-447f-b42f-b97d27053cf9")
 	)
 	(global_label "12V_BUCK_A_OUT"
 		(shape input)
@@ -5384,7 +5432,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330k DNP"
+		(property "Value" "DNP"
 			(at 143.7386 37.973 0)
 			(effects
 				(font
@@ -5461,7 +5509,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k DNP"
+		(property "Value" "DNP"
 			(at 143.7386 49.53 0)
 			(effects
 				(font
@@ -7462,7 +7510,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "330k DNP"
+		(property "Value" "DNP"
 			(at 145.0086 90.043 0)
 			(effects
 				(font
@@ -7539,7 +7587,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33k DNP"
+		(property "Value" "DNP"
 			(at 145.0086 102.743 0)
 			(effects
 				(font
