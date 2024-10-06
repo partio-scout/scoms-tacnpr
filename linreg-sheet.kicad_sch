@@ -3567,6 +3567,15 @@
 				(hide yes)
 			)
 		)
+		(property "DNP" "true"
+			(at 81.28 172.72 0)
+			(effects
+				(font
+					(size 5.0038 5.0038)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bdd71beb-bd3a-4504-98ae-a4e9f100c281")
 		)
