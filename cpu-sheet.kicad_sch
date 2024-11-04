@@ -4113,6 +4113,12 @@
 		(uuid "56b53988-7c92-40d8-a754-683f4429d93e")
 	)
 	(junction
+		(at 246.38 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72c30462-ea42-4e2c-9bfc-c3bb200dbb76")
+	)
+	(junction
 		(at 130.81 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4273,16 +4279,6 @@
 			(type default)
 		)
 		(uuid "09321bf4-1ea1-49b5-b1f9-ac29d6606a74")
-	)
-	(wire
-		(pts
-			(xy 48.26 57.15) (xy 54.61 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0be6d64d-bd50-4f4b-b713-eebf2f3bdc06")
 	)
 	(wire
 		(pts
@@ -4766,6 +4762,16 @@
 	)
 	(wire
 		(pts
+			(xy 246.38 73.66) (xy 250.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c5ad385-24c6-4c41-8110-8fd10e0b3a35")
+	)
+	(wire
+		(pts
 			(xy 204.47 111.76) (xy 204.47 105.41)
 		)
 		(stroke
@@ -5026,7 +5032,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 73.66) (xy 250.19 73.66)
+			(xy 242.57 73.66) (xy 246.38 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5483,6 +5489,16 @@
 			(type default)
 		)
 		(uuid "ef3c2ca7-fcc8-4cff-8fc1-0c762aa25455")
+	)
+	(wire
+		(pts
+			(xy 53.34 57.15) (xy 54.61 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1076d97-6ad8-43e9-a490-b133cbe25f23")
 	)
 	(wire
 		(pts
@@ -12760,7 +12776,7 @@
 		(dnp no)
 		(uuid "01192dee-6c26-4748-8ab6-05eddaadfe5e")
 		(property "Reference" "R45"
-			(at 50.8 58.42 90)
+			(at 50.8 61.468 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12768,7 +12784,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 50.8 55.88 90)
+			(at 50.8 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12985,6 +13001,155 @@
 			(project "TACNPR"
 				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
 					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8975057-2e8d-4337-a0b1-7cf2b6e14f7a")
+		(property "Reference" "TP9"
+			(at 248.666 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONL"
+			(at 246.634 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 251.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd715579-1a1d-43b7-b479-8a97921d5084")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 57.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d83e5f23-cfb0-44f6-80a5-f32672dd4a4a")
+		(property "Reference" "R93"
+			(at 50.8 55.626 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 50.8 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b246a6a5-4a34-4268-bdf9-1b85ab889239")
+		)
+		(pin "2"
+			(uuid "104782e8-b4bf-45ff-9061-8a7d5c2d018f")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "R93")
 					(unit 1)
 				)
 			)
