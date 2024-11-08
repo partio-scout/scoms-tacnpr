@@ -1,1612 +1,3111 @@
-(kicad_sch (version 20230121) (generator eeschema)
-
-  (uuid 9538e4ed-27e6-4c37-b989-9859dc0d49e8)
-
-  (paper "A4")
-
-  (title_block
-    (title "TACNPR")
-    (date "2021-03-22")
-    (rev "C")
-  )
-
-  (lib_symbols
-    (symbol "Device:R_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (at 0.762 0.508 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "R_Small" (at 0.762 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "R resistor" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Resistor, small symbol" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "R_Small_0_1"
-        (rectangle (start -0.762 1.778) (end 0.762 -1.778)
-          (stroke (width 0.2032) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "R_Small_1_1"
-        (pin passive line (at 0 2.54 270) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -2.54 90) (length 0.762)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "Graphic:Logo_Open_Hardware_Large" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "#LOGO" (at 0 12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "Logo_Open_Hardware_Large" (at 0 -10.16 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "Logo" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Open Hardware logo, large" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "Logo_Open_Hardware_Large_1_1"
-        (polyline
-          (pts
-            (xy 6.731 -8.7122)
-            (xy 6.6294 -8.6614)
-            (xy 6.35 -8.4836)
-            (xy 5.9944 -8.255)
-            (xy 5.5372 -7.9502)
-            (xy 5.1054 -7.6454)
-            (xy 4.7498 -7.4168)
-            (xy 4.4958 -7.239)
-            (xy 4.3942 -7.1882)
-            (xy 4.318 -7.2136)
-            (xy 4.1148 -7.3152)
-            (xy 3.81 -7.4676)
-            (xy 3.6322 -7.5692)
-            (xy 3.3528 -7.6708)
-            (xy 3.2258 -7.6962)
-            (xy 3.2004 -7.6708)
-            (xy 3.0988 -7.4676)
-            (xy 2.9464 -7.0866)
-            (xy 2.7178 -6.604)
-            (xy 2.4892 -6.0452)
-            (xy 2.2352 -5.4356)
-            (xy 1.9558 -4.826)
-            (xy 1.7272 -4.2164)
-            (xy 1.4986 -3.683)
-            (xy 1.3208 -3.2512)
-            (xy 1.2192 -2.9464)
-            (xy 1.1684 -2.8194)
-            (xy 1.1938 -2.794)
-            (xy 1.3208 -2.667)
-            (xy 1.5748 -2.4892)
-            (xy 2.0828 -2.0574)
-            (xy 2.6162 -1.397)
-            (xy 2.921 -0.6604)
-            (xy 3.048 0.1524)
-            (xy 2.9464 0.9144)
-            (xy 2.6416 1.6256)
-            (xy 2.1336 2.286)
-            (xy 1.524 2.7686)
-            (xy 0.8128 3.0734)
-            (xy 0 3.175)
-            (xy -0.762 3.0988)
-            (xy -1.4986 2.794)
-            (xy -2.159 2.286)
-            (xy -2.4384 1.9812)
-            (xy -2.8194 1.3208)
-            (xy -3.048 0.6096)
-            (xy -3.0734 0.4318)
-            (xy -3.0226 -0.3556)
-            (xy -2.794 -1.0922)
-            (xy -2.3876 -1.7526)
-            (xy -1.8288 -2.3114)
-            (xy -1.7526 -2.3622)
-            (xy -1.4732 -2.5654)
-            (xy -1.2954 -2.6924)
-            (xy -1.1684 -2.8194)
-            (xy -2.159 -5.207)
-            (xy -2.3114 -5.588)
-            (xy -2.5908 -6.2484)
-            (xy -2.8194 -6.8072)
-            (xy -3.0226 -7.2644)
-            (xy -3.1496 -7.5692)
-            (xy -3.2258 -7.6708)
-            (xy -3.2258 -7.6962)
-            (xy -3.302 -7.6962)
-            (xy -3.4798 -7.6454)
-            (xy -3.8354 -7.4676)
-            (xy -4.0386 -7.366)
-            (xy -4.2926 -7.239)
-            (xy -4.4196 -7.1882)
-            (xy -4.5212 -7.239)
-            (xy -4.7498 -7.3914)
-            (xy -5.1054 -7.6454)
-            (xy -5.5372 -7.9248)
-            (xy -5.9436 -8.2042)
-            (xy -6.3246 -8.4582)
-            (xy -6.604 -8.636)
-            (xy -6.731 -8.7122)
-            (xy -6.7564 -8.7122)
-            (xy -6.858 -8.636)
-            (xy -7.0866 -8.4582)
-            (xy -7.4168 -8.1534)
-            (xy -7.874 -7.6962)
-            (xy -7.9502 -7.62)
-            (xy -8.3312 -7.239)
-            (xy -8.636 -6.9088)
-            (xy -8.8392 -6.6802)
-            (xy -8.9154 -6.5786)
-            (xy -8.9154 -6.5786)
-            (xy -8.8392 -6.4516)
-            (xy -8.6614 -6.1722)
-            (xy -8.4328 -5.7912)
-            (xy -8.128 -5.3594)
-            (xy -7.3152 -4.191)
-            (xy -7.7724 -3.0988)
-            (xy -7.8994 -2.7686)
-            (xy -8.0772 -2.3622)
-            (xy -8.2042 -2.0828)
-            (xy -8.255 -1.9558)
-            (xy -8.382 -1.905)
-            (xy -8.6614 -1.8542)
-            (xy -9.0932 -1.7526)
-            (xy -9.6266 -1.651)
-            (xy -10.1092 -1.5748)
-            (xy -10.541 -1.4732)
-            (xy -10.8712 -1.4224)
-            (xy -11.0236 -1.397)
-            (xy -11.049 -1.3716)
-            (xy -11.0744 -1.2954)
-            (xy -11.0998 -1.143)
-            (xy -11.0998 -0.889)
-            (xy -11.1252 -0.4572)
-            (xy -11.1252 0.1524)
-            (xy -11.1252 0.2286)
-            (xy -11.0998 0.8128)
-            (xy -11.0998 1.27)
-            (xy -11.0744 1.5494)
-            (xy -11.0744 1.6764)
-            (xy -11.0744 1.6764)
-            (xy -10.922 1.7018)
-            (xy -10.6172 1.778)
-            (xy -10.16 1.8542)
-            (xy -9.652 1.9558)
-            (xy -9.6012 1.9812)
-            (xy -9.0932 2.0828)
-            (xy -8.636 2.159)
-            (xy -8.3312 2.2352)
-            (xy -8.2042 2.286)
-            (xy -8.1788 2.3114)
-            (xy -8.0772 2.5146)
-            (xy -7.9248 2.8448)
-            (xy -7.747 3.2512)
-            (xy -7.5692 3.6576)
-            (xy -7.4168 4.0386)
-            (xy -7.3152 4.318)
-            (xy -7.2898 4.445)
-            (xy -7.2898 4.445)
-            (xy -7.366 4.572)
-            (xy -7.5438 4.826)
-            (xy -7.7978 5.207)
-            (xy -8.128 5.6642)
-            (xy -8.128 5.6896)
-            (xy -8.4328 6.1468)
-            (xy -8.6868 6.5278)
-            (xy -8.8392 6.7818)
-            (xy -8.9154 6.9088)
-            (xy -8.9154 6.9088)
-            (xy -8.8138 7.0358)
-            (xy -8.5852 7.2898)
-            (xy -8.255 7.6454)
-            (xy -7.874 8.0264)
-            (xy -7.747 8.1534)
-            (xy -7.3152 8.5852)
-            (xy -7.0104 8.8646)
-            (xy -6.8326 8.9916)
-            (xy -6.731 9.0424)
-            (xy -6.731 9.0424)
-            (xy -6.604 8.9408)
-            (xy -6.3246 8.763)
-            (xy -5.9436 8.509)
-            (xy -5.4864 8.2042)
-            (xy -5.461 8.1788)
-            (xy -5.0038 7.874)
-            (xy -4.6482 7.62)
-            (xy -4.3688 7.4422)
-            (xy -4.2672 7.3914)
-            (xy -4.2418 7.3914)
-            (xy -4.064 7.4422)
-            (xy -3.7338 7.5438)
-            (xy -3.3528 7.6962)
-            (xy -2.9464 7.874)
-            (xy -2.5654 8.0264)
-            (xy -2.286 8.1534)
-            (xy -2.159 8.2296)
-            (xy -2.159 8.2296)
-            (xy -2.1082 8.382)
-            (xy -2.032 8.7122)
-            (xy -1.9304 9.1694)
-            (xy -1.8288 9.7282)
-            (xy -1.8034 9.8044)
-            (xy -1.7018 10.3378)
-            (xy -1.6256 10.7696)
-            (xy -1.5748 11.0744)
-            (xy -1.524 11.2014)
-            (xy -1.4478 11.2268)
-            (xy -1.1938 11.2522)
-            (xy -0.8128 11.2522)
-            (xy -0.3302 11.2522)
-            (xy 0.1524 11.2522)
-            (xy 0.6604 11.2522)
-            (xy 1.0668 11.2268)
-            (xy 1.3716 11.2014)
-            (xy 1.4986 11.176)
-            (xy 1.4986 11.176)
-            (xy 1.5494 11.0236)
-            (xy 1.6256 10.6934)
-            (xy 1.7018 10.2108)
-            (xy 1.8288 9.6774)
-            (xy 1.8288 9.5758)
-            (xy 1.9304 9.0424)
-            (xy 2.032 8.6106)
-            (xy 2.0828 8.3058)
-            (xy 2.1336 8.2042)
-            (xy 2.159 8.1788)
-            (xy 2.3876 8.0772)
-            (xy 2.7432 7.9248)
-            (xy 3.175 7.747)
-            (xy 4.191 7.3406)
-            (xy 5.461 8.2042)
-            (xy 5.5626 8.2804)
-            (xy 6.0198 8.5852)
-            (xy 6.3754 8.8392)
-            (xy 6.6294 8.9916)
-            (xy 6.7564 9.0424)
-            (xy 6.7564 9.0424)
-            (xy 6.8834 8.9408)
-            (xy 7.1374 8.7122)
-            (xy 7.4676 8.382)
-            (xy 7.8486 7.9756)
-            (xy 8.1534 7.6962)
-            (xy 8.4836 7.3406)
-            (xy 8.7122 7.112)
-            (xy 8.8392 6.9596)
-            (xy 8.8646 6.858)
-            (xy 8.8646 6.8072)
-            (xy 8.7884 6.6802)
-            (xy 8.6106 6.4008)
-            (xy 8.3312 6.0198)
-            (xy 8.0264 5.588)
-            (xy 7.7978 5.207)
-            (xy 7.5184 4.8006)
-            (xy 7.3406 4.4958)
-            (xy 7.2898 4.3434)
-            (xy 7.2898 4.2926)
-            (xy 7.3914 4.0386)
-            (xy 7.5184 3.683)
-            (xy 7.7216 3.2258)
-            (xy 8.1534 2.2352)
-            (xy 8.7884 2.1082)
-            (xy 9.1948 2.0574)
-            (xy 9.7536 1.9304)
-            (xy 10.2616 1.8288)
-            (xy 11.0998 1.6764)
-            (xy 11.1252 -1.3208)
-            (xy 10.9982 -1.3716)
-            (xy 10.8712 -1.397)
-            (xy 10.5664 -1.4732)
-            (xy 10.1346 -1.5494)
-            (xy 9.6266 -1.651)
-            (xy 9.1948 -1.7272)
-            (xy 8.7376 -1.8288)
-            (xy 8.4328 -1.8796)
-            (xy 8.2804 -1.905)
-            (xy 8.255 -1.9558)
-            (xy 8.1534 -2.159)
-            (xy 7.9756 -2.5146)
-            (xy 7.8232 -2.921)
-            (xy 7.6454 -3.3274)
-            (xy 7.493 -3.7338)
-            (xy 7.366 -4.0132)
-            (xy 7.3406 -4.191)
-            (xy 7.3914 -4.2926)
-            (xy 7.5692 -4.5466)
-            (xy 7.7978 -4.9276)
-            (xy 8.1026 -5.3594)
-            (xy 8.4074 -5.7912)
-            (xy 8.6614 -6.1722)
-            (xy 8.8138 -6.4262)
-            (xy 8.89 -6.5532)
-            (xy 8.8646 -6.6548)
-            (xy 8.6868 -6.858)
-            (xy 8.3566 -7.1882)
-            (xy 7.874 -7.6708)
-            (xy 7.7978 -7.747)
-            (xy 7.3914 -8.128)
-            (xy 7.0612 -8.4328)
-            (xy 6.8326 -8.636)
-            (xy 6.731 -8.7122)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-      )
-    )
-    (symbol "Graphic:SYM_ESD_Small" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "#SYM" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "SYM_ESD_Small" (at 0 -3.175 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 0.254 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0.254 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "symbol ESD" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "ESD warning/\"Do not touch\" symbol, small" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SYM_ESD_Small_0_0"
-        (polyline
-          (pts
-            (xy -1.27 0.381)
-            (xy 2.159 -1.016)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.667 -1.905)
-            (xy 2.794 -1.905)
-            (xy 0 2.54)
-            (xy -2.667 -1.905)
-          )
-          (stroke (width 0.254) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.7432 -1.905)
-            (xy 2.7178 -1.8796)
-            (xy 2.6162 -1.6764)
-            (xy 2.5654 -1.6002)
-            (xy 2.4892 -1.4986)
-            (xy 2.4384 -1.3716)
-            (xy 1.7526 -0.2286)
-            (xy 1.7018 -0.127)
-            (xy 1.6256 -0.0508)
-            (xy 1.6002 0.0508)
-            (xy 1.5494 0.1016)
-            (xy 1.4986 0.2032)
-            (xy 1.4732 0.2286)
-            (xy 1.4732 0.2032)
-            (xy 1.4478 0.2032)
-            (xy 1.3208 0.0762)
-            (xy 1.2954 0.0254)
-            (xy 1.2954 -0.0254)
-            (xy 1.27 -0.0762)
-            (xy 1.2446 -0.1524)
-            (xy 1.143 -0.254)
-            (xy 1.0922 -0.3302)
-            (xy 1.0414 -0.3556)
-            (xy 0.9144 -0.4826)
-            (xy 0.762 -0.5842)
-            (xy 0.6604 -0.6604)
-            (xy 0.508 -0.762)
-            (xy 0.4572 -0.8128)
-            (xy 0.3556 -0.8636)
-            (xy 0.3048 -0.9144)
-            (xy 0.2286 -0.9652)
-            (xy 0.0762 -1.1938)
-            (xy 0.0254 -1.2954)
-            (xy -0.0254 -1.4224)
-            (xy -0.0508 -1.4986)
-            (xy -0.1016 -1.5748)
-            (xy -0.127 -1.651)
-            (xy -0.1778 -1.6764)
-            (xy -0.2032 -1.7272)
-            (xy -0.254 -1.7526)
-            (xy -0.4064 -1.7526)
-            (xy -0.4064 -1.7272)
-            (xy -0.4572 -1.7018)
-            (xy -0.4826 -1.6256)
-            (xy -0.508 -1.524)
-            (xy -0.508 -1.0922)
-            (xy -0.4572 -0.889)
-            (xy -0.4064 -0.8128)
-            (xy -0.254 -0.6604)
-            (xy -0.2032 -0.5842)
-            (xy -0.127 -0.5334)
-            (xy -0.1016 -0.4826)
-            (xy -0.0762 -0.4064)
-            (xy -0.0508 -0.3556)
-            (xy -0.0254 -0.3302)
-            (xy -0.0254 -0.2794)
-            (xy 0 -0.2286)
-            (xy -0.0762 -0.1524)
-            (xy -0.127 -0.127)
-            (xy -0.1524 -0.0762)
-            (xy -0.2032 -0.0508)
-            (xy -0.2286 -0.0254)
-            (xy -0.254 -0.0254)
-            (xy -0.3048 -0.0762)
-            (xy -0.3556 -0.1016)
-            (xy -0.4318 -0.127)
-            (xy -0.4826 -0.1524)
-            (xy -0.5588 -0.2286)
-            (xy -0.6096 -0.254)
-            (xy -0.8382 -0.4826)
-            (xy -0.8128 -0.5588)
-            (xy -0.7874 -0.5842)
-            (xy -0.7874 -0.8636)
-            (xy -0.8128 -0.889)
-            (xy -0.8128 -0.9652)
-            (xy -0.762 -1.016)
-            (xy -0.762 -1.0414)
-            (xy -0.6604 -1.2954)
-            (xy -0.6604 -1.5748)
-            (xy -0.6858 -1.6002)
-            (xy -0.6858 -1.6256)
-            (xy -0.7366 -1.7018)
-            (xy -0.8382 -1.7526)
-            (xy -0.9144 -1.7526)
-            (xy -0.9398 -1.7272)
-            (xy -0.9652 -1.6764)
-            (xy -1.016 -1.6002)
-            (xy -1.0414 -1.524)
-            (xy -1.143 -1.27)
-            (xy -1.2192 -1.0414)
-            (xy -1.27 -0.9652)
-            (xy -1.2954 -0.889)
-            (xy -1.3208 -0.8382)
-            (xy -1.3208 -0.8128)
-            (xy -1.3716 -0.7112)
-            (xy -1.397 -0.5842)
-            (xy -1.397 -0.4826)
-            (xy -1.3716 -0.381)
-            (xy -1.3208 -0.254)
-            (xy -1.2954 -0.2032)
-            (xy -1.1938 -0.0508)
-            (xy -1.0414 0.1524)
-            (xy -0.9906 0.2032)
-            (xy -0.9652 0.254)
-            (xy -0.9144 0.3302)
-            (xy -0.889 0.381)
-            (xy -0.8636 0.381)
-            (xy -0.8128 0.508)
-            (xy -0.6096 0.7112)
-            (xy -0.5334 0.7366)
-            (xy -0.508 0.762)
-            (xy -0.4318 0.762)
-            (xy -0.3556 0.7874)
-            (xy -0.2286 0.8128)
-            (xy -0.1016 0.8128)
-            (xy 0.0508 0.8382)
-            (xy 0.2032 0.8382)
-            (xy 0.3048 0.8636)
-            (xy 0.4826 0.8636)
-            (xy 0.5334 0.889)
-            (xy 0.5842 0.889)
-            (xy 0.6858 0.9398)
-            (xy 0.7112 0.9652)
-            (xy 0.762 0.9906)
-            (xy 0.8128 1.0414)
-            (xy 0.8636 1.0668)
-            (xy 0.889 1.1176)
-            (xy 0.9144 1.143)
-            (xy 0.9144 1.1938)
-            (xy 0.889 1.2192)
-            (xy 0.8636 1.27)
-            (xy 0.8128 1.3462)
-            (xy 0.7112 1.5494)
-            (xy 0.635 1.651)
-            (xy 0.5842 1.7526)
-            (xy 0.508 1.8796)
-            (xy 0.4572 1.9558)
-            (xy 0.381 2.0828)
-            (xy 0.3048 2.1844)
-            (xy 0.254 2.286)
-            (xy 0.2032 2.3622)
-            (xy 0.1778 2.4384)
-            (xy 0.1016 2.5146)
-            (xy 0.1016 2.54)
-            (xy 0.0762 2.5654)
-            (xy 0.0762 2.5908)
-            (xy 0.0254 2.5908)
-            (xy 0.0254 2.5654)
-            (xy -0.0254 2.5146)
-            (xy -0.1016 2.3622)
-            (xy -0.254 2.1336)
-            (xy -0.3048 2.032)
-            (xy -0.4572 1.778)
-            (xy -0.5588 1.6256)
-            (xy -0.762 1.27)
-            (xy -0.889 1.0668)
-            (xy -1.016 0.8382)
-            (xy -1.1684 0.6096)
-            (xy -1.3208 0.3302)
-            (xy -1.397 0.2032)
-            (xy -1.524 -0.0254)
-            (xy -1.778 -0.4318)
-            (xy -1.8796 -0.635)
-            (xy -2.0066 -0.8128)
-            (xy -2.1082 -0.9906)
-            (xy -2.2098 -1.143)
-            (xy -2.286 -1.2954)
-            (xy -2.4384 -1.5494)
-            (xy -2.4892 -1.651)
-            (xy -2.5654 -1.7526)
-            (xy -2.5908 -1.8288)
-            (xy -2.6162 -1.8796)
-            (xy -2.6416 -1.905)
-            (xy -2.6416 -1.9304)
-            (xy 2.7432 -1.9304)
-            (xy 2.7432 -1.905)
-          )
-          (stroke (width 0.127) (type default))
-          (fill (type background))
-        )
-      )
-    )
-    (symbol "Graphic:SYM_Radio_Waves_Large" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "#SYM" (at 0 5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "SYM_Radio_Waves_Large" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Footprint" "" (at 0 -5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0.762 -5.08 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "symbol logo radio waves warning radiation" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Radio waves warning symbol, large" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "SYM_Radio_Waves_Large_0_1"
-        (arc (start -1.778 -0.254) (mid -2.0478 -1.27) (end -1.778 -2.286)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start -1.27 -0.508) (mid -1.4811 -1.27) (end -1.27 -2.032)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start -0.762 -0.762) (mid -0.9158 -1.27) (end -0.762 -1.778)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (circle (center 0 -1.27) (radius 0.508)
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (polyline
-          (pts
-            (xy -5.08 -5.08)
-            (xy 5.08 -5.08)
-            (xy 0 3.81)
-            (xy -5.08 -5.08)
-          )
-          (stroke (width 0.508) (type default))
-          (fill (type background))
-        )
-        (polyline
-          (pts
-            (xy -1.016 -4.572)
-            (xy 1.016 -4.572)
-            (xy 0 -1.27)
-            (xy -1.016 -4.572)
-          )
-          (stroke (width 0) (type default))
-          (fill (type outline))
-        )
-        (arc (start 0.762 -1.778) (mid 0.9158 -1.27) (end 0.762 -0.762)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 1.27 -2.032) (mid 1.4811 -1.27) (end 1.27 -0.508)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (arc (start 1.778 -2.286) (mid 2.0478 -1.27) (end 1.778 -0.254)
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-    )
-    (symbol "Mechanical:MountingHole_Pad" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "H" (at 0 6.35 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "MountingHole_Pad" (at 0 4.445 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "~" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "mounting hole" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Mounting Hole with connection" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "MountingHole*Pad*" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "MountingHole_Pad_0_1"
-        (circle (center 0 1.27) (radius 1.27)
-          (stroke (width 1.27) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "MountingHole_Pad_1_1"
-        (pin input line (at 0 -2.54 90) (length 2.54)
-          (name "1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-
-  (text "SUBSHEETS (revision C):" (at 76.2 76.2 0)
-    (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
-    (uuid 02165243-61a3-4857-84ba-71a77cb9a387)
-  )
-  (text "This HAM radio project is licensed under \nthe TAPR Open Hardware License \n(www.tapr.org/OHL)"
-    (at 68.58 180.34 0)
-    (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
-    (uuid 0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e)
-  )
-  (text "3V3 lin.reg.\n& terminals" (at 120.65 138.43 0)
-    (effects (font (size 3.4036 3.4036) (thickness 0.6807) bold) (justify left bottom))
-    (uuid 35354519-a28c-40c4-befd-0943e98dea53)
-  )
-  (text "W5500 \nEthernet" (at 167.64 138.43 0)
-    (effects (font (size 4 4) (thickness 0.6807) bold) (justify left bottom))
-    (uuid 54365317-1355-4216-bb75-829375abc4ec)
-  )
-  (text "Si4463 & \nRF switching" (at 119.38 105.41 0)
-    (effects (font (size 3.4036 3.4036) (thickness 0.6807) bold) (justify left bottom))
-    (uuid 646d9e91-59b4-4865-a2fc-29780ed32563)
-  )
-  (text "OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE" (at 184.15 179.07 0)
-    (effects (font (size 2.4638 2.4638) (thickness 0.4928) bold) (justify left bottom))
-    (uuid 75286985-9fa5-4d30-89c5-493b6e63cd66)
-  )
-  (text "MCU, SRAM, \nSERIAL" (at 72.39 106.68 0)
-    (effects (font (size 4.036 4.036) (thickness 0.6807) bold) (justify left bottom))
-    (uuid 825c70b0-4860-42b7-97dc-86bfa46e06fd)
-  )
-  (text "RF LNA \n& PA" (at 167.64 105.41 0)
-    (effects (font (size 4 4) (thickness 0.7976) bold) (justify left bottom))
-    (uuid 9d984d1b-8097-407f-92f3-3ef68867dcfa)
-  )
-  (text "TACNPR project" (at 182.88 173.99 0)
-    (effects (font (size 5.0038 5.0038) (thickness 1.0008) bold) (justify left bottom))
-    (uuid 9ff4672a-e1a4-4a1e-887d-1b9a3429d278)
-  )
-  (text "TACNPR project\n" (at 83.82 44.45 0)
-    (effects (font (size 10.0076 10.0076) (thickness 2.0015) bold) (justify left bottom))
-    (uuid bbb15673-6d42-42b8-9d51-7515b3ad9ee9)
-  )
-  (text "Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE"
-    (at 78.74 59.69 0)
-    (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
-    (uuid c201e1b2-fc01-4110-bdaa-a33290468c83)
-  )
-  (text "DC/DC\nconverters" (at 76.2 138.43 0)
-    (effects (font (size 4 4) (thickness 0.7976) bold) (justify left bottom))
-    (uuid e6521bef-4109-48f7-8b88-4121b0468927)
-  )
-
-  (symbol (lib_id "Graphic:Logo_Open_Hardware_Large") (at 53.34 173.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006067be98)
-    (property "Reference" "#LOGO1" (at 53.34 161.29 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "Logo_Open_Hardware_Large" (at 53.34 184.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 53.34 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 53.34 173.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#LOGO1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_Radio_Waves_Large") (at 275.59 172.72 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006067e54c)
-    (property "Reference" "#SYM2" (at 275.59 167.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "SYM_Radio_Waves_Large" (at 275.59 179.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 275.59 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 276.352 177.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#SYM2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 246.38 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cee86)
-    (property "Reference" "H3" (at 248.92 105.5116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 248.92 107.823 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 246.38 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 246.38 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 246.38 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9f039fb6-5ce0-4870-aee6-8e0a9fe6ee25))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H3") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 229.87 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cefe0)
-    (property "Reference" "H5" (at 232.41 124.5616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 232.41 126.873 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 229.87 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 229.87 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 229.87 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f6d5ca88-7063-4c5c-8e9a-2b458008f0a4))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 246.38 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cf1c5)
-    (property "Reference" "H7" (at 248.92 124.5616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 248.92 126.873 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 246.38 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 246.38 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 246.38 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 11d1454e-2d3e-4816-9c55-e6e0e2714147))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H7") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 237.49 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cf8be)
-    (property "Reference" "H2" (at 240.03 105.5116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 240.03 107.823 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 237.49 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 237.49 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 237.49 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a10429c-d5b1-4432-9d05-15b34a78ff26))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 254 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cf948)
-    (property "Reference" "H4" (at 256.54 105.5116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 256.54 107.823 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 254 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 254 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 254 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 15989b27-1e1a-4651-8e64-dca48b96f1d2))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H4") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 237.49 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cf952)
-    (property "Reference" "H6" (at 240.03 124.5616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 240.03 126.873 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 237.49 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 237.49 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 237.49 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 899dffee-5f47-4f6e-a8c2-03d223789b4f))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H6") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 255.27 125.73 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000607cf95c)
-    (property "Reference" "H8" (at 257.81 124.5616 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 257.81 126.873 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 255.27 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 255.27 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 255.27 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3787faf0-33c9-478b-bb05-7fbc61092459))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H8") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Graphic:SYM_ESD_Small") (at 271.78 130.81 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000608032af)
-    (property "Reference" "#SYM1" (at 271.78 127.254 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "SYM_ESD_Small" (at 271.78 133.985 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "Symbol:ESD-Logo_8.9x8mm_SilkScreen" (at 271.78 130.556 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 271.78 130.556 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#SYM1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole_Pad") (at 229.87 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006087e1a0)
-    (property "Reference" "H1" (at 232.41 105.5116 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MH" (at 232.41 107.823 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom" (at 229.87 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 229.87 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "DNP" "TRUE" (at 229.87 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d3a85980-4f7f-4333-8fb9-5677e22b549e))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 229.87 111.76 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000062389c69)
-    (property "Reference" "R50" (at 232.41 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 234.95 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 229.87 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 229.87 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 229.87 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9aa11459-7b35-4694-aeb2-72e202b23d00))
-    (pin "2" (uuid fed4f01d-8379-41e5-bacd-6a06ba38a6fe))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R50") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 229.87 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006238a22a)
-    (property "Reference" "#PWR0194" (at 229.87 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 229.997 118.6942 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 229.87 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 229.87 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 5f406c10-3d8f-4523-83b9-c4c17247863b))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0194") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 237.49 111.76 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006238c952)
-    (property "Reference" "R62" (at 240.03 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 242.57 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 237.49 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 237.49 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 237.49 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 50b5c8e6-9bbf-44af-a3cd-534457561b24))
-    (pin "2" (uuid ebdf56c8-0f30-4d93-bf26-8529128adccd))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R62") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 237.49 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006238c9fa)
-    (property "Reference" "#PWR0195" (at 237.49 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 237.617 118.6942 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 237.49 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 237.49 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 1fb121bf-de2b-4f2e-8832-66a25629b62d))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0195") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 246.38 111.76 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000062393945)
-    (property "Reference" "R63" (at 248.92 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 251.46 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 246.38 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 246.38 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 246.38 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d187e8ec-c764-41aa-a96e-87e465e05d40))
-    (pin "2" (uuid 2110d59e-1f57-42ef-9de6-062277bdd2b1))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R63") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 246.38 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000062393a1d)
-    (property "Reference" "#PWR0196" (at 246.38 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 246.507 118.6942 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 246.38 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 246.38 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cd889081-467d-4e4e-b8ed-a0ae246558f9))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0196") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 254 111.76 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000062393a27)
-    (property "Reference" "R64" (at 256.54 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 259.08 110.49 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 254 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 254 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 254 111.76 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9c990a53-81f0-4057-8d11-068af2d39fa2))
-    (pin "2" (uuid 79655be7-2960-4357-8187-35a101f138c6))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R64") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 254 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-000062393a31)
-    (property "Reference" "#PWR0197" (at 254 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 254.127 118.6942 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 254 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 254 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 81396435-1b97-4a34-b09b-2b6920366dcf))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0197") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 229.87 130.81 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d5af)
-    (property "Reference" "R65" (at 232.41 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 234.95 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 229.87 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 229.87 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 229.87 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c224a212-c94a-428f-98af-64dd4e26a9f7))
-    (pin "2" (uuid 03ee58da-addd-46bd-9544-7f3ea5b7f2c9))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R65") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 229.87 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d6bf)
-    (property "Reference" "#PWR0198" (at 229.87 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 229.997 137.7442 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 229.87 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 229.87 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid f2400802-90eb-4862-867f-6d34263b84b8))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0198") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 237.49 130.81 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d6c9)
-    (property "Reference" "R66" (at 240.03 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 242.57 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 237.49 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 237.49 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 237.49 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8d1d6994-050d-4bda-be24-cbcdf2507918))
-    (pin "2" (uuid 5a17ae54-5dd6-4444-a4d1-d1f7ecb2b71c))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R66") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 237.49 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d6d3)
-    (property "Reference" "#PWR0199" (at 237.49 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 237.617 137.7442 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 237.49 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 237.49 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid dca42f48-721b-4636-8193-30af4339a58a))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0199") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 246.38 130.81 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d6dd)
-    (property "Reference" "R67" (at 248.92 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 251.46 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 246.38 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 246.38 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 246.38 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 40ca96b8-e7bb-4e8e-948f-8b3bd35ce3fa))
-    (pin "2" (uuid 3335e903-dcdc-4021-a41a-d8693918d2cd))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R67") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 246.38 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-00006239d6e7)
-    (property "Reference" "#PWR0200" (at 246.38 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 246.507 137.7442 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 246.38 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 246.38 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6497e30e-246a-436a-9640-b042ecdac395))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0200") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_Small") (at 255.27 130.81 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000624d1b0b)
-    (property "Reference" "R70" (at 257.81 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "0" (at 260.35 129.54 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 255.27 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 255.27 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "LCSC" "C17477" (at 255.27 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6dde20d9-9e4b-4d02-9cd8-36664b986508))
-    (pin "2" (uuid 1b483344-0912-4720-8deb-ed407459703e))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "R70") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GND") (at 255.27 133.35 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 00000000-0000-0000-0000-0000624d1f61)
-    (property "Reference" "#PWR0207" (at 255.27 139.7 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (at 255.397 137.7442 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 255.27 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 255.27 133.35 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 915db51f-7723-4d69-9c4b-2ff49dcea1fc))
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
-          (reference "#PWR0207") (unit 1)
-        )
-      )
-    )
-  )
-
-  (sheet (at 161.29 90.17) (size 36.83 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000060604cf2)
-    (property "Sheetname" "RF-PA" (at 161.29 89.0901 0)
-      (effects (font (size 2.0066 2.0066)) (justify left bottom))
-    )
-    (property "Sheetfile" "RF-PA-sheet.kicad_sch" (at 161.29 110.0992 0)
-      (effects (font (size 2.0066 2.0066)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "6"))
-      )
-    )
-  )
-
-  (sheet (at 116.84 90.17) (size 36.83 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-0000607946f5)
-    (property "Sheetname" "radio" (at 116.84 88.8996 0)
-      (effects (font (size 2.3876 2.3876)) (justify left bottom))
-    )
-    (property "Sheetfile" "radio-sheet.kicad_sch" (at 116.84 110.2516 0)
-      (effects (font (size 2.3876 2.3876)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "4"))
-      )
-    )
-  )
-
-  (sheet (at 118.11 123.19) (size 38.1 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-0000607fb7f8)
-    (property "Sheetname" "linear-regs" (at 118.11 121.9196 0)
-      (effects (font (size 2.3876 2.3876)) (justify left bottom))
-    )
-    (property "Sheetfile" "linreg-sheet.kicad_sch" (at 118.11 143.2716 0)
-      (effects (font (size 2.3876 2.3876)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "5"))
-      )
-    )
-  )
-
-  (sheet (at 71.12 90.17) (size 38.1 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-00006096f497)
-    (property "Sheetname" "cpu" (at 71.12 88.8996 0)
-      (effects (font (size 2.3876 2.3876)) (justify left bottom))
-    )
-    (property "Sheetfile" "cpu-sheet.kicad_sch" (at 71.12 110.2516 0)
-      (effects (font (size 2.3876 2.3876)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "2"))
-      )
-    )
-  )
-
-  (sheet (at 71.12 123.19) (size 38.1 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-0000609a52e7)
-    (property "Sheetname" "tacbucks" (at 71.12 121.9196 0)
-      (effects (font (size 2.3876 2.3876)) (justify left bottom))
-    )
-    (property "Sheetfile" "tacbuck-sheet.kicad_sch" (at 71.12 143.2716 0)
-      (effects (font (size 2.3876 2.3876)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "3"))
-      )
-    )
-  )
-
-  (sheet (at 163.83 123.19) (size 34.29 19.05) (fields_autoplaced)
-    (stroke (width 0) (type solid))
-    (fill (color 0 0 0 0.0000))
-    (uuid 00000000-0000-0000-0000-000062ae4073)
-    (property "Sheetname" "ethernet" (at 163.83 121.9196 0)
-      (effects (font (size 2.3876 2.3876)) (justify left bottom))
-    )
-    (property "Sheetfile" "ethernet-sheet.kicad_sch" (at 163.83 143.2716 0)
-      (effects (font (size 2.3876 2.3876)) (justify left top))
-    )
-    (instances
-      (project "TACNPR"
-        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "7"))
-      )
-    )
-  )
-
-  (sheet_instances
-    (path "/" (page "1"))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "9538e4ed-27e6-4c37-b989-9859dc0d49e8")
+	(paper "A4")
+	(title_block
+		(title "TACNPR")
+		(date "2021-03-22")
+		(rev "D")
+	)
+	(lib_symbols
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Graphic:Logo_Open_Hardware_Large"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#LOGO"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "Logo_Open_Hardware_Large"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Open Hardware logo, large"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Logo"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Logo_Open_Hardware_Large_1_1"
+				(polyline
+					(pts
+						(xy 6.731 -8.7122) (xy 6.6294 -8.6614) (xy 6.35 -8.4836) (xy 5.9944 -8.255) (xy 5.5372 -7.9502)
+						(xy 5.1054 -7.6454) (xy 4.7498 -7.4168) (xy 4.4958 -7.239) (xy 4.3942 -7.1882) (xy 4.318 -7.2136)
+						(xy 4.1148 -7.3152) (xy 3.81 -7.4676) (xy 3.6322 -7.5692) (xy 3.3528 -7.6708) (xy 3.2258 -7.6962)
+						(xy 3.2004 -7.6708) (xy 3.0988 -7.4676) (xy 2.9464 -7.0866) (xy 2.7178 -6.604) (xy 2.4892 -6.0452)
+						(xy 2.2352 -5.4356) (xy 1.9558 -4.826) (xy 1.7272 -4.2164) (xy 1.4986 -3.683) (xy 1.3208 -3.2512)
+						(xy 1.2192 -2.9464) (xy 1.1684 -2.8194) (xy 1.1938 -2.794) (xy 1.3208 -2.667) (xy 1.5748 -2.4892)
+						(xy 2.0828 -2.0574) (xy 2.6162 -1.397) (xy 2.921 -0.6604) (xy 3.048 0.1524) (xy 2.9464 0.9144)
+						(xy 2.6416 1.6256) (xy 2.1336 2.286) (xy 1.524 2.7686) (xy 0.8128 3.0734) (xy 0 3.175) (xy -0.762 3.0988)
+						(xy -1.4986 2.794) (xy -2.159 2.286) (xy -2.4384 1.9812) (xy -2.8194 1.3208) (xy -3.048 0.6096)
+						(xy -3.0734 0.4318) (xy -3.0226 -0.3556) (xy -2.794 -1.0922) (xy -2.3876 -1.7526) (xy -1.8288 -2.3114)
+						(xy -1.7526 -2.3622) (xy -1.4732 -2.5654) (xy -1.2954 -2.6924) (xy -1.1684 -2.8194) (xy -2.159 -5.207)
+						(xy -2.3114 -5.588) (xy -2.5908 -6.2484) (xy -2.8194 -6.8072) (xy -3.0226 -7.2644) (xy -3.1496 -7.5692)
+						(xy -3.2258 -7.6708) (xy -3.2258 -7.6962) (xy -3.302 -7.6962) (xy -3.4798 -7.6454) (xy -3.8354 -7.4676)
+						(xy -4.0386 -7.366) (xy -4.2926 -7.239) (xy -4.4196 -7.1882) (xy -4.5212 -7.239) (xy -4.7498 -7.3914)
+						(xy -5.1054 -7.6454) (xy -5.5372 -7.9248) (xy -5.9436 -8.2042) (xy -6.3246 -8.4582) (xy -6.604 -8.636)
+						(xy -6.731 -8.7122) (xy -6.7564 -8.7122) (xy -6.858 -8.636) (xy -7.0866 -8.4582) (xy -7.4168 -8.1534)
+						(xy -7.874 -7.6962) (xy -7.9502 -7.62) (xy -8.3312 -7.239) (xy -8.636 -6.9088) (xy -8.8392 -6.6802)
+						(xy -8.9154 -6.5786) (xy -8.9154 -6.5786) (xy -8.8392 -6.4516) (xy -8.6614 -6.1722) (xy -8.4328 -5.7912)
+						(xy -8.128 -5.3594) (xy -7.3152 -4.191) (xy -7.7724 -3.0988) (xy -7.8994 -2.7686) (xy -8.0772 -2.3622)
+						(xy -8.2042 -2.0828) (xy -8.255 -1.9558) (xy -8.382 -1.905) (xy -8.6614 -1.8542) (xy -9.0932 -1.7526)
+						(xy -9.6266 -1.651) (xy -10.1092 -1.5748) (xy -10.541 -1.4732) (xy -10.8712 -1.4224) (xy -11.0236 -1.397)
+						(xy -11.049 -1.3716) (xy -11.0744 -1.2954) (xy -11.0998 -1.143) (xy -11.0998 -0.889) (xy -11.1252 -0.4572)
+						(xy -11.1252 0.1524) (xy -11.1252 0.2286) (xy -11.0998 0.8128) (xy -11.0998 1.27) (xy -11.0744 1.5494)
+						(xy -11.0744 1.6764) (xy -11.0744 1.6764) (xy -10.922 1.7018) (xy -10.6172 1.778) (xy -10.16 1.8542)
+						(xy -9.652 1.9558) (xy -9.6012 1.9812) (xy -9.0932 2.0828) (xy -8.636 2.159) (xy -8.3312 2.2352)
+						(xy -8.2042 2.286) (xy -8.1788 2.3114) (xy -8.0772 2.5146) (xy -7.9248 2.8448) (xy -7.747 3.2512)
+						(xy -7.5692 3.6576) (xy -7.4168 4.0386) (xy -7.3152 4.318) (xy -7.2898 4.445) (xy -7.2898 4.445)
+						(xy -7.366 4.572) (xy -7.5438 4.826) (xy -7.7978 5.207) (xy -8.128 5.6642) (xy -8.128 5.6896)
+						(xy -8.4328 6.1468) (xy -8.6868 6.5278) (xy -8.8392 6.7818) (xy -8.9154 6.9088) (xy -8.9154 6.9088)
+						(xy -8.8138 7.0358) (xy -8.5852 7.2898) (xy -8.255 7.6454) (xy -7.874 8.0264) (xy -7.747 8.1534)
+						(xy -7.3152 8.5852) (xy -7.0104 8.8646) (xy -6.8326 8.9916) (xy -6.731 9.0424) (xy -6.731 9.0424)
+						(xy -6.604 8.9408) (xy -6.3246 8.763) (xy -5.9436 8.509) (xy -5.4864 8.2042) (xy -5.461 8.1788)
+						(xy -5.0038 7.874) (xy -4.6482 7.62) (xy -4.3688 7.4422) (xy -4.2672 7.3914) (xy -4.2418 7.3914)
+						(xy -4.064 7.4422) (xy -3.7338 7.5438) (xy -3.3528 7.6962) (xy -2.9464 7.874) (xy -2.5654 8.0264)
+						(xy -2.286 8.1534) (xy -2.159 8.2296) (xy -2.159 8.2296) (xy -2.1082 8.382) (xy -2.032 8.7122)
+						(xy -1.9304 9.1694) (xy -1.8288 9.7282) (xy -1.8034 9.8044) (xy -1.7018 10.3378) (xy -1.6256 10.7696)
+						(xy -1.5748 11.0744) (xy -1.524 11.2014) (xy -1.4478 11.2268) (xy -1.1938 11.2522) (xy -0.8128 11.2522)
+						(xy -0.3302 11.2522) (xy 0.1524 11.2522) (xy 0.6604 11.2522) (xy 1.0668 11.2268) (xy 1.3716 11.2014)
+						(xy 1.4986 11.176) (xy 1.4986 11.176) (xy 1.5494 11.0236) (xy 1.6256 10.6934) (xy 1.7018 10.2108)
+						(xy 1.8288 9.6774) (xy 1.8288 9.5758) (xy 1.9304 9.0424) (xy 2.032 8.6106) (xy 2.0828 8.3058)
+						(xy 2.1336 8.2042) (xy 2.159 8.1788) (xy 2.3876 8.0772) (xy 2.7432 7.9248) (xy 3.175 7.747) (xy 4.191 7.3406)
+						(xy 5.461 8.2042) (xy 5.5626 8.2804) (xy 6.0198 8.5852) (xy 6.3754 8.8392) (xy 6.6294 8.9916)
+						(xy 6.7564 9.0424) (xy 6.7564 9.0424) (xy 6.8834 8.9408) (xy 7.1374 8.7122) (xy 7.4676 8.382)
+						(xy 7.8486 7.9756) (xy 8.1534 7.6962) (xy 8.4836 7.3406) (xy 8.7122 7.112) (xy 8.8392 6.9596)
+						(xy 8.8646 6.858) (xy 8.8646 6.8072) (xy 8.7884 6.6802) (xy 8.6106 6.4008) (xy 8.3312 6.0198)
+						(xy 8.0264 5.588) (xy 7.7978 5.207) (xy 7.5184 4.8006) (xy 7.3406 4.4958) (xy 7.2898 4.3434) (xy 7.2898 4.2926)
+						(xy 7.3914 4.0386) (xy 7.5184 3.683) (xy 7.7216 3.2258) (xy 8.1534 2.2352) (xy 8.7884 2.1082)
+						(xy 9.1948 2.0574) (xy 9.7536 1.9304) (xy 10.2616 1.8288) (xy 11.0998 1.6764) (xy 11.1252 -1.3208)
+						(xy 10.9982 -1.3716) (xy 10.8712 -1.397) (xy 10.5664 -1.4732) (xy 10.1346 -1.5494) (xy 9.6266 -1.651)
+						(xy 9.1948 -1.7272) (xy 8.7376 -1.8288) (xy 8.4328 -1.8796) (xy 8.2804 -1.905) (xy 8.255 -1.9558)
+						(xy 8.1534 -2.159) (xy 7.9756 -2.5146) (xy 7.8232 -2.921) (xy 7.6454 -3.3274) (xy 7.493 -3.7338)
+						(xy 7.366 -4.0132) (xy 7.3406 -4.191) (xy 7.3914 -4.2926) (xy 7.5692 -4.5466) (xy 7.7978 -4.9276)
+						(xy 8.1026 -5.3594) (xy 8.4074 -5.7912) (xy 8.6614 -6.1722) (xy 8.8138 -6.4262) (xy 8.89 -6.5532)
+						(xy 8.8646 -6.6548) (xy 8.6868 -6.858) (xy 8.3566 -7.1882) (xy 7.874 -7.6708) (xy 7.7978 -7.747)
+						(xy 7.3914 -8.128) (xy 7.0612 -8.4328) (xy 6.8326 -8.636) (xy 6.731 -8.7122)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+		)
+		(symbol "Graphic:SYM_ESD_Small"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#SYM"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SYM_ESD_Small"
+				(at 0 -3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.254 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0.254 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "ESD warning/\"Do not touch\" symbol, small"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "symbol ESD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SYM_ESD_Small_0_0"
+				(polyline
+					(pts
+						(xy -1.27 0.381) (xy 2.159 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.667 -1.905) (xy 2.794 -1.905) (xy 0 2.54) (xy -2.667 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.7432 -1.905) (xy 2.7178 -1.8796) (xy 2.6162 -1.6764) (xy 2.5654 -1.6002) (xy 2.4892 -1.4986)
+						(xy 2.4384 -1.3716) (xy 1.7526 -0.2286) (xy 1.7018 -0.127) (xy 1.6256 -0.0508) (xy 1.6002 0.0508)
+						(xy 1.5494 0.1016) (xy 1.4986 0.2032) (xy 1.4732 0.2286) (xy 1.4732 0.2032) (xy 1.4478 0.2032)
+						(xy 1.3208 0.0762) (xy 1.2954 0.0254) (xy 1.2954 -0.0254) (xy 1.27 -0.0762) (xy 1.2446 -0.1524)
+						(xy 1.143 -0.254) (xy 1.0922 -0.3302) (xy 1.0414 -0.3556) (xy 0.9144 -0.4826) (xy 0.762 -0.5842)
+						(xy 0.6604 -0.6604) (xy 0.508 -0.762) (xy 0.4572 -0.8128) (xy 0.3556 -0.8636) (xy 0.3048 -0.9144)
+						(xy 0.2286 -0.9652) (xy 0.0762 -1.1938) (xy 0.0254 -1.2954) (xy -0.0254 -1.4224) (xy -0.0508 -1.4986)
+						(xy -0.1016 -1.5748) (xy -0.127 -1.651) (xy -0.1778 -1.6764) (xy -0.2032 -1.7272) (xy -0.254 -1.7526)
+						(xy -0.4064 -1.7526) (xy -0.4064 -1.7272) (xy -0.4572 -1.7018) (xy -0.4826 -1.6256) (xy -0.508 -1.524)
+						(xy -0.508 -1.0922) (xy -0.4572 -0.889) (xy -0.4064 -0.8128) (xy -0.254 -0.6604) (xy -0.2032 -0.5842)
+						(xy -0.127 -0.5334) (xy -0.1016 -0.4826) (xy -0.0762 -0.4064) (xy -0.0508 -0.3556) (xy -0.0254 -0.3302)
+						(xy -0.0254 -0.2794) (xy 0 -0.2286) (xy -0.0762 -0.1524) (xy -0.127 -0.127) (xy -0.1524 -0.0762)
+						(xy -0.2032 -0.0508) (xy -0.2286 -0.0254) (xy -0.254 -0.0254) (xy -0.3048 -0.0762) (xy -0.3556 -0.1016)
+						(xy -0.4318 -0.127) (xy -0.4826 -0.1524) (xy -0.5588 -0.2286) (xy -0.6096 -0.254) (xy -0.8382 -0.4826)
+						(xy -0.8128 -0.5588) (xy -0.7874 -0.5842) (xy -0.7874 -0.8636) (xy -0.8128 -0.889) (xy -0.8128 -0.9652)
+						(xy -0.762 -1.016) (xy -0.762 -1.0414) (xy -0.6604 -1.2954) (xy -0.6604 -1.5748) (xy -0.6858 -1.6002)
+						(xy -0.6858 -1.6256) (xy -0.7366 -1.7018) (xy -0.8382 -1.7526) (xy -0.9144 -1.7526) (xy -0.9398 -1.7272)
+						(xy -0.9652 -1.6764) (xy -1.016 -1.6002) (xy -1.0414 -1.524) (xy -1.143 -1.27) (xy -1.2192 -1.0414)
+						(xy -1.27 -0.9652) (xy -1.2954 -0.889) (xy -1.3208 -0.8382) (xy -1.3208 -0.8128) (xy -1.3716 -0.7112)
+						(xy -1.397 -0.5842) (xy -1.397 -0.4826) (xy -1.3716 -0.381) (xy -1.3208 -0.254) (xy -1.2954 -0.2032)
+						(xy -1.1938 -0.0508) (xy -1.0414 0.1524) (xy -0.9906 0.2032) (xy -0.9652 0.254) (xy -0.9144 0.3302)
+						(xy -0.889 0.381) (xy -0.8636 0.381) (xy -0.8128 0.508) (xy -0.6096 0.7112) (xy -0.5334 0.7366)
+						(xy -0.508 0.762) (xy -0.4318 0.762) (xy -0.3556 0.7874) (xy -0.2286 0.8128) (xy -0.1016 0.8128)
+						(xy 0.0508 0.8382) (xy 0.2032 0.8382) (xy 0.3048 0.8636) (xy 0.4826 0.8636) (xy 0.5334 0.889)
+						(xy 0.5842 0.889) (xy 0.6858 0.9398) (xy 0.7112 0.9652) (xy 0.762 0.9906) (xy 0.8128 1.0414) (xy 0.8636 1.0668)
+						(xy 0.889 1.1176) (xy 0.9144 1.143) (xy 0.9144 1.1938) (xy 0.889 1.2192) (xy 0.8636 1.27) (xy 0.8128 1.3462)
+						(xy 0.7112 1.5494) (xy 0.635 1.651) (xy 0.5842 1.7526) (xy 0.508 1.8796) (xy 0.4572 1.9558) (xy 0.381 2.0828)
+						(xy 0.3048 2.1844) (xy 0.254 2.286) (xy 0.2032 2.3622) (xy 0.1778 2.4384) (xy 0.1016 2.5146) (xy 0.1016 2.54)
+						(xy 0.0762 2.5654) (xy 0.0762 2.5908) (xy 0.0254 2.5908) (xy 0.0254 2.5654) (xy -0.0254 2.5146)
+						(xy -0.1016 2.3622) (xy -0.254 2.1336) (xy -0.3048 2.032) (xy -0.4572 1.778) (xy -0.5588 1.6256)
+						(xy -0.762 1.27) (xy -0.889 1.0668) (xy -1.016 0.8382) (xy -1.1684 0.6096) (xy -1.3208 0.3302)
+						(xy -1.397 0.2032) (xy -1.524 -0.0254) (xy -1.778 -0.4318) (xy -1.8796 -0.635) (xy -2.0066 -0.8128)
+						(xy -2.1082 -0.9906) (xy -2.2098 -1.143) (xy -2.286 -1.2954) (xy -2.4384 -1.5494) (xy -2.4892 -1.651)
+						(xy -2.5654 -1.7526) (xy -2.5908 -1.8288) (xy -2.6162 -1.8796) (xy -2.6416 -1.905) (xy -2.6416 -1.9304)
+						(xy 2.7432 -1.9304) (xy 2.7432 -1.905)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+		)
+		(symbol "Graphic:SYM_Radio_Waves_Large"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#SYM"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "SYM_Radio_Waves_Large"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0.762 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Radio waves warning symbol, large"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "symbol logo radio waves warning radiation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SYM_Radio_Waves_Large_0_1"
+				(arc
+					(start -1.778 -0.254)
+					(mid -2.0478 -1.27)
+					(end -1.778 -2.286)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.27 -0.508)
+					(mid -1.4811 -1.27)
+					(end -1.27 -2.032)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -0.762 -0.762)
+					(mid -0.9158 -1.27)
+					(end -0.762 -1.778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.27)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 -5.08) (xy 5.08 -5.08) (xy 0 3.81) (xy -5.08 -5.08)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 -4.572) (xy 1.016 -4.572) (xy 0 -1.27) (xy -1.016 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start 0.762 -1.778)
+					(mid 0.9158 -1.27)
+					(end 0.762 -0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 -2.032)
+					(mid 1.4811 -1.27)
+					(end 1.27 -0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 -2.286)
+					(mid 2.0478 -1.27)
+					(end 1.778 -0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "power-flag"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(text "SUBSHEETS (revision D):"
+		(exclude_from_sim no)
+		(at 76.2 76.2 0)
+		(effects
+			(font
+				(size 2.9972 2.9972)
+				(thickness 0.5994)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "02165243-61a3-4857-84ba-71a77cb9a387")
+	)
+	(text "This HAM radio project is licensed under \nthe TAPR Open Hardware License \n(www.tapr.org/OHL)"
+		(exclude_from_sim no)
+		(at 68.58 180.34 0)
+		(effects
+			(font
+				(size 2.9972 2.9972)
+				(thickness 0.5994)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f3c9e3a-9c59-4881-b27a-d0e982b3ea8e")
+	)
+	(text "3V3 lin.reg.\n& terminals"
+		(exclude_from_sim no)
+		(at 120.65 138.43 0)
+		(effects
+			(font
+				(size 3.4036 3.4036)
+				(thickness 0.6807)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "35354519-a28c-40c4-befd-0943e98dea53")
+	)
+	(text "W5500 \nEthernet"
+		(exclude_from_sim no)
+		(at 167.64 138.43 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.6807)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "54365317-1355-4216-bb75-829375abc4ec")
+	)
+	(text "Si4463 & \nRF switching"
+		(exclude_from_sim no)
+		(at 119.38 105.41 0)
+		(effects
+			(font
+				(size 3.4036 3.4036)
+				(thickness 0.6807)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "646d9e91-59b4-4865-a2fc-29780ed32563")
+	)
+	(text "OH1GJV, OH2EAT, OH2FLO, OH3HZB, OH5GE"
+		(exclude_from_sim no)
+		(at 184.15 179.07 0)
+		(effects
+			(font
+				(size 2.4638 2.4638)
+				(thickness 0.4928)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "75286985-9fa5-4d30-89c5-493b6e63cd66")
+	)
+	(text "MCU, SRAM, \nSERIAL"
+		(exclude_from_sim no)
+		(at 72.39 106.68 0)
+		(effects
+			(font
+				(size 4.036 4.036)
+				(thickness 0.6807)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "825c70b0-4860-42b7-97dc-86bfa46e06fd")
+	)
+	(text "RF LNA \n& PA"
+		(exclude_from_sim no)
+		(at 167.64 105.41 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.7976)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9d984d1b-8097-407f-92f3-3ef68867dcfa")
+	)
+	(text "TACNPR project"
+		(exclude_from_sim no)
+		(at 182.88 173.99 0)
+		(effects
+			(font
+				(size 5.0038 5.0038)
+				(thickness 1.0008)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ff4672a-e1a4-4a1e-887d-1b9a3429d278")
+	)
+	(text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector"
+		(exclude_from_sim no)
+		(at 199.39 77.47 0)
+		(effects
+			(font
+				(size 2.0038 2.0038)
+				(thickness 0.4008)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7ddc24d-18a4-45d9-987d-b903562de2a5")
+	)
+	(text "TACNPR project\n"
+		(exclude_from_sim no)
+		(at 83.82 44.45 0)
+		(effects
+			(font
+				(size 10.0076 10.0076)
+				(thickness 2.0015)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbb15673-6d42-42b8-9d51-7515b3ad9ee9")
+	)
+	(text "Tatu OH2EAT, Lasse OH3HZB & Tommi OH1GJV & SCOMS team\nSpecial thanks to: Mikko OH2FLO & Vili OH5GE"
+		(exclude_from_sim no)
+		(at 78.74 59.69 0)
+		(effects
+			(font
+				(size 2.9972 2.9972)
+				(thickness 0.5994)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "c201e1b2-fc01-4110-bdaa-a33290468c83")
+	)
+	(text "DC/DC\nconverters"
+		(exclude_from_sim no)
+		(at 76.2 138.43 0)
+		(effects
+			(font
+				(size 4 4)
+				(thickness 0.7976)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "e6521bef-4109-48f7-8b88-4121b0468927")
+	)
+	(symbol
+		(lib_id "Graphic:Logo_Open_Hardware_Large")
+		(at 53.34 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006067be98")
+		(property "Reference" "#LOGO1"
+			(at 53.34 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Logo_Open_Hardware_Large"
+			(at 53.34 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#LOGO1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_Radio_Waves_Large")
+		(at 275.59 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006067e54c")
+		(property "Reference" "#SYM2"
+			(at 275.59 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_Radio_Waves_Large"
+			(at 275.59 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 275.59 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.352 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 275.59 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#SYM2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 246.38 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cee86")
+		(property "Reference" "H3"
+			(at 248.92 105.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 248.92 107.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 246.38 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 246.38 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f039fb6-5ce0-4870-aee6-8e0a9fe6ee25")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 229.87 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cefe0")
+		(property "Reference" "H5"
+			(at 232.41 124.5616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 232.41 126.873 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 229.87 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6d5ca88-7063-4c5c-8e9a-2b458008f0a4")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 246.38 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cf1c5")
+		(property "Reference" "H7"
+			(at 248.92 124.5616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 248.92 126.873 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 246.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 246.38 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "11d1454e-2d3e-4816-9c55-e6e0e2714147")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 237.49 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cf8be")
+		(property "Reference" "H2"
+			(at 240.03 105.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 240.03 107.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 237.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 237.49 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a10429c-d5b1-4432-9d05-15b34a78ff26")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 254 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cf948")
+		(property "Reference" "H4"
+			(at 256.54 105.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 256.54 107.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15989b27-1e1a-4651-8e64-dca48b96f1d2")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 237.49 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cf952")
+		(property "Reference" "H6"
+			(at 240.03 124.5616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 240.03 126.873 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 237.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 237.49 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "899dffee-5f47-4f6e-a8c2-03d223789b4f")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 255.27 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000607cf95c")
+		(property "Reference" "H8"
+			(at 257.81 124.5616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 257.81 126.873 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 255.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 255.27 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3787faf0-33c9-478b-bb05-7fbc61092459")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Graphic:SYM_ESD_Small")
+		(at 271.78 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000608032af")
+		(property "Reference" "#SYM1"
+			(at 271.78 127.254 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "SYM_ESD_Small"
+			(at 271.78 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Symbol:ESD-Logo_8.9x8mm_SilkScreen"
+			(at 271.78 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 271.78 130.556 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 271.78 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#SYM1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 229.87 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006087e1a0")
+		(property "Reference" "H1"
+			(at 232.41 105.5116 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MH"
+			(at 232.41 107.823 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 229.87 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d3a85980-4f7f-4333-8fb9-5677e22b549e")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 229.87 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000062389c69")
+		(property "Reference" "R50"
+			(at 232.41 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 234.95 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 229.87 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9aa11459-7b35-4694-aeb2-72e202b23d00")
+		)
+		(pin "2"
+			(uuid "fed4f01d-8379-41e5-bacd-6a06ba38a6fe")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006238a22a")
+		(property "Reference" "#PWR0194"
+			(at 229.87 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.997 118.6942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f406c10-3d8f-4523-83b9-c4c17247863b")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0194")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 237.49 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006238c952")
+		(property "Reference" "R62"
+			(at 240.03 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 242.57 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 237.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 237.49 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50b5c8e6-9bbf-44af-a3cd-534457561b24")
+		)
+		(pin "2"
+			(uuid "ebdf56c8-0f30-4d93-bf26-8529128adccd")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 237.49 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006238c9fa")
+		(property "Reference" "#PWR0195"
+			(at 237.49 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.617 118.6942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1fb121bf-de2b-4f2e-8832-66a25629b62d")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0195")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 246.38 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000062393945")
+		(property "Reference" "R63"
+			(at 248.92 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 251.46 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 246.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 246.38 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d187e8ec-c764-41aa-a96e-87e465e05d40")
+		)
+		(pin "2"
+			(uuid "2110d59e-1f57-42ef-9de6-062277bdd2b1")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000062393a1d")
+		(property "Reference" "#PWR0196"
+			(at 246.38 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.507 118.6942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cd889081-467d-4e4e-b8ed-a0ae246558f9")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0196")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 254 111.76 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000062393a27")
+		(property "Reference" "R64"
+			(at 256.54 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 259.08 110.49 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 254 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 254 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 254 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c990a53-81f0-4057-8d11-068af2d39fa2")
+		)
+		(pin "2"
+			(uuid "79655be7-2960-4357-8187-35a101f138c6")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 254 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-000062393a31")
+		(property "Reference" "#PWR0197"
+			(at 254 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 254.127 118.6942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81396435-1b97-4a34-b09b-2b6920366dcf")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0197")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 229.87 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d5af")
+		(property "Reference" "R65"
+			(at 232.41 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 234.95 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c224a212-c94a-428f-98af-64dd4e26a9f7")
+		)
+		(pin "2"
+			(uuid "03ee58da-addd-46bd-9544-7f3ea5b7f2c9")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d6bf")
+		(property "Reference" "#PWR0198"
+			(at 229.87 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.997 137.7442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 229.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f2400802-90eb-4862-867f-6d34263b84b8")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0198")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 237.49 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d6c9")
+		(property "Reference" "R66"
+			(at 240.03 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 242.57 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 237.49 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 237.49 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 237.49 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d1d6994-050d-4bda-be24-cbcdf2507918")
+		)
+		(pin "2"
+			(uuid "5a17ae54-5dd6-4444-a4d1-d1f7ecb2b71c")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 237.49 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d6d3")
+		(property "Reference" "#PWR0199"
+			(at 237.49 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 237.617 137.7442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 237.49 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dca42f48-721b-4636-8193-30af4339a58a")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0199")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 246.38 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d6dd")
+		(property "Reference" "R67"
+			(at 248.92 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 251.46 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 246.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 246.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40ca96b8-e7bb-4e8e-948f-8b3bd35ce3fa")
+		)
+		(pin "2"
+			(uuid "3335e903-dcdc-4021-a41a-d8693918d2cd")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R67")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-00006239d6e7")
+		(property "Reference" "#PWR0200"
+			(at 246.38 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.507 137.7442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6497e30e-246a-436a-9640-b042ecdac395")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0200")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 255.27 130.81 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000624d1b0b")
+		(property "Reference" "R70"
+			(at 257.81 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 260.35 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 255.27 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 255.27 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C17477"
+			(at 255.27 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dde20d9-9e4b-4d02-9cd8-36664b986508")
+		)
+		(pin "2"
+			(uuid "1b483344-0912-4720-8deb-ed407459703e")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "R70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 133.35 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000624d1f61")
+		(property "Reference" "#PWR0207"
+			(at 255.27 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.397 137.7442 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 255.27 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "915db51f-7723-4d69-9c4b-2ff49dcea1fc")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(reference "#PWR0207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet
+		(at 161.29 90.17)
+		(size 36.83 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000060604cf2")
+		(property "Sheetname" "RF-PA"
+			(at 161.29 89.0901 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RF-PA-sheet.kicad_sch"
+			(at 161.29 110.0992 0)
+			(effects
+				(font
+					(size 2.0066 2.0066)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 116.84 90.17)
+		(size 36.83 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-0000607946f5")
+		(property "Sheetname" "radio"
+			(at 116.84 88.8996 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "radio-sheet.kicad_sch"
+			(at 116.84 110.2516 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 123.19)
+		(size 38.1 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-0000607fb7f8")
+		(property "Sheetname" "linear-regs"
+			(at 118.11 121.9196 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "linreg-sheet.kicad_sch"
+			(at 118.11 143.2716 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 71.12 90.17)
+		(size 38.1 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-00006096f497")
+		(property "Sheetname" "cpu"
+			(at 71.12 88.8996 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu-sheet.kicad_sch"
+			(at 71.12 110.2516 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 71.12 123.19)
+		(size 38.1 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-0000609a52e7")
+		(property "Sheetname" "tacbucks"
+			(at 71.12 121.9196 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "tacbuck-sheet.kicad_sch"
+			(at 71.12 143.2716 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 163.83 123.19)
+		(size 34.29 19.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "00000000-0000-0000-0000-000062ae4073")
+		(property "Sheetname" "ethernet"
+			(at 163.83 121.9196 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet-sheet.kicad_sch"
+			(at 163.83 143.2716 0)
+			(effects
+				(font
+					(size 2.3876 2.3876)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
 )

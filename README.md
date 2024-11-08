@@ -1,18 +1,15 @@
-# TACNPR project 'Neppari'
+# TACNPR project ('Neppari')
 
-NPR (New Packet Radio protocol) compatible Ethernet-connected radio w/ integrated RF PA. Revision B brought integrated Ethernet and revision C some RF performance enhancements (see modifications guidance for revA & revB below).
+NPR-compatible (New Packet Radio) Ethernet-connected radio w/ integrated RF PA for the 70cm HAM band.
 TACNPR is binary-compatible with the original design /1/ by Guillaume F4HDK.
 
 Designed by Lasse OH3HZB & Tatu OH2EAT & Scoms team (special thanks to Mikko OH2FLO, Vili OH5GE and Tommi OH1GJV (TACBUCK design))
 
-![3D](TACNPR-revC-3D-top.jpg)
+![photo](TACNPR-revD-photo.jpg)
 
-![photo](TACNPR-revB-photo.jpg)
+Licensed under the TAPR Open Hardware License www.tapr.org/OHL
 
-Licensed under the TAPR Open Hardware License 
-www.tapr.org/OHL
-
-Please note that you need to be licensed HAM radio operator to use this radio.
+Please note that you need to be licensed HAM radio operator to use this radio. Remember to check your local regulations.
 
 ### Modifications for revA and revB to optimize RF performance
 
@@ -21,10 +18,28 @@ Please note that you need to be licensed HAM radio operator to use this radio.
 * C65 and C102: replace by 6p8
 * C100: replace by 8p2
 
-The tuning stub should be shorted according to the latest revC layout.
+The tuning stub in revA/revB should be shorted according to the revC/revD layout.
+
+### Project milestones and current status
+
+* RevA: First version with Ethernet add-on module.
+* RevB: Integrated Ethernet.
+* RevC: RF performance enhancements (see the previous chapter). 
+* RevD: Powerpole connector option added.
+
+RevC and RevD are tested and fully functional. RevA & RevB require tuning (stub) and modifications mentioned above.
 
 ### Recommended TX power setting for maximum power with this PA module
 
 set RF_power 55
 
 /1/: NPR by Guillaume F4HDK (2018-): https://hackaday.io/project/164092-npr-new-packet-radio 
+
+### Disclaimer
+
+This design and all related material is provided as-is and is to be used at your own risk. The authors take no responsibility for any direct, indirect, incidental, or consequential 
+damage that may arise from its use, including but not limited to damage to property, loss of data, or personal injury. Users are solely responsible for 
+ensuring safe operation and adherence to all relevant laws and regulations. 
+
+For the license terms, please refer to LICENSE file or http://www.tapr.org/OHL
+
