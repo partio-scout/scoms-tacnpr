@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TACNPR (TACBUCKs)")
-		(rev "D")
+		(rev "E")
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
@@ -11580,7 +11580,7 @@
 				)
 			)
 		)
-		(property "Value" "2k7"
+		(property "Value" "4k7"
 			(at 120.65 191.77 90)
 			(effects
 				(font
@@ -11615,7 +11615,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C13167"
+		(property "LCSC" "C23162"
 			(at 120.65 189.23 0)
 			(effects
 				(font

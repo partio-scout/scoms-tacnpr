@@ -7,7 +7,7 @@
 	(title_block
 		(title "TACNPR")
 		(date "2021-03-22")
-		(rev "D")
+		(rev "E")
 	)
 	(lib_symbols
 		(symbol "Device:R_Small"
@@ -765,7 +765,7 @@
 			)
 		)
 	)
-	(text "SUBSHEETS (revision D):"
+	(text "SUBSHEETS (revision E):"
 		(exclude_from_sim no)
 		(at 76.2 76.2 0)
 		(effects
@@ -882,7 +882,7 @@
 		)
 		(uuid "9ff4672a-e1a4-4a1e-887d-1b9a3429d278")
 	)
-	(text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector"
+	(text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector\n-revE: RX_STATE->RX_LED etc, no major changes."
 		(exclude_from_sim no)
 		(at 199.39 77.47 0)
 		(effects

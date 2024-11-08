@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TACNPR (CPU sheet)")
-		(rev "D")
+		(rev "E")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Female"

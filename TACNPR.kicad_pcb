@@ -75088,7 +75088,7 @@
 			)
 		)
 	)
-	(gr_text "TACNPR-D"
+	(gr_text "TACNPR-E"
 		(at 123.952 53.5432 0)
 		(layer "F.SilkS" knockout)
 		(uuid "00000000-0000-0000-0000-0000606d2e09")
