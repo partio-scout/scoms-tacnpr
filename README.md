@@ -37,7 +37,7 @@ set RF_power 55
 
 ### Disclaimer
 
-This device is provided as-is and is to be used at your own risk. The authors take no responsibility for any direct, indirect, incidental, or consequential 
+This design and all related material is provided as-is and is to be used at your own risk. The authors take no responsibility for any direct, indirect, incidental, or consequential 
 damage that may arise from its use, including but not limited to damage to property, loss of data, or personal injury. Users are solely responsible for 
 ensuring safe operation and adherence to all relevant laws and regulations. 
 
