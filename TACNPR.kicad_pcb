@@ -75828,8 +75828,8 @@
 			)
 		)
 	)
-	(gr_text "RXLED"
-		(at 186.0804 68.6816 90)
+	(gr_text "RX_ST.\nLED"
+		(at 186.69 68.9356 90)
 		(layer "F.SilkS")
 		(uuid "8633fafc-fdd0-4623-b208-57d2a9c11711")
 		(effects
@@ -76086,8 +76086,8 @@
 			)
 		)
 	)
-	(gr_text "PWRLED"
-		(at 186.0296 63.246 90)
+	(gr_text "PWR\nLED"
+		(at 186.69 63.7032 90)
 		(layer "F.SilkS")
 		(uuid "fd989137-247d-41c8-a149-a82fac928f71")
 		(effects
