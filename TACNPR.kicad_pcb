@@ -74944,14 +74944,15 @@
 			(justify mirror)
 		)
 	)
-	(gr_text "RF STATE HEADER (J4):\n1=PWRLED\n2=TX_STATE\n3=RX_STATE\n4=TXLED=TX_STATE+330R\n5=RST (STM32 MCU)\n6=GND\n"
-		(at 176.276 50.1904 90)
+	(gr_text "RF STATE HEADER (J4):\n1=PWRLED\n2=TX_STATE\n3=RX LED\n4=TX LED\n5=RST (STM32 MCU)\n6=GND\n"
+		(at 175.8696 51.4604 90)
 		(layer "B.SilkS")
 		(uuid "00000000-0000-0000-0000-000061460e56")
 		(effects
 			(font
-				(size 0.8 0.8)
+				(size 0.8 1)
 				(thickness 0.2)
+				(bold yes)
 			)
 			(justify left mirror)
 		)
