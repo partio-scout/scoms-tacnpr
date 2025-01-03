@@ -59,7 +59,10 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_edge_clearance|112394753|133086554|221995a8-0310-40af-a781-a0064f63aa56|913e1805-ce0d-434f-9da3-058c0c84219f",
+        "silk_edge_clearance|112395000|135890000|00000000-0000-0000-0000-000060593f36|4994e2d0-a526-4892-9339-6bb39af1a0d3"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -568,10 +571,10 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -584,7 +587,7 @@
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "LCSC"
     },
     "connection_grid_size": 50.0,
     "drawing": {
