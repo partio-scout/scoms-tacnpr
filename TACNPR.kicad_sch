@@ -882,9 +882,9 @@
 		)
 		(uuid "9ff4672a-e1a4-4a1e-887d-1b9a3429d278")
 	)
-	(text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector\n-revE: RX_STATE->RX_LED etc, no major changes."
+	(text "Major changes since revA:\n-revA: first release\n-revB: integrated Ethernet\n-revC: enhanced RF performance\n-revD: Powerpole connector\n-revE: RX_LED (J4), minor enhancements"
 		(exclude_from_sim no)
-		(at 199.39 77.47 0)
+		(at 201.93 82.296 0)
 		(effects
 			(font
 				(size 2.0038 2.0038)
