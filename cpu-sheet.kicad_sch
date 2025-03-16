@@ -5735,7 +5735,6 @@
 	)
 	(label "SWDIO(PA13)"
 		(at 123.19 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -5746,7 +5745,6 @@
 	)
 	(label "SWCLK(PA14)"
 		(at 133.35 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.9906 0.9906)

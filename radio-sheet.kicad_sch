@@ -3910,7 +3910,6 @@
 	)
 	(label "3V3_LNA_FILTERED"
 		(at 199.39 110.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -4629,11 +4628,11 @@
 				(hide yes)
 			)
 		)
-		(property "DNP" "TRUE"
+		(property "LCSC" "C476202"
 			(at 124.46 64.77 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 5.0038 5.0038)
 				)
 				(hide yes)
 			)
