@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TACNPR (linear regulators)")
-		(rev "D")
+		(rev "E")
 	)
 	(lib_symbols
 		(symbol "Connector:Screw_Terminal_01x02"

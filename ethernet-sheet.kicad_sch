@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TACNPR  (Ethernet)")
-		(rev "D")
+		(rev "E")
 		(company "Scoms")
 		(comment 1 "Drawn by OH3HZB 2022-2023")
 		(comment 2 "Reviewed by OH2EAT 2023")

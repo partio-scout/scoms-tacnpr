@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "TACNPR (CPU sheet)")
-		(rev "D")
+		(rev "E")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x04_Female"
@@ -4113,6 +4113,12 @@
 		(uuid "56b53988-7c92-40d8-a754-683f4429d93e")
 	)
 	(junction
+		(at 246.38 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "72c30462-ea42-4e2c-9bfc-c3bb200dbb76")
+	)
+	(junction
 		(at 130.81 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4276,16 +4282,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 57.15) (xy 54.61 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0be6d64d-bd50-4f4b-b713-eebf2f3bdc06")
-	)
-	(wire
-		(pts
 			(xy 110.49 90.17) (xy 114.3 90.17)
 		)
 		(stroke
@@ -4346,16 +4342,6 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 59.69) (xy 54.61 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15ad38b1-ffe0-40e8-ae8e-724dde550b38")
-	)
-	(wire
-		(pts
 			(xy 43.18 156.21) (xy 43.18 161.29)
 		)
 		(stroke
@@ -4363,6 +4349,16 @@
 			(type default)
 		)
 		(uuid "18b6dcb6-5ab3-481b-b998-33e8cf6d281f")
+	)
+	(wire
+		(pts
+			(xy 53.34 54.61) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a770931-d8f1-4ef4-9bec-b3b585ba6344")
 	)
 	(wire
 		(pts
@@ -4586,6 +4582,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 52.07) (xy 53.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d722d0-90df-4907-ac5f-af97c93e9e48")
+	)
+	(wire
+		(pts
 			(xy 114.3 85.09) (xy 110.49 85.09)
 		)
 		(stroke
@@ -4763,6 +4769,16 @@
 			(type default)
 		)
 		(uuid "5b29962f-685a-409c-915c-9c4a92ed442a")
+	)
+	(wire
+		(pts
+			(xy 246.38 73.66) (xy 250.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c5ad385-24c6-4c41-8110-8fd10e0b3a35")
 	)
 	(wire
 		(pts
@@ -5026,7 +5042,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 73.66) (xy 250.19 73.66)
+			(xy 242.57 73.66) (xy 246.38 73.66)
 		)
 		(stroke
 			(width 0)
@@ -5336,6 +5352,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 59.69) (xy 53.34 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfe9fd0b-bd0d-4431-a1b9-d788e780ea1d")
+	)
+	(wire
+		(pts
 			(xy 191.77 73.66) (xy 199.39 73.66)
 		)
 		(stroke
@@ -5486,6 +5512,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 57.15) (xy 54.61 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1076d97-6ad8-43e9-a490-b133cbe25f23")
+	)
+	(wire
+		(pts
 			(xy 110.49 82.55) (xy 114.3 82.55)
 		)
 		(stroke
@@ -5533,16 +5569,6 @@
 			(type default)
 		)
 		(uuid "fb4e7351-d265-4999-adf6-bc7596c21cf3")
-	)
-	(wire
-		(pts
-			(xy 48.26 54.61) (xy 54.61 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd5233f3-d789-4e5e-8c4a-55a2bf539145")
 	)
 	(wire
 		(pts
@@ -5719,7 +5745,6 @@
 	)
 	(label "SWDIO(PA13)"
 		(at 123.19 107.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -5730,7 +5755,6 @@
 	)
 	(label "SWCLK(PA14)"
 		(at 133.35 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.9906 0.9906)
@@ -5756,6 +5780,32 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TXSTATE"
+		(shape output)
+		(at 54.61 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "0994e334-02c8-454a-b5ef-16b1daf73d76")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.0227 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -5798,28 +5848,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIOR1"
-		(shape output)
-		(at 54.61 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.0038 1.0038)
-			)
-			(justify left)
-		)
-		(uuid "15f1846f-4de6-4b40-aca9-79868fb6655b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.944 54.5473 0)
-			(effects
-				(font
-					(size 1.0038 1.0038)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6123,6 +6151,28 @@
 			)
 		)
 	)
+	(global_label "GPIOR3"
+		(shape output)
+		(at 26.67 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.0038 1.0038)
+			)
+			(justify right)
+		)
+		(uuid "64c7b977-7f37-433b-b166-920f9720b8fd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 19.3305 58.42 0)
+			(effects
+				(font
+					(size 1.0038 1.0038)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "CS_SRAM"
 		(shape input)
 		(at 185.42 39.37 180)
@@ -6182,6 +6232,28 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_RX"
+		(shape output)
+		(at 54.61 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "6b5c5f19-85e7-40d8-9a3a-9146dcbc096c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 61.8739 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -6273,7 +6345,7 @@
 	)
 	(global_label "3V3_LNA"
 		(shape input)
-		(at 53.34 52.07 0)
+		(at 54.61 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6283,7 +6355,7 @@
 		)
 		(uuid "85edcd72-b013-41b9-a4a7-bd170a959a3e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.4081 52.0075 0)
+			(at 62.6781 52.0075 0)
 			(effects
 				(font
 					(size 1 1)
@@ -6776,28 +6848,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIOR3"
-		(shape output)
-		(at 54.61 59.69 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.0038 1.0038)
-			)
-			(justify left)
-		)
-		(uuid "fa7d9526-a850-4042-b15c-ccb35bfb712f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.944 59.6273 0)
-			(effects
-				(font
-					(size 1.0038 1.0038)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -12752,82 +12802,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 50.8 59.69 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01192dee-6c26-4748-8ab6-05eddaadfe5e")
-		(property "Reference" "R45"
-			(at 50.8 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 50.8 55.88 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 50.8 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C23138"
-			(at 50.8 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94548c13-93f3-41f1-9f78-8f914477c7da")
-		)
-		(pin "2"
-			(uuid "b834595e-58f9-4fdf-abe2-d4ce93a74917")
-		)
-		(instances
-			(project "TACNPR"
-				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
-					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
 		(at 50.8 52.07 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12991,6 +12965,304 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 26.67 58.42 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6cdabec4-eb82-4380-901c-0e76a841ce07")
+		(property "Reference" "TP10"
+			(at 28.4988 63.373 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 28.4988 61.0616 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 26.67 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 26.67 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 26.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 26.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e85c24f-325c-4808-93dc-76484fb0efa6")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 246.38 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a8975057-2e8d-4337-a0b1-7cf2b6e14f7a")
+		(property "Reference" "TP9"
+			(at 248.666 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "CONL"
+			(at 246.634 66.294 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
+			(at 251.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DNP" "TRUE"
+			(at 246.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bd715579-1a1d-43b7-b479-8a97921d5084")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad84a9f7-5f00-4217-8296-36e774dc7f05")
+		(property "Reference" "R94"
+			(at 50.8 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 50.8 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5119b3db-25c9-47be-ab98-c695a174b3be")
+		)
+		(pin "2"
+			(uuid "dcee303d-56e3-47ed-afb3-d2ca8fd7fb4b")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "R94")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 57.15 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d83e5f23-cfb0-44f6-80a5-f32672dd4a4a")
+		(property "Reference" "R93"
+			(at 50.8 55.626 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 50.8 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 50.8 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b246a6a5-4a34-4268-bdf9-1b85ab889239")
+		)
+		(pin "2"
+			(uuid "104782e8-b4bf-45ff-9061-8a7d5c2d018f")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "R93")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 243.84 113.03 90)
 		(unit 1)
@@ -13050,6 +13322,82 @@
 			(project "TACNPR"
 				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
 					(reference "#PWR0160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 59.69 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff8cad74-31bd-49e9-b732-d2d73f52cb79")
+		(property "Reference" "R45"
+			(at 50.8 58.166 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 50.8 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 50.8 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c482004-12a9-450a-a10d-cfceb073f2fb")
+		)
+		(pin "2"
+			(uuid "e7467292-ad95-4ea4-bf16-9bc8e84a87e9")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "R45")
 					(unit 1)
 				)
 			)
