@@ -28,7 +28,7 @@ The tuning stub in revA/revB should be shorted according to the revC/revD layout
 * RevD: Powerpole connector option added.
 * RevE: TX/RX LEDs (J4)
 
-RevC and RevD are tested and fully functional. RevA & RevB require tuning (stub) and modifications mentioned above.
+RevC and RevD are tested and fully functional. RevA & RevB require tuning (stub) and modifications mentioned above. RevD->revE, no changes to RF section.
 
 ### Recommended TX power setting for maximum power with this PA module
 
