@@ -26,6 +26,7 @@ The tuning stub in revA/revB should be shorted according to the revC/revD layout
 * RevB: Integrated Ethernet.
 * RevC: RF performance enhancements (see the previous chapter). 
 * RevD: Powerpole connector option added.
+* RevE: TX/RX LEDs (J4)
 
 RevC and RevD are tested and fully functional. RevA & RevB require tuning (stub) and modifications mentioned above.
 
