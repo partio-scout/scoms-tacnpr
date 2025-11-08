@@ -4352,6 +4352,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 54.61) (xy 54.61 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a770931-d8f1-4ef4-9bec-b3b585ba6344")
+	)
+	(wire
+		(pts
 			(xy 110.49 49.53) (xy 120.65 49.53)
 		)
 		(stroke
@@ -4569,6 +4579,16 @@
 			(type default)
 		)
 		(uuid "3c19fda9-55de-469e-9693-2d8993bca106")
+	)
+	(wire
+		(pts
+			(xy 54.61 52.07) (xy 53.34 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41d722d0-90df-4907-ac5f-af97c93e9e48")
 	)
 	(wire
 		(pts
@@ -5552,16 +5572,6 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 54.61) (xy 54.61 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd5233f3-d789-4e5e-8c4a-55a2bf539145")
-	)
-	(wire
-		(pts
 			(xy 71.12 64.77) (xy 72.39 64.77)
 		)
 		(stroke
@@ -5774,6 +5784,32 @@
 			)
 		)
 	)
+	(global_label "TXSTATE"
+		(shape output)
+		(at 54.61 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "0994e334-02c8-454a-b5ef-16b1daf73d76")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 63.0227 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED_RX"
 		(shape output)
 		(at 83.82 87.63 180)
@@ -5812,28 +5848,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIOR1"
-		(shape output)
-		(at 54.61 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.0038 1.0038)
-			)
-			(justify left)
-		)
-		(uuid "15f1846f-4de6-4b40-aca9-79868fb6655b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.944 54.5473 0)
-			(effects
-				(font
-					(size 1.0038 1.0038)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6331,7 +6345,7 @@
 	)
 	(global_label "3V3_LNA"
 		(shape input)
-		(at 53.34 52.07 0)
+		(at 54.61 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6341,7 +6355,7 @@
 		)
 		(uuid "85edcd72-b013-41b9-a4a7-bd170a959a3e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 61.4081 52.0075 0)
+			(at 62.6781 52.0075 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13091,6 +13105,82 @@
 			(project "TACNPR"
 				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
 					(reference "TP9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 50.8 54.61 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad84a9f7-5f00-4217-8296-36e774dc7f05")
+		(property "Reference" "R94"
+			(at 50.8 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330"
+			(at 50.8 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23138"
+			(at 50.8 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5119b3db-25c9-47be-ab98-c695a174b3be")
+		)
+		(pin "2"
+			(uuid "dcee303d-56e3-47ed-afb3-d2ca8fd7fb4b")
+		)
+		(instances
+			(project "TACNPR"
+				(path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8/00000000-0000-0000-0000-00006096f497"
+					(reference "R94")
 					(unit 1)
 				)
 			)
